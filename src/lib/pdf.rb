@@ -29,7 +29,7 @@ class CharSheet
     pdf.font 'data/caliban.ttf'
     pdf.default_leading -4
 
-    logger.info @character
+    # logger.info @character
    
     <<-GRID
     (0...40).each do |x|
@@ -123,9 +123,14 @@ class CharSheet
     self.render_shade_exponent(pdf, ref_attr[0], ref_attr[1], [279, 396.5])
     self.render_shade_exponent(pdf, mor_attr[0], mor_attr[1], [278.5, 346])
 
+    ptgs = @character['ptgs']
+    ["Su", "Li", "Mi", "Se", "Tr", "Mo"].each do |tol|
+      tol_c = ptgs[tol.downcase]
+      pdf.draw_text "#{tol}", :at => [29 + (19.5 * tol_c), 190], :size => @t2
+    end
+
     pdf.draw_text str_attr[1], :at => [264, 428], :size => @t2
     pdf.draw_text hes_attr[1], :at => [53, 318], :size => @t2
-
 
     skills_left = @character['skills'][0...13]
     skills_right = @character['skills'][13...26]

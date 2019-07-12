@@ -69,7 +69,7 @@
     }
   },
   "Peasant Setting": {
-    "Speaker of Names": {
+    "Speaker Of Names": {
       "time": 7,
       "res": 20,
       "stat": [
@@ -185,7 +185,7 @@
         2,
         "Low Born",
         "Impressive Hat",
-        "Never a Moment of Peace"
+        "Never A Moment Of Peace"
       ],
       "requires": "Wizard's Apprentice, Neophyte Sorcerer, Apt Pupil or Junior Student. This character may not have the Mark of Privilege",
       "requires_expr": [
@@ -263,10 +263,10 @@
         "religious subsetting:canon",
         "religious subsetting:abbot/abbess",
         "religious subsetting:bishop",
-        "outcast subsetting:mad summoner",
-        "outcast subsetting:crazy witch",
-        "seafaring setting:weather witch",
-        "noble court subsetting:court summoner"
+        "mad summoner",
+        "crazy witch",
+        "weather witch",
+        "court summoner"
       ],
       "key_leads": [
         "Outcast Subsetting",
@@ -347,13 +347,13 @@
         "Dismissive",
         "Polite",
         "Arrogant",
-        "Frustrated",
+        "Disgruntled",
         "Faust"
       ],
       "requires": "Senior Student, Mad Summoner, Apt Pupil or Wizard's Apprentice",
       "requires_expr": [
         "senior student",
-        "outcast subsetting:mad summoner",
+        "mad summoner",
         "apt pupil",
         "wizard's apprentice"
       ],
@@ -364,7 +364,7 @@
       ]
     }
   },
-  "Outcast Setting": {
+  "Outcast Subsetting": {
     "Demented Inventor": {
       "time": 7,
       "res": 15,
@@ -390,14 +390,14 @@
       ],
       "traits": [
         2,
-        "Demented",
+        "Unhinged",
         "Tinker"
       ],
       "requires": "Rogue Wizard, Apt Pupil or Wizard's Apprentice",
       "requires_expr": [
         "rogue wizard",
         "apt pupil",
-        "villager setting:wizard's apprentice"
+        "wizard's apprentice"
       ],
       "key_leads": [
         "Peasant Setting",
@@ -432,8 +432,8 @@
       ],
       "requires": "Coroner, Death Cultist, Cultist or Apt Pupil",
       "requires_expr": [
-        "noble court subsetting:coroner",
-        "death cult setting:death cultist",
+        "coroner",
+        "death cultist",
         "cultist",
         "apt pupil"
       ]
@@ -472,6 +472,13 @@
         [
           "+has_n_lifepaths_or_less",
           1
+        ],
+        [
+          "born peasant",
+          "village born",
+          "city born",
+          "born noble",
+          "son of a gun"
         ]
       ],
       "key_leads": [
@@ -483,6 +490,12 @@
     "Junior Student": {
       "time": 2,
       "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
       "leads": [
         "City",
         "Court",
@@ -519,653 +532,688 @@
       ]
     },
     "Senior Student": {
-      "time": 1,
-      "res": 1,
+      "time": 2,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
         "Court",
-        "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Outcast"
       ],
       "skills": [
         [
-          3,
-          ""
+          7,
+          "Calligraphy",
+          "Rhetoric",
+          "Aura Reading",
+          "Empyrealia",
+          "Demonology",
+          "Doctrine",
+          "School of Magic-wise",
+          "Junior Student-wise"
         ]
       ],
       "traits": [
-        1,
-        ""
+        2,
+        "Graduate",
+        "Bully"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Junior Student or Sorcerer. May not be taken twice",
+      "requires_expr": [
+        "junior student",
+        "sorcerer"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
         "Noble Court Subsetting",
-        "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Outcast Subsetting"
       ]
     },
     "Adjunct": {
-      "time": 1,
-      "res": 1,
+      "time": 6,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
-        "Court",
-        "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
         "Religious"
       ],
       "skills": [
         [
-          3,
-          ""
+          6,
+          "Research",
+          "Folklore",
+          "Alchemy",
+          "Taxidermy",
+          "Library-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Overworked",
+        "Familiar Face"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Senior Student",
+      "requires_expr": [
+        "senior student"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
-        "Noble Court Subsetting",
-        "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
         "Religious Subsetting"
       ]
     },
     "Master Sorcerer": {
-      "time": 1,
-      "res": 1,
+      "time": 8,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
         "Court",
-        "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Seafaring"
       ],
       "skills": [
         [
-          3,
-          ""
+          5,
+          "Sorcery",
+          "Instructor",
+          "Facet-wise",
+          "Aura-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Versatile",
+        "Sixth Sense"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Adjunct or Court Sorcerer",
+      "requires_expr": [
+        "adjunct",
+        "court sorcerer"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
         "Noble Court Subsetting",
-        "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Seafaring Setting"
       ]
     },
     "Master Enchanter": {
-      "time": 1,
-      "res": 1,
+      "time": 8,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
         "Court",
-        "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Outcast"
       ],
       "skills": [
         [
-          3,
-          ""
+          6,
+          "Enchanting",
+          "Instructor",
+          "Carving",
+          "Etching",
+          "Herbalism",
+          "Jeweler",
+          "Vessel-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Nimble",
+        "Practiced Precision"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Adjunct or Court Enchanter",
+      "requires_expr": [
+        "adjunct",
+        "court enchanter"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
         "Noble Court Subsetting",
-        "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Outcast Subsetting"
       ]
     },
     "Master Summoner": {
-      "time": 1,
-      "res": 1,
+      "time": 8,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
         "Court",
-        "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Outcast"
       ],
       "skills": [
         [
-          3,
-          ""
+          8,
+          "Summoning",
+          "Instructor",
+          "Bargaining",
+          "Ugly Truth",
+          "Soothing Platitudes",
+          "Rule of Law",
+          "Philosophy",
+          "Scheme-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Extrovert",
+        "Fearless",
+        "Obscure Aura"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Adjunct or Court Summoner",
+      "requires_expr": [
+        "adjunct",
+        "court summoner"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
         "Noble Court Subsetting",
-        "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Outcast Subsetting"
       ]
     },
     "Researcher": {
-      "time": 1,
-      "res": 1,
+      "time": 10,
+      "res": 15,
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
         "Court",
-        "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
         "Religious"
       ],
       "skills": [
         [
-          3,
-          ""
+          12,
+          "Research",
+          "Composition",
+          "Cartography",
+          "Cryptogrpahy",
+          "Doctrine",
+          "Apothecary",
+          "Ritual",
+          "Death Art",
+          "Foreign Languages",
+          "Dark Arts-wise",
+          "Elven Songs-wise",
+          "Orc Rituals-wise",
+          "Dwarven Art-wise"
         ]
       ],
       "traits": [
-        1,
-        ""
+        2,
+        "Myopic",
+        "Bookworm",
+        "Speaker Of The Secret Language"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Adjunct or Scholar. May only be taken once",
+      "requires_expr": [
+        "adjunct",
+        "scholar"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
         "Noble Court Subsetting",
-        "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
         "Religious Subsetting"
       ]
     },
     "Councillor": {
-      "time": 1,
-      "res": 1,
+      "time": 5,
+      "res": 40,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
-        "Court",
-        "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Court"
       ],
       "skills": [
         [
-          3,
-          ""
+          6,
+          "Administration",
+          "Rhetoric",
+          "Wine Tasting",
+          "Troubled Student-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Council Of Mages",
+        "Imperious Demeanor"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Master Sorcerer, Master Enchanter or Master Summoner",
+      "requires_expr": [
+        "master sorcerer",
+        "master enchanter",
+        "master summoner"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
-        "Noble Court Subsetting",
-        "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Noble Court Subsetting"
       ]
     },
     "Headmaster": {
-      "time": 1,
-      "res": 1,
+      "time": 12,
+      "res": 50,
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
         "Court",
-        "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
         "Religious"
       ],
       "skills": [
         [
-          3,
-          ""
+          7,
+          "Oratory",
+          "Etiquette",
+          "Poetry",
+          "Strategy Games",
+          "Vintner",
+          "Dark Secret-wise"
+        ],
+        [
+          1,
+          "General"
         ]
       ],
       "traits": [
-        1,
-        ""
+        3,
+        "Stoic",
+        "Master Of Mages",
+        "Domineering Presence"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Councillor",
+      "requires_expr": [
+        "councillor"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
         "Noble Court Subsetting",
-        "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
         "Religious Subsetting"
       ]
     }
   },
   "Death Cult Setting": {
     "Harem Slave": {
-      "time": 1,
-      "res": 1,
+      "time": 3,
+      "res": 3,
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
-        "Court",
         "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Outcast"
       ],
       "skills": [
         [
-          3,
-          ""
+          4,
+          "Creepy Priest-wise",
+          "Disgusting Necromancer-wise",
+          "Death Cult-wise",
+          "Escape Artist"
         ]
       ],
       "traits": [
-        1,
-        ""
+        2,
+        "Numb"
       ],
-      "requires": "",
-      "requires_expr": [],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
-        "Noble Court Subsetting",
         "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Outcast Subsetting"
       ]
     },
     "Death Cultist": {
-      "time": 1,
-      "res": 1,
+      "time": 2,
+      "res": 5,
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
-        "Court",
         "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Soldier"
       ],
       "skills": [
         [
           3,
-          ""
+          "Death-wise",
+          "Riot-wise",
+          "Secret Cult Worship-wise"
         ]
       ],
       "traits": [
-        1,
-        ""
+        2,
+        "Zealot",
+        "Suicidal"
       ],
-      "requires": "",
-      "requires_expr": [],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
-        "Noble Court Subsetting",
         "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Professional Soldier Subsetting"
       ]
     },
     "Grave Robber": {
-      "time": 1,
-      "res": 1,
+      "time": 3,
+      "res": 7,
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
-        "Court",
         "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Soldier"
       ],
       "skills": [
         [
-          3,
-          ""
+          4,
+          "Ditch Digging",
+          "Graveyard-wise",
+          "Night Watch-wise",
+          "Shovel-wise"
         ]
       ],
       "traits": [
-        1,
-        ""
+        2,
+        "Lunatic"
       ],
-      "requires": "",
-      "requires_expr": [],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
-        "Noble Court Subsetting",
         "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Professional Soldier Subsetting"
       ]
     },
     "Spy": {
-      "time": 1,
-      "res": 1,
+      "time": 4,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
-        "Court",
-        "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Soldier"
       ],
       "skills": [
         [
-          3,
-          ""
+          7,
+          "Inconspicuous",
+          "Stealthy",
+          "Falsehood",
+          "Forgery",
+          "Observation",
+          "Righteous Priest-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Furtive",
+        "Manhunter"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Cultist or Insurrectionist",
+      "requires_expr": [
+        "death cultist",
+        "insurrectionist",
+        "cultist"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
-        "Noble Court Subsetting",
-        "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Professional Soldier Subsetting"
       ]
     },
     "Factotum": {
-      "time": 1,
-      "res": 1,
+      "time": 7,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
         "City",
-        "Court",
         "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Soldier"
       ],
       "skills": [
         [
-          3,
-          ""
+          7,
+          "Haggling",
+          "Persuasion",
+          "Hauling",
+          "Appraisal",
+          "Taxidermy",
+          "Local Law-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Polite",
+        "Efficient",
+        "Stoic"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Spy, Tomb Guard, Deranged, Evangelist or Insurrectionist",
+      "requires_expr": [
+        "spy",
+        "tomb guard",
+        "evangelist",
+        "deranged",
+        "insurrectionist"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
         "City Dweller Setting",
-        "Noble Court Subsetting",
         "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Professional Soldier Subsetting"
       ]
     },
     "Tomb Guard": {
-      "time": 1,
-      "res": 1,
+      "time": 4,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
-        "Court",
         "Servitude",
         "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Soldier"
       ],
       "skills": [
         [
-          3,
-          ""
+          5,
+          "Spear",
+          "Knives",
+          "Brawling",
+          "Walking Corpse-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Disfigured",
+        "Loyal"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Cultist, Grave Digger, Freebooter or any soldier lifepath",
+      "requires_expr": [
+        "death cultist",
+        "grave robber",
+        "cultist",
+        "gravedigger",
+        "freebooter",
+        "professional soldier subsetting:runner",
+        "professional soldier subsetting:apprentice",
+        "professional soldier subsetting:musician",
+        "professional soldier subsetting:foot soldier",
+        "professional soldier subsetting:archer",
+        "professional soldier subsetting:crossbowman",
+        "professional soldier subsetting:sailor",
+        "professional soldier subsetting:herald",
+        "professional soldier subsetting:bannerman",
+        "professional soldier subsetting:scout",
+        "professional soldier subsetting:sergeant",
+        "professional soldier subsetting:veteran",
+        "professional soldier subsetting:cavalryman",
+        "professional soldier subsetting:journeyman",
+        "professional soldier subsetting:armorer",
+        "professional soldier subsetting:atilliator",
+        "professional soldier subsetting:chaplain",
+        "professional soldier subsetting:engineer",
+        "professional soldier subsetting:wizard of war",
+        "professional soldier subsetting:quartermaster",
+        "professional soldier subsetting:captain"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
-        "Noble Court Subsetting",
         "Servitude And Captive Setting",
         "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Professional Soldier Subsetting"
       ]
     },
     "Death Priest": {
-      "time": 1,
-      "res": 1,
+      "time": 6,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
-        "Court",
-        "Servitude",
         "Outcast",
         "Soldier",
-        "Seafaring",
         "Religious"
       ],
       "skills": [
         [
-          3,
-          ""
+          6,
+          "Command",
+          "Ritual",
+          "God of Death-wise",
+          "Death Cult-wise"
         ]
       ],
       "traits": [
-        1,
-        ""
+        2,
+        "Creepy",
+        "Invocations Of The Damned",
+        "Iron Will",
+        "Cult Leader"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Venal Priest or Heretic Priest",
+      "requires_expr": [
+        "venal priest",
+        "heretic priest"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
-        "Noble Court Subsetting",
-        "Servitude And Captive Setting",
         "Outcast Subsetting",
         "Professional Soldier Subsetting",
-        "Seafaring Setting",
         "Religious Subsetting"
       ]
     },
     "Death Artist": {
-      "time": 1,
-      "res": 1,
+      "time": 10,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "p,"
+        ]
+      ],
       "leads": [
-        "Peasant",
-        "Villager",
-        "City",
-        "Court",
         "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+        "Outcast"
       ],
       "skills": [
         [
-          3,
-          ""
+          8,
+          "Death Art",
+          "Tomb-wise",
+          "Orc Servant-wise",
+          "Evil Necromancer-wise",
+          "Death Cult-wise"
         ]
       ],
       "traits": [
-        1,
-        ""
+        3,
+        "Cynical",
+        "Mind Over Matter",
+        "Missing Limb",
+        "Paranoid Ear",
+        "Meticulous",
+        "Corrupted"
       ],
-      "requires": "",
-      "requires_expr": [],
+      "requires": "Evil Necromancer, Apt Pupil or Rogue Wizard",
+      "requires_expr": [
+        "evil necromancer",
+        "apt pupil",
+        "rogue wizard"
+      ],
       "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
-        "Noble Court Subsetting",
         "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+        "Outcast Subsetting"
       ]
     }
   },
-  "Servant of the Dark Blood Setting": {
-    "Master of the Weak": {
-      "time": 1,
-      "res": 1,
-      "leads": [
-        "Peasant",
-        "Villager",
-        "City",
-        "Court",
-        "Servitude",
-        "Outcast",
-        "Soldier",
-        "Seafaring",
-        "Religious"
+  "Servant Of The Dark Blood Subsetting": {
+    "Master Of The Weak": {
+      "time": 7,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
       ],
       "skills": [
         [
-          3,
-          ""
+          5,
+          "Death Art",
+          "Apocalypse-wise",
+          "Graveyard-wise",
+          "Murder-wise"
         ]
       ],
       "traits": [
         1,
-        ""
+        "Feared Above All"
       ],
-      "requires": "",
-      "requires_expr": [],
-      "key_leads": [
-        "Peasant Setting",
-        "Villager Setting",
-        "City Dweller Setting",
-        "Noble Court Subsetting",
-        "Servitude And Captive Setting",
-        "Outcast Subsetting",
-        "Professional Soldier Subsetting",
-        "Seafaring Setting",
-        "Religious Subsetting"
+      "requires": "Knower Of Secrets",
+      "requires_expr": [
+        "knower of secrets"
       ]
     }
   }

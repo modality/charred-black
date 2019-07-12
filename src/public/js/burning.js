@@ -1245,6 +1245,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     //   :traits => [
     //     [name, type]
     //   ]
+    //   :ptgs => { :su => ["B1"], ... }
     // }
 
 
@@ -1342,6 +1343,15 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
       return display.desc + " " + display.dice + "D";
     });
     chardata.affiliations = res;
+
+    chardata.ptgs = {
+      "su": $scope.ptgs.su,
+      "li": $scope.ptgs.li,
+      "mi": $scope.ptgs.mi,
+      "se": $scope.ptgs.se,
+      "tr": $scope.ptgs.tr,
+      "mo": $scope.ptgs.mo,
+    };
 
     chardata.attr_mod_questions = convertAttributeModifierQuestionResultsForCharsheet($scope);
 

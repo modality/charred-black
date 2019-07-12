@@ -1,0 +1,149 @@
+{
+  "Always in the Way": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Assistant Pig-Keeper": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Brook No Fools": {
+    "cost": 7,
+    "type": "die",
+    "desc": "The spirit binder's art is not something to be trifled with! Their secrets are well kept because meddling fools will only cause irreparable harm to themselves and the domains with which they tamper. A summoner with this trait receives a fate point every time they rebuff an offer of help from a potential student (so that character does not earn a test toward learning the skill). The summoner receives a persona point when they actively thwart another character from learning the secrets of Spirit Binding, Summoning, or Circination."
+  },
+  "Bully": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Corrupted": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character has opened their body and soul to the dark powers. They must open the Corrupted emotional attribute. Increase their starting rank by one."
+  },
+  "Council of Mages": {
+    "cost": 6,
+    "type": "die",
+    "desc": "The Council of Mages is a small, secretive, yet powerful entity. This trait grants a 1D reputation and a 1D affiliation with this organization. This combines with other appropriate reputations and affiliations."
+  },
+  "Creepy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cult Leader": {
+    "cost": 8,
+    "type": "die",
+    "desc": "Cult Leaders are charismatic and eccentric. This trait grants a 1D reputation and 1D affiliation with the Death Cult. This combines with other appropriate reputations and affiliations."
+  },
+  "Unhinged": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Disfigured": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character has led a life of hardship and pain. They've been cut up, broken, and beaten down. This trait grants +1D to shrug off or grit teeth for any injury."
+  },
+  "Evil": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Faust": {
+    "cost": 3,
+    "type": "die",
+    "desc": "When bargaining with the higher powers for something pure and innocent like love, gain a bonus persona point for each agreement you strike on behalf of the one you seek to protect or affect."
+  },
+  "Feared Above All": {
+    "cost": 5,
+    "type": "die",
+    "desc": "For good reason or not, this character is feared by all who know them. +1D to Intimidation. Choose a 1D infamous reputation."
+  },
+  "Fiery": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Disgruntled": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Furtive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Graduate": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This trait grants a 1D affiliation with a College of Magic. This combines with other appropriate and applicable affiliations."
+  },
+  "Harried": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hazed": {
+    "cost": 2,
+    "type": "die",
+    "desc": "This character may take a free inimical relationship with another character who was their senior in the College of Magic."
+  },
+  "Impressive Hat": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character's hat is mightily impressive. It can be seen for miles! It's so impressive that people often remember the hat more than the person. This gives a 1D Reputation among the people of a given locale as the wearer of the really impressive hat, so long as the hat is being worn, of course. Wearing the hat also gives a +2 Ob to any Disguise or Inconspicuous test."
+  },
+  "Invocations of the Damned": {
+    "cost": 5,
+    "type": "call_on",
+    "desc": "The Dark Priest swears their soul to fell powers. Like other priests, they must have a Belief that ties to their Faith in order to maintain the emotional attribute. If the player writes a second Belief tied to their faith in the dark gods and their service to them, the priest may use this trait as a call-on for Faith when that Belief comes into question."
+  },
+  "Late": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Low Born": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Low Born characters are born of unremarkable parents. They cannot trace their lineage to any nobility or to any historic or notable figures. They have a 1D infamous reputation in noble or elite circles due to their obvious lack of heritage. It also adds a +1 Ob disadvantage to any Inconspicuous tests in noble or courtly settings."
+  },
+  "Master of Mages": {
+    "cost": 0,
+    "type": "die",
+    "desc": "The Headmaster of a College of Magic attained their position by rigorous pursuit of excellence and expertise in sorcery and magic. This trait grants a 2D repuation among mages and the halls of power as a Master of Mages."
+  },
+  "Misunderstood": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Choose a 1D infamous reputation. And suffer -1 to your body of argument whenever you're trying to explain your nature, position, meaning, or special insight."
+  },
+  "Never A Moment Of Peace": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This trait grants the character a 5 rps relationship. This relationship must be with a character who is always bothering or interrupting him. If that character is forced out of his life, someone new will come along. This character just attracts these sort of people! You may invest additional resource points and increase the value of this relationship."
+  },
+  "Polite": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Speaker Of The Secret Language": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Spirit Familiar": {
+    "cost": 5,
+    "type": "die",
+    "desc": "This character has a familiar whose spirit is linked to their own. They can see through the familiar's eyes using the familiar's Perception stat. However, when using their familiar's eyes, a character with this trait cannot look through their own though other senses may still be employed. It takes two actions of concentration to engage their familiar's eyes, and two more actions to return their sight to their own eyes. This trait does not grant Low Speech. However the creature does understand its companion's wishes and will go where its master directs it to go, look at what its master directs it to look at, etc. A character with this trait feels the pain of their familiar. If the familiar suffers a light or greater wound, the master suffers a light wound. If the familiar is ever killed, the master suffers a traumatic wound. In the game, the character is physically unharmed, but mentally traumatized. Recovery and Treatment are as per a standard traumatic wound. This wound does not bleed out. A familiar uses the following stats: Wi G2, Pe G3, Ag B4, Sp B5, Po B3, Fo B3, Hea B4, Ref B4, Ste B5, MW B9. Choose its form: cat, doc, snake, bird, pig, rabbit, fox or similar. No large predators or beasts of burden. The animal must show some mark or quality that indicates it is not entirely of this world. For example, it must be hairless, one eyed, two-tailed, of large size or even just have a disturbing aura."
+  },
+  "Suicidal": {
+    "cost": 5,
+    "type": "die",
+    "desc": "This character (instantly) earns a persona point every time he takes a mortal wound."
+  },
+  "Versatile": {
+    "cost": 4,
+    "type": "die",
+    "desc": "The Master Sorcerer places their confidence in the art of sorcery. It is a versatile and potent art, and they know it intimately. If using Art Magic, reduce by one the number of tests required for Weaving Magic into the Fiber of my Being. If using the standard Sorcery rules, reduce their practicals aptitude by one. If using Practical Magic, they may take an additional category of magic. In addition, the player earns a persona point for pushing their character's magic in a dangerous or untried direction."
+  },
+  "Well Traveled": {
+    "cost": 4,
+    "type": "die",
+    "desc": "The Speaker of Names wanders the lands and seas, communing with the spirits. This trait allows the player to take a new domain when their character travels to a new locale in play. The player may describe a memory their character has of this place or a place like it. They may describe when they traveled here before. The player then adds a new domain to their spirit binder at its base level (0). Once used, this trait becomes a character trait. To be clear, the domain is added during play at a time of the player's choosing, not during character burning."
+  }
+}

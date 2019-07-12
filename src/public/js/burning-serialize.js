@@ -234,7 +234,6 @@ function convertCurrentCharacterToStruct($scope, appropriateWeapons) {
   }
   chardata.stats = stats;
 
-
   var lifepathSkills = [];
   var generalSkills = [];
   var addSkillTo = function(list, displaySkill){

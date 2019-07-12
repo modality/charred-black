@@ -1,0 +1,52 @@
+{
+  "Alchemy": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Bargaining": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Circination": {
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Death Art": {
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Forte"
+    ]
+  },
+  "Enchanting": {
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Sorcery": {
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Spirit Binding": {
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Summoning": {
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  }
+}
