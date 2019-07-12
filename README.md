@@ -1,25 +1,18 @@
-Deploy
-------
+# Charred Black
 
-https://devcenter.heroku.com/articles/container-registry-and-runtime
+The unofficial, online, Burning Wheel Gold (+Codex) character burner. Adapted from [Charred](https://charred.herokuapp.com/).
 
+## Deploy Steps
+
+See: [Heroku - Container Registry and Runtime](https://devcenter.heroku.com/articles/container-registry-and-runtime)
+
+```
 heroku login
 heroku container:login
 heroku container:push web -a charred-black
 heroku container:release web -a charred-black
 heroku open
-
-## Changelog
-
-2.0.1 - update
-
-First Mate LP should be selectable with 2 seafaring LPs. If Son of a Gun is the first LP, it is not selectable. 
-Example: Son of a Gun -> Officer's Mate -> First Mate.
-
-2.0.0 - Charred Black release
-gold character pdf
-wizard burner lifepaths
-
+```
 
 ## Beliefs
 
@@ -34,8 +27,10 @@ of other gaming tools, but let's keep this tool focused on one thing and do it r
 ### Stick To Published Material
 
 In order to keep the scope of my maintainership finite, I'm not planning to accept community-made lifepaths et al. for inclusion
-in this codebase. Each additional data set increases Charred Black's startup time and memory requirements. Additionally, that
-makes me an arbiter of quality, and I'd prefer not to have the Enmity Clause invoked because I rejected someone's homebrew content.
+in this codebase. Each additional data set increases Charred Black's startup time and memory requirements. The design of your lifepath
+requirements and emotional attributes may not be supported by the editor, or convoluted to implement. Finally, deciding to include
+community-made content would make me an arbiter of quality, and I'd prefer not to have the Enmity Clause invoked because I rejected
+someone's homebrew content.
 
 I am working on a solution for uploading lifepaths et. al which would be stored locally in your browser and not permanently on
 a server. This way, you can make your data files and share them around with your friends for use with this tool. If someone else
@@ -63,11 +58,10 @@ More guidelines:
 * Only .pdf and .char file formats should be returned as responses when getting data out of the cache. I'll consider other formats
   on a case-by-case basis: for example, I'd be open to a format which could be used with Roll20.
 
-## Guide
+## Contribution Best Practices
 
-### Best Practices
-
-No matter what's in the book, always Capital Case for skills, traits, lifepaths and settings:
+### Capital Case
+No matter what's in the book, always use Capital Case for skills, traits, lifepaths and settings:
 
 e.g.
 Path Of Spite Subsetting
@@ -80,7 +74,13 @@ Hyphens: the word after the hyphen is not capitalized:
 Rabble-rouser
 Burden Of The Crown-wise
 
-Anatomy of a lifepath
+### Lifepath Example
+
+Some notes:
+1. The best way to create new lifepaths is by following the same advice that Burning Wheel gives you: look at something similar that already exists and adapt it.
+1. In the `stat` block below, you'd get both a mental and physical stat point for taking this lifpath. If you want either/or, use `[1, "pm"]`.
+
+
 ```
 {
   "Example Setting": {
@@ -100,7 +100,7 @@ Anatomy of a lifepath
       "skills": [
         [
           3,
-          "Inconspicuous"
+          "JSON-wise"
         ],
         [
           1,
@@ -109,7 +109,7 @@ Anatomy of a lifepath
       ],
       "traits": [
         1,
-        ""
+        "Plucky"
       ],
       "requires": "",
       "requires_expr": [
