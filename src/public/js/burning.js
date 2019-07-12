@@ -150,6 +150,15 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
         return $scope.attribute("Ancestral Taint").shade;
       }
     };
+    $scope.statsForSkillCalc["Spite"] = {
+      "exp": function(){
+        // Note: this function can't be called until $scope.attribute is defined!
+        return $scope.attribute("Spite").exp;
+      },
+      "calcshade": function(){
+        return $scope.attribute("Spite").shade;
+      }
+    };
     // Setting names for use in the Add Lifepath section
     $scope.settingNames  = ["Loading..."]
     $scope.currentSettingLifepathNames  = [];
@@ -248,7 +257,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
 
     /* Used to keep track of whether the user shade-shifted an attribute, for those attributes that 
        allow shade shifting */
-    $scope.attributeShade = {'Steel': 'B', 'Grief' : 'B', 'Greed' : 'B', 'Hatred' : 'B'};
+    $scope.attributeShade = {'Steel': 'B', 'Grief' : 'B', 'Greed' : 'B', 'Hatred' : 'B', 'Spite' : 'B'};
 
     $scope.ptgs = new PTGS(); 
 
@@ -329,6 +338,10 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     }
     else if ( $scope.stock == "elf" ){
       result.push("Grief");
+      // Spite must be calculated after Grief
+      if ( $scope.hasTrait("Spite") ) {
+        result.push("Spite");
+      }
     }
     else if ( $scope.stock == "dwarf" ){
       result.push("Greed");
@@ -933,7 +946,6 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     }
   }
 
-
   // Return the value of the attribute with the specified name as a hash of [shade : S, exp : E, modifyable : flag]
   $scope.attribute = function(name){
 
@@ -1081,6 +1093,14 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
       grief += bonus;
       return { "shade" : $scope.attributeShade[name], "exp" : grief, "modifyable" : true};
     }
+    else if ( "Spite" == name ){
+      var spite = computeModifiers(name);
+      if($scope.attributeShade[name] == 'G'){
+        spite -= 5;
+      }
+      spite += bonus;
+      return { "shade" : $scope.attributeShade[name], "exp" : spite, "modifyable" : true};
+    }
     else if ( "Faith" == name ){
       var faith = 3 + computeModifiers(name);
       faith += bonus;
@@ -1092,7 +1112,6 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
       taint += bonus;
       return { "shade" : $scope.statsByName["Will"].shade, "exp" : taint, "modifyable" : true};
     }
-
   }
 
   $scope.distributeStats = function(){
@@ -3043,14 +3062,12 @@ function attributeModifyingQuestions($scope, attribute)
       for(key in skills)
       {
         var skill = skills[key];
-        if( skill.exp($scope.statsForSkillCalc) > 0 && beginsWith(key.toLowerCase(), "lament") )
+        // Dark Elves have no laments, therefore we check if the skill is a lament BEFORE we calculate
+        // the exponent because we don't want to it to get sent into an infinite loop, i.e.
+        // calculate spite -> calc grief -> calc spite skill exponent -> spite -> grief -> ...
+        if( beginsWith(key.toLowerCase(), "lament") && skill.exp($scope.statsForSkillCalc) > 0 )
           return 0;
       }
-      for(var i = 0; i < skills.length; i++){
-        if( beginsWith(skills[i].name.toLowerCase(), "lament") )
-          return 0;
-      }
-
       return 1;
     }
 
@@ -3077,9 +3094,48 @@ function attributeModifyingQuestions($scope, attribute)
       {question: "Has the character lived among non-Elven people?", math_label: "(+1 Grief)", modifier: 1},
       {question: "+1 Grief for each point of Steel above 5.", computed: true, compute: steelMod},
       {question: "+1 Grief if the characters Perception is above 5.", computed: true, compute: percMod},
-      {question: "+1 Greed if the character is over 500 years old.", computed: true, compute: ageMod(500)},
-      {question: "+1 Greed if the character is over 750 years old.", computed: true, compute: ageMod(750)},
-      {question: "+1 Greed if the character is over 1000 years old.", computed: true, compute: ageMod(1000)}
+      {question: "+1 Grief if the character is over 500 years old.", computed: true, compute: ageMod(500)},
+      {question: "+1 Grief if the character is over 750 years old.", computed: true, compute: ageMod(750)},
+      {question: "+1 Grief if the character is over 1000 years old.", computed: true, compute: ageMod(1000)}
+    );
+  }
+  else if ( attribute == "Spite" )
+  {
+    var griefMod = function() {
+      var grief = $scope.attribute("Grief").exp
+      return grief;
+    }
+
+    var traitsMod = function(){
+      var val = 0;
+      if($scope.hasTrait('Slayer'))
+        val++;
+      if($scope.hasTrait('Exile'))
+        val++;
+      if($scope.hasTrait('Feral'))
+        val++;
+      if($scope.hasTrait('Murderous'))
+        val++;
+      if($scope.hasTrait('Saturnine'))
+        val++;
+      if($scope.hasTrait('Femme Fatale/Homme Fatale'))
+        val++;
+      if($scope.hasTrait('Cold'))
+        val++;
+      if($scope.hasTrait('Bitter'))
+        val++;
+      return val;
+    }
+
+    result.push(
+      {question: "+1 Spite for every point of Grief", computed: true, compute: griefMod},
+      {question: "+1 Spite for each of several spiteful traits", computed: true, compute: traitsMod},
+      {question: "Has the character been betrayed by their friends?", math_label: "(+1 Spite)", modifier: 1},
+      {question: "Is the character lovesick or broken hearted?", math_label: "(+1 Spite)", modifier: 1},
+      {question: "Has the character been abandoned by those they held dear?", math_label: "(+1 Spite)", modifier: 1},
+      {question: "Has the character been abused or tortured?", math_label: "(+1 Spite)", modifier: 1},
+      {question: "Does the character still respect or admire someone on the other side?", math_label: "(-1 Spite)", modifier: -1},
+      {question: "Does the character still love someone on the other side?", math_label: "(-2 Spite)", modifier: -2}
     );
   }
   else if ( attribute == "Hatred" )
