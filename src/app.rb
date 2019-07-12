@@ -11,7 +11,7 @@ set :bind, ENV['HOST']
 set :port, ENV['PORT']
 
 CACHE = Mu::Cache.new :max_size => 128, :max_time => 30.0
-DATA = CharredData.load_data
+DATA = Charred::Data.new.data
 
 helpers do
   def logger
@@ -21,6 +21,10 @@ end
 
 get '/' do
   erb :index
+end
+
+get '/list_chars/:user' do
+  "{}"
 end
 
 get /\/([\w]+)_partial/ do

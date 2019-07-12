@@ -1,0 +1,46 @@
+{
+  "Callous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cold": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Compulsive Liar": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Deceptive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Femme Fatale/Homme Fatale": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Feral": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Filthy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Murderous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Remote": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Saturnine": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Spite": {
+    "cost": 1,
+    "type": "character"
+  }
+}

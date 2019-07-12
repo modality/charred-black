@@ -1,0 +1,296 @@
+{
+  "Path Of Spite Subsetting": {
+    "Griever": {
+      "time": 3,
+      "res": 0,
+      "skills": [
+        [
+          3,
+          "Sorrow Of Truth",
+          "Dark Elf-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Spite"
+      ]
+    },
+    "Wastrel": {
+      "time": 25,
+      "res": 3,
+      "skills": [
+        [
+          6,
+          "Scavenging",
+          "Brawling",
+          "Forest-wise",
+          "Wasteland-wise",
+          "Animal-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Filthy",
+        "Feral"
+      ],
+      "requires": "Griever",
+      "requires_expr": [
+        "griever"
+      ]
+    },
+    "Thief": {
+      "time": 18,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          6,
+          "Lock Pick",
+          "Stealthy",
+          "Climbing",
+          "Sleight Of Hand",
+          "Dirge Of Night"
+        ]
+      ],
+      "traits": [
+        1,
+        "Thief"
+      ],
+      "requires": "Griever",
+      "requires_expr": [
+        "griever"
+      ]
+    },
+    "Assassin": {
+      "time": 15,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          7,
+          "Intimidation",
+          "Poisons",
+          "Escape Artist",
+          "Knives",
+          "Garotte",
+          "Keen Of Terror"
+        ]
+      ],
+      "traits": [
+        1,
+        "Murderous",
+        "Callous",
+        "Cold Blooded"
+      ],
+      "requires": "Griever",
+      "requires_expr": [
+        "griever"
+      ]
+    },
+    "Stalker": {
+      "time": 20,
+      "res": 8,
+      "skills": [
+        [
+          8,
+          "Hunting",
+          "Elf-wise",
+          "Tracking",
+          "Trapper",
+          "Observation",
+          "Stealthy",
+          "Throwing",
+          "Javelin",
+          "Supplication To Shadows"
+        ]
+      ],
+      "traits": [
+        1,
+        "Saturnine"
+      ],
+      "requires": "Griever",
+      "requires_expr": [
+        "griever"
+      ]
+    },
+    "Deceiver": {
+      "time": 35,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          7,
+          "Sleight Of Hand",
+          "Disguise",
+          "Inconspicuous",
+          "Rhyme Of The Unraveller"
+        ]
+      ],
+      "traits": [
+        1,
+        "Deceptive"
+      ],
+      "requires": "Griever",
+      "requires_expr": [
+        "griever"
+      ]
+    },
+    "Liar": {
+      "time": 25,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          6,
+          "Falsehood",
+          "Soothing Platitudes",
+          "Persuasion",
+          "Twisted Tongue"
+        ]
+      ],
+      "traits": [
+        1,
+        "Compulsive Liar"
+      ],
+      "requires": "Griever",
+      "requires_expr": [
+        "griever"
+      ]
+    },
+    "Siren": {
+      "time": 55,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          9,
+          "Seduction",
+          "Etiquette",
+          "Persuasion",
+          "Soothing Platitudes",
+          "Gossip-wise",
+          "Fugue Of Discord",
+          "Litany Of Fools"
+        ]
+      ],
+      "traits": [
+        2,
+        "Charismatic",
+        "Femme Fatale/Homme Fatale"
+      ],
+      "requires": "Assassin, Deceiver or Liar",
+      "requires_expr": [
+        "assassin",
+        "deceiver",
+        "liar"
+      ]
+    },
+    "Eremite": {
+      "time": 150,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          12,
+          "Philosophy",
+          "Ugly Truth",
+          "Obscure History",
+          "Symbology",
+          "Strategy",
+          "Elf-wise",
+          "Orc-wise",
+          "Dwarf-wise",
+          "Man-wise",
+          "Paean To The Dark Fire"
+        ]
+      ],
+      "traits": [
+        2,
+        "Remote",
+        "Cold"
+      ],
+      "requires": "Siren, Wastrel or Stalker",
+      "requires_expr": [
+        "siren",
+        "wastrel",
+        "stalker"
+      ]
+    },
+    "Recluse": {
+      "time": 225,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Ancient History",
+          "Dwarf-wise",
+          "Elven Politics-wise",
+          "Cut Of The Quickened Mind"
+        ],
+        [
+          5,
+          "General"
+        ]
+      ],
+      "traits": [
+        1,
+        "Vengeful"
+      ],
+      "requires": "Eremite or any three Dark Elf lifepaths",
+      "requires_expr": [
+        "+or",
+        [
+          "eremite"
+        ],
+        [
+          "+has_n_lifepaths_in",
+          3,
+          "path of spite subsetting:griever",
+          "path of spite subsetting:wastrel",
+          "path of spite subsetting:thief",
+          "path of spite subsetting:assassin",
+          "path of spite subsetting:stalker",
+          "path of spite subsetting:deceiver",
+          "path of spite subsetting:liar",
+          "path of spite subsetting:siren"
+        ]
+      ]
+    }
+  }
+}
