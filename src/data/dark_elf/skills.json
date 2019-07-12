@@ -1,1 +1,72 @@
-{}
+{
+  "Litany Of Fools": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Cut Of The Quickened Mind": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Dirge Of Night": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Fugue Of Discord": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Spite"
+    ]
+  },
+  "Keen Of Terror": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Paean To The Dark Fire": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Spite"
+    ]
+  },
+  "Rhyme Of The Unraveler": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Surrow Of Truth": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Spite"
+    ]
+  },
+  "Supplication To Shadows": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Twisted Tongue": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Spite"
+    ]
+  }
+}

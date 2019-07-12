@@ -1,46 +1,58 @@
 {
-  "Callous": {
-    "cost": 1,
-    "type": "character"
-  },
   "Cold": {
     "cost": 1,
-    "type": "character"
-  },
-  "Compulsive Liar": {
-    "cost": 1,
-    "type": "character"
+    "type": "die",
+    "desc": "In a Duel of WIts where kindness, compassion, Grief or passion are involved, the Eremite may double his Will for the purposes of the body of argument. This effect can be triggered mid-conflict, increasing the Eremite's body of argument immediately."
   },
   "Deceptive": {
     "cost": 1,
-    "type": "character"
+    "type": "call_on",
+    "desc": "The Deceptive trait acts as a call-on for Sleight of Hand and Falsehood. However this trait so infuses the liar, he has a hard time telling the truth. Deceptive also incurs a +1 Ob penalty to Oratory, Command tests and a +2 Ob to Ugly Truth or Litany of Fools."
   },
   "Femme Fatale/Homme Fatale": {
     "cost": 1,
-    "type": "character"
+    "type": "call_on",
+    "desc": "Call-on for Seduction."
   },
-  "Feral": {
+  "Feral Elf": {
     "cost": 1,
-    "type": "character"
+    "type": "die",
+    "desc": "Wastrels lose themselves to their animal instincts, living for decades at a time without contact with civilization–living as animals do. The Feral trait reduces overall hesitation by one, but adds +1 Ob to all social skill tests. Also, Feral Elf negates the bonus to Circles from any Elven lifepath trait such as Etharchal, Lord of Ages, etc.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "hesitation"
+        ],
+        "value": [
+          "+add",
+          -1
+        ]
+      }
+    ]
   },
   "Filthy": {
     "cost": 1,
     "type": "character"
   },
-  "Murderous": {
-    "cost": 1,
-    "type": "character"
-  },
-  "Remote": {
-    "cost": 1,
-    "type": "character"
-  },
   "Saturnine": {
     "cost": 1,
-    "type": "character"
+    "type": "die",
+    "desc": "If any other player attempts to influence a character with the Saturnine trait with passion, motivation, joy, or love, the Saturnine Dark Elf player gets a +1D advantage to all tests for one scene when confronting, hunting or poisoning that character."
   },
   "Spite": {
     "cost": 1,
-    "type": "character"
+    "type": "character",
+    "desc": "Dark Elves trade their Grief for a burning Spite. Something has snapped inside the Dark Elf's soul–Grief seems folly to them. Whatever the truth of an immortal life is, Dark Elves know that it does not lay silently grieving with their Elven siblings. See the Spite section of this The Path of Spite chapter for more details on the rules."
+  },
+  "Thief": {
+    "cost": 1,
+    "type": "call_on",
+    "desc": "The Thief trait requires that the player note a mandatory theft-related Instinct: \"When visiting home, always steal Mother's valuables,\" for example. So long as that Instinct is in play, it acts as a call-on for Sleight of Hand."
+  },
+  "Vengeful": {
+    "cost": 1,
+    "type": "die",
+    "desc": "If the Dark Elf character is defeated in a Duel of Wits or a Fight and lives to tell the tale, they may FoRK their Spite into all rolls bent on avenging themselves against their enemy. Humiliating or murdering the enemy–getting revenge upon them–immediately earns the player a bonus persona point, for a total of two: one for a personal goal and one for Vengeful. The Vengeful trait also requires that the Dark Elf have a close relationship with a non-spiteful Elf or a mortal human. It can be familial, romantic or fraternal in nature–but it must be close. It must rankle the Dark Elf that they still live that way."
   }
 }

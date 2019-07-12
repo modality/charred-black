@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Bitter Poison",
+    "type": "gear",
+    "rp": 10
+  },
+  {
+    "name": "Spiteful Poison",
+    "type": "gear",
+    "rp": 20
+  },
+  {
+    "name": "Lock Picks",
+    "type": "gear",
+    "rp": 10
+  },
+  {
+    "name": "Long Knife",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Barbed Javelins",
+    "type": "gear",
+    "rp": 3
+  },
+  {
+    "name": "Garotte",
+    "type": "gear",
+    "rp": 3
+  },
+  {
+    "name": "Caltrops",
+    "type": "gear",
+    "rp": 3
+  },
+  {
+    "name": "Tools Of The Trade",
+    "type": "gear",
+    "rp": 9
+  },
+  {
+    "name": "Cloak Of Darkness",
+    "type": "gear",
+    "rp": 30
+  },
+  {
+    "name": "Climbing Claws",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Remote Refuge",
+    "type": "property",
+    "resources": [
+      {
+        "name": "Wasteland",
+        "rp": 20
+      },
+      {
+        "name": "Isolated Manor And Moorland",
+        "rp": 50
+      },
+      {
+        "name": "Hidden Fortress",
+        "rp": 100
+      },
+      {
+        "name": "Dark Forest, Cove Or Lonely Mountain",
+        "rp": 150
+      },
+      {
+        "name": "Safe House",
+        "rp": 25
+      }
+    ]
+  },
+  {
+    "name": "Morlin Armor",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Light Mail",
+        "rp": 30
+      },
+      {
+        "name": "Heavy Mail",
+        "rp": 40
+      },
+      {
+        "name": "Plated Mail",
+        "rp": 100
+      }
+    ]
+  },
+  {
+    "name": "Morlin Weapons",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "+1 speed",
+        "rp": 15
+      },
+      {
+        "name": "+1 VA",
+        "rp": 15
+      },
+      {
+        "name": "+1 Power",
+        "rp": 30
+      }
+    ]
+  }
+]

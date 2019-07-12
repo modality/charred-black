@@ -1,10 +1,12 @@
 require_relative 'data/gold'
 require_relative 'data/wizard'
+require_relative 'data/dark_elf'
 
 module Charred
   class Data
     include Charred::Gold
     include Charred::Wizard
+    include Charred::DarkElf
 
     attr :data
 
@@ -13,6 +15,7 @@ module Charred
 
       load_gold(@data)
       load_wizard(@data)
+      load_dark_elf(@data)
     end
 
     def lifepath_requirements(expr)
