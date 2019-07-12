@@ -1,0 +1,1595 @@
+{
+  "Chattel Setting": {
+    "Born Chattel": {
+      "time": 10,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Black Legion",
+        "Servant"
+      ],
+      "skills": [
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "common_traits": [
+        "Cannibal",
+        "Cold Black Blood",
+        "Breeder",
+        "Fanged And Clawed",
+        "Loathsome And Twisted",
+        "Lynx-eyed, Like Burning Coals",
+        "Vile Language"
+      ],
+      "key_leads": [
+        "Black Legion Subsetting",
+        "Servant Of The Dark Blood Subsetting"
+      ]
+    },
+    "Cattle Slave": {
+      "time": 5,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Animal Husbandry"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tasting The Lash",
+        "Screaming",
+        "Shouting",
+        "Kicking The Beast"
+      ]
+    },
+    "Scavenger": {
+      "time": 3,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Black Legion"
+      ],
+      "skills": [
+        [
+          3,
+          "Foraging",
+          "Inconspicuous"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tasting The Lash",
+        "Running (Away)",
+        "Hiding",
+        "Stealing",
+        "Scavenger"
+      ],
+      "key_leads": [
+        "Black Legion Subsetting"
+      ]
+    },
+    "Forge Slave": {
+      "time": 5,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Ditch Digging"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tasting The Lash",
+        "Pain Life",
+        "Back-breaking Labor",
+        "Numb"
+      ]
+    },
+    "Hauler": {
+      "time": 5,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Driving",
+          "Beast Of Burden-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tasting The Lash",
+        "Back-breaking Labor",
+        "Cursing",
+        "Spitting",
+        "Yowling"
+      ]
+    },
+    "Cutter Slave": {
+      "time": 5,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Tree Pulling",
+          "Ditch Digging"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tasting The Lash",
+        "Hatred Of Forests",
+        "Back-breaking Labor"
+      ]
+    },
+    "Tunneler": {
+      "time": 4,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Ditch Digging",
+          "Tunnel-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tasting The Lash",
+        "Back-breaking Labor",
+        "Black Lung"
+      ]
+    },
+    "Ravager": {
+      "time": 3,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Black Legion"
+      ],
+      "skills": [
+        [
+          4,
+          "Brawling",
+          "Cudgel",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        2,
+        "Pack Hunter"
+      ],
+      "key_leads": [
+        "Black Legion Subsetting"
+      ]
+    },
+    "Woodcutter": {
+      "time": 7,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          4,
+          "Rude Carpentry",
+          "Mending",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Cutter Slave",
+      "requires_expr": [
+        "cutter slave"
+      ]
+    },
+    "Butcher": {
+      "time": 7,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          4,
+          "Butchery",
+          "Tanner",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Cattle Slave",
+      "requires_expr": [
+        "cattle slave"
+      ]
+    },
+    "Forger": {
+      "time": 7,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          5,
+          "Blacksmith",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        2,
+        "Singed"
+      ],
+      "requires": "Forge Slave",
+      "requires_expr": [
+        "forge slave"
+      ]
+    },
+    "Pitwright": {
+      "time": 8,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          4,
+          "Mining",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        1,
+        "Deep Sense"
+      ],
+      "requires": "Tunneler",
+      "requires_expr": [
+        "tunneler"
+      ]
+    },
+    "Edge Grinder": {
+      "time": 10,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Black Legion"
+      ],
+      "skills": [
+        [
+          6,
+          "Mending",
+          "Weaponsmith",
+          "Armorer",
+          "Tanner"
+        ]
+      ],
+      "traits": [
+        2,
+        "Suspicious"
+      ],
+      "requires": "He Who Grinds the Edges of our Axes to Glinting Sharpness requires Forger",
+      "requires_expr": [
+        "forger"
+      ],
+      "key_leads": [
+        "Black Legion Subsetting"
+      ]
+    },
+    "Whipmaster": {
+      "time": 9,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Black Legion"
+      ],
+      "skills": [
+        [
+          4,
+          "Interrogation",
+          "Intimidation",
+          "Brawling",
+          "Orcish Torture"
+        ]
+      ],
+      "traits": [
+        1,
+        "Where There's A Whip, There's A Way"
+      ],
+      "requires": "Pitwright, Forger, four Slave life paths, or any Great and Black, or Legion lifepath",
+      "requires_expr": [
+        "+or",
+        [
+          "pitwright",
+          "forger"
+        ],
+        [
+          "+has_n_lifepaths_in",
+          4,
+          "cattle slave",
+          "forge slave",
+          "cutter slave"
+        ],
+        [
+          "great and black setting:born great",
+          "great and black setting:the rites",
+          "great and black setting:servant of the gate",
+          "great and black setting:follower",
+          "great and black setting:black destroyer",
+          "great and black setting:named",
+          "great and black setting:siege master",
+          "great and black setting:gate forger",
+          "great and black setting:whisperer",
+          "great and black setting:great one",
+          "black legion subsetting:goblin",
+          "black legion subsetting:sun blotter",
+          "black legion subsetting:nightseeker",
+          "black legion subsetting:legioner",
+          "black legion subsetting:hatred bearer",
+          "black legion subsetting:despair shouter",
+          "black legion subsetting:black hunter",
+          "black legion subsetting:astride the beast",
+          "black legion subsetting:bears the lash",
+          "black legion subsetting:packmaster",
+          "black legion subsetting:head taker",
+          "black legion subsetting:troll lord"
+        ]
+      ],
+      "key_leads": [
+        "Black Legion Subsetting"
+      ]
+    }
+  },
+  "Great And Black Setting": {
+    "Born Great": {
+      "time": 10,
+      "res": 5,
+      "leads": [
+        "Servant"
+      ],
+      "skills": [
+        [
+          3,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Born To Rule Them All",
+        "Enemy Of The Sun"
+      ],
+      "common_traits": [
+        "Cannibal",
+        "Cold Black Blood",
+        "Breeder",
+        "Fanged And Clawed",
+        "Loathsome And Twisted",
+        "Lynx-eyed, Like Burning Coals",
+        "Vile Language"
+      ],
+      "key_leads": [
+        "Servant Of The Dark Blood Subsetting"
+      ]
+    },
+    "The Rites": {
+      "time": 3,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Black Legion",
+        "Servant"
+      ],
+      "skills": [
+        [
+          5,
+          "Brawling",
+          "Intimidation",
+          "Orcish Torture"
+        ]
+      ],
+      "traits": [
+        2,
+        "Life Is Death",
+        "Sprinter"
+      ],
+      "restrict": "The Rites may only be taken once and it must be the character's second lifepath.",
+      "requires_expr": [
+        "+and",
+        [
+          "+has_n_lifepaths_or_more",
+          1
+        ],
+        [
+          "+has_n_lifepaths_or_less",
+          1
+        ]
+      ],
+      "key_leads": [
+        "Black Legion Subsetting",
+        "Servant Of The Dark Blood Subsetting"
+      ]
+    },
+    "Servant Of The Gate": {
+      "time": 4,
+      "res": 7,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Black Legion",
+        "Chattel"
+      ],
+      "skills": [
+        [
+          2,
+          "Soothing Platitudes",
+          "Ditch Digging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Humble Before My Master",
+        "Hauling",
+        "Back-breaking Labor"
+      ],
+      "key_leads": [
+        "Black Legion Subsetting",
+        "Chattel Setting"
+      ]
+    },
+    "Follower": {
+      "time": 5,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Black Legion",
+        "Chattel"
+      ],
+      "skills": [
+        [
+          8,
+          "Armor Training",
+          "Axe",
+          "Bow",
+          "Knives",
+          "Mace",
+          "Riding",
+          "Shield Training",
+          "Clan-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Silent Hatred"
+      ],
+      "requires": "He Who Walks in the Named's Shadow requires The Rites or Astride the Beast",
+      "requires_expr": [
+        "the rites",
+        "astride the beast"
+      ],
+      "key_leads": [
+        "Black Legion Subsetting",
+        "Chattel Setting"
+      ]
+    },
+    "Black Destroyer": {
+      "time": 6,
+      "res": 12,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          7,
+          "Mounted Combat Training",
+          "Great Wolf Husbandry",
+          "Riding",
+          "Axe",
+          "Spear"
+        ]
+      ],
+      "traits": [
+        2,
+        "Intense Hatred",
+        "Low Cunning"
+      ],
+      "requires": "He Whose Skin is like Winter Night, Whose Mere Presence Causes Those Beneath Him to Shiver in Terror and Cower Beneath his Wicked Blade requires Follower, Astride the Beast or Head Taker",
+      "requires_expr": [
+        "follower",
+        "astride the beast",
+        "head taker"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Named": {
+      "time": 8,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          5,
+          "Command",
+          "Brutal Intimidation",
+          "Orcish Torture"
+        ]
+      ],
+      "traits": [
+        2,
+        "Savage Consequences"
+      ],
+      "requires": "He Who is Mighty and Earned the Ancient Right to be Named requires Black Destroyer, Troll Lord or Head Taker",
+      "requires_expr": [
+        "black destroyer",
+        "troll lord",
+        "head taker"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Siege Master": {
+      "time": 10,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          5,
+          "Siege Engineer",
+          "Artillerist",
+          "Mending"
+        ]
+      ],
+      "traits": [
+        1,
+        "The Bigger They Come...",
+        "Brutish Efficiency"
+      ],
+      "requires": "Servant of the Gate",
+      "requires_expr": [
+        "servant of the gate"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Gate Forger": {
+      "time": 10,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          5,
+          "Mason",
+          "Bastions Of Hatred",
+          "Mining"
+        ]
+      ],
+      "traits": [
+        1,
+        "Rare Talent"
+      ],
+      "requires": "Siege Master",
+      "requires_expr": [
+        "siege master"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Whisperer": {
+      "time": 9,
+      "res": 40,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Servant"
+      ],
+      "skills": [
+        [
+          5,
+          "Poisonous Platitudes",
+          "Falsehood",
+          "Persuasion",
+          "Clan-wise",
+          "Ambition-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Forked Tongue",
+        "Poisonous Ambition"
+      ],
+      "requires": "Slave to the Dark, Whipmaster, Gate Forger or Bears the Lash",
+      "requires_expr": [
+        "slave to the dark",
+        "whipmaster",
+        "gate forger",
+        "bears the lash"
+      ],
+      "key_leads": [
+        "Servant Of The Dark Blood Subsetting"
+      ]
+    },
+    "Great One": {
+      "time": 20,
+      "res": 60,
+      "stat": [
+        [
+          2,
+          "m"
+        ],
+        [
+          2,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Black Legion"
+      ],
+      "skills": [
+        [
+          5,
+          "Command",
+          "Strategy",
+          "Name Ritual"
+        ],
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Flights Of Murderous Fancy",
+        "Unrelenting Hatred"
+      ],
+      "requires": "Named and the Born to Rule Them All trait",
+      "requires_expr": [
+        "+and",
+        [
+          "named"
+        ],
+        [
+          "+trait",
+          "born to rule them all"
+        ]
+      ],
+      "key_leads": [
+        "Black Legion Subsetting"
+      ]
+    }
+  },
+  "Black Legion Subsetting": {
+    "Goblin": {
+      "time": 3,
+      "res": 2,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          2,
+          "Foraging",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tasting The Lash",
+        "Exhausted",
+        "Running (Away)",
+        "Charging Blindly",
+        "Marching"
+      ],
+      "restrict": "Born Great orcs may not take this path.",
+      "requires_expr": [
+        "+not",
+        [
+          "born great"
+        ]
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Sun Blotter": {
+      "time": 3,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          2,
+          "Bow",
+          "Mending",
+          "Fletcher"
+        ]
+      ],
+      "traits": [
+        1,
+        "Hiding",
+        "Running (Away)"
+      ],
+      "restrict": "Born Great orcs may not take this path.",
+      "requires_expr": [
+        "+not",
+        [
+          "born great"
+        ]
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Nightseeker": {
+      "time": 4,
+      "res": 4,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          5,
+          "Orienteering",
+          "Tracking",
+          "Trapper",
+          "Stealthy",
+          "Climbing",
+          "Garrote"
+        ]
+      ],
+      "traits": [
+        1,
+        "Tasting The Lash"
+      ],
+      "requires": "He Who Lurks in the Twilight and Seeks Our Enemies requires Legioner, Sun Blotter, Scavenger or Ravager",
+      "restrict": "Born Great orcs may not take this path.",
+      "requires_expr": [
+        "+and",
+        [
+          "legioner",
+          "sun blotter",
+          "scavenger",
+          "ravager"
+        ],
+        [
+          "+not",
+          [
+            "born great"
+          ]
+        ]
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Legioner": {
+      "time": 4,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          4,
+          "Spear",
+          "Shield Training",
+          "Brawling",
+          "Foraging"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Ravager, Whipmaster or Goblin",
+      "restrict": "Born Great orcs may not take this path.",
+      "requires_expr": [
+        "+and",
+        [
+          "ravager",
+          "whipmaster",
+          "goblin"
+        ],
+        [
+          "+not",
+          [
+            "born great"
+          ]
+        ]
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Hatred Bearer": {
+      "time": 1,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          3,
+          "Conspicuous",
+          "Black Legion-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Psychotic",
+        "Paranoid",
+        "Booming Voice"
+      ],
+      "requires": "The Rites, Legioner or Whipmaster",
+      "requires_expr": [
+        "the rites",
+        "legioner",
+        "whipmaster"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Despair Shouter": {
+      "time": 3,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          3,
+          "Brazen Horn Of Despair",
+          "Intimidation",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        2,
+        "Reviled"
+      ],
+      "requires": "The Rites, Legioner or Whipmaster",
+      "requires_expr": [
+        "the rites",
+        "legioner",
+        "whipmaster"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Black Hunter": {
+      "time": 5,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          5,
+          "Bow",
+          "Hunting",
+          "Field Dressing",
+          "Stealthy"
+        ]
+      ],
+      "traits": [
+        1,
+        "Black Bile Poison"
+      ],
+      "requires": "He Who is Fell and Stalks the Night requires Follower, Ravager or Nightseeker",
+      "requires_expr": [
+        "follower",
+        "ravager",
+        "nightseeker"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Astride The Beast": {
+      "time": 5,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel",
+        "Great"
+      ],
+      "skills": [
+        [
+          8,
+          "Mounted Combat Training",
+          "Riding",
+          "Great Wolf Husbandry",
+          "Intimidation",
+          "Spear",
+          "Armor Training"
+        ]
+      ],
+      "traits": [
+        1,
+        "Brash",
+        "Cry Of Doom"
+      ],
+      "requires": "He Who Sits Astride the Howling Black Beast requires Black Hunter or Follower",
+      "requires_expr": [
+        "black hunter",
+        "follower"
+      ],
+      "key_leads": [
+        "Chattel Setting",
+        "Great And Black Setting"
+      ]
+    },
+    "Bears The Lash": {
+      "time": 6,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Chattel",
+        "Great"
+      ],
+      "skills": [
+        [
+          6,
+          "Whip-wise",
+          "Intimidation",
+          "Orcish Torture",
+          "Command",
+          "Sword",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        1,
+        "Where There's A Whip, There's A Way"
+      ],
+      "requires": "He Who Bears the Lash and Drives Us Ever On requires Whipmaster, Black Hunter, Astride the Beast or The Rites",
+      "requires_expr": [
+        "whipmaster",
+        "black hunter",
+        "astride the beast",
+        "the rites"
+      ],
+      "key_leads": [
+        "Chattel Setting",
+        "Great And Black Setting"
+      ]
+    },
+    "Packmaster": {
+      "time": 7,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Chattel",
+        "Great"
+      ],
+      "skills": [
+        [
+          5,
+          "Great Wolf Husbandry",
+          "Great Wolf-wise",
+          "Pack-wise",
+          "Mending"
+        ]
+      ],
+      "traits": [
+        1,
+        "Flea-bitten",
+        "Where There's A Whip, There's A Way",
+        "Show No Fear"
+      ],
+      "requires": "He Who Rules the Black Wolf Pack requires Bears the Lash, Follower, Whipmaster, Master of Eight or Knower of Secrets]",
+      "requires_expr": [
+        "bears the lash",
+        "follower",
+        "whipmaster",
+        "master of eight",
+        "knower of secrets"
+      ],
+      "key_leads": [
+        "Chattel Setting",
+        "Great And Black Setting"
+      ]
+    },
+    "Head Taker": {
+      "time": 6,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel",
+        "Great"
+      ],
+      "skills": [
+        [
+          5,
+          "Command",
+          "Brutal Intimidation",
+          "Axe",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        2,
+        "Unrelenting Savagery",
+        "Fondness For Elven Blood",
+        "Taste For Man-flesh"
+      ],
+      "requires": "He Who Cleaves the Heads of his Enemies From Their Shoulders and Sets Them Upon Stakes for All to See requires Bears the Lash, Black Destroyer or Named",
+      "requires_expr": [
+        "bears the lash",
+        "black destroyer",
+        "named"
+      ],
+      "key_leads": [
+        "Chattel Setting",
+        "Great And Black Setting"
+      ]
+    },
+    "Troll Lord": {
+      "time": 5,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Great",
+        "Servant"
+      ],
+      "skills": [
+        [
+          6,
+          "Troll-wise",
+          "Troll Etiquette",
+          "Hammer",
+          "Shield Training"
+        ]
+      ],
+      "traits": [
+        2,
+        "Arrogant",
+        "Troll Speak"
+      ],
+      "requires": "Bears the Lash, Pack Master or Named",
+      "requires_expr": [
+        "bears the lash",
+        "packmaster",
+        "named"
+      ],
+      "key_leads": [
+        "Great And Black Setting",
+        "Servant Of The Dark Blood Subsetting"
+      ]
+    }
+  },
+  "Servant Of The Dark Blood Subsetting": {
+    "Slave To The Dark": {
+      "time": 6,
+      "res": 3,
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          2,
+          "Servant-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Fearful Respect Of The Servants",
+        "Naked Hatred"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Drinker Of The Dark": {
+      "time": 5,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          3,
+          "Doctrine Of Night's Blood"
+        ]
+      ],
+      "traits": [
+        3,
+        "Stark Madness",
+        "Blasphemer",
+        "Void Embrace"
+      ],
+      "requires": "Slave to the Dark",
+      "requires_expr": [
+        "slave to the dark"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Bloodletter": {
+      "time": 5,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Chattel"
+      ],
+      "skills": [
+        [
+          5,
+          "Rituals Of Blood",
+          "Orcish Torture",
+          "Intimidation",
+          "Knives"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Drinker of the Dark",
+      "requires_expr": [
+        "drinker of the dark"
+      ],
+      "key_leads": [
+        "Chattel Setting"
+      ]
+    },
+    "Knower Of Secrets": {
+      "time": 6,
+      "res": 7,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Chattel",
+        "Black Legion"
+      ],
+      "skills": [
+        [
+          4,
+          "Rituals Of Night",
+          "Vile Poisoner",
+          "Foraging"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Drinker of the Dark",
+      "requires_expr": [
+        "drinker of the dark"
+      ],
+      "key_leads": [
+        "Chattel Setting",
+        "Black Legion Subsetting"
+      ]
+    },
+    "Master Of Eight": {
+      "time": 8,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Chattel",
+        "Black Legion"
+      ],
+      "skills": [
+        [
+          7,
+          "Spider Husbandry",
+          "Riding",
+          "Mounted Combat Training",
+          "Web-wise",
+          "Climbing"
+        ]
+      ],
+      "traits": [
+        2,
+        "Batshit",
+        "Affinity For Spiders"
+      ],
+      "requires": "Knower of Secrets",
+      "requires_expr": [
+        "knower of secrets"
+      ],
+      "key_leads": [
+        "Chattel Setting",
+        "Black Legion Subsetting"
+      ]
+    },
+    "Master Of Blood": {
+      "time": 7,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          4,
+          "Rituals-wise",
+          "Animal Husbandry",
+          "Orc-wise",
+          "Elf-wise",
+          "Wolf-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Where There's A Whip, There's A Way"
+      ],
+      "requires": "Bloodletter",
+      "requires_expr": [
+        "bloodletter"
+      ]
+    },
+    "Master Of Darkness": {
+      "time": 7,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Cave-wise",
+          "Tunnel-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Knower of Secrets",
+      "requires_expr": [
+        "knower of secrets"
+      ]
+    },
+    "Dark Summoner": {
+      "time": 10,
+      "res": 12,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Darkness-wise"
+        ],
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Master of Darkness",
+      "requires_expr": [
+        "master of darkness"
+      ]
+    },
+    "Blood Summoner": {
+      "time": 10,
+      "res": 12,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Poison-wise",
+          "Bat-wise",
+          "Troll-wise"
+        ],
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Master of Blood",
+      "requires_expr": [
+        "master of blood"
+      ]
+    },
+    "Servant": {
+      "time": 50,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Great And Black-wise",
+          "Name Ritual"
+        ],
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "The Born to Rule Them All trait and Dark Summoner or Blood Summoner",
+      "requires_expr": [
+        "+and",
+        [
+          "dark summoner",
+          "blood summoner"
+        ],
+        [
+          "+trait",
+          "born to rule them all"
+        ]
+      ]
+    }
+  }
+}

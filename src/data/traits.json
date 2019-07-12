@@ -1,0 +1,4733 @@
+{
+  "Abashed": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Abnormally Long Tongue": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Abused": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Accustomed To The Dark": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "common"
+    ],
+    "desc": "Contrary to popular belief, Dwarves cannot see in the darkness. However, because they have lived many ages in halls lit by firelight and reflected sunlight, Dwarves do not suffer any penalty for twilight, starlight, candlelight, lamplight or torchlight. They do suffer from complete darkness as Men and Elves do."
+  },
+  "Aches And Pains": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Acute": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "Elven Bladesmiths tend to be very sharp -- their attention to detail and ability to reason is renowned even among the Elves. It is said that this ability to see a matter to its conclusion comes from centuries of staring at the tip of the blade. Bladesmiths may round up when factoring the root for any skill that includes Perception in its root stat.",
+    "bonus": [
+      {
+        "target": [
+          "+skills_having",
+          "+any_root",
+          "perception"
+        ],
+        "value": [
+          "+round_up"
+        ]
+      }
+    ]
+  },
+  "Addicted": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Adorable": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Adventurer": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Dwarven society is very structured and rigid. Those that break its conventions are forever branded as outsiders -- even if they're later let back into the fold. Characters who were once Adventurers bear the stain of their deeds for the rest of their lives. No matter how hard they try to hide it, other Dwarves can just smell it on them. Adventurers gain +1 Ob to all Circles tests when dealing with Artificers or Noble Born Dwarves. However, Adventurers may choose a minor affiliation (1D) outside the Dwarf hold for free."
+  },
+  "Affinity For...": {
+    "cost": 4,
+    "type": "die",
+    "desc": "An Affinity trait represents something that the character loves so much, he excels at it. Players may choose one skill for which their character has an Affinity. The trait gives the character +1D to the skill."
+  },
+  "Affinity For Plants": {
+    "cost": 4,
+    "type": "die",
+    "desc": "An Affinity trait represents something that the character loves so much, he excels at it. Players may choose one skill for which their character has an Affinity. The trait gives the character +1D to the skill."
+  },
+  "Affinity For Rope": {
+    "cost": 4,
+    "type": "die",
+    "desc": "An Affinity trait represents something that the character loves so much, he excels at it. Players may choose one skill for which their character has an Affinity. The trait gives the character +1D to the skill."
+  },
+  "Affinity For Books And Scrolls": {
+    "cost": 4,
+    "type": "die",
+    "desc": "An Affinity trait represents something that the character loves so much, he excels at it. Players may choose one skill for which their character has an Affinity. The trait gives the character +1D to the skill."
+  },
+  "Affinity For Business": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character has a hard nose for the cutthroat world of business. Affinity for Business gives +1D to any Resource test."
+  },
+  "Affinity For Horses": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Affinity for Horses, like all Affinities, gives +1D when dealing with the subject of the trait. In this case, Animal Husbandry and Riding tests are +1D.",
+    "bonus": [
+      {
+        "target": [
+          "+skills",
+          "animal husbandry",
+          "riding"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Affinity For Sheep And Goats": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "This trait adds +1D to any skill or stat when dealing with sheep or goats"
+  },
+  "Affinity For Spiders": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "The Masters of Eight develops a special kinship with his spider slaves. He learns their ways and habits. This trait adds +1D to any spider-related stat or skill tests."
+  },
+  "Aggressive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Agoraphobic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Agreeable": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Alarming": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Alcoholic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Alert": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Little, electric voices echo around the character's skull. Character may Glance Assess and Aim (+1D) when Stand and Drool hesitating. Therefore, if your character hesitates for two actions in Fight, he may shit himself and get two aiming dice. In Range and Cover, Alert grats 1D to the next shot after the character finishes hesitating."
+  },
+  "Alms-taker": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Aloof": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Aman": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "This trait indicates the Elf is of a rare lineage -- those first to walk even among the First Born. Down through the ages, the Aman have most often tread the path of the Etharch -- they are the lords and kings of all Elves. This character need not be an Etharch himself, but he is eligible for that rank. In addition, the Elf-folk of the Wilderlands and Citadel treat him with a mixture of fear and adoration."
+  },
+  "Ambidextrous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Ambitious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Amenable": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Amenable To Other Options": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Anemic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Apostate": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "The apostate has forsaken one religion for another. Anyone can be an apostate -- many Christians captured by the Muslims during the Crusades resorted to apostasy in order to save their lives. The Apostate character must have at least one religiously focused Belief. He also gains a 1D infamous reputation among his former co-religionists."
+  },
+  "Appreciation For Beauty": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Apprehensive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Arcane": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Arrogant": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Artful Dodger": {
+    "cost": 5,
+    "type": "die",
+    "desc": "This trait allows the character to see it coming -- he knows Destiny has it in for him and knows what she looks like. In the Fight rules, he may forfeit one action for free per exchange: He does not have to lose one when he changes one. All the other normal rules and conditions for Forfeiting apply."
+  },
+  "Atravieso": {
+    "cost": 1,
+    "type": "die",
+    "desc": "Someone who is an Atravieso is always getting his hands into everything, fiddling with every little thing he can. When in any new place, or a stressful situation, the character must pass an Ob 3 Will test to resist touching and fiddling. If he fails the test, the character goes for the most fragile/breakable/dangerous objects around -- beakers in the laboratory, eggs in the hen house, detonators in the bomb shop, the queen's dress at court, etc -- and well, fiddles with them."
+  },
+  "Aura Of Innocence": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character projects the appearance of being completely free of taint and guilt in any crime. No one would ever suspect him. This is a call-on for Falsehood or Inconspicuous when dodging guilt."
+  },
+  "Aura Of Determination": {
+    "cost": 5,
+    "type": "call_on",
+    "desc": "This trait allows the character and everyone within his presence to reroll one test in a great effort."
+  },
+  "Aura Of Fear": {
+    "cost": 5,
+    "type": "die",
+    "desc": "This character emanates fear. When entering his presence, all must pass a Steel test. Once the Steel test is made, the victim character does not have to test again until the next time he encounters this fearful creature."
+  },
+  "Aura Of Holiness": {
+    "cost": 7,
+    "type": "die",
+    "desc": "This character is bathed in a divine light. Any character with the Lawbreaker, Dreaded, Spirit Nature or Aura of Malevolence trait must immediately take a Steel test when entering the holy character's presence. Add the holy character's Will exponent to the hesitation obstacle. In addition, the holy man's Suasion dice are always considered open-ended."
+  },
+  "Aura Of Malevolence": {
+    "cost": 6,
+    "type": "die",
+    "desc": "This character is evil, and everyone knows it. Little children run away crying, dogs bark maniacally. This character, and all his cohorts within his Presence gain +2D to Intimidate or Interrogate. If the malevolent character has other characters helping him Intimidate, each character grants an additional helping dice over what they would normally give. Only one effect may be used at a time."
+  },
+  "Aura Of Martyrdom": {
+    "cost": 3,
+    "type": "die",
+    "desc": "He will die for our sins. We all know it. We all want it (not that we would do anything to speed the process along...). In him we shall be redeemed. The player whose character possesses this trait earns persona artha for personal goals when talking steps in the game to martyr his character. The character must die for a lost cause -- preferably religious. Should this glorious death transpire, the character's remains instantly become holy relics. The first person to gather up those remains is granted all of the martyr's remaining artha. If he had no artha left at the time of his death, the relic grants a deeds point to its new owner. Lastly, after the artha/deeds point is spent from the remains, they become a suitable matrix for Enchanting. See the Enchanting rules in the Magic Burner."
+  },
+  "Authoritative": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Avarice": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "special"
+    ],
+    "desc": "A player may choose to make his Dwarven character especially Greedy. With this trait he can raise his character's starting Greed to whatever exponent he desires (so long as it is higher than what it would start at). The downside of this is that Greed tests always count as the type of test the character needs to advance, no matter the obstacle. If he needs a routine, the next test counts as routine. See the Greed mechanics for the ramifications of this."
+  },
+  "Back-breaking Labor": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "orcish",
+      "mannish"
+    ],
+    "desc": "Call-on for Power or Forte when performing hard labor."
+  },
+  "Bad Egg": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Baleful Stare": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "A call-on for Intimidation or Interrogation when attempting to inject gravity into a situation or to cow a subject: \"He just gives you that look.\""
+  },
+  "Barker": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Base Humility": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Bastard": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "This character is the illegitimate son of a noble of rank. He will only be heir to the lands and income if all the other heirs die or join the clergy. Bastards are not looked upon kindly as they dilute claims to birthright and threaten the system of rightful inheritance. Bastards have a 1D infamous reputation among the nobility."
+  },
+  "Batshit": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Bearded": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "dwarven",
+      "common"
+    ],
+    "desc": "A Dwarf's beard is a sign of rank and maturity. No male dwarf would dare go about with a bald face."
+  },
+  "Bedside Manner": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Beespeaker": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The character understands the secret lives of bees. He can understand their signs and buzzing, but he can't really talk back to them. His Perception acts as Aura Reading on bees."
+  },
+  "Believer": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Believers fervently accept the truth of miracles and the power of Faith. All Faith obstacles used against Believers are made at -1 Ob."
+  },
+  "Bellicose": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Big Boned": {
+    "cost": 1,
+    "type": "character"
+  },
+  "The Bigger They Come...": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "The Siege Master cannot resist big targets. Massive, sturdy donjons are an affront to his sensibilities. The Siege Master will always target the biggest hunk of bricks (or prettiest war machines) first and pound them into dust and ruin."
+  },
+  "Bilge-drinker": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Birdie Talk": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character is just weird. He tweets and chirps at birds and they respond in kind -- landing on his shoulders and twittering away. This character is considered to have Low Speech for birds only."
+  },
+  "A Bit Deaf": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The incessant clanging and banging has made this character a bit deaf. +1 Ob to all auditory-based perception tests."
+  },
+  "Bitter": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Black Bile Poison": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "orcish"
+    ],
+    "desc": "Black Hunters know a little-known a little-known secret about Orc bile. It's toxic to other creatures. A Hunter with this training may simply vomit on his arrows or knives to poison them before a fight. The vomit stays fresh for about a half hour before it loses its potency. No roll is required. Any creature who takes a Mark result hit from such a coated barb must pass an Ob 4 Health test. Margin of failure is added to all Health and Steel test obstacles taken for the rest of the day. This poison does not affect Orcs."
+  },
+  "Black Lung": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "This Orc is beset with a wretched hacking cough. This wheezing gives him -1 Ob to all Health Stealthy and Inconspicuous test."
+  },
+  "Blank Stare": {
+    "cost": 3,
+    "type": "die",
+    "desc": "No matter the emotion, the character never shows any sign of \"getting it.\" The little light bulb never seems to come on. +1 Ob to all Persuasion and Soothing Platitudes test made against this character"
+  },
+  "Blasphemer": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Blind": {
+    "cost": 1,
+    "type": "die",
+    "desc": "This character cannot see clearly. He cannot make purely visual-based Perception tests, and he is at +2 Ob to all sight-based Speed and Agility tests."
+  },
+  "Blisters": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Bloviatic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Boaster": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Bookworm": {
+    "cost": 2,
+    "type": "die",
+    "desc": "\"You've got to leave this library and go out and experience the world! Stop hiding in your books and live!\" warned the old instructor \"Yeah right,\" thought the student. \"All the knowledge I'll ever need is here...in these books!\" Characters with this trait reduce their aptitude for learning Academic skills by one."
+  },
+  "Booming Voice": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character's voice cuts through walls and overpowers other speakers. This is a call-on for Conspicuous, Oratory or Command"
+  },
+  "Bored": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Born To Be King": {
+    "cost": 5,
+    "type": "character",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "This character is a son in the royal line. If he is the eldest, he is the direct heir to the throne. If he is a younger son, he bears no immediate obligation and is free to pursue his own aims. However, the character is a Prince and the obligations of said rank should play heavily on his life. He may, at some point, be called upon to take the throne!"
+  },
+  "Born To Rule Them All": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Those Born Great and Black are marked by distinctive features -- tall stature, broad shoulders and deep-hued skin. This is the mantle of hereditary leadership among the Orcs. In order to be a Great One or a Servant, one must be Born to Rule Them All. This trait grants a 1D affiliation among Great and Black Orcs and a 1D infamous reputation among the chattel and the legion."
+  },
+  "Born Under The Silver Stars": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "elven",
+      "common"
+    ],
+    "desc": "To those who look upon the Elves with clear eyes, there shimmers an unmistakable halo, like white light through a gossamer veil, like stars shining at night."
+  },
+  "Bottomless Stomach": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Eat and eat and eat. \"Nature's Cruel Joke.\" Characters with the Bottomless Stomach trait are at +1 Ob to all Resources tests involving food, drink and meals."
+  },
+  "Branded A Coward": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Whether true or not, this character has been branded a coward. In Dwarven society, this stain comes not from breaking an oath, but from refusing to swear the oath in the first place. Branded a Coward grants the character a 1D infamous reputation with either Dwarven Nobles, Clansmen, Guilders, Artificers or the Host. Player's choice. And more important, this Dwarf may not swear an Oath until he has redeemed himself in the eyes of his longbeard."
+  },
+  "Brash": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Brave": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Breeder": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "orcish",
+      "common"
+    ],
+    "desc": "Though they loathe life and yearn for death, Orcs are compelled by their accursed nature to procreate often and quickly."
+  },
+  "Broken": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "-1 Ob to all Intimidation, Interrogation, Command and Seduction tests used against this character. His Will has been broken."
+  },
+  "Broken In": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The Apprentice is stripped of his pride and ego. The player must remove any lifepath traits related to pride or status -- Noblesse Oblige for example."
+  },
+  "Broken Man": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Brooding": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "The Great One is prone to profound mood swings. If ever beaten in a Duel of Wits or surpassed in a social skill test, the Great One must succumb to this trait. He must hesitate for his full hesitation (minimum of two actions). While Brooding, the player may invoke his Flights of Murderous Fancy trait. (Note that in order to access that trait, the Great One must have this trait.) If the Great One does not have the Flights of Murderous Fancy trait, he simply fumes for a few moments as he broods and then returns to his regular state of mind."
+  },
+  "Bruiser": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The marine has spent his days at sea a-betitn' and a-brawlin'. Take your bets, gents! This trait is a call-on for Brawling"
+  },
+  "Brusque": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Brutal": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Brutish Efficiency": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "This trait acts as a call-on for Siege Engineer"
+  },
+  "Bulbous Nose": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Bull's-eye Spitter": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "\"I spit in yer eye!\" In calm weather and good light, this character simply does not miss his target, WHen spitting in the fight rules, it's a \"longer\" weapon, it costs one action to use, and it gives your opponent +1 Ob to his next test. Use this in Duel of Wits and give your opponent +1D to his next action. Use this against a sorcerer to distract him -- counts as a may not. Use this in Range and Cover and count your days numbered. This trait may only be used once per opponent--ever."
+  },
+  "Burial Rites": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ]
+  },
+  "Burial At Sea": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "+1D to Consecration and Purification Faith tests for performing burial rites at sea. Player also earns a persona point for each player character he buries at sea."
+  },
+  "Buxom": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cadaverous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Calm Demeanor": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "The Elven Attendant learns that an implacable visage is crucial to winning favor and advancement in the Elven court. To portray fear and agitation is to betray oneself. Call-on for Steel in the Duel of Wits"
+  },
+  "Call Of The Sea": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Callous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Calloused": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Callow": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cannibal": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "orcish",
+      "common"
+    ],
+    "desc": "So vile are they, Orcs will not hesitate to slay and eat their companions."
+  },
+  "Catamite": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "Catamite has been chosen as the trait name to represent the openly homosexual characters in the Burning Wheel. Honestly it was a pejorative medieval term -- a slur. It is how society would refer to them, not necessarily how they refer to themselves. Any Character may be homosexual via the player's choice, but by taking the Catamite trait the player is acknowledging that his character is open about his orientation. The ramifications of such a decision in a conservative medieval society are grist for great game situations"
+  },
+  "Charging Blindly": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Add +1D to Steel tests when at the van of an attack and charging across the field of battle."
+  },
+  "Charismatic": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "There is something magnetic and enigmatic about this character that draws people to him. People generally enjoy his company. This is a call-on for Persuasion or Oratory. Pick one."
+  },
+  "Charming": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Suave and likable, this character possesses a certain je ne sais quoi that makes him affable (despite his cowardly, murderous personality). Call-on for Soothing Platitudes or Seduction. Pick One."
+  },
+  "Child Prodigy": {
+    "cost": 2,
+    "type": "die",
+    "desc": "This trait is only available to one or two lifepath characters. The player may add +3D to the Perception or Will exponent of the character, or may shade shift one skill. Abuse this at your peril."
+  },
+  "Chosen One": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "If a player's characters possesses the Faithful trait, he may purchase this trait to make the Faith shade gray."
+  },
+  "Chronologue": {
+    "cost": 1,
+    "type": "character",
+    "desc": "An innate sense of time plagues this character. He always knows what time it is."
+  },
+  "Chuffing": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Chuntering": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cipher": {
+    "cost": 5,
+    "type": "die",
+    "desc": "It is not that the character is completely nondescript, but there is something about him that makes people not notice him. This trait shade shifts Inconspicuous to gray, but adds +1 Ob to all Circles tests."
+  },
+  "Circumspect": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Claustrophobic": {
+    "cost": 1,
+    "type": "die",
+    "desc": "Claustrophobia is a specific phobia applying to enclosed spaces. A character afflicted with this trait will not willingly enter small spaces like prison cells, closets, tunnels, trunks or even cramped rooms. If he should find himself in an enclosed space for a long period of time (more than a minute or two), he becomes agitated and eventually hysterical -- the character must pass a Steel test. If failed, he must either Swoon or Run and Scream."
+  },
+  "Clumsy": {
+    "cost": 1,
+    "type": "die",
+    "desc": "The character tends to trip or drop things at the wrong moment. Use this trait to further color failed tests involving holding precious or fragile things. A Clumsy character will always drop what he is holding in a rather spectacular manner if he fails a test."
+  },
+  "Cold Black Blood": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "common"
+    ],
+    "desc": "The cold substance of night runs through their veins, rendering these tomrented souls immortal. But it also makes them susceptible to the sun's burning rays. Orcs suffer +2 Ob to all tests while abroad in the sunlight. If it is cloudy, dawn or twilight, the penalty is only +1 Ob. But the night deadens their nerves as well: Cold Black Blood reduces hesitation obstacles by two for pain, but not fear or wonderment."
+  },
+  "Cold-blooded": {
+    "cost": 2,
+    "type": "die",
+    "desc": "This murderous soul has had a bellyful of killing and he won't hesitate to do more. Reduce hesitation for death, violence and pain by one. Do not reduce hesitation for surprise or wonderment"
+  },
+  "Cold Hearted": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Reduce hesitation for surprise and fear (including Intimidation) by one. Pain hesitation is not reduced."
+  },
+  "Collector": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Color Blind": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Colorful": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Comely": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Comfortable Shoes": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Commanding Aura": {
+    "cost": 6,
+    "type": "die",
+    "desc": "This character possesses an imperious and imposing demeanor. His merest words seem like fiat and his statements like edicts. His lessers feel compelled to obey. Add +1D to the character's Command skill. He may also help all those in his presence with any Steel tests they are compelled to make.",
+    "bonus": [
+      {
+        "target": [
+          "+skills",
+          "command"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Complaining": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Compulsive Liar": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Condescending": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Connected": {
+    "cost": 4,
+    "type": "die",
+    "desc": "This character has connections that belie his station. You may add one of the following new settings to your Circles: City dweller, Villager, Professional Soldier or Outcast (or equivalent from non-Mannish settings)."
+  },
+  "Confident": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Contortionist": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "A Contortionist can bend and twist the body into odd positioins. Call-on for Speed and Agility in thight situations."
+  },
+  "Cookie": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cool Headed": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Cool heads keep calm in crazy situations. Reduce hesitation from surprise and fear (not pain) by one."
+  },
+  "Corrupt": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cowardly": {
+    "cost": 1,
+    "type": "die",
+    "desc": "This is not the most flattering trait. Cowardly characters will not willingly put themselves at bodily risk and tend to run from danger -- or at least be conveniently absent: +1 hesitation",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "hesitation"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Cramped Hands": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Crippled": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character is missing a limb or is horribly disfigured. Choose one stat. It cannot start higher than exponent 3 and it is capped at exponent 4. If this restriction creates an excess of stat points during character burning, the extra points are discarded."
+  },
+  "Crotchety": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cruel": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cry Of Doom": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "He Who Sits Astride the Howling Black Beast learns to howl like a Great Wolf. He may deliver a potent and terrifying war cray from the back of his charging mount. The Cry adds +2D to Intimidation when mounted and bearing down on your prey. Intimidation requires two actions. Also using the Cry the Orc may call his wolf to him over great distances -- communicating with him as if he himself were a wolf."
+  },
+  "Cry Wolf": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cryptic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Curious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Curses Like A Sailor": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cursing": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Cynical": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dangerous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dangerous Obsession": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Treasurers spend too much time with the Prince's hoard. They eat, sleep and drink coins and riches. They dream about -- cannot stop thinking about -- fantastic wealth. This trait adds +1D to starting Greed.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "greed"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Daring": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Darling Of The Court": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The character is beloved at court. Increase any reputation by +1D"
+  },
+  "Deadly Precision": {
+    "cost": 5,
+    "type": "die",
+    "desc": "Deadly Precision allows the character to choose one weapon skill that he favours. Use his skill exponent in place of his Power stat when factoring his IMS for weapons under this skill."
+  },
+  "Deaf": {
+    "cost": 4,
+    "type": "die",
+    "desc": "This character cannot make auditory-based Perception tests, and is +2 Ob to all Perception tests in general."
+  },
+  "Debauched": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Deep Sense": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "This trait turns the character's Perception into an Orienteering-like skill when underground. He can discern directions, depth and inclination like surface dwellers can see the lay of the land, time of day and the weather."
+  },
+  "Deep Sleeper": {
+    "cost": 3,
+    "type": "die",
+    "desc": "Deep Sleepers are very difficult to rouse from sleep. Loud noises, shouts, even calling their own names won't do it. To wake from sleep before the appointed time, this character must pass an Ob 5 Will test."
+  },
+  "Deferential": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Demagogue": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Denouncer": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Desperate": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Despondent": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Determined": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dexterity Of The Cat": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This trait can be called on when the character is trying to navigate narrow ledges, branches, rope or walkways. Call-on for Climbing or related Speed tests."
+  },
+  "Devout": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Diligent": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Diminutive Hands": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Diminutive Stature": {
+    "cost": 1,
+    "type": "character",
+    "desc": "Characters of Diminutive Stature are no taller than five feet (1.6 paces). This is the stature of Dwarves and Roden."
+  },
+  "Diseased": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character possesses an honest-to-god communicable disease. He is covered with scabs and sores, he stinks like a corpse and he can't sleep due to the itching. Should he ever fail a Health test for recovery from an injury he loses 1D from his Health as his illness overcomes him. Any physical contact with him necessitates a Health test. Obstacles is equal to 10 minus the Diseased's Health. Failure means the character who came into contact with him is now Diseased as well."
+  },
+  "Disciplined": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dismissive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dispute-settler": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "This skill acts as a call-on for Persuasion, Coarse Persuasion or Oratory when trying to settle a dispute between two characters."
+  },
+  "Distracted": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Disturbed": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Disturbingly Confident": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Disturbingly Large Mouth": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dog Lover": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dog-faced Boy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Domineering": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Domineering Presence": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Characters with Domineering Presence may, one per scene, make their verbal maneuver first in a Duel of Wits. In the case of a Rebuttal versus Point (or something similar), this trait doesn't have any effect. But if a Bishop is attempting to Dismiss while his opponent is making a Point, then the Bishop player makes his point and rolls his dice first. If he fails to win the Duel, then the other player may respond."
+  },
+  "Dour": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Down To Earth": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character is very grounded. He understands the natural order and lives by it. Use this skill as a call-on for Farming, Plant-wise or any other earthy skill the GM approves. Pick one."
+  },
+  "Downtrodden": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dramatic": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Whatever happens to the character, it is very entertaining and overwrought when he tells you about it later. This trait can be called on for Acting and Theatrics."
+  },
+  "Dreadful": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character is so horrible to look upon, dread fills the hearts of his enemies and friends. The character can use this trait as a call-on for Intimidation and Interrogation."
+  },
+  "Dreamer": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character's dreams have a lifelike and portentous quality. The prime function of this trait is to allow the character to have visions in his dreams. These visions are always relevant to the game at hand. The player then becomes the intermediary for this information between the GM and the rest of the group."
+  },
+  "Driven": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "There is a distant goal which drives this character on. Something burns in his mind that will make all this suffering, hardship and pain worth it in the end. This trait is a call-on for one skill that is related to one of the goals listed in the character's Beliefs. Choose the skill before play starts."
+  },
+  "Drop-dead Gorgeous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Drunk": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dusty": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dutiful": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Dvergar": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Dvergar are original, mythical Dwarves. Dwarven nobility all lay claim of the blood ties to these ancient forebears. This trait grants a 1D affiliation with other Dwarven nobility and a 1D reputation among all Dwarves as noble. Characters with this trait suffer a +1 Ob to all Inconspicuous tests among Dwarves."
+  },
+  "Eagle Eye": {
+    "cost": 4,
+    "type": "die",
+    "desc": "Eagle Eye allows the character to see great distances clearly. For the purposes of shooting skill tests, characters with Eagel Eye count extreme range as optimal in the Range and Cover rules."
+  },
+  "Ear For Voices": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The character always remembers a voice and is able to pick out conversations over distance and noise. An Ob 3 Perception test allows the character to hear perfectly that conversation across the busy bar."
+  },
+  "Ear To The Ground": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "The harried Lieutenant serves his Captain as best he can. If the player purchases a relationship with an important or powerful captain, increase his base Circle by one."
+  },
+  "Early Riser": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Earthen": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Earthy Smell": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Eating Maggots": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Ebullient": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Educated": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Effete": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Eidetic Memory": {
+    "cost": 4,
+    "type": "die",
+    "desc": "The character has the ability to remember nearly anything that he has read or seen. The player is allowed to consult the GM on occasion about certain important character memories. Whenever there is a question about whether or not the character remembers something, it is assumed that he does. The GM can provide the necessary information to the player."
+  },
+  "Eldritch Sink": {
+    "cost": 8,
+    "type": "die",
+    "desc": "Magic does not and cannot directly affect this character. This includes both beneficial and detrimental effects. This isn't the best trait for sorcerers, as it would negate the Gifted trait."
+  },
+  "Emotional": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Enemy Of The Sun": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "special"
+    ],
+    "desc": "The greatest, most fearsome of Orcs have been bred to resist the pure rays of the sun. They may travel by day and suffer no obstacle penalties as under the Cold Black Blood Orc common trait."
+  },
+  "Entropic": {
+    "cost": 5,
+    "type": "die",
+    "desc": "Things fall apart around the character. Any mechanic that involves something breaking--armor or materials, for example-- counts double in its effect. One breach counts as two, one lost armor die counts as two. Any DoF mechanic for catastrophic failure is weighted by +1 toward the worst result. Any roll that results in complete failure indicates that something broke. Oops. This trait affects everyone and everything in the character's presence, including himself."
+  },
+  "Erudite": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Esoteric": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Essence Of The Earth": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "common"
+    ],
+    "desc": "Elves do not feel the effects of earthly cold and heat as do Men; they do not fall ill; they are ageless and will only pass on when the Earth ends. Elves do not have to take Health tests for illness, and they gain +1D to Health and Forte tests for resisting fatigue and poison. Yet, they are not deathless: Elves may be killed by violence or may waste away due to Grief."
+  },
+  "Estimation": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "dwarven"
+    ],
+    "desc": "Dwarven Engineers often share with each other their vast knowledge. \"How far do y' think that is?\" \"Hunnert paces?\" \"Nah,hunnert seven and an eight, easy.\" Using this training skill, a Dwarf may add a +1D any skill that requires an estimation of distance, depth or height: building a bridge, carving out a hall or even leaping a chasm. Be warned though, estimating incorrectly can be calamitous. If the test is failed, the results are catastrophic."
+  },
+  "Etharchal": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "This character is of Elven noble stock. His facial features, bearing, accent and manners are distinct from those born in the wilds or the citadel. His heritage is recognizable at a glance. Grats a 1D affiliation with Elven Etharchs. This compounds with all other appropriate affiliations."
+  },
+  "Eunuch": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Evasive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Exasperated": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Exhausted": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Pushed to the brink of his endurance one too many times, this character is simply exhausted. +1 Ob to all Health tests."
+  },
+  "Exile": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "special"
+    ],
+    "desc": "This Elf has committed some crime that has nearly earned him the title of enemy among his people. Rather than dishonor him with such a stigma, his people instead sent him into exile. Ultimately, though, it is a death sentence. The exile cannot journey West. Should his Grief overtake him, he'll have no succor and will simply waste away. This trait adds +1D to starting Grief, and a 1D infamous reputation among all Elves."
+  },
+  "Exorcism Ritualist": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The exorcism ritualist knows how to drive demons from the possessed. He gains a +1D advantage to Faith when using the Purification miracle to exorcise demons."
+  },
+  "Extra Digit": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Extremely Bitter": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Extremely Respectful Of One's Betters": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Extrovert": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The character may reduce his aptitude for learning social skills by one."
+  },
+  "Eye Of The Hunter": {
+    "cost": 3,
+    "type": "die",
+    "desc": "Characters with Eye of the Hunter count their Perception exponent as Observation for detecting Stealthy, Camouflage or similarly concealed characters."
+  },
+  "Faded": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fair And Statuesque": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "elven",
+      "common"
+    ],
+    "desc": "Elves are fair and beautiful to all who look upon them. The Elven form inclines toward tall and slender, rounded by graceful curves."
+  },
+  "Faithful": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "roden",
+      "special"
+    ],
+    "desc": "This trait is required in order to open the Faith attribute. With Faith, the character is able to perform miracles. The Faith section of this chapter describes how to start the attribute. The Emotional Magic section of the Burning Wheel describes its mechanics."
+  },
+  "Familiar Face": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Of course he's my friend. I've seen him around here dozens of times! Familiar face is a call-on for Circles tests."
+  },
+  "Family Heirloom": {
+    "cost": 5,
+    "type": "die",
+    "desc": "A Family Heirloom is an item of great value or power that symbolizes the (once great) might of the family. A character may only take this trait if he starts with 20 or fewer resource points. The trait allows the player to take one item from any list that costs 50 rps or less."
+  },
+  "Fanatical Devotion": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fanged And Clawed": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "common"
+    ],
+    "desc": "The mouth of an Orc is a violent organ, well suited to tearing flesh and shouting blasphemies. Orcs may use their Fanged Maw as a weapon: The bite is a Power 1, WS 1, VA 1, Add 2, shortest length weapon.  Claws like steel shards protrude from their gnarled fingers. They may be used as weapons: Power 1, VS X, VA -, Add 2, shortest length. They act like knives for purposes of positioning and fighting distance."
+  },
+  "Fastidious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fateful": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fea": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "The Fêa trait denotes that this Elf has been born into a family whose lineage typically holds the rank of prince. This character need not hold the rank of prince himself, but possessing this trait indicates that he is eligible for the rank. This trait is required if the player wishes to take the Prince lifepath for his character."
+  },
+  "Fealty To The Fea": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "Sword Singers trained in the palace of the Etharch are traditionally considered the Prince's own bodyguard. They report directly to him in times of peace and war."
+  },
+  "Fear Of Cheese": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fear Of Wet Noises": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fearful Respect Of The Servants": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fearless": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character is practically immune to fear. Reduce hesitation for pain, fear and the shock of gore or death by three. Hesitation for wonderment or surprise is not reduced."
+  },
+  "Feral": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fervent Believer": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fey Blood": {
+    "cost": 4,
+    "type": "die",
+    "desc": "The blood of the elder folk runs through him. This character may choose one trait from the Elf, Dwarf or Orc trait list. Lifepath and common Racial traits are free, normal costs apply to Special Traits."
+  },
+  "Firm": {
+    "cost": 1,
+    "type": "character"
+  },
+  "First Born": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "common"
+    ],
+    "desc": "Elves are made from the very fabric of nature-- wind, air, wood and water. Thus, they know its secrets very well: they know how to preserve much of its power-- even when it is taken and shaped into something new. It is this intimate knowledge that allows the Elves to weave their songs. Their unadulterated essence grants them insight into their world unmatched by the races of Men, Dwarves or Orcs. Due to this, Elves Perception maximum is 9 rather than 8."
+  },
+  "Fixed Smile": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Flamboyant": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Flatterer": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Flea-bitten": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fleet Of Foot": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Fleet of foot is a call-on for Speed when racing or positioning."
+  },
+  "Flights Of Murderous Fancy": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "While under the effects of the Brooding trait, the Great One is beset by the winged visions of his horrid and vile fantasies. These tempting little morsels dance in his mind's eye: Tearing the Elven captain limb from limb, turning pesky knights into dinnerware or slaughtering his entire clan in order get them to shut up, for example. After being humiliated in a social skill test or Duel of Wits, such visions become irresistible. While Brooding, the Orc player may design a Flight of Murderous Fancy to focus on. He must name a task and the vivid details of how he'll accomplish said task. He may then FoRK his Hatred into any and all tests- stat, skill, Steel, Health or whatever-- while on the job. When he sates his fancy (and accomplishes the goal), the player immediately earns a persona point. Tapping into the Flights of Murderous Fancy trait counts as a routine test for Hatred."
+  },
+  "Flip": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Floury": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Folksy Wisdom": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Following The Beat": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fondness For Elven Blood": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Forked Tongue": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "This trait is a call-on for Falsehood."
+  },
+  "Formalist": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Fortitude": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "When others would quit from exhaustion, this character will heave to and give it one more try. Call-on for Forte."
+  },
+  "Foul Smelling": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Frail": {
+    "cost": 4,
+    "type": "die",
+    "desc": "Weakness saps vitality. This character is less vigorous than his companions. Perhaps due to an overactive life of the mind? Subtract one from Power or Forte. Also, the maximum for the Frait stat is reduced to exponent 5."
+  },
+  "Frippery": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Frustrated": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Why can't anything go the way it was planned? Why? WHY?!! Gah! You're all imbeciles!"
+  },
+  "Galvanizing Presence": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Galvanizing Presence is a call-on for command or Conspicuous"
+  },
+  "Garrulous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Gelid": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Generous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Genial": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Gentle But Firm": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Geometric": {
+    "cost": 3,
+    "type": "die",
+    "desc": "Geometry is the mother of invention. Forget what the other guy says. This trait gives +1D to any skill that utilizes mathematics or measurements."
+  },
+  "Gerbil Brain": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Gifted": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "This trait is required for the character to be able to cast spells, enchant artifacts, speak with the dead or summon spirits. Without it, Sorcery, Summoning and Enchanting are merely academic pursuits. With the Gifted trait, the character can manipulate magic. See Sorcery in the Burning Wheel for more."
+  },
+  "Glib": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character is a believable storyteller. his manner and expressions are earnest and appropriate. This trait is a call-on for Soothing Platitudes, Falsehood and Seduction."
+  },
+  "Gloryhound": {
+    "cost": 3,
+    "type": "die",
+    "desc": "A gloryhound cannot restrain himself when he sees a chance for \"glory\". He charges into the fray heedless of safety, tactics or plans. Glory includes: maidens fair, enemy sorcereres commanding undead hordes, large monsters, enemy knights, and enemy kings. Gloryhounds may add an additional Steel reaction: For Glory! While hesitating from a failed Steel test (and choosing this reaction) the Gloryhound must Close, In range and Cover he must use Steel. In Fight he must Close and attempt to Charge. He may not do anything else."
+  },
+  "Gluttonous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Gnawing Hunger": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Good For Nothing": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Gossip": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Graceful": {
+    "cost": 4,
+    "type": "call_on",
+    "desc": "This character is fluid and flowing in motion. This trait me be called-on for Speed tests and for social skills requiring grace or presence. This is a special, double effect call-on. The pricing is correct."
+  },
+  "Grand": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Greasy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Greater Muse": {
+    "cost": 6,
+    "type": "die",
+    "desc": "Under the influence of his muse, this character is a virtuoso. The player must choose an art form and one of the his character's skills that it inspires. When the art is being performed or witnessed, the dependent skill shade shifts one step lighter. A character cannot be his own muse."
+  },
+  "Greed": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "common"
+    ],
+    "desc": "Deep in the heart of every Dwarf lies a terrible seed, a lust for wealth and beauty. Some Dwarves master it; others succumb. It is a powerful emotion that drives many a Dwarf from his comfortable life and compels him to perform terrible acts or zealously create works of inestimable craft. See the Dwarven Greed section in this chapter for more on this emotional attribute."
+  },
+  "Greedy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Grey Mantle": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Grief": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "common"
+    ],
+    "desc": "Years of emotion and strife take their toll, and eventually all Elves begin to feel Grief tug at their hearts. See the Elven Grief section for the mechanics of this trait."
+  },
+  "Grim": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Grudgekeeper": {
+    "cost": 1,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "special"
+    ],
+    "desc": "This character contains within him the capacity to maintain terrible enmity for perceived slights. He swears grudges like others swear oaths. The Grudgekeeper trait allows the player to replace his Oathsword Belief with a Grudge, Rather than a promise or an oath he swears revenge. Grudges follow the same mechanics as oaths. If the character has the Oathswearer trait, it combines with Grudgekeeper. He may only pronounce grudges -- rather than oaths -- between two characters. They must write them into their Beliefs as if they were oaths."
+  },
+  "Grumbling": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Guarded": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hacking Cough": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hairy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Half-elf": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "elven"
+    ],
+    "desc": null
+  },
+  "Halitosis": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hand-eye Coordination": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The character may round up when factoring roots for skills with the Perception/Agility root.",
+    "bonus": [
+      {
+        "target": [
+          "+skills_having",
+          "+all_root",
+          "perception",
+          "agility"
+        ],
+        "value": [
+          "+round_up"
+        ]
+      }
+    ]
+  },
+  "Hands Of Iron": {
+    "cost": 4,
+    "type": "die",
+    "desc": "The character's fists (and feet) have been toughened that his hands count as a Power 1 weapon (like a stone, knife or dagger)."
+  },
+  "Handsome": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Happy-go-lucky": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hard As Nails": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "The Warden may choose to ignore one wound once per conflict. He may do so as long as the wounded dice penalty is not greater than his current Will. So if he's only got a 1D of Will left, he can't ignore a traumatic wound, but he can ignore a light."
+  },
+  "Hard-hearted": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "They always have excuses, and this character has heard them all. He may add four successes to any body of argument in a duel of Wits where his opponent is trying to weasel out of an obligation."
+  },
+  "Hard Work": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hardened": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Hard labor has turned this character's back to stone and his muscles to iron. Round up when factoring Health."
+  },
+  "Hatred Of Forests": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Haunted": {
+    "cost": 1,
+    "type": "character"
+  },
+  "He's A Jonah, That One": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Healthy": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "No matter what the character does or how he live his life, he still maintains the glow of fitness. Call-on for Health tests."
+  },
+  "Hide Before Battle": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hiding": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Goblins learn very quickly that it's better to hide from their masters than be caught or volunteered. Add +1D to Stealthy.",
+    "bonus": [
+      {
+        "target": [
+          "+skills",
+          "stealthy"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Hoarding": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Holier": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hollow Bones": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Homesick": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Honored": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hope": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Horsefriend": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Humble Before My Master": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Humility": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Humility In The Face Of Your Betters": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hungry": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hurt": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Hypochondriac": {
+    "cost": 1,
+    "type": "character"
+  },
+  "I Know This Ship Like My Own Hands": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The carpenter is a strange bloke, but he definitely knows tehh ship. This trait acts as a call-on for any ability used in trying to figure out something about the sailor's ship -- be it the location of something lost or the knowledge to repair terrible damage."
+  },
+  "Idealistic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Idealogue": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Impecunious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Imperious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Imperious Demeanor": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Use this trait as a call-on for Circles when dealing with anyone of lower rank or station."
+  },
+  "Impulsive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Incessant Tapping": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Incomprehensible Diagnosis": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Call-on for Falsehood when trying to hide the true facts of a medical diagnosis."
+  },
+  "Inconsiderate": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Indecisive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Ineffable Feature": {
+    "cost": 1,
+    "type": "character",
+    "desc": "An Ineffable Feature is a facial or bodily feature that cannot be altered or destroyed. Or if it is somehow destroyed or removed, it grows back the same as it was before."
+  },
+  "Infallible Religious Logic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Ink-stained Hands": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Inscrutable": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Insightful": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Insomniac": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Inspirational": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "The character innervates and motivates other people by his mere presence. Can be used as a call-on for Oratory and Command."
+  },
+  "Intense Hatred": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Intractable": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Inured": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Invisible Friend": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Involuntary Shudders": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Iron Memory": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Wordbearers are taught tricks of the memory so that they never forget the missives they are commissioned to recite. Players whose characters have this trait, who have forgotten a vital game-important detail, may make an Ob 3 Perception test to recall it."
+  },
+  "Iron Nails": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Iron Nose": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "This character has smelled the worst of it. He never has to take a Steel, Health or Forte test due to nauseating smells."
+  },
+  "Iron Stomach": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character can eat nearly anything and not get sick, even while enduring stomach-churning gross-out jokes. Call-on for Forte tests against illness or poison."
+  },
+  "Iron Will": {
+    "cost": 3,
+    "type": "die",
+    "desc": "Characters with Iron Will are resistant to Interrogation and Seduction. Any attempts at bending them are made at double obstacle penalty. In a Duel of Wits in which the opposing skill is Interrogation or Seduction, the player may double his body of argument."
+  },
+  "It Just Might Work!": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Jaded": {
+    "cost": 4,
+    "type": "die",
+    "desc": "So many years and so much humanity has this character seen, life seems to be an endless repetition of petty struggles. \"I tire of this game...\" Reduce hesitation for surprise or shock by three."
+  },
+  "Jaunty": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Jealous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Joan Of Arc": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Keen Sense Of Humor": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Keen Sight": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "common"
+    ],
+    "desc": "Like an eagle, Elves may see a great distance with perfect clarity. Add +1D to all Perception-based (or Observation-based) field maneuvers for Range and Cover or any Perception test involving seeing long distance. Elves may also see in starlight as if it were day. They suffer no obstacle penalties for dim light. Smoke and haze still bar their vision -- normal penalties apply. On complete darkness Elves suffer +4 Ob like Men or Dwarves."
+  },
+  "Keen Taste": {
+    "cost": 5,
+    "type": "die",
+    "desc": "This trait can be used to determine the ingredients of a substance sampled by taste. The player can combine this trait with any one of his applicable skills. Using his knowledge and this inborn talent, he can decipher the ingredients or components of a material, substance or compound. If a character had Prospecting and Keen Taste, he could taste earth and determine what components are contained therein. Such an action requires a successful Perception test at an obstacle equal to what it would normally take to create or spot his substance. This test is open-ended. Keen Taste can also be used as a call-on for Alchemy, Apothecary, Herbalism, Wine Tasting, Cooking and Baking."
+  },
+  "Keys To The Church": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "At one point, some church official thought it was a good idea to appoint this character a Doorkeeper and grant him keys to the church. It was he who locked the doors and guarded the reliquaries. This grants him a 1D affiliation with the church. If he acquitted his duties well, he gains a 1D reputation (local, no power) within the Church. If he took liberties with his duties, he gains a 1d infamous reputation (and +1 Ob to all Circles tests dealing with the Church). This compounds with other reputations and affiliations in the church."
+  },
+  "Kicking The Beast": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "It is the Cattle Slaves' responsibility to move any herd animals owned by the clan. Should any animals go missing, the Goblins become the herd. Characters with this trait may use their Power or Agility, or a weapon skill, to motivate any herd animal (in lieu of Animal Husbandry, Riding or Driving). The animals do suffer wounds from any extreme behavior."
+  },
+  "The Killer": {
+    "cost": 5,
+    "type": "die",
+    "desc": "This character is always aware of what is going on around him -- always looking one way while acting on something else. In Fight, The Killer trait reduces all shooting and throwing actions by one action. In Range and Cover, The Killer grants a +1D advantage to maneuver tests."
+  },
+  "Know It All": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Laconic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Lame": {
+    "cost": 1,
+    "type": "die",
+    "desc": "One of the character's legs is deformed or permanently injured causing the character to walk with a pronounced limp. Reduce the character's stride by one. In addition, the character may not benefit from any skill or trait that increases the stride (like Sprinter).",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "stride"
+        ],
+        "value": [
+          "+add",
+          -1
+        ]
+      }
+    ]
+  },
+  "Landlubber": {
+    "cost": 1,
+    "type": "die",
+    "desc": "\"I think I'm gonna throw up.\" \"I can't swim!\" Look at the landlubber, seasick and staggering around the deck. This character is +1 Ob to all Health tests and attempts at good judgement while at sea."
+  },
+  "Lavish Taste": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Lazy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Learned": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Leprosy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Lesser Muse": {
+    "cost": 5,
+    "type": "die",
+    "desc": "The beauty of art inspires this character to wild heights. The player must choose an art form and a skill it inspires. When under the influence of his Muse, the character gains +2 open-ended dice to all \"inspired\" skill tests. A character cannot be his own Muse. He cannot recite poetry to himself while he is madly hacking away at his enemies."
+  },
+  "Lesson Of One": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "A Second is a Sword Singer in training. One of the rituals of this rigorous regimen is to dissolve the ego entirely. The Second learns to think, act and be his master -- his own psyche is stripped bare.  This forms an intense bond between the two Elves, one that typically lasts beyond the Second's elevation to Sword Singer himself. If the player purchases an important relationship with his mentor he gains a 1D reputation as his student; if he purchases a powerful relationship, he gains a 2D reputation."
+  },
+  "Life Is Death": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Reduce hesitation obstacles due to injury and pain by two."
+  },
+  "Lifting Heavy Things": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Call-on for Power when lifting something that is obviously too heavy, bulky or cumbersome for the character."
+  },
+  "Light Sleeper": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Light sleepers are easily roused from slumber. They are always allowed the benefit of a Perception test to wake up when a noise is heard or someone is creeping about their room. Make the test as if they were awake. If the character has Observation, that can be used in place of Perception. If the test is passed, the character is instantly awake and ready to go. Also, Light Sleeper adds +1 Ob to all Health tests for recovering Tax."
+  },
+  "Linguist": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character is passionate about languages. They are a puzzle to solve, a mystery to unravel, a game he enjoys and is naturally good at. Reduce aptitude for learning the Foreign Language skill by 1. Acts as a call-on for the Foreign Languages skill."
+  },
+  "Lithe": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character has fluid grace inherent to his movements. Lithe characters tend to be thin and muscular. Call-on for Dance or any other athletic-type skill. Choose one before starting the game."
+  },
+  "A Little Crazy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "A Little Fat": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Loathsome And Twisted": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "common"
+    ],
+    "desc": "Orcs are repellent, event to their own kind, and especially to Elves, Men and Dwarves. Their bodies are bent and squad, with ugly, long arms and sickening charred flesh: Orc stat maximums are straight 8s. This trait also unlocks the Hatred emotional attribute for Orcs."
+  },
+  "Loner": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Lonesome": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Long Fingered": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Long Of Limb": {
+    "cost": 4,
+    "type": "die",
+    "desc": "Abnormally long arms or legs. Long of Limb increases the character's bare-fisted reach in positioning tests to long. If used with a weapon, increase the weapon length by one step."
+  },
+  "Lord Of Ages": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "This character is the lord and master of an Elven dominion. He governs the Althings, Princes, Captains and Lords. He is ancient and powerful -- his life spans the ages. The Lord of Ages trait grants +1D to one reputation or affiliations the player chooses for this character."
+  },
+  "Lord's Favorite": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Lost": {
+    "cost": 1,
+    "type": "die",
+    "desc": "This character never knows where he is or what direction he is going. Explicit directions are required to get him anywhere, and even that rarely works. Double obstacle penalties to all Orienteering or Navigation tests and any Perception test used to find the right direction."
+  },
+  "Lost Faith": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Answer the Faith questions from the standpoint of \"before\" the character gained this trait, then circle it and write \"LOST\" next to it. The player has no access to the character's Faith attribute. Then write into the character's Beliefs the reason why he no longer believes. Should that Belief (or Beliefs) change into one of renewed faith (via an appropriate in-game situation) and the player spent a deeds point during the conflict, he may reopen his attribute. Erase the circle and \"LOST.\" Once restored, the player may perform miracles as per the standard rules."
+  },
+  "Louis Wu": {
+    "cost": 2,
+    "type": "die",
+    "desc": "When surprised or shocked by a revelation (especially when called on to make a Steel test for such instances), this character is prone to fits of laughter. He may replace \"Stand and Drool\" with \"Belly Laugh\" in his hesitation options. If this doesn't infuriate friends and foes alike, something is wrong in the world."
+  },
+  "Love Of The Horse": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Low Cunning": {
+    "cost": 4,
+    "type": "call_on",
+    "restrict": [
+      "orcish"
+    ],
+    "desc": "This is a call-on for any skill used in betraying a superior."
+  },
+  "Low Speech": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The knowledge of the language of animals and beasts is known to you. Choose one type of animalia: birds, horses and beasts of burden, beasts of the wild, reptiles and scaly beasts, fish or insects. This trait may be taken multiple times. Additional Low Speech categories cost +1 trait point."
+  },
+  "Loyal": {
+    "cost": 3,
+    "type": "die",
+    "desc": "There is an old saying: \"Death is lighter than a feather, but duty is heavier than a mountain.\" This character lives by these words. The player may add an additional Belief centered around his Loyalty to another character. Should this trait ever be voted off, the character loses the Belief as well; should the Belief be changed, the trait is lost."
+  },
+  "Lucky": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "There's always the lucky ones. Always. They make the rest of us look like shlubs while they skate through life. This trait can be used in a number of ways. First, it can be used as a call-on for any ability. This can only be used once per adventure. Second, it can be used to buy off one failed roll to save the character's life once-- a failed armor test, a flubbed Speed test, etc. The test is passed and the trait is lost. Lastly if the player makes a random in-game guess (via roleplay), the guess is always right-- so long as the player isn't aware the guess is right."
+  },
+  "Lunatic": {
+    "cost": 1,
+    "type": "character",
+    "desc": "This character always knows the phase of the moon."
+  },
+  "Lustrous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Lynx-eyed, Like Burning Coals": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "common"
+    ],
+    "desc": "An Orc's eyes glow red with the inner fire of despite and hatred. Orcs can see clearly in darkness and shadows. They never suffer a penalty for such conditions."
+  },
+  "Mad": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Made Man": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "A good craftsman is always in demand; and good craftsmen always look out for one another. 1D affiliation for being a journeyman craftsman."
+  },
+  "Maggot Connoisseur": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Maimed": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character has been horribly maimed during his career. Choose the nature of the disfigurement and associate it with one physical stat, all tests against that stat are +2 Ob. If Forte is chosen, the penalty transfers over to Health, or the mortal wound is reduced by one."
+  },
+  "Man Of Few Words": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Manhunter": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This trait grants the ability to detect strong emotion in others, namely fear, nerves, elation and arousal. The character's Perception acts as the Aura Reading skill (but only for the non-spell detection uses)."
+  },
+  "Manly": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Marching": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Orcs with this trait actually know how to march in step. Add +1D to Speed for any marching or travel tests, and +1D to Health tests for fatigue, when marching in formation under the lash."
+  },
+  "Mark Of Privilege": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Those born into nobility bear certain features-- telltale signs of their lineage. Their nose, their bearing, their skin or even their speech mark them as one of the privileged. This confers a 1D affiliation with nobility but also adds +1 Ob to all Inconspicuous or Falsehood tests when masquerading as someone lower than your station."
+  },
+  "Mark Of The Beast": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Massive Stature": {
+    "cost": 4,
+    "type": "die",
+    "desc": "This character is the size of a Troll. Due to his imposing bulk, his weapon length categories are increased by one step. If wielding a \"longest\" weapon, he may count his weapn longer than longest!"
+  },
+  "Maternal": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Matriarchal": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Maudlin": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Mean": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Melodamatic Family": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Mercenary": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Merciful": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Merciless": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Metal Plate In The Skull": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Meticulous": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "The Meticulous character is neat and organized to the point of obsessiveness. All non-physical/martial arts skill tests take the maximum time required. The trait may be used as a call-on for one academic, craftsman, artisan or military skill of the player's choosing. For Dwarven characters, the skill must relate to the character's Greed idiom."
+  },
+  "Mind For Small Details": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Mind-numbing Work": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Call-on for Will when performing mind-numbing, repetitive work."
+  },
+  "Mind Over Matter": {
+    "cost": 3,
+    "type": "die",
+    "desc": "With this trait, a player may add one point from his physical pool to his mental pool. This trait has no effect after character burning."
+  },
+  "Misanthropic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Misplaced Aura": {
+    "cost": 3,
+    "type": "die",
+    "desc": "Character has the aura of another type of person or creature. The player and the GM must design this aura-- complete with character stock, Beliefs, Instincts and trait-- before play begins. Any Aura Reading tests made against this character see the Misplaced Aura instead of the real one. However, the Aura Reader can see the Misplaced Aura trait if he gets at least four successes on his test."
+  },
+  "Missing Digit": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Missing Eye": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This trait increases most sight-based Perception obstacles by +1 to +2 Ob depending on the situation."
+  },
+  "Missing Hand": {
+    "cost": 1,
+    "type": "die",
+    "desc": "A missing hand reduces Agility by 1, and obviously prevents the character from performing any action with two hands.",
+    "bonus": [
+      {
+        "target": [
+          "+stat",
+          "agility"
+        ],
+        "value": [
+          "+add",
+          -1
+        ]
+      }
+    ]
+  },
+  "Missing Limb": {
+    "cost": 1,
+    "type": "die",
+    "desc": "Missing limbs have serious effect on how the character is played. A missing arm sets the Agility cap at 5, and obviously prevents the character from performing any action with two hands. A missing leg sets the Speed cap at 4 and reduces the stride by two."
+  },
+  "Monastic": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The diligent daily rituals of monastic life are detailed and difficult. This trait grants +1D to Faith for consecration, Guidance or Revelation miracles while praying in a monastery."
+  },
+  "Mourner": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "special"
+    ],
+    "desc": "The Mourner is obsessed with his Grief. He is morose. The player may add any amount to his starting Grief that he sees fit, up to a maximum of exponent 9. In addition, all laments are made at +2 Ob, and any time the character's Grief is one test from advancing, the next test -- regardless of its difficulty -- advances him. Grief clings to this character's spirit and cannot be shaken."
+  },
+  "Murderous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Mute": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Muttering": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Myopic": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character has terrible vision. He can barely see what is in front of his face. +2 Ob to all visual-based Perception tests."
+  },
+  "Naked Hatred": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Narcoleptic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Near-sighted": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Too much time spent reading in candlelight has strained this character's vision. +1 Ob to all tests requiring long-distance vision including: Bow, Crossbow, Throwing, and Range and Cover Field Maneuvers."
+  },
+  "Never Cry Wolf": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Nihilistic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Night Owl": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Nimble": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Nimble characters are capable of great acts of dexterity with their hands. Nimble may be called-on for Agility tests or one skill with Agility in its root. Choose the skill during character burning."
+  },
+  "No-nonsense": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Noblesse Oblige": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character was born into nobility. He has been raised with the idea that not only is he privileged, but he is obligated to perform his duty to society. The player may add a fourth Belief to his character. It must be one of the following: It is my duty to guard society and uphold its interests; I govern from duty, heritage and right; rulership is my natural and ordained task; the opinions of commoners are uneducated, therefore worthless; I am responsible for the people; my reverence is to the crown; rule of the many strips society of its strength and divides it into unfriendly fragments; rulership by minds unaccustomed to privilege is impossible; wealth, birth and intellect mark an individual to undertake governance."
+  },
+  "Nose For Trouble": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Nose Of The Bloodhound": {
+    "cost": 4,
+    "type": "die",
+    "desc": "A character with the Nose of the Bloodhound trait can tell a person's or animal's identity via scent and an Ob 1 Perception test. Nose of the Bloodhound also counts as a call-on for Tracking."
+  },
+  "Numb": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character has lived life under the whip. The Numb trait gives the character pronounced scars along his back, shoulders and legs. Also, the character does not feel the +1 Ob effects of superficial wounds. Three superficials still equal -1D."
+  },
+  "Oathbreaker": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "A character who breaks an oath, lies while under oath or fails to fulfill an oath is forever marked as an Oathbreaker. While Oathbreakers are tolerated in Dwarven society, they are also mistrusted. No oaths may be sworn with an Oathbreaker until he has somehow resolved his initial betrayal. Also, the player must choose a relationship at the start of play that encompasses his broken oath. Lastly, Oathbreaker grants a 1D infamous reputation among the Nobles, Host, Artificers, Guilders or Clans. Player's choice."
+  },
+  "Oathswearer": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Long has it been the tradition of the great Dwarven Princes to go before the Longbeards of the clan to receive their blessings and swear an oath to protect them and uphold the traditions of their forefathers. Oathswearer is perhaps the most vital trait in Dwarven culture. Though all Dwarves are Oathsworn, only those with the Oathswearer trait may pronounce a binding pact. Any oath taken while not under the guidance of an Oathswearer is not binding. Any oath pronounced before an Oathswearer must be written into teh character's Beliefs. It usually replaces one of the character's existing three Beliefs. It can be used to replace the fourth, Oathsworn trait belief only if that oath has been satisfied.  If an Oathswearer demands a character's word, and the character refuses, the Oathswearer can, at his discretion, brand him a coward. It is a stain that all Dwarves recognize, and no oaths or agreements are made with cowards. The character is given the Branded a Coward trait."
+  },
+  "Oathsworn": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "common"
+    ],
+    "desc": "All Dwarves have stern values hammered into their skulls from a very early age. In fact, Dwarven society is a complex and interlocking network of promises and traditions. The most prime among them is: \"honor the oath.\" To break an oath is to break tradition that has seen Dwarves through many dark ages. It is a terrible crime and one not easily forgiven or forgotten. Due to this trait, all Dwarf characters start the game with an additional (fourth) Belief. This Belief must come in the form of an oath, and represents a pre-game bond between the Dwarf an one of his relationships. Oaths that pertain to the situation in play fill one of the standard three Belief slots. Acceptable oaths are: the soldier's oath: \"I owe Burri a debt of honor;\" the uncle's: \"I swore to recover the crown for my brother;\" the prince's vow: \"My father's last words were to rule wisely; this I swore;\" and the drunk promises his wife: \"I vow never to go near the beer again.\" Yes, the requirements of an oath mean a Dwarf character must start with a relationship."
+  },
+  "Obscure Aura": {
+    "cost": 3,
+    "type": "die",
+    "desc": "Tests to read this character's Aura are made at a double obstacle penalty. This penalty does not apply to detecting spells cast by or on the character."
+  },
+  "Obedient": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Wolves who are chosen to become Dark Friends tend to be particularly obedient. While their masters can be extremely generous\\'97feeding their wolves much fresh meat-they are also extremely violent and punishing. Rarely do they hesitate to kill a disobedient wolf. Lastly, a Dark Friend has an intuitive understanding of the powers the Blood Summoners what knows the might of success and the calamity of failure. It is far better to aid the former and prevent the latter."
+  },
+  "Obliging": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Obsessed": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Obsessive": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "This Dwarf spends a little too much time talking about certain things. Obsessive must relate to the character's Greed idiom and adds +1D to starting Greed.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "greed"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Obstinate": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Odd": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Oddly Likeable": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "No matter how outrageous his deeds or words, there's just something about this Dwarf that's charming and likeable."
+  },
+  "Odious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Off-kilter": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Oikofugic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Organized": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "Call-on for Administration, Estate Management or Accounting."
+  },
+  "Ornery": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Other Life": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Outlaw": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "The Outlaw is a very particular person in medieval society. A player who chooses the Outlaw trait for his character must consent to a few conditions: First, his character has either committed a grievous crime or is perceived as an enemy of the established order. Second, no law applies to this character-- he has no rights whatsoever. He cannot appeal to the courts or the mercy of a judge for anything. Any man or beast may kill the outlaw and suffers no legal penalty for it. When the Outlaw trait is taken, the player must divide his resource points into two pools. Any resource points from City, Noble or Religious lifepaths go into one pool: The player may spend them as per the normal rules. However, he does not get access to the City/Noble/Religious resources until the Outlaw trait is voted off. The character's remaining resource points may be spent as normal on gear, affiliations, relationships, etc.  Outlaws gain a 1D infamous reputation among town and city folk and the nobility."
+  },
+  "Overbite": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Overworked": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Pack Hunter": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Ravagers hunt with one another in an instinctual fashion. This trait adds +1D to all Steel tests so long as the Orcs equal their enemy's numbers. It also adds +1D to all engagement and positioning tests (in Fight) and field maneuvers (in Range and over) when attacking in a group (as small as two Orcs)."
+  },
+  "Pain Life": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Pain Life reduces hesitation due to pain by one."
+  },
+  "Palsy": {
+    "cost": 2,
+    "type": "die",
+    "desc": "The shakes. Manifestations of this can be minor or only arise under certain conditions. But whenever it does arise, the character has serious difficutly performing delicate work with the hands. +1 Ob to any delicate work on Agility- or Perception/Agility-rooted skills."
+  },
+  "Paranoid": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Paranoid About The Ship": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Paranoid Ear": {
+    "cost": 3,
+    "type": "die",
+    "desc": "A character with Paranoid Ear uses his Perception exponent as Observation for detecting Stealthy  (or Chameleoned) characters."
+  },
+  "Pardoner": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "A pardoner has an interesting reputation in society-- he is publiclyy reviled and secretly loved. A character with this trait has been given a special dispensation from the church to pardon the sins of the faithful and devout. With the Pardoner trait, a player can provide the opportunity for any character with the Gullible, Superstitious or Believer traits to change one of their Beliefs. The change can happen any time, so long as the Pardoner has a say in it and the new Belief relates to the church, god, absolution or sin. In addition, this trait gives a 1D reputation among the lay folk; which also counts as an infamous reputation in the church (+1 Ob to Circles tests in ecclesiastical or church settings). This compounds with other reputations and affiliations in the church."
+  },
+  "Pariah": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Passionate": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Patient": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Patriarchal": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Patriarchal/matriarchal": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Pegboy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Penetrating Gaze": {
+    "cost": 4,
+    "type": "die",
+    "desc": "Penetrating Gaze reduces obstacle penalties for visibility and darkness by two."
+  },
+  "Penny-wise": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Call-on for Resources. This character keeps track of all his expenses, all the way down to the penny!"
+  },
+  "Perfect Pitch": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Perfect Pitch bestows the heavenly ability to identify or reproduce any pitch heard. Obviously this can be greatly useful in music. Call-on for singing and musical instrument skills."
+  },
+  "Perfectionist": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Peripatetic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Perspective": {
+    "cost": 0,
+    "type": "call_on",
+    "desc": "this artist possesses the incredible ability to represent three-dimensional objects and depth relationships on a two-dimensional surface. This trait acts as a call-on for any situation in which such an ability would prove useful."
+  },
+  "Phobia": {
+    "cost": 3,
+    "type": "die",
+    "desc": "Choose any one of the numerous phobias floating around out in the world. If faced with the object of his phobia, a character must make a Steel Test at +2 Ob hesitation."
+  },
+  "Pickled": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character may ignore all starting Health penalties for having an unhealthy lifestyle and whatnot. The character must pursue the unhealthy lifestyle in game."
+  },
+  "Pigpen": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Plain Faced": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "The character just looks like anyone else (of his race and class) and is quite difficult to identify in a crowd. Call-on for Inconspicuous."
+  },
+  "Poised": {
+    "cost": 3,
+    "type": "call_on",
+    "desc": "Despite being caught in extremely compromising circumstances, this character remains unflustered. Poised counts as a call-on for resisting the effects of Obfuscate and Incite actions. It also counts as a call-on for Etiquette."
+  },
+  "Pointed Ears": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Poisonous Ambition": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Poker Face": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "More than just an inscrutable stone face, Poker Face is all about giving the face you need to mislead your opponent. This trait can be used as a call-on for Falsehood and Gambling/Games of Chance."
+  },
+  "Pompous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Possessed": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This special trait may only be chosen after consultation with the GM and/or the other players. If it is taken, the character is possessed by a dæmon, spirit or seraph. Choose one appropriate trait to be made manifest through the human vessel from the d-mon/seraph list in the Monster Burner. I recommend that Lawbreaker come along with any and all choices, but it is not required. Once the nature of the possession is determined, the player and the GM need to devise a separate set of Beliefs and Instincts for the possessing spirit. When these come into conflict with the character's own BITs, a versus Will test must be made-- the spirit against the character. Use the appropriate Will from the stat blocks in the MOnster Burner. Whoever wins the test can enact his Belief or Instinct. A Possessed person can be exercised as per the Faith mechanics in the Burning Wheel. Whether or not he wants to be exorcised is another matter. Also, the Possessed character's aura (for Aura REading) will show the additional trait and additional set of Beliefs and Instincts."
+  },
+  "Power Behind The Throne": {
+    "cost": 5,
+    "type": "die",
+    "desc": "A character with this trait has extended his tendrils of power from his traditional Circles into a new setting. You may add one of the following settings to your Circles-- Religious, Noble Court or Noble (or equivalent)."
+  },
+  "Practical": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Practiced Precision": {
+    "cost": 2,
+    "type": "die",
+    "desc": "The match appeared in his hand and in a tiny blur of motion, his pipe was lit. This character has a trademark act that he has repeated so frequently that it has become a single action-- like lighting a pipe with a match. Normally this would cost at least three \"actions\" in game, but the Practiced Precision trait reduces that cost to one action. Players must decide what \"trademark act\" their character will practice before the character enters into the game. Combat-related actions may be Practiced Precision trademarks. They are only reduced by one action, rather than reduced to one action."
+  },
+  "Pragmatic Outlook": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Predatory": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Prince/princess Of The Blood": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "Among the Fêa, this Elf is a ruling prince and destined to one day be Etharch. By taking the Prince lifepath, the player is creating a character who is directly related to either the ruling Etharch or his forebears. A Prince of the Blood, though not an Etharch himself, is in line for the Elven crown. This trait adds +1D to the Elf's starting base Circles rating. Prince of the Blood requries the Fêa trait as well.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "circles"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Problems": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "If anyone has problems, it's the village idiot. This trait can manifest in two ways. The charater can either be maladjusted and unable to perform socially, or he can be metnally handicapped in some way. If social problems are chosen, the character has double aptitude requirements for social skills and +2 Ob to all Will and social skill tests. If mental problems are chosen, the character has double aptitude requirements for all Perception rooted skills and +2 Ob for all academic, craftsman and artisan skills."
+  },
+  "Profuse Sweat": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Prominent Scar": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Prone To Exaggeration": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Proud": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Psychotic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Querulous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Quick-step": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Wordbearers must hustle from the Miller to the Brewer, from the Quartermaster to the Khirurgeon, and from the Trader to the Longbeard. This trait acts as a call-on for any Speed test where the Dwarf is hurrying or hustling (including running to escape or maneuvering for a positioning test)."
+  },
+  "Quick Study": {
+    "cost": 3,
+    "type": "die",
+    "desc": "A character with this trait reduces his Perception aptitude by one."
+  },
+  "Quick-witted": {
+    "cost": 4,
+    "type": "die",
+    "desc": "Quick-witted reduces hesitation by one action and grants the character +1D to any Rebuttal action in the Duel of Wits."
+  },
+  "Quickened Pulse": {
+    "cost": 3,
+    "type": "die",
+    "desc": "There was a moment of electric hesitation between them; their eyes flashed and fenced. But when the assassin lunged it was too late. The thin man was already at his throat. This trait allows the character to round up when factoring Reflexes."
+  },
+  "Quiescent": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Buying this trait allows the player to neutralize and remove one required lifepath trait."
+  },
+  "Quiet": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Quiet characters walk quietly, talk quietly, eat quietly and often startle their friends with unheralded appearances. This trait can be used as a call-on for Stealthy."
+  },
+  "Quirky": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Rabble-rouser": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Rainman": {
+    "cost": 2,
+    "type": "die",
+    "desc": "If the character can see it, he can count it. The tallying happens instantaneously and is utterly involuntary. This inevitably leads to the character constantly muttering numbers and figures and driving his companions crazy."
+  },
+  "Rapier Wit": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character has a lightning-quick mind and a sharp tongue; he never hesitates to offer a cutting remark. In a Duel of Wits, if the player can interject a searing bon mot while his opponent is speaking, he gains +2D to his next verbal action. If the character with the Rapier Wit does not win the test, or if the action is a failed Dismiss, Rapier Wit may not be used again in the duel."
+  },
+  "Rare Talent": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Amazingly, and against all expectations, this Orc is actually talented with his hands and mind. The player may choose one craftsman or artisan-type skill for shich this trait acts as a call-on. No wonder he was promoted to Gate Forger."
+  },
+  "Rarified": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Rash": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Rat-speak": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Squeak, Squeak, I say! This character has Low Speech for rats and vermin."
+  },
+  "Reckless": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Recondite": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Red Cheeks": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Red-blooded": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Reeks Of Alcohol": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Regal Bearing": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Reincarnated": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Remarkable Flatulence": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Remote": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Resigned (To Death)": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character realizes that he is going to die and has accepted that fact. This trait acts as a call on for Steel test in which the character rightly assumes he is going to die -- when the cause is hopeless, he's badly wounded, everyone else is dead, etc."
+  },
+  "Resigned To Fate": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Resolute": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Restless": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Reviled": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Rhetorical": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Righteous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Road Weary": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Robust": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The player may add one point from his mental pool to his physical pool in character burning. Thereafter Robust acts as a character trait."
+  },
+  "Romantic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Rough Hands": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Rower": {
+    "cost": 2,
+    "type": "die",
+    "desc": "+1D to Power to motivate an oar-driven seagoing vessel."
+  },
+  "Royal Favorite": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Ruddy Complexion": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Running (Away)": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Increase the character's stride by one when he's running in fear, surprise or terror -- and not necessarily just from a failed Steel test."
+  },
+  "Sadistic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sailor's Oath": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Salt Of The Earth": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sane": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Savage Consequences": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "The Named pays back any slight or injury two-fold. You wound him, he cripples you. You best half his clan, he slaughters two of your cities."
+  },
+  "Savvy": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Captains are self-reliant and clever men -- when they want something, they know how to ask so people listen. This is a call-on for Circles."
+  },
+  "Scapegoat": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Scarred": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Scavenger": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This is a call-on for the Scavenging skill"
+  },
+  "Scheming": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Scheming characters are always plotting and planning. It doesn't even have to be for their benefit of gain -- sometimes they just plot and plan to see their cleverness at work. Combined with Murderous or Ambitious this can be a very problematic trait. Scheming also allows the player to add +1D to his body of argument in a Duel of Wits."
+  },
+  "Screaming": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sea Legs": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Call-on for Speed when aboard a ship. Also this characer doesn't get seasick."
+  },
+  "Seasoned": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Second Sight": {
+    "cost": 4,
+    "type": "die",
+    "desc": "With Second Sight, the character peer vaguely into the shifting shadows of the spirit world. It is a powerful, multifaceted ability. Through an act of concentration, he can push through the veil of reality to see the other side. This costs one action in Fight but otherwise can be done at will. The Second Sight grants the ability to discern if something is magical or not. Test Perception: high power magic (major miracles, Mjolnir, the Burning Wheel, Ob 10 spells, Strength 10 spirits, etc.), Ob1; moderately-powered magic (minor miracles, Ob 5 spells, a risen corpse, the Belt of Flying, Dragon Slaying Sword, Spirit Weapons, Strength 5-spirits), Ob 5; low power magic (Red Spectacles, Bless/Curse, Ob 2 spells, Strength 2 spirits etc.), Ob 8. If successful, the character knows the  item, person or effect is magical. He doesn't know exactly what the magic does. Second Sight is one of the abilities that allows a character to use the Aura Reading skill. See the Aura Reading skill in this book for obstacles. Second Sight allows the mage to FoRK Aura Reading into Sorcery or Summoning (so long as he is using his sight). Second Sight turns Perception into Observation for detecting Stealthy or Inconspicuous characters. Any physical actions taken (running, jumping, fighting, etc.) while using Second Sight suffer a +1 Ob penalty."
+  },
+  "Secretive": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Secretly Worships The Black Sea God": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Seemingly Concerned": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Seen It All": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Seen Not Heard": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Self-confident": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Self-satisfied": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sense Of Direction": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "Characters with this trait have a harder time getting lost because they always have a general idea which direction they came from. Sense of Direction can be called on to aid Orienteering and Navigation. This trait is not universal: a farmer has no Sense of Direction at sea; a ranger has no Sense of Direction underground; a sailor doesn't do so well in the mountains."
+  },
+  "Sense Of Distance": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "With and Ob 2 Perception test (plus disadvantages for weather and light), this character can correctly guess any distance."
+  },
+  "Sense Of Entitlement": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Servant Of The Citadel": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "The Althing is the most powerful Elven citizen barring the Lord Protector. He is the ruler of a vast and ancient Citadel -- heir to a tradition stretching back nearly to the dawn of time. Such as it is, the Althing tends to take his job pretty seriously. If the player takes it seriously and adds both a Belief and Instinct relating to the welfare of his city -- and these are relevant to the game at hand -- the character gets a 2D reputation and 2D major affiliation in and around the citadel. These may be improved with additional resource point allocations."
+  },
+  "Shaped From Earth And Stone": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "common"
+    ],
+    "desc": "In the first age, when the earth was barren, Dwarves were created by the One Who Most Dearly Loves to Shape With His Hands. Dwarves were born beneath the earth and it was long before they came forth into the light of the sun. In these dark ages, they grew familiar with the ores, veins, rocks, and sediments that were the sky, ocean and earth. Attendant with their appreciation of raw materials is a love of building and shaping. Due to their heritage above all else it is craftsmanship and the beauty of that which is wrought by skill that Dwarves love most. And since they were Born Under Earth, metals, stones and gems are their first love -- far beyond cloth, wood or leather. This trait also gives the Dwarves access to natural magic abilities -- open-ended/special skills for most of their crafts and arts."
+  },
+  "Sharp Dresser": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Shouting": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Show No Fear": {
+    "cost": 4,
+    "type": "call_on",
+    "desc": "This is a call-on for Steel when confronted or against impossible odds."
+  },
+  "Shrewd": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sick": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sickly": {
+    "cost": 2,
+    "type": "die",
+    "desc": "This character is prone to illness. Permanently subtract -1D of Health and cap Health at B5",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "health"
+        ],
+        "value": [
+          "+add",
+          -1
+        ]
+      }
+    ]
+  },
+  "Sight Of The Bat": {
+    "cost": 6,
+    "type": "die",
+    "desc": "This is a scary supernatural trait. It negates all penalties for darkness or dim light."
+  },
+  "Silent Hatred": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Singed": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sixth Sense": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character gets a twinge in his brain (or eye, or heart, or stomach) when a life-threatening event or phenomenon is near. This trait counts as a very special Instinct: Always get a twinge in the head from impending danger. It's broad and breaks all the rules for Instincts, but that's why it's a trait. At any point where the player is about to send his character into a life-threatening situation, the GM is obligated to warn him, \"You've got a bad feeling about this.\" The precise nature of the danger is not revealed. Also, it is the player's responsibility to remind the GM that he has Sixth Sense. If ever there is a dispute surrounding its use, apply the guidelines for using Instincts to the trait."
+  },
+  "Skeptical": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Skin Of An Apple": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Skinny": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Slave To Fate": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "The Rune Caster is plagued with fleeting visions of what could be and what might have been. He sees his own fate intertwined with all the other doomed strands; there is no other path to walk but the one he is on."
+  },
+  "Stout": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "common"
+    ],
+    "desc": "Dwarves are smaller than Men in stature, but they tend to be a bit thicker around the middle, with attendant broader hands, feet and arms. Thought tough and doughty, Dwarves' stout frames also hinders them slightly. Speed must always be lower than their Power or Forte (whichever is higher), even if this limites advancements. Their stride is 6. Dwarven nature allows for a Forte maximum of 9 rather than 8 and a Speed maximum of 6 rather than 8."
+  },
+  "Tough": {
+    "cost": 2,
+    "type": "die",
+    "desc": "A tough character may round up when determining his mortal wound."
+  },
+  "Slayer": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "special"
+    ],
+    "desc": "This Elf has been marked as a slayer of his kin. In his past, his rage overcame his Grief and compassion, and he slew one of his own. Now he is marked as enemy and hunted by his own people. +1D to starting Grief, a 2D infamous reputation (all Elven people) as a Slayer, and +1D to Intimidate/Silent Fury any Elf."
+  },
+  "Sleek": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sleep-talker": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Slippery": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character is hard to get a hold of -- he wriggles and squirms his way out of nearly any grip. This character may use his Speed or Agility rather than Power to escape from and avoid Locks."
+  },
+  "Slow": {
+    "cost": 2,
+    "type": "die",
+    "desc": "Slow to react and slow on the uptake, he's not the sharpest knife in the drawer. +1 Ob to all Perception tests and increase base hesitation by one."
+  },
+  "Smells Like A Horse": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Solipsistic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Somnambulist": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sonorous Voice": {
+    "cost": 2,
+    "type": "call_on",
+    "desc": "This character's voice sounds sweet and melodious to the ear. So delightful is the sound that it can be used as a call-on for Seduction, Persuasion and Suasion tests."
+  },
+  "Spartacus": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This character is a hero among the slaves, outcasts and soldiery. You may add one of the following settings to your Circles: Servitude, Outcast or Professional Soldier."
+  },
+  "Spectacular": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Spitting": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sprinter": {
+    "cost": 4,
+    "type": "die",
+    "desc": "This trait increases the stride of the character by one. For Orcs and Men that'd be from 7 to 8. This can grant a substantial bonus to positioning tests, as the character will very likely have the highest stride and gain a bonus die for it.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "stride"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Squinty": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Stark Madness": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ]
+  },
+  "Starved": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Stealing": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Should a player whose character has this trait take a kleptomaniacal Instinct, he may use Stealing as a call-on for Sleight of Hand. If no such Instinct is taken, this character is the first one accused when anything is stolen in the clan."
+  },
+  "Stentorious Voice": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "Call-On for Conspicuous, Stentorious Debate and Oratory. Characters who have this trait are at a double obstacle penalty for all Singing skill tests."
+  },
+  "Stern Demeanor": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Stinky": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Stoic": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The Stoic character simply does not flinch in the face of danger. Reduce overall hesitation by one.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "hesitation"
+        ],
+        "value": [
+          "+add",
+          -1
+        ]
+      }
+    ]
+  },
+  "Stolid": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Stone-faced": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "This trait cancels the effects of the Discerner song and any other trait or special ability that allows the character to be \"read.\" However, it doesn't count against Aura Reading with the Mage sense or Second Sight. It also adds +2D to Falsehood and Gambling."
+  },
+  "Strong-willed": {
+    "cost": 1,
+    "type": "character"
+  },
+  "The Story": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character is adept at playing to his audience -- he's always got the right story on hand to impress them and win them to his side. Call-on for Falsehood."
+  },
+  "Strange": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Strapping": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Street Smart": {
+    "cost": 4,
+    "type": "call_on",
+    "desc": "This character understands the dangers and customs of city living. This trait may be used as a call-on for Streetwise, City-wise and Circles in the City Dweller Setting (The pricing is correct for this trait.)"
+  },
+  "Stubborn": {
+    "cost": 3,
+    "type": "die",
+    "desc": "This trait adds +2D to the character's body of argument in a Duel of Wits that contravenes one of his Beliefs."
+  },
+  "Stung Once (Once)": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Stupid": {
+    "cost": 3,
+    "type": "die",
+    "desc": "+1 Ob to all social skills and spells affecting and used by this character."
+  },
+  "Stutter": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Superstitious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Suspicious": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Swaggering": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Sword Of The White Towers": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "Sword Singers are revered among the Elven hosts. Take a 1D affiliation with the Swords of the White Towers -- Elven sword singers who have sworn to protect their land and citadels."
+  },
+  "Sworn Homage": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The knigght must swear homage to his lord, the king. He promises fealty to his lord; to guard his land and fight in his wars with armor, horse and sword; to manage his land in good stead, to collect and pay taxes; and generally obey the law and uphold the peace. The player doesn't have to write a Belief for this, though it is encouraged. The Sworn Homage trait indicates the belief is internalized. This trait grants a 1D affiliation with the nobility. Should the character fail to perform his duties, then he may be stripped of rank. This compounds with other noble affiliations like Mark of Privelege."
+  },
+  "Sworn To Protect": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "If the Lord Protector's player uses one of his Beliefs to describe his vow to defend the citadel/wilderlands/royalty, and such a vow is relevant to the current game, the Lord Protector receives a 2D reputation (he's the boss) and a 2D major affiliation within the Protectors. These may be further improved upon with resource points"
+  },
+  "Sworn To The Lord Protector": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "The Captain has sworn a vow to loyally serve his lord. This trait grants a free relationship with the Lord Protector provided the player writes a Belief about him. If the player decides not to write a Belief or the Belief changes, the trait becomes a character trait. If he later writes a Belief about the Lord Protector, the trait is reactivated."
+  },
+  "Sworn To The Lord Protector (Or Etharch Or Althing)": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "The character has sworn a vow to loyally serve his lord. This trait grants a free relationship with the chosen lord provided the player writes a Belief about him. If the player decides not to write a Belief or the Belief changes, the trait becomes a character trait. If he later writes a Belief about the lord, the trait is reactivated."
+  },
+  "Sworn To The Order": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "A knight of a holy military order may add an additional (fourth) Belief dictated by his particular Order (poverty, chastity, protection of pilgrims, etc.). Sworn to the Order replaces the Noblesse Oblige trait and Belief."
+  },
+  "Taciturn": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Tainted Legacy": {
+    "cost": 5,
+    "type": "die",
+    "desc": "This character's ancestors have mated with something unholy and have tainted the bloodline forever: a curse that will never be lifted, a twisted yoke to bear. The player may choose one trait from a dæmon, vampyr, satyr, red cap, raksha, ophidia, kocista-noga, giant or dragon (which are found in the  Monster Burner). Tainted Legacy also incurs an Inconspicuous penalty. The character always counts as having the \"different race\" penalty (+2 Ob) -- his taint has certain odd outward signs."
+  },
+  "Tall Tale Teller": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character has seen it all. At least he says he has. His yarn is always wilder, larger and more incredible than his companions' stories. The player may add +1D to Persuasion, Seduction, Interrogation or Falsehood tests so long as he can come up with an appropriate tale."
+  },
+  "Taste For Man-flesh": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Tasting The Lash": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "When another character cracks a whip across his back and gives an order, the player must obey the orders (as long as the orders aren't to \"stick that knife in your throat\" or something similar). He can be driven to attack, to flee, to drop his weapon, fall to his knees or just plain row the boat. This trait does not allow a reroll, it merely forces an action. Thus it can be used to cow opponents or send your reluctant underlings into the fray."
+  },
+  "Temperamental": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Tenacious": {
+    "cost": 4,
+    "type": "die",
+    "desc": "A Tenacious character has a one-track mind. Once he is fixed on something he keeps after it. If a Tenacious character's body of argument in a Duel of Wits is reduced to zero or below this trait puts it back up to one die. This allows the character to play out the next volley (or more if his die isn't lost). Once that one die is reduced however, the argument is over."
+  },
+  "Tenuous": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Thick Skin": {
+    "cost": 1,
+    "type": "die",
+    "desc": "This character is unaffected by insults, nettling and nagging. Incite actions in the Duel of Wits are +2 Ob against this character."
+  },
+  "Thousand-yard Stare": {
+    "cost": 2,
+    "type": "die",
+    "desc": "This character has seen so much death, shock, inhumanity and horror that nothing phases him anymore. This trait reduces hesitation by three against pain, violence and intimidation but increases hesitation by two against surprise and Wonderment-type spell effects. This character may not Run and Scream. Characters with this trait tend to be quiet, remote and cold. They also never seem to look into your eyes. Rather, their gaze is always fixed a thousand yards behind you."
+  },
+  "Thug": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Thunderous Snoring": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Tidy Aspect": {
+    "cost": 1,
+    "type": "character",
+    "desc": "Even under the most adverse conditions, the character's clothes and appearance are neat and clean."
+  },
+  "Timid": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Tinkerer": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "dwarven",
+      "lifepath"
+    ],
+    "desc": "This trait acts as a call-on for Mending or Black-Metal Artifice when trying to cobble together something new or weird."
+  },
+  "Tolerant": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Tongueless": {
+    "cost": 2,
+    "type": "die",
+    "desc": "This character's tongue has been cut out, either as an act of criminal malice, as cruel punishment or as religious service. The character may not properly speak. This is a pretty big handicap in a game where all communication is done via speech."
+  },
+  "Tonsured": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This character has symbolically shaved his head as part of the ritual of initiation into his religious order. The Tonsured trait grants a 1D affiliation with a monastic or religious order. Also, the character is authorized to officiate the rituals of his order, whatever the players and GM decide they are. This compounds with other reputations and affiliations in the church."
+  },
+  "Touch Of Ages": {
+    "cost": 7,
+    "type": "die",
+    "desc": "This trait allows the character to \"read\" objects through her touch. A successful Perception test will give impressions present in the object: strong emotion arcana and even age. Type/name of object, Ob 1. Age of object, Ob 2. Length of the time the object has been in its current location, Ob 3. Recent events surrounding the object that left physical evidence, Ob 4. Recent events taht left no physical mark, Ob 5. Past events that left their mark, Ob 6. Past events that left no mark, Ob 7."
+  },
+  "Touch Of The Devil": {
+    "cost": 7,
+    "type": "die",
+    "desc": "This is an odd but powerful trait. With the touch of the Devil, a character's hands become sensitive and finely tuned instruments. If when making a Perception test, the player can describe how his character is using his hands to sense the disturbance/noise, Perception counts as Gray shade. Detecting soft foot steps on a stone floor, impressions on a piece of paper, cracks in a vial or the breeze through a keyhole, for example. If used in a versus test against Stealthy, Touch of the Devil counts as Observation. Surgery, Pottery, Carpentry, Sewing, Whitesmithing, Etching, Engraving, Carving, Lapidary, and Jewelcraft may root from Gray Perception. WHenever a character with this trait is wounded he suffers an additional automatic superficial wound. These count toward the \"three superficial wounds\" limit and toward incapacitation."
+  },
+  "Touch Of Madness": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Tough As Nails": {
+    "cost": 6,
+    "type": "die",
+    "desc": "Pain and suffering are a picnic. This character is not required to make Steel test for pain exhaustion or deprivation. He just clambers to his feet and keeps going. If kicked back to the ground, he crawls."
+  },
+  "Troll Speak": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Orc Troll Lords learn to communicate with Trolls, not only in the Vile Language, but in the bruteæs own language as well. This character may understand spoken Trollish and speak it himself."
+  },
+  "Trusting": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Trustworthy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Turgid": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Ugly": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Ugly Reputation": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The Ship's Doctor has something of an unpleasant reputation with the sailiors. This trait grants a 1D infamous reputation among sailors and seafarers. \"Oh, you were a 'doctor'.\""
+  },
+  "Unbeliever": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Unbreakable": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "special"
+    ],
+    "desc": "This Elf is possessed of an unbreakable spirit. Grief seems to have no effect on him whatsoever. Subtract -2D from starting Grief. In addition, all Grief tests are taken at -1 Ob",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "grief"
+        ],
+        "value": [
+          "+add",
+          -2
+        ]
+      }
+    ]
+  },
+  "Unctuous": {
+    "cost": 3,
+    "type": "die",
+    "desc": "The personality of this character is so caustic that he is distasteful and difficult to be around. +2 Ob to the character's Persuasion, Seduction, Haggling and Oratory tests. It does not affect Command or even Intimidation."
+  },
+  "Underbite": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Underpaid": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Uneasy": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Unheeded": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "No one notices this character. Call-on for Inconspicuous."
+  },
+  "Unlucky": {
+    "cost": 1,
+    "type": "die",
+    "desc": "The Unlucky character has a hard life. Whenever the player makes an arbitrary decision about something in game, it's always wrong. If for example, the character comes to a fork in the road, and the player just shrugs, \"I dunno. I go left\" It's the wrong direction -- doesn't matter what the \"truth\" is, that's his luck. Unlucky may be bought off in game. If the player utterly succeeds at a test at a crucial moment -- all successes, glowing results, victory, etc -- the player may opt to turn the success into a dismal, catastrophic and hopefully hilarious failure. Doing so immediately earns the player a fate point and persona point. Unlucky is then removed from his trait list."
+  },
+  "Unrelenting Hatred": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Unrelenting Savagery": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Head-Takers earn their position through their ability to master their blood lust. When in battle, or when committing murder, this character may FoRK his Hatred into any weapon skill or Power test. However the player who controls this character must take his actions too far. When he uses this trait he must describe an act so horrid and vile it causes the other players to flinch and grimace. Failure to evoke the savage nature of the Head-Taker is cause for loss of the trait in the Trait Vote. Invoking this trait also counts as a routine test for Hatred."
+  },
+  "Unsavory Madman": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Urbane": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Venal": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Veneer Of Obedience": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Vested": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Priests become vested in their Order. In Western/Christian canon, the vestment is called a surplice. It is their choir dress, the vestment for processions, the official priestly dress of the lower clergy, the vestment worn by the priest in administering the sacraments and when giving blessings. The right to wear a surplice shows that the character is at the very least a member of the lower clergy. This trait grants a 1D affiliation with the church and its faithful parishioners. This compounds with other reputations and affiliations in the church."
+  },
+  "Vigor Of Youth": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "special"
+    ],
+    "desc": "Though old, this character possesses the strength and vitality of his youth. If starting the game older than 40 years, a character with this trait uses these stat pools: 7 mental and 14 physical."
+  },
+  "Vile Language": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "orcish",
+      "common"
+    ],
+    "desc": "Orcs speak a special language of shadow, chill and blight. They share this tongue with corrupt vermin, shades, Great Wolves, Trolls and certain Great Spiders."
+  },
+  "Virtuous": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "dwarven",
+      "special"
+    ],
+    "desc": "This Dwarf is virtuous, honorable, and restrained. He may add +2D to his Steel when making a test against Greed. He also may reduce his starting Greed by -1D."
+  },
+  "Vitriolic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Vocal": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Voice In The Crowd": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Void Embrace": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "orcish"
+    ],
+    "desc": "Drinkers of the Dark are immersed in shivering pools of arcane energies. They are taught to imbibe, inhale and exhale the Dark Blood and survive. This trait transforms the Orc's Hatred into a vehicle for enormous power. However, Orcs are unable to tap their innate power without Rituals. Void Embrace is an emotional attribute with its own shade and exponent. It is used to resist tax, sustain spells (rather than Will), and is used to maintain a spell after a distraction. Any Orc may be taught the Rituals, but without Void Embrace, he cannot resist the tax and thus will be permanently crippled or worse. Void Embrace can also be used to enhance certain rolls by spending a persona point to tap the Void. See the Void Embrace section of the Orc chapter for more details. If Void Embrace is advanced to exponent 10, the Orc goes mad or commits suicide. Either way he is removed from play."
+  },
+  "Wary": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Watchful": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Ghosts of the Deeping Wood always prefer to watch from afar before revealing their presence."
+  },
+  "Weak-willed": {
+    "cost": 2,
+    "type": "die",
+    "desc": "This character is pliable like tapioca. In a Duel of Wits, this character can only ever use the Not a Big Deal rules for his body of argument."
+  },
+  "Weather Sense": {
+    "cost": 2,
+    "type": "die",
+    "desc": "\"My joints ache; storm's coming.\" With a twinge in the knee, a stiffening of the joints, back pain or headaches, Weather Sense clues a character into impending weather. Unless the GM plays with strict house weather rules -- I don't -- the Weather Sense in essence gives the player the ability to dictate the weather. Why else would a player pick this trait unless he were concerned about having the right weather for something or other? Anyway, I say let him predict it based on the Perception obstacles below -- and let his predictions come true. Useless vague predictions (\"Rain soon\"), Ob 1. Accurate weather, Ob 2. Approximate location, Ob 3. Approximate time, Ob 4. Accurate time, Ob 5. Each obstacle tier includes all the other effects under it."
+  },
+  "Weight Of The World": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Wierd": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Well Appointed": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Well Dressed": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Where There's A Whip, There's A Way": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "orcish",
+      "lifepath"
+    ],
+    "desc": "Orcs live by the rule of the lash. With a whip in hand and lads to lash, an Orc taskmaster feels that nothing can stop him! An Orc with this trait and a whip can force another -- any character -- to reroll a failed test once per session as if he had a call-on for this particular test. This effect is automatic as long as the player is bellowing and flailing around like he has a whip in his hand (and his character actually has a whip). This is how Orcs make slaves of their captives. A few sessions of accepting the whip will no doubt earn you the Tasting the Lash trait in the vote."
+  },
+  "White-gold Wielder": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Wise Aphorisms": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "elven",
+      "lifepath"
+    ],
+    "desc": "Elves are full of pertinent old sayings. Use this as a call-on for Persuasion, Oratory, Interrogation or Seduction if the player can come up with some appropriately spacious dialogue to throw into play at the right moment."
+  },
+  "Wolf's Snout": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Wolves have an exceptional sense of smell. Wolf's Snout grants +1D to Perception for assesses, and +1D to Tracking and Howling skill tests. This bonus is also added to Perception for determining Reflexes. This trait counts as Observation when combined with Woodland Ear."
+  },
+  "Wolverine": {
+    "cost": 5,
+    "type": "die",
+    "desc": "Characters with the Wolverine trait recover faster than others from wounds and illness. May be used as a call-on for Health for recovery from a wound or illness. Wolverine can also be used to buy off a botched recovery test. If used in this way, the test is considered passed, but the trait is lost in the bargain."
+  },
+  "World Weary": {
+    "cost": 1,
+    "type": "die",
+    "restrict": [
+      "elven",
+      "special"
+    ],
+    "desc": "Certain Elves feel a weariness creep into their bones. The constant trial and tribulation that marks the passing of years begins to drag them down. Reduce hesitation by one but increase Grief by one.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "hesitation"
+        ],
+        "value": [
+          "+add",
+          -1
+        ]
+      },
+      {
+        "target": [
+          "+attr",
+          "grief"
+        ],
+        "value": [
+          "+add",
+          1
+        ]
+      }
+    ]
+  },
+  "Worldly": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Xenophobic": {
+    "cost": 1,
+    "type": "character"
+  },
+  "You Should Know Better Than That!": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Your Eminence": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Viscounts and Counts are referred to as \"Your Eminence.\" This trait indicates that the character was born into this rank. He need not have ever been a count himself, but it is his birthright to be addressed as one. A character must have this trait in order to take the Count or Viscount lifepaths."
+  },
+  "Your Grace": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "Dukes and Bishops bear the appellation of Your Grace. To fail to refer to them by title is to lose one's head or the sanctity of one's mortal soul. The character need not have experienced the actual duties of a Duke or Bishop, but the rank is his to flaunt. This trait is required for the Duke or the Bishop lifepaths."
+  },
+  "Your Lordship": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "This trait simply indicates that the character was born into lower nobility. He need not ever have led the life of a lord. Indeed to do so would require the Lord lifepath. However, his birthright is that of a lord, and he is accustomed to being addressed as \"Your Lordship.\" Failure to do so is an insult. A character must have the Your Lordship trait in order to take the Lord lifepath."
+  },
+  "Yowling": {
+    "cost": 1,
+    "type": "character"
+  },
+  "Zealot": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "mannish",
+      "lifepath"
+    ],
+    "desc": "The Zealot is a fervent believer. He has taken hold of a doctrine and made it his own. The Zealot trait allows the player to add an additional (fourth) Belief to his character. The Belief must relate to the doctrine of his cult or sect."
+  },
+  "Aecer's Likeness": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Roden are, in essence, upright and acutely intelligent rodents. Their defining feature is their pronounced incisors curving down from their extended snouts. Covered in fur, Roden bear large ears and long tails. Their feet are long and thickly padded, making shoes unnecessary."
+  },
+  "Coat Of Fur": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "All Roden have a short coat of fur. While Field Roden coloration ranges from sawdust to chocolate, those Below tend to be deep, dark brown, gray, or black. Roden fur offers them protection from the elements. They can withstand rain and cold with little worry. This trait acts as a call-on for Health or Forte tests related to weather or wet."
+  },
+  "Communal": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Roden prefer the company of others and safety of numbers. They live in close-knit villages made up of large, extended families, and refer to their homes as 'nests.' It is quite rare to find one alone, and usually such loners are exiles. All Roden start with a 1D affiliation with their family and their nest. Name the nest and its location."
+  },
+  "Enlarged Incisors": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Roden incisors grow continually through life and need to be filed regularly. These incisors are often quite sharp, and can be used to bite opponents if the situation becomes desperate. +1 Power, Add 2, VA - , Shortest, WS 2."
+  },
+  "Quick-blooded": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Roden have fast metabolisms that take their toll on them over time. Roden live shorter lives than Men, reaching old age by 40. They have a Stride of 8."
+  },
+  "Tail": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Roden tails range from 1/2 to 1 pace long. Field Born often have furry tails, while those Below often have bald ones."
+  },
+  "Large Ears": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Roden have large, sensitive ears that sit atop their heads. These give them excellent hearing. +1D to Perception rolls."
+  },
+  "Pack Rat": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Anything might be useful later on, so Roden are loathe to throw away anything."
+  },
+  "Skittish": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "common"
+    ],
+    "desc": "Roden are instinctively afraid of loud noises and surprises. Increase hesitation by 1 for Steel tests caused by fear or surprise. Hesitation for more than one action indicates the Roden must flee."
+  },
+  "Aggressive Carnivore": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "A Carnivore's blood runs hot, and he is quick to anger. He relies on confrontation to deal with most problems. Call-on for Intimidation. Must enter combat in Aggressive Stance."
+  },
+  "Alarmist": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Deputies aren't necessarily cowards, but they know the best way to deal with trouble is to bring in reinforcements... fast! \"Shout when surprised or hesitating\" must be added as an additional Instinct."
+  },
+  "Broken Spirit": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "His spirit is gone and he is ready to accept whatever is offered. Reduce by one any obstacles to motivate this character via Preaching, Oratory or Suasion."
+  },
+  "Confusing Rant": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Pinkies are a bit \"off\" in their thinking and tend to be socially retarded. Those that speak to one often come away dazed by a bombardment of trivia, non sequiturs, and bad jokes. During a Duel of Wits, this trait grants the character +3D to Incite. The only hesitation option is to \"Stand and Blink.\" All attempts to Intimidate or Command a Confusing Ranter are at +2 Ob. Also, Ranters are at a +2 Ob to all Oratory and Rhetoric tests."
+  },
+  "Defensive": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Those that malign the Society misunderstand the Society. They've got it completely wrong, and here's why..."
+  },
+  "Feared": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The ignorant fear the unknown, and the Albino is a terrible mystery. Choose a 1D infamous reputation."
+  },
+  "Genius": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Every idea is unique and brilliant, every plan sure-fire and flawless. It is only a matter of time before such brilliance is properly recognized and rewarded. Genius is a call-on for one non-martial or athletic skill of the player's choosing."
+  },
+  "Good Listener": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The Negotiator seems to pay attention to and understand what people say. This encourages others to continue speaking and open up to him. May be used as a call-on for Haggling, Persuasion, and Seduction."
+  },
+  "Gopher": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "What's a gopher do? He goes for this; he goes for that. He fetches water; he fetches tools."
+  },
+  "Hand-shaker": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The tools of the politician's trade. May be used as a call-on for Oratory or Persuasion when he's shaking hands."
+  },
+  "Humble": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "All are equal before Aecer, and the wise continually remind themselves of this fact. 1D reputation among the faithful as exceptionally humble."
+  },
+  "Impersonal": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The opposite of Bedside Manner. Dull the pain, collect payment, say goodbye. Too many faces, and they're not worth the trouble."
+  },
+  "Light Touch": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The key to a successful \"lift\" is in the fingers. May be used as a call-on for Sleight of Hand."
+  },
+  "Megalomaniac": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The Visionary is a gift from Heaven to the mortal world. It is his destiny to lead and shape the future in his image. +2D to Conspicuous and always add an extra die when helping or FoRKing with Conspicuous.",
+    "bonus": [
+      {
+        "target": [
+          "+skills",
+          "conspicuous"
+        ],
+        "value": [
+          "+add",
+          2
+        ]
+      }
+    ]
+  },
+  "Misunderstood": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Those with the Superstitious trait will not deal kindly with an Albino. Don't they realize that you are just trying to help? \"Just listen! No, stop! Don't run away!\" *sigh*. 1D infamous reputation among the Superstitious."
+  },
+  "Opportunist": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Never let a passerby pass you by. Never ignore a good deal or a potential sucker."
+  },
+  "Ordained": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "This Roden is one of Aecer's Ordained. He is responsible for carrying out the rituals and rites. Ordained characters are always treated with respect by the Field Roden. 1D affiliation with the Roden faithful."
+  },
+  "Practiced Smile": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Smile for all the pretty people!"
+  },
+  "Pyromaniac": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The fire is lovely and pure. It cleanses and purifies and burns and sings and calls out in waking dreams. Call-on for Firebuilding"
+  },
+  "Rat-squeak": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "This character can talk to and understand rats and mice."
+  },
+  "Revered": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The Abbot is a pillar of piety and virtue in the community. May be used as a call-on for Oratory or Suasion."
+  },
+  "Sadist": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Causing pain and suffering in others is a highly entertaining and enjoyable pastime. May be used as a call-on for Torture."
+  },
+  "Serious": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "A Crafter takes his skill very seriously. A joke or song at the tavern is fine, but keep it outside the workshop or else!"
+  },
+  "Single-minded": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Once a Murderer sets his mind, there is very little that can redirect him. Call-on for Steel when \"on the job.\""
+  },
+  "Soft Step": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The Burglar walks in a particular fashion, feeling each step before putting his weight on it. May be used as a call-on for Climbing and Stealthy."
+  },
+  "Toiling": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Laborers are used to working long hours doing the same mindless, repetitive tasks. Call-on for Back Breaking Labor when doing mindless, repetitive tasks."
+  },
+  "Tunnel Vision": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "The Below is a dark place and those who live there have adapted. May see as normal in low-lit areas, but not in complete darkness. Those looking directly into these eyes will see glowing, green orbs staring back. Reduces penalties for dim light by one step."
+  },
+  "Vegetarian": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "lifepath"
+    ],
+    "desc": "Field Born are naturally vegetarians, consuming grains, fruits, berries, and nuts."
+  },
+  "Clawed": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "This Roden's hands are typically like a man's but with longer fingers. The Clawed trait results in hard, elongated fingernails that can be used as tools or weapons. +1 Power, Add 2, VA -, Speed 3, Shortest."
+  },
+  "Club Tail": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "This tail is thicker and stiffer than most. It can be a surprising weapon during a melee. +2 Power, Add 2, VA - , Speed 2, Long. May not be combined with Whip Tail."
+  },
+  "Coat Of Darkness": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "Some of those Below have adapted almost supernaturally to the dark. When attempting to Stealth in areas of darkness and shadow, this fur adds +2D to the roll. May not be combined with Fur of the Fields."
+  },
+  "Extra-long Fur": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "Fur that normally is no deeper than a finger's length now grows up to four times longer! Knots, tangles, and clumps require extra time to manage."
+  },
+  "Fur Of The Fields": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "Roden with this trait have a wondrous coat of fur that allows them to blend into any field or woodland terrain. When attempting to Stealth in such areas, this fur adds two dice (+2D) to the roll. May not be combined with Coat of Darkness."
+  },
+  "Naked": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "Roden with this trait have no fur, and their pink skin is laid bare, though whiskers still poke out from their muzzles. Sunburn is common and clothing is required."
+  },
+  "Night Eyed": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "With this trait, a Roden is able to see even in complete darkness. However, daylight causes a +1 Ob to all tests."
+  },
+  "Pouched Cheeks": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "These cheeks are very elastic and may be used to carry a surprising amount of fruits, nuts, and vegetables. Consider it feasible to place up to 6 apples in each cheek. Knives and other sharp objects are carried at the bearer's own risk!"
+  },
+  "Sharpened Incisors": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "This Roden's teeth are extra sharp. Add 1, VA 1, Speed 3, Shortest."
+  },
+  "Visionary Faith": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "Visionaries draw their power from their followers, not divine favor. This trait grants a B3 Faith attribute. The attribute may not be increased with the Faith questions. Instead, it is increased by purchasing a Visionary Cult (see Monster Burner page 130). Any miracles performed with Visionary Faith only affect the believers and nothing or no one else."
+  },
+  "Whip Tail": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "roden",
+      "special"
+    ],
+    "desc": "These tails are typically one or two paces longer than most others and tend to be slender. Power 0, Add 1, VA - , Speed 3, Longer. May not be combined with Club Tail."
+  },
+  "Crushing Jaws": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Great Wolves have powerful jaws honed into deadly hunting weapons. Crushing Jaws count as: Pow +3, Add 2, VA 2, Short, Speed 2 weapon. May Lock and Strike on the same action."
+  },
+  "Deep Fur": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Heavy and thick fur protects Great Wolves against the cold of their harsh environment. They can tolerate extremely cold temperatures, whereas extended times of hot weather tend to agitate them. This trait allows the wolf to ignore penalties/tests relating to cold weather. However, extended time in hot weather causes +1 Ob to all tests. The color a wolf's pelt can range from pure white, to pure black, to mottled gray, to brown, to sandy, and even to reddish and ochre."
+  },
+  "Great Lupine Form": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Great Wolves possess the basic form common to wolves. They have a rangy, muscular body set on high and powerful legs with large, well- padded feet. They have long snouts and massive, protruding jaws. Their fm is a crown of coarse guard hairs supported by a nigh-impermeable layer of soft under-fm. Their most prominent feature is, of course, their massive size. Great wolves stand three to five feet at the shoulder and can weigh 200-600 lbs. Great\\'b7 Wolves have a maximum exponent of 6 for Agility (from their lack of hands), other stat maximums are 8. Wolves Charge in Fight with a +2D bonus rather than the standard +1D."
+  },
+  "Lupine Intellect": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Without a doubt, Great Wolves are intelligent creatures. They possess a personality and intellect equivalent to that of Men and Orcs. Never assume that just because he doesn't live in cities, write with a pen or eat with a knife, the wolf is a dumb brute. Far from it. In fact, many would attest to the fact that wolves possess a superior culture to that of Men! Even so, Great Wolves are not tool-using creatures. Though they understand a great many things, they generally don't use (or even need) tools to accomplish the tasks in their daily lives. Any wolf attempting to use tools like hammers, swords or scissors should suffer quadruple obstacle penalties."
+  },
+  "Long-legged": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Great Wolves have a Stride of 11"
+  },
+  "Wolf's Eyes": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Though vision is not their strongest sense, wolves do possess the advantage of being able to see well in low light. Wolves reduce obstacle penalties for dim light, darkness and haze by one step."
+  },
+  "Woodland Ear": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "common"
+    ],
+    "desc": "Wolves have extraordinary hearing. The Woodland Ear allows wolves to discern different animal calls and add +1D to Perception tests for assesses, Tracking and Hunting. This bonus is also added to Perception for determining Reflexes. This trait counts as Observation when combined with Wolf's Snout."
+  },
+  "Ancestral Taint": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Spirit Hunters are said to be the Chosen Ones of the Great Grandfather- chosen to take up his eternal struggle against the spirits, speech-twisters, and demons that seek to overcome wolf-kind. Once a wolf begins to sing the howls of the Spirit Hunters, he grows closer to the Great Grandfather; in fact he begins to take on a bit of his essence. The more the Spirit-Howler sings the ancient songs, the more the Taint grows within him. See the Ancestral Taint Mechanics in the Spirit Hunter section for more on this."
+  },
+  "Broken Wolf": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Wolves who are captured by Men or Orcs are broken into the ways of their new masters. More than just being submissive, wolves with the Broken trait obey the strange laws and requirements of their new Dominants. -1 to Will exponent when accepting commands or a Duel of Wits from a Dominant."
+  },
+  "Brutality": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Black Destroyers react to challenges with a ferocity and brutality far above what is necessary or even appropriate. This brutality has garnered them quite a both within the Legion and without. Use this trait as a call-on for Intimidation."
+  },
+  "Demented": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Wolves born to the Legion are different from their wild brethren. They are twisted and unbalanced-quick to anger and too quick to kill. Wild Wolves find them disturbing and uncouth."
+  },
+  "Dominant": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "There are only ever two Dominants in a pack, a male and female pair. These two serve as the mother and father of the group, guiding them to new hunting grounds and producing more offspring to strengthen and expand the pack. This trait grants a 1D affiliation with a pack and a 1D reputation within that pack as a Dominant."
+  },
+  "Great Cunning": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Ebon Tyrants are the Dominants of the vast Black Destroyer packs. More than just savage1y and brutality are required to attain this rank. Great Cunning is a necessity. This trait acts as a call-on for Strategy, Tactics, and any \"wise\" tested for insight."
+  },
+  "Howl Of Doom": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Together the wolf and rider howl, stabbing their victims with cold fear as they charge. The Wolf can howl and force his enemies to make a Steel test\\'97add +4D to the Intimidation test when using the Howl of Doom. This Howl requires 2 actions to perform and cannot be done on the charge\\'97it must be done beforehand. In Range and Cover, it positions with 2D. In Fight it counts as the Longest weapon."
+  },
+  "Odor Of Spirits": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "This woif stinks of spirits. The packs shun him, and the Spirit Hunters harry him. Only the Haunts and Ghosts accept him."
+  },
+  "Piercing Gaze": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "The eyes of Ghost of the Deeping Wood burn like glittering coals. This trait is a call-on for Intimidation. Also, anyone attempting to deceive the wolf (using Falsehood, Persuasion, Soothing Platitudes) is at a +1 Ob. Burning flames flash implacably behind his eyes and hint at the terrible fate of liars."
+  },
+  "Preternaturally Calm": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Ghosts of the Deeping Wood possess a calmness that rivals the most serene glade on a starry summer night. Reduce Hesitation by 2.",
+    "bonus": [
+      {
+        "target": [
+          "+attr",
+          "hesitation"
+        ],
+        "value": [
+          "+add",
+          -2
+        ]
+      }
+    ]
+  },
+  "Wolfish Scavenger": {
+    "cost": 0,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "This wolf has a nose for finding all sorts of odd bits. This is a call-on for the Scavenger or Foraging skills."
+  },
+  "Spirit Ears": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Spirit-Howlers become attuned to the spirit world as their Taint grows. A wolf with this trait has the ability to hear those of the spirit-nature. Counts as Observation for detecting the movements of spirits, demons and other creatures of spirit nature. Obstacle to detect spirits is 10 minus their Strength. Wolves may use their Woodland Ear in combination with this Trait, but not their Wolf's Snout."
+  },
+  "Spirit Nose": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "The Taint suffuses the Spirit Hunter. Using his Spirit Nose he may add his Wolf's Snout to detect spirits (as Spirit Ears above). Also, Spirit Nose allows Spirit Hunters to Track spirits, even those who leave no marks or do not touch the ground. Use the obstacles listed with the Tracking skill and be creative."
+  },
+  "Stained": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "The Last Wolf is the scapegoat of the pack. All of the anger and frustration is taken out on his hide. No matter how he elevates himself throughout his life, the Last Wolf always bears this stain on his very heart. This trait grants a 1D reputation as a Last Wolf."
+  },
+  "Stink Of The Ancient": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Great Wolves can smell a Ghost when he is near. His scent is distinct, a mix of Ancient Ways and twisted speech that covers his coat like the blood of the hunted. This stink causes fear, trepidation and even hatred in Great Wolves. They do not look kindly upon one who so tampers with the will of the Grandfather. This trait grans a 1D infamous reputation among the packs as a Ghost of the Deeping Wood."
+  },
+  "Submissive": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Wolves learn to submit a Dominant wolf at a very young age. Any wolf in the pack who is not part of the Dominant pair is Submissive. These wolves follow the lead of their superiors and often beg for certain permissions, including permission to eat from a kill. Being Submissive in the pack connotes no weakness. It merely shows that the wolf understands the natural order of things. This trait grants a 1D affiliation with a pack or a free relationship with a master/dominant character. Prominent Submissive behaviors include: looking away from the Dominant's gaze, crouching with head to the ground before the Dominant, rolling over and exposing the belly to the Dominant, and nibbling or licking the Dominant's chin. Lastly, wolves may possess both the Dominant and Submissive traits. These wolves will rule their pack they rightly should, but might also submit to stronger Dominants -- be they wolf, Man or Orc."
+  },
+  "Wanderlust": {
+    "cost": 0,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "lifepath"
+    ],
+    "desc": "Lone Wolves tend to be overtaken by a wanderlust when they leave their packs. They roam the deep and dark woods, high mountains, lonely tundras and long paths in of a mate, a territory or even darker secrets."
+  },
+  "Aura Of Terror": {
+    "cost": 6,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "Ancient fear rolls off this wolf in waves. Add +2D to Intimidation tests."
+  },
+  "Changeling Coat": {
+    "cost": 3,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "This wolf was born to be a trickster. His coat shifts patterns and colors at will. Add +1D to Stealthy and Inconspicuous tests."
+  },
+  "Chosen Wolf": {
+    "cost": 3,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "Only certain wolves are chosen to become Spirit Hunters. On certain nights in the dead of winter, the Spirit Hunters will come to the territories and seek out lone wolves. Those who are chosen receive a special scent and are marked to become Spirit Hunters. This trait is required to be able to take the Spirit-Chaser lifepath. It grants a lD affiliation with the Spirit Hunters."
+  },
+  "Fearsome Beast": {
+    "cost": 2,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "There is something odd and unsettling about this wolf-something very old and frightening. Use this trait as a call-on for Intimidation."
+  },
+  "Frost Coat": {
+    "cost": 2,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "The pelt of this wolf is like glittering ice. Use this trait as a call-on for Stealthy when stalking the tundra and arctic wastes."
+  },
+  "Ghost Coat": {
+    "cost": 4,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "This wolf's coat shifts subtly from dark to light, from mottled to clear, depending on what land he stalks and haunts. Use this for a call-on for Stealthy in any terrain."
+  },
+  "Mangy Coat": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "This wolf's fur is rough, tangled, unkempt, and even balding in some places."
+  },
+  "Mark Of The Ancient": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "Some pups are born with a certain mark, which is often considered shameful by the packs. Such rare wolves are descendants from the Ancient, the first wolf who created the world. The packs believe such wolves are cursed and destined for a life of mayhem. This trait is required for using the skills Tongue of the Ancient and Ancient Ways."
+  },
+  "Formidable Bark": {
+    "cost": 2,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "The voice of this wolf is strong and clear, easily piercing the dense woods and cutting through dampening fog. Use this trait as a call-on for Howling and Command. Combined with Fearsome Beast, this trait adds +1D to all Intimidation tests."
+  },
+  "Raven-friend": {
+    "cost": 1,
+    "type": "die",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "Wolves and ravens have a special relationship. Not only do they aid one another on the hunt-ravens will circle a herd to mark it for wolves, and wolves will allow ravens to feed at their kills -- they are also great friends. Wolves and ravens enjoy taunting each other and playing endless and dangerous games of tag. This trait grants either a free relationship with a raven or a 1D affiliation with a conspiracy of ravens. This trait signifies a wolf who is especially fond of ravens and who is well thought of by the birds. While the whole pack may play, he is the only pack member who can understand the quacks and squawks of raven speech."
+  },
+  "Shadow Coat": {
+    "cost": 2,
+    "type": "call_on",
+    "restrict": [
+      "wolfish",
+      "special"
+    ],
+    "desc": "The form of this wolf is perfectly suited to stalking in the shadows of the woods. Use this trait as a call-on for Stealthy when stalking the forests and valleys."
+  }
+}

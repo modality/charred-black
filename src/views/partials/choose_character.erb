@@ -1,0 +1,12 @@
+<div class='modal-header'>
+  <h3 class='modal-title'>{{message}}</h3>
+</div>
+<div class='modal-body'>
+  <p>
+    <select class='form-control' ng-model='characterIdAndName' ng-options='id_and_name[1] for id_and_name in characterStorage.characterIdAndNames'></select>
+  </p>
+</div>
+<div class='modal-footer'>
+  <button class='btn btn-primary' ng-click='ok(characterIdAndName)'>OK</button>
+  <button class='btn btn-warning' ng-click='cancel()'>Cancel</button>
+</div>

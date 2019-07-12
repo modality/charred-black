@@ -1,0 +1,200 @@
+<div class='container' id='help'>
+  <!-- See http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-affix.php -->
+  <div class='row' data-offset-bottom='200' data-offset-top='60' data-spy='affix'>
+    <div class='col-md-2' id='scrollSpy'>
+      <ul class='nav nav-tabs nav-stacked' data-offset-top='100' data-spy='affix' id='toc'>
+        <li class='active'>
+          <a href='#/help?scrollTo=intro'>Introduction</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=tools'>Tools</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=character'>Character</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=lifepaths'>Lifepaths</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=stats'>Stats and Attributes</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=skills'>Skills</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=traits'>Traits</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=resources'>Resources</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=roden'>Hints for Roden</a>
+        </li>
+        <li>
+          <a href='#/help?scrollTo=great_wolves'>Hints for Great Wolves</a>
+        </li>
+      </ul>
+    </div>
+    <div class='col-md-9'>
+      <h2 id='intro'>Introduction</h2>
+      <div class='well'>
+        Charred (Char&middot;ed)
+        <br>
+        <br>
+        <ol>
+          <li><i>adj.</i> Burned and black.</li>
+          <li><i>n.</i> A portmanteau of <i>character</i> and <i>editor</i>.</li>
+        </ol>
+      </div>
+      <p>
+        Welcome to Charred: the unofficial, online, Burning-Wheel Gold character burner.
+        The first part of this guide goes over the main features of Charred in the order that they appear
+        in the main view. At the end is a description of some tricks for specific stocks.
+      </p>
+      <h2 id='tools'>Tools</h2>
+      <p>
+        This section of Charred contains features for uploading and downloading data:
+      </p>
+      <p>
+        <strong>Create PDF Character Sheet.</strong>
+        Click this link to download a PDF version of your character so far. The character sheet format is
+        based on the BWHQ Official Short-Term Game Character Sheet with the answers to the
+        attribute-modifying questions appended to the end.
+      </p>
+      <p>
+        <strong>Reset Character.</strong>
+        Remove all entered data from the character sheet leaving it blank.
+      </p>
+      <p>
+        <strong>Download Character.</strong>
+        Save a copy of the current character data as a <tt>.char</tt> file on your harddrive. You can pass this
+        file along to other people to allow them to view your character.
+      </p>
+      <p>
+        <strong>Upload Character.</strong>
+        Load a character that was saved as a <tt>.char</tt> file.
+      </p>
+      <h2 id='character'>Character</h2>
+      <p>
+        This section contains general character information.
+      </p>
+      <p>
+        <strong>Name.</strong>
+        The character's name. Click the Gen link to regenerate a random name.
+      </p>
+      <p>
+        <strong>Stock.</strong>
+        The character's stock. Be careful: changing the stock resets the character, so all changes are lost!
+      </p>
+      <p>
+        <strong>Age.</strong>
+        The character's age calculated from lifepaths and leads.
+      </p>
+      <h2 id='lifepaths'>Lifepaths</h2>
+      <p>
+        In this section you choose the lifepaths for your character. By default only the settings and lifepaths you are
+        allowed to take based on the lifepath requirements and restrictions are visible. If you are interested
+        in just browsing what's available, in the Settings you can disable the requirements checking so that all lifepaths
+        may be selected.
+      </p>
+      <h2 id='stats'>Stats and Attributes</h2>
+      <p>
+        This section shows the current allocation of stats and attributes for your character. The remaining stat points are shown
+        at the top, and the points allocated to each stat are shown below. The attributes, which are computed based on the stats, are shown to the right.
+      </p>
+      <p>
+        Each stat can be increased or decreased by clicking the + and - buttons to the right of the exponent. If you have enough stat points remaining,
+        you can shade-shift a stat by clicking it's shade; for example, to shade-shift Will you will need to have 5 Mental points
+        (or the equivalent in Mental and Either points) unspent.
+      </p>
+      <p>
+        Clicking the Distribute button automatically allocates all of the stat points evenly amongst the different stats.
+      </p>
+      <p>
+        Some attributes are displayed with a 'modify' link to the right. Clicking this link allows you to answer the questions that modify that attribute.
+      </p>
+      <h2 id='skills'>Skills</h2>
+      <p>
+        This section is used to choose the skills for your character. As you add lifepaths this section slowly fills with <i>available</i> skills, and the
+        required skills for each lifepath are opened. All opened skills are shown in bold. Additional skills can be added using the General Skills dropdown,
+        for which only General skill points can be spent.
+      </p>
+      <p>
+        Available but unopened skills don't count as part of the character; they don't show up on the character sheet, and are only used in character burning.
+        An available skill can be opened by spending points towards it using the + button to the right.
+      </p>
+      <p>
+        When you increase a skill's exponent, if the skill is a lifepath skill, then both lifepath and general skills may be spent on it, whereas if the
+        skill is a general skill only general points may be spent on it. Charred doesn't provide a mechanism for explicitly allocating the general points;
+        instead a simple heuristic is used: points are drawn from the lifepath points pool first if possible, then when that pool is exhaused points are
+        drawn from the general pool. For example, if the character has the Accounting skill from a lifepath, and has 3 lifepath and 2 general points, then
+        clicking + three times will exhaust the lifepath points pool leaving 2 general points unspent; clicking + twice more will exhaust the general points
+        pool.
+      </p>
+      <p>
+        <strong>Add Custom -Wise.</strong>
+        This field can be used to make up a -Wise skill appropriate to the campaign. The skill will be rooted in Perception as all -wises are.
+      </p>
+      <h2 id='traits'>Traits</h2>
+      <p>
+        This section is used to choose the traits for your character. Traits from lifepaths, which all cost 1 point, are available from the
+        Add Trait from Lifepath dropdown, while special traits can be chosen from the 'Special Trait' list.
+      </p>
+      <p>
+        <strong>Search Traits...</strong>
+        This link opens a more advanced trait-choosing dialog. In the dialog you can filter traits by type, by cost, and by whether or not it's
+        affordable; that is, you have enough points to buy it. The filters combine, so only traits that match all criteria are shown.
+        The only non-trivial feature on this dialog is the Cost filter, which accepts a simple
+        math expression. Entering &lt; 2 would display all traits that cost less than 2 points. Conversely &gt; 4 would show all traits costing more
+        than 4. Finally = 3 would show all traits costing exactly 3 points.
+      </p>
+      <h2 id='resources'>Resources</h2>
+      <p>
+        This section is used to purchase resources for your character from different categories:
+        gear, property, relationships, reputations, and affiliations.
+        The dropdown labelled Select Category is used to switch which category of resources will be shown.
+        When the dropdown labelled Select Category is changed, the interface in the Resources section is switched to the appropriate
+        one.
+      </p>
+      <p>
+        The interfaces for the resource categories are largely self-explanatory, except for Gear and Property. For Gear and
+        Property there are two separate sections for adding a resource: Add, which is used to choose an item from a list,
+        and Custom Add, which is used to create an ad-hoc item. When choosing from a list, any item from the list ending with
+        an ellipsis indicates a category of items which when selected will cause a new dropdown to appear to the right. The
+        new dropdown may then be used to select a specific item from the category (which may itself be another category).
+      </p>
+      <h3>Modifying existing resources</h3>
+      <p>
+        To modify a resource after it's been added, follow these steps:
+        <ol>
+          <li>Remove the resource. Its contents will populate the 'Add' fields. For Gear and Property, the 'Add Custom' fields are populated instead.</li>
+          <li>Edit the resource.</li>
+          <li>Click 'Add' to add the resource again.</li>
+        </ol>
+      </p>
+      <h2 id='roden'>Roden</h2>
+      <p>
+        Roden are an old stock that appeared in the Burning Wheel Revised Monster Burner, but were never updated for
+        Burning Wheel Gold. They have been adapted to appear in this burner, but some liberties were taken (by necessity) to
+        mold them to work with the Gold version.
+      </p>
+      <p>
+        The revised edition defined a 'Broken' trait for Roden; in Charred it is named 'Broken Spirit'.
+      </p>
+      <h2 id='great_wolves'>Great Wolves</h2>
+      <p>
+        Great Wolves are an old stock that appeared in the Burning Wheel Revised Monster Burner, but were never updated for
+        Burning Wheel Gold. They have been adapted to appear in this burner, but some liberties were taken (by necessity) to
+        mold them to work with the Gold version.
+      </p>
+      <p>
+        Great Wolves have an emotional attribute that only appears when a certain trait is bought. Originally the trait was named
+        'Chosen One', but in Charred it appears as 'Chosen Wolf'.
+      </p>
+      <p>
+        The revised edition defined a 'Broken' trait for Great Wolves; in Charred it is named 'Broken Wolf'. Similarly the previous
+        Hunting skill for wolves has been renamed to 'Wolfish Hunting'.
+      </p>
+    </div>
+  </div>
+</div>

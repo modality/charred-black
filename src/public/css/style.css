@@ -1,0 +1,129 @@
+.container {
+  margin-top: 0.5em;
+}
+
+@font-face {
+  font-family: "Post Mediaeval";
+  src: url("/fonts/post-mediaeval.ttf") format("truetype");
+}
+
+.navbar-default {
+  background: linear-gradient(0deg, #000000, #333333);
+  
+}
+
+.navbar-default .navbar-brand {
+  font-family: "Post Mediaeval", sans-serif;
+  color: #D5AD6D; /*if no support for background-clip*/
+  background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.3px;
+}
+
+.navbar-default .navbar-nav a {
+  color: #FFFFFF !important;
+}
+
+.navbar-default .navbar-nav a:hover {
+  color: #CCCCCC !important;
+}
+
+.panel-heading 
+{
+  background-color: #F5F5F5;
+}
+
+.panel-heading h4 
+{
+  font-size: 1.5em;
+}
+
+.highlight 
+{
+  background-color: #ff0000;
+}
+
+/* Make iframes invisible. */
+iframe
+{ 
+  width: 0px; 
+  height: 0px;
+  border: 0px solid #000000;
+}
+
+/* See http://www.abeautifulsite.net/blog/2013/08/whipping-file-inputs-into-shape-with-bootstrap-3/ */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+
+/* Code for making Table of Contents work on help page */
+#toc.nav-tabs{
+    /*width: 140px;*/
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+#toc.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+#toc.nav-tabs li:first-child{
+    border-top: none;
+}
+#toc.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+#toc.nav-tabs li.active a, #toc.nav-tabs li.active a:hover{
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+#toc.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+#toc.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+#toc.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
+}
+
+/* help page  */
+/*
+#help p
+{
+  padding-left: 1em;
+}
+*/
+
+#versiontext
+{
+  color: #808080;
+  font-size: 10px;
+}

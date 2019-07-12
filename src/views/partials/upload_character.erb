@@ -1,0 +1,27 @@
+<div class='modal-header'>
+  <h3 class='modal-title'>Upload Character</h3>
+</div>
+<form action='/upload_charfile' enctype='multipart/form-data' id='char_upload_form' method='post' ng-submit='ok()' target='uploadiframe'>
+  <div class='modal-body'>
+    <p>
+      Select a previously saved .char file to upload.
+    </p>
+    <p>
+      <fieldset>
+        <div class='input-group input-group-sm'>
+          <span class='input-group-btn'>
+            <span class='btn btn-default btn-file'>
+              Browse
+              <input name='charfile' placeholder='browse...' type='file'>
+            </span>
+          </span>
+          <input class='form-control' readonly='' style='width: 12em' type='text'>
+        </div>
+      </fieldset>
+    </p>
+  </div>
+  <div class='modal-footer'>
+    <button class='btn btn-primary' type='submit'>OK</button>
+    <button class='btn btn-warning' ng-click='cancel()' type='reset'>Cancel</button>
+  </div>
+</form>

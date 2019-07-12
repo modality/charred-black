@@ -1,0 +1,2048 @@
+{
+  "Wilderlands Setting": {
+    "Born Wilder Elf": {
+      "time": 20,
+      "res": 5,
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          2,
+          "Sing",
+          "Elven Script"
+        ],
+        [
+          4,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "common_traits": [
+        "Born Under The Silver Stars",
+        "Essence Of The Earth",
+        "Fair And Statuesque",
+        "First Born",
+        "Grief",
+        "Keen Sight"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Rider": {
+      "time": 20,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          6,
+          "Riding",
+          "Gift Of Speed",
+          "Lay Of The Horse"
+        ]
+      ],
+      "traits": [
+        1,
+        "Oikofugic"
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Harvester": {
+      "time": 50,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Protector"
+      ],
+      "skills": [
+        [
+          5,
+          "Round Of Harvest",
+          "Farming",
+          "Firebuilding",
+          "Animal Husbandry",
+          "Mending"
+        ]
+      ],
+      "traits": [
+        1,
+        "Seasoned"
+      ],
+      "key_leads": [
+        "Protector Subsetting"
+      ]
+    },
+    "Gatherer": {
+      "time": 40,
+      "res": 3,
+      "skills": [
+        [
+          5,
+          "Rhyme Of The Gatherer",
+          "Herb-wise",
+          "Orienteering"
+        ]
+      ],
+      "traits": [
+        1,
+        "Rough Hands"
+      ]
+    },
+    "Fisherman": {
+      "time": 50,
+      "res": 8,
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          9,
+          "Hymn Of Scales And Fins",
+          "Pilot",
+          "Boatwright",
+          "Knots",
+          "Mending",
+          "Cooking",
+          "Seamanship",
+          "Rigging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Wary"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Shepherd": {
+      "time": 45,
+      "res": 6,
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          4,
+          "Song Of Flocks And Herds",
+          "Climbing",
+          "Wolf-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Never Cry Wolf"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Wanderer": {
+      "time": 75,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          6,
+          "Song Of Paths And Ways",
+          "Air Of Gates",
+          "Foraging",
+          "Road-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Oikofugic"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Huntsman": {
+      "time": 45,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          7,
+          "Call Of The Wild",
+          "Javelin",
+          "Bow",
+          "Tracking",
+          "Stealthy",
+          "Observation"
+        ]
+      ],
+      "traits": [
+        1,
+        "Watchful"
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Chandler": {
+      "time": 50,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          5,
+          "Chant Of Offering",
+          "Haggling",
+          "Conspicuous",
+          "Appraisal"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Weaver": {
+      "time": 50,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          5,
+          "Weaving Way",
+          "Threading Chant",
+          "Mending"
+        ]
+      ],
+      "traits": [
+        1,
+        "Fateful"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Forester": {
+      "time": 90,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          6,
+          "Song Of Arbors",
+          "Forest-wise",
+          "Tree-wise",
+          "Song Of The Eldar"
+        ]
+      ],
+      "traits": [
+        2,
+        "Stern"
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Vintner": {
+      "time": 60,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          7,
+          "Purple Song",
+          "Vine-wise",
+          "Cooper",
+          "Vintage-wise",
+          "Terroir-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Rarified"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Miller": {
+      "time": 60,
+      "res": 18,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          6,
+          "Grain Song",
+          "Mending",
+          "Carpentry",
+          "Mill-wise",
+          "Grain-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Earthen"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Song Singer": {
+      "time": 45,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          6,
+          "Song Of Songs",
+          "Song Of Soothing",
+          "Lament Of The Westering Sun",
+          "Oratory"
+        ]
+      ],
+      "traits": [
+        1,
+        "Vocal"
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Spouse": {
+      "time": 75,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          5,
+          "Song Of Soothing",
+          "Rhyme Of Rules",
+          "Song Of Feasting",
+          "Fealty-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Patriarch/matriarch": {
+      "time": 100,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel"
+      ],
+      "skills": [
+        [
+          6,
+          "Homesong",
+          "Lyric Of Healing",
+          "Dignity Of The Wilderlands"
+        ]
+      ],
+      "traits": [
+        1,
+        "Patriarchal/matriarchal"
+      ],
+      "requires": "Spouse",
+      "requires_expr": [
+        "spouse"
+      ],
+      "key_leads": [
+        "Citadel Setting"
+      ]
+    },
+    "Elder": {
+      "time": 150,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          5,
+          "Verse Of Decision",
+          "Council Caller"
+        ]
+      ],
+      "traits": [
+        2,
+        "Wise Aphorisms"
+      ],
+      "requires": "Character must be 750 years old after taking this path or the oldest character in the group by 100 years.",
+      "requires_expr": [
+        "+age_greater_than",
+        600
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Etharch Setting"
+      ]
+    }
+  },
+  "Citadel Setting": {
+    "Citadel Born": {
+      "time": 20,
+      "res": 7,
+      "leads": [
+        "Wilderlands"
+      ],
+      "skills": [
+        [
+          2,
+          "Elven Script",
+          "Sing"
+        ],
+        [
+          5,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "common_traits": [
+        "Born Under The Silver Stars",
+        "Essence Of The Earth",
+        "Fair And Statuesque",
+        "First Born",
+        "Grief",
+        "Keen Sight"
+      ],
+      "key_leads": [
+        "Wilderlands Setting"
+      ]
+    },
+    "Servitor": {
+      "time": 20,
+      "res": 5,
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          5,
+          "Hauling",
+          "Observation",
+          "Citadel-wise",
+          "Althing-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Humility",
+        "Lifting Heavy Things"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Wanderer": {
+      "time": 75,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands"
+      ],
+      "skills": [
+        [
+          6,
+          "Song Of Paths And Ways",
+          "Air Of Gates",
+          "Scavenging",
+          "Streetwise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Lonesome"
+      ],
+      "key_leads": [
+        "Wilderlands Setting"
+      ]
+    },
+    "Song Singer": {
+      "time": 25,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          5,
+          "Sing",
+          "Song Of Songs",
+          "Song Of Soothing",
+          "Lament Of Stars"
+        ]
+      ],
+      "traits": [
+        1,
+        "Voice In The Crowd"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Student": {
+      "time": 20,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          6,
+          "Lyric Of Law",
+          "Ballad Of History",
+          "Elven Script",
+          "Etiquette",
+          "Oratory"
+        ]
+      ],
+      "traits": [
+        1,
+        "Educated"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Clothier": {
+      "time": 75,
+      "res": 20,
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          7,
+          "Threading Chant",
+          "Embroidery",
+          "Leathercraft",
+          "Weaving Way"
+        ]
+      ],
+      "traits": [
+        1,
+        "Well Dressed"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Soldier-protector": {
+      "time": 5,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          8,
+          "Alarm",
+          "Armor Training",
+          "Shield Training",
+          "Sword",
+          "Bow",
+          "Knives",
+          "Fletcher",
+          "Mending"
+        ]
+      ],
+      "traits": [
+        1,
+        "Dutiful"
+      ],
+      "requires": "Wanderer, Seafarer, Spouse, Rider, Huntsman, or any Etharch or Protector lifepath",
+      "requires_expr": [
+        "wanderer",
+        "seafarer",
+        "spouse",
+        "rider",
+        "huntsman",
+        "etharch setting:born etharch",
+        "etharch setting:student",
+        "etharch setting:attendant",
+        "etharch setting:second",
+        "etharch setting:sword singer",
+        "etharch setting:steward",
+        "etharch setting:prince/princess",
+        "etharch setting:etharch",
+        "protector subsetting:rider",
+        "protector subsetting:herald",
+        "protector subsetting:soother",
+        "protector subsetting:ranger",
+        "protector subsetting:bowyer",
+        "protector subsetting:spearbearer",
+        "protector subsetting:sword singer",
+        "protector subsetting:outrider",
+        "protector subsetting:lancer",
+        "protector subsetting:lieutenant",
+        "protector subsetting:captain",
+        "protector subsetting:armorer",
+        "protector subsetting:bladesmith",
+        "protector subsetting:lord protector"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Seafarer": {
+      "time": 50,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          9,
+          "Weathersong",
+          "Rope Chant",
+          "Rhyme Of The Mariner",
+          "Seamanship",
+          "Pilot",
+          "Spear"
+        ]
+      ],
+      "traits": [
+        1,
+        "Call Of The Sea",
+        "Rower"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Sea Captain": {
+      "time": 100,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          8,
+          "Slip Of Currents",
+          "Supplication To The Wind",
+          "Command",
+          "Oratory",
+          "Sword"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Seafarer, Adjutant, Lieutenant or Sword Singer",
+      "requires_expr": [
+        "seafarer",
+        "adjutant",
+        "lieutenant",
+        "sword singer"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Novice": {
+      "time": 10,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands"
+      ],
+      "skills": [
+        [
+          4,
+          "Mending",
+          "Craft-wise",
+          "Elven Artifact-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Loyal"
+      ],
+      "key_leads": [
+        "Wilderlands Setting"
+      ]
+    },
+    "Shaper": {
+      "time": 35,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          6,
+          "Woodcraft",
+          "Stonecraft",
+          "Smithcraft"
+        ]
+      ],
+      "traits": [
+        1,
+        "Long Fingered"
+      ],
+      "requires": "Novice",
+      "requires_expr": [
+        "novice"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Jeweler": {
+      "time": 75,
+      "res": 20,
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          5,
+          "Jewelcraft",
+          "Gemcraft",
+          "Appraisal"
+        ]
+      ],
+      "traits": [
+        2,
+        "Patient",
+        "Nimble"
+      ],
+      "requires": "Shaper",
+      "requires_expr": [
+        "shaper"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Artisan": {
+      "time": 150,
+      "res": 40,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          6,
+          "Archcraft",
+          "Stonecraft",
+          "Canticle Of Years",
+          "Antiphon Union Training"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Shaper",
+      "requires_expr": [
+        "shaper"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Keel Master": {
+      "time": 100,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          6,
+          "Shipwright",
+          "Ship-wise",
+          "Carving"
+        ]
+      ],
+      "traits": [
+        2,
+        "Perfectionist"
+      ],
+      "requires": "Shaper",
+      "requires_expr": [
+        "shaper"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Artist": {
+      "time": 60,
+      "res": 12,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands"
+      ],
+      "skills": [
+        [
+          5,
+          "Song Of Form",
+          "Painting"
+        ]
+      ],
+      "traits": [
+        2,
+        "Appreciation For Beauty"
+      ],
+      "key_leads": [
+        "Wilderlands Setting"
+      ]
+    },
+    "Bard": {
+      "time": 65,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          11,
+          "Song Of Merriment",
+          "Lament Of Mourning",
+          "Verse Of Friendship",
+          "Tract Of Enmity",
+          "Oratory",
+          "Conspicuous",
+          "Lyre",
+          "Flute"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Song Singer",
+      "requires_expr": [
+        "song singer"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Adjutant": {
+      "time": 75,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Protector"
+      ],
+      "skills": [
+        [
+          7,
+          "Code Of Citadels",
+          "Etiquette",
+          "Administration",
+          "Etharch-wise",
+          "Citadel-wise",
+          "Protector-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Organized",
+        "Patient"
+      ],
+      "requires": "Herald, Attendant, Student or Spouse",
+      "requires_expr": [
+        "herald",
+        "attendant",
+        "student",
+        "spouse"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Loremaster": {
+      "time": 200,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          10,
+          "Ancient And Obscure History",
+          "Research",
+          "Ballad Of History",
+          "Lyric Of Law",
+          "Canticle Of Years",
+          "Rhyme Of Tongues"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Bard, Adjutant, Steward or Patriarch/Martriarch",
+      "requires_expr": [
+        "bard",
+        "adjutant",
+        "steward",
+        "patriarch/matriarch"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Etharch Setting"
+      ]
+    },
+    "Althing": {
+      "time": 250,
+      "res": 100,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          10,
+          "Council Caller",
+          "Song Of Silence",
+          "Persuasion",
+          "Soothing Platitudes",
+          "Ugly Truth",
+          "Administration"
+        ]
+      ],
+      "traits": [
+        2,
+        "Servant Of The Citadel"
+      ],
+      "requires": "Loremaster, Bard, Artisan, Steward, Captain, Sea Captain or Patriarch/Martriarch",
+      "requires_expr": [
+        "loremaster",
+        "bard",
+        "artisan",
+        "steward",
+        "captain",
+        "sea captain",
+        "patriarch/matriarch"
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    }
+  },
+  "Etharch Setting": {
+    "Born Etharch": {
+      "time": 25,
+      "res": 10,
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          2,
+          "Elven Script",
+          "Etiquette",
+          "Sing"
+        ],
+        [
+          5,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Etharchal",
+        "Fea",
+        "Aman"
+      ],
+      "common_traits": [
+        "Born Under The Silver Stars",
+        "Essence Of The Earth",
+        "Fair And Statuesque",
+        "First Born",
+        "Grief",
+        "Keen Sight"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Student": {
+      "time": 25,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          9,
+          "Ages Of The Etharch",
+          "Lyric Of Law",
+          "Ballad Of History",
+          "Oratory",
+          "Calligraphy",
+          "Song Of The Eldar"
+        ]
+      ],
+      "traits": [
+        1,
+        "Learned"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Attendant": {
+      "time": 25,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          4,
+          "Etiquette",
+          "Riding",
+          "Brawling",
+          "Sword"
+        ]
+      ],
+      "traits": [
+        2,
+        "Calm Demeanor"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Second": {
+      "time": 35,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          8,
+          "Song Of Bonding",
+          "Sword",
+          "Knives",
+          "Bow",
+          "Mending",
+          "Riding",
+          "Mounted Combat Training"
+        ]
+      ],
+      "traits": [
+        2,
+        "Lesson Of One",
+        "Patient"
+      ],
+      "requires": "Attendant, Bowyer, Spearbearer, Seafarer or Soldier-Protector",
+      "requires_expr": [
+        "attendant",
+        "bowyer",
+        "spearbearer",
+        "seafarer",
+        "soldier-protector"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Sword Singer": {
+      "time": 40,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          10,
+          "Song Of The Sword",
+          "Sword",
+          "Armor Training",
+          "Shield Training",
+          "Knives",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        1,
+        "Fealty To The Fea",
+        "Cool Headed"
+      ],
+      "requires": "Second, Lancer or Lieutenant",
+      "requires_expr": [
+        "second",
+        "lancer",
+        "lieutenant"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Steward": {
+      "time": 110,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          8,
+          "Estate Management",
+          "Accounting",
+          "Etiquette",
+          "Estate-wise",
+          "Intrigue-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Lieutenant, Artisan, Bard, Loremaster, Adjutant, Sea Captain or Patriarch/Martriarch",
+      "requires_expr": [
+        "lieutenant",
+        "artisan",
+        "bard",
+        "loremaster",
+        "adjutant",
+        "sea captain",
+        "patriarch/matriarch"
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Prince/princess": {
+      "time": 150,
+      "res": 100,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          6,
+          "Song Of Lordship",
+          "Voice Of Ages"
+        ],
+        [
+          4,
+          "General"
+        ]
+      ],
+      "traits": [
+        1,
+        "Prince/princess Of The Blood"
+      ],
+      "requires": "Fea trait and Sword Singer",
+      "requires_expr": [
+        "+and",
+        [
+          "+trait",
+          "fea"
+        ],
+        [
+          "sword singer"
+        ]
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    },
+    "Etharch": {
+      "time": 250,
+      "res": 200,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Protector"
+      ],
+      "skills": [
+        [
+          8,
+          "Council Caller",
+          "Voice Of Thunder",
+          "Doom Sayer",
+          "Discerner"
+        ],
+        [
+          4,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Lord Of Ages"
+      ],
+      "requires": "Aman trait and either Loremaster or Prince",
+      "requires_expr": [
+        "+and",
+        [
+          "+trait",
+          "aman"
+        ],
+        [
+          "loremaster",
+          "prince/princess"
+        ]
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Protector Subsetting"
+      ]
+    }
+  },
+  "Protector Subsetting": {
+    "Rider": {
+      "time": 15,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          6,
+          "Riding",
+          "Animal Husbandry",
+          "Gift Of Speed",
+          "Lay Of The Horse"
+        ]
+      ],
+      "traits": [
+        1,
+        "Smells Like A Horse"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Herald": {
+      "time": 35,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          8,
+          "Paean Of Deeds",
+          "Mornsong",
+          "Evensong",
+          "Recitation Of Ages",
+          "Silver Trumpet"
+        ]
+      ],
+      "traits": [
+        2,
+        "Stoic"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Soother": {
+      "time": 30,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          6,
+          "Lyric Of Healing",
+          "Song Of Soothing",
+          "Doom Of Strength",
+          "Foraging"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Ranger": {
+      "time": 45,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Wilderlands"
+      ],
+      "skills": [
+        [
+          10,
+          "Observation",
+          "Stealthy",
+          "Bow",
+          "Foraging",
+          "Rhyme Of The Pathfinder",
+          "Song Of Soothing",
+          "Threne Of The Chameleon",
+          "Lyric Of Healing"
+        ]
+      ],
+      "traits": [
+        1,
+        "Grey Mantle",
+        "Sprinter"
+      ],
+      "requires": "Forester, Wanderer, Bowyer or Second",
+      "requires_expr": [
+        "forester",
+        "wanderer",
+        "bowyer",
+        "second"
+      ],
+      "key_leads": [
+        "Wilderlands Setting"
+      ]
+    },
+    "Bowyer": {
+      "time": 20,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          5,
+          "Bowcraft",
+          "Mending",
+          "Bow",
+          "Bow-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Circumspect"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Spearbearer": {
+      "time": 20,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          8,
+          "Spearcraft",
+          "Spear",
+          "Armor Training",
+          "Formation Fighting"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Sword Singer": {
+      "time": 30,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          10,
+          "Sword",
+          "Armor Training",
+          "Shield Training",
+          "Knives",
+          "Brawling",
+          "Song Of The Sword"
+        ]
+      ],
+      "traits": [
+        1,
+        "Sword Of The White Towers"
+      ],
+      "requires": "Second, Soldier-Protector, Soother, Spouse or Spearbearer",
+      "requires_expr": [
+        "second",
+        "soldier-protector",
+        "soother",
+        "spouse",
+        "spearbearer"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Outrider": {
+      "time": 20,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Citadel",
+        "Wilderlands"
+      ],
+      "skills": [
+        [
+          9,
+          "Bow",
+          "Spear",
+          "Observation",
+          "Trails-wise",
+          "Mounted Combat: Bowman Training",
+          "Animal Husbandry",
+          "Mending",
+          "Stealthy"
+        ]
+      ],
+      "traits": [
+        1,
+        "Daring"
+      ],
+      "requires": "Rider",
+      "requires_expr": [
+        "rider"
+      ],
+      "key_leads": [
+        "Citadel Setting",
+        "Wilderlands Setting"
+      ]
+    },
+    "Lancer": {
+      "time": 50,
+      "res": 12,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          10,
+          "Song Of Burning Bright",
+          "Lament For The Fallen",
+          "Lance",
+          "Mounted Combat Training",
+          "Shield Training",
+          "Armor Training"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Outrider or Second",
+      "requires_expr": [
+        "outrider",
+        "second"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Lieutenant": {
+      "time": 65,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          7,
+          "Paean Of Deeds",
+          "Command",
+          "Sword",
+          "Shield Training",
+          "Formation Fighting"
+        ]
+      ],
+      "traits": [
+        1,
+        "Ear To The Ground"
+      ],
+      "requires": "Sword Singer, Lancer, Sea Captain or two Bowyer/Spearbearer lifepaths",
+      "requires_expr": [
+        "+or",
+        [
+          "sword singer",
+          "lancer",
+          "sea captain"
+        ],
+        [
+          "+has_n_lifepaths_in",
+          2,
+          "bowyer",
+          "spearbearer"
+        ]
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Captain": {
+      "time": 85,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          9,
+          "Oratory",
+          "Sword",
+          "Command",
+          "Tactics",
+          "Formation Fighting",
+          "Monody Of The March",
+          "Silent Fury",
+          "Hymn Of Victory"
+        ]
+      ],
+      "traits": [
+        2,
+        "Sworn To The Lord Protector (Or Etharch Or Althing)"
+      ],
+      "requires": "Lieutenant, Prince, Sea Captain, Steward or two Sword Singer lifepaths",
+      "requires_expr": [
+        "+or",
+        [
+          "lieutenant",
+          "prince/princess",
+          "sea captain",
+          "steward"
+        ],
+        [
+          "+has_n_lifepaths_in",
+          2,
+          "sword singer"
+        ]
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    },
+    "Armorer": {
+      "time": 90,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          7,
+          "Armorer",
+          "Etching",
+          "Sewing",
+          "Tanner",
+          "Antiphon Union Training"
+        ]
+      ],
+      "traits": [
+        1,
+        "Patient"
+      ],
+      "requires": "Shaper or Bladesmith",
+      "requires_expr": [
+        "shaper",
+        "bladesmith"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Bladesmith": {
+      "time": 80,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel"
+      ],
+      "skills": [
+        [
+          5,
+          "Riddle Of Steel",
+          "Etching",
+          "Elven Blade-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Acute"
+      ],
+      "requires": "Armorer, Shaper, Bowyer or Spearbearer",
+      "requires_expr": [
+        "armorer",
+        "shaper",
+        "bowyer",
+        "spearbearer"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting"
+      ]
+    },
+    "Lord Protector": {
+      "time": 125,
+      "res": 60,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wilderlands",
+        "Citadel",
+        "Protector",
+        "Etharch"
+      ],
+      "skills": [
+        [
+          10,
+          "Strain Of Far Sight",
+          "Anthem Of Courage",
+          "Ballad Of Rage",
+          "Command",
+          "Formation Fighting",
+          "Administration",
+          "Logistics",
+          "Strategy"
+        ]
+      ],
+      "traits": [
+        1,
+        "Sworn To Protect"
+      ],
+      "requires": "Captain or Prince",
+      "requires_expr": [
+        "captain",
+        "prince/princess"
+      ],
+      "key_leads": [
+        "Wilderlands Setting",
+        "Citadel Setting",
+        "Protector Subsetting",
+        "Etharch Setting"
+      ]
+    }
+  }
+}

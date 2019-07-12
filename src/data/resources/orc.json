@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Rags",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Traveling Gear",
+    "rp": 3,
+    "type": "gear"
+  },
+  {
+    "name": "Hobnailed Boots",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Orc Arms",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Poor Quality",
+        "rp": 3
+      },
+      {
+        "name": "Run Of The Mill Quality",
+        "rp": 5
+      }
+    ]
+  },
+  {
+    "name": "Armor",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Hides",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 1
+          }
+        ]
+      },
+      {
+        "name": "Reinforced Hides",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 3
+          }
+        ]
+      },
+      {
+        "name": "Reinforced Leather",
+        "resources": [
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 8
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 25
+          }
+        ]
+      },
+      {
+        "name": "Light Mail",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 5
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 12
+          }
+        ]
+      },
+      {
+        "name": "Heavy Mail",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 8
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Missile Weapons",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Bow",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 3
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 5
+          }
+        ]
+      },
+      {
+        "name": "Crossbow",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 4
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 6
+          }
+        ]
+      },
+      {
+        "name": "Iron-cased Bombs",
+        "resources": null,
+        "rp": 10
+      }
+    ]
+  },
+  {
+    "name": "Black Iron Helmet",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Black Iron Shield",
+    "rp": 4,
+    "type": "gear"
+  },
+  {
+    "name": "Riding Mount Or Pack Animal",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Great Wolf Mount",
+    "rp": 15,
+    "type": "gear"
+  },
+  {
+    "name": "Whip",
+    "rp": 2,
+    "type": "gear"
+  },
+  {
+    "name": "Poison",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Brazen Horn",
+    "rp": 9,
+    "type": "gear"
+  },
+  {
+    "name": "Clan Banner",
+    "rp": 9,
+    "type": "gear"
+  },
+  {
+    "name": "Skill Tools",
+    "rp": 9,
+    "type": "gear"
+  },
+  {
+    "name": "Riding Harness For Wolf",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Servant's Black Robes",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Servant's Leather Apron",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Ceremonial Knives",
+    "rp": 3,
+    "type": "gear"
+  },
+  {
+    "name": "Ceremonial Axe Or Sword",
+    "rp": 7,
+    "type": "gear"
+  },
+  {
+    "name": "Servant's Tools Of The Trade",
+    "rp": 7,
+    "type": "gear"
+  },
+  {
+    "name": "Poisoner's Toolkit",
+    "rp": 7,
+    "type": "gear"
+  }
+]

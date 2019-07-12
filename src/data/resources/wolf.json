@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Territory",
+    "type": "property",
+    "resources": [
+      {
+        "name": "Barren",
+        "rp": 5
+      },
+      {
+        "name": "Wild Grounds",
+        "rp": 10
+      },
+      {
+        "name": "Plentiful Range",
+        "rp": 15
+      }
+    ]
+  },
+  {
+    "name": "Armor",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Plated Leather Chanfron",
+        "rp": 3
+      },
+      {
+        "name": "Leather Collar",
+        "rp": 2
+      },
+      {
+        "name": "Plated Body Armor",
+        "rp": 6
+      },
+      {
+        "name": "Leather Greaves And Cuissarts",
+        "rp": 2
+      }
+    ]
+  }
+]

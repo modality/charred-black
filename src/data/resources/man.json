@@ -1,0 +1,434 @@
+[
+  {
+    "name": "Arms",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Poor Quality",
+        "rp": 3
+      },
+      {
+        "name": "Run Of The Mill Quality",
+        "rp": 5
+      },
+      {
+        "name": "Superior Quality",
+        "rp": 20
+      }
+    ]
+  },
+  {
+    "name": "Missile Weapons",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Throwing Weapons",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 2
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 3
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 9
+          }
+        ]
+      },
+      {
+        "name": "Hunting Bow",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 3
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 5
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 15
+          }
+        ]
+      },
+      {
+        "name": "Great Bow",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 5
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 10
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 30
+          }
+        ]
+      },
+      {
+        "name": "Crossbow",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 4
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 7
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 21
+          }
+        ]
+      },
+      {
+        "name": "Heavy Crossbow",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 6
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 12
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 36
+          }
+        ]
+      },
+      {
+        "name": "Pistol",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 8
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 15
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 45
+          }
+        ]
+      },
+      {
+        "name": "Arquebus",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 10
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 20
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 60
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Armor",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Gambeson",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 2
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 3
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 12
+          }
+        ]
+      },
+      {
+        "name": "Reinforced Leather",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 3
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 6
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 24
+          }
+        ]
+      },
+      {
+        "name": "Light Mail",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 5
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 10
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 40
+          }
+        ]
+      },
+      {
+        "name": "Heavy Mail",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 8
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 15
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 60
+          }
+        ]
+      },
+      {
+        "name": "Plated Mail",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 10
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 20
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 80
+          }
+        ]
+      },
+      {
+        "name": "Full Plated Mail",
+        "resources": [
+          {
+            "name": "Poor Quality",
+            "rp": 25
+          },
+          {
+            "name": "Run Of The Mill Quality",
+            "rp": 50
+          },
+          {
+            "name": "Superior Quality",
+            "rp": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Riding Mount Or Pack Animal",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Warhorse",
+    "rp": 12,
+    "type": "gear"
+  },
+  {
+    "name": "Clothes",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Traveling Gear",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Shoes",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Personal Effects",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Finery",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Cash",
+    "rp": 6,
+    "type": "gear"
+  },
+  {
+    "name": "Skill Toolkit",
+    "rp": 8,
+    "type": "gear"
+  },
+  {
+    "name": "Workshop",
+    "rp": 20,
+    "type": "property"
+  },
+  {
+    "name": "Companion Animal",
+    "rp": 3,
+    "type": "gear"
+  },
+  {
+    "name": "Herd Of Animals",
+    "rp": 20,
+    "type": "property"
+  },
+  {
+    "name": "Rent",
+    "rp": 5,
+    "type": "property"
+  },
+  {
+    "name": "Property",
+    "type": "property",
+    "resources": [
+      {
+        "name": "A Leaky Shack",
+        "rp": 1
+      },
+      {
+        "name": "A Small Cottage",
+        "rp": 3
+      },
+      {
+        "name": "A House",
+        "rp": 10
+      },
+      {
+        "name": "A \"Cottage Industry\" Like A Weaver",
+        "rp": 10
+      },
+      {
+        "name": "A Villa Or Farm",
+        "rp": 15
+      },
+      {
+        "name": "A Small Business",
+        "rp": 20
+      },
+      {
+        "name": "Moderate-sized Business",
+        "rp": 30
+      },
+      {
+        "name": "A Manor Or Small Estate",
+        "rp": 40
+      },
+      {
+        "name": "An Urban Hotel",
+        "rp": 40
+      },
+      {
+        "name": "A Well-paid Position (Like Mayor)",
+        "rp": 45
+      },
+      {
+        "name": "A Successful Small Business",
+        "rp": 60
+      },
+      {
+        "name": "A Large Business",
+        "rp": 60
+      },
+      {
+        "name": "A Keep",
+        "rp": 60
+      },
+      {
+        "name": "A Fortress",
+        "rp": 75
+      },
+      {
+        "name": "A Moderate-sized Estate",
+        "rp": 75
+      },
+      {
+        "name": "A Castle With Attendant Town",
+        "rp": 90
+      },
+      {
+        "name": "A Large Estate",
+        "rp": 90
+      },
+      {
+        "name": "A Palace",
+        "rp": 105
+      },
+      {
+        "name": "A Government Position In A Prosperous Town",
+        "rp": 105
+      }
+    ]
+  },
+  {
+    "name": "Boat",
+    "type": "property",
+    "resources": [
+      {
+        "name": "A Rowboat Or Skiff",
+        "rp": 5
+      },
+      {
+        "name": "A Longboat",
+        "rp": 10
+      },
+      {
+        "name": "A Junk",
+        "rp": 15
+      },
+      {
+        "name": "A Felucca",
+        "rp": 30
+      },
+      {
+        "name": "A Carrack",
+        "rp": 60
+      },
+      {
+        "name": "A Caravel",
+        "rp": 75
+      },
+      {
+        "name": "Treasure Ship",
+        "rp": 105
+      }
+    ]
+  }
+]

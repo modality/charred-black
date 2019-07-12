@@ -1,0 +1,42 @@
+<div class='modal-header'>
+  <h3 class='modal-title'>Add Trait</h3>
+</div>
+<div class='modal-body'>
+  <strong>Remaining:</strong>
+  {{unspentTraitPoints}}/{{totalTraitPoints}} pts
+  <br>
+  <br>
+  <p>
+    <select class='form-control' ng-model='data.currentTrait' ng-options='s.nameForListDisplay for s in filteredTraits()' size='10'></select>
+  </p>
+  <well ng-show='data.currentTrait.desc'>
+    <strong>Description:</strong>
+    {{data.currentTrait.desc}}
+  </well>
+  <h4>Filter By</h4>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-2'>
+        Type:
+        <select class='form-control' ng-model='filters.typeFilter'>
+          <option value=''>(unfiltered)</option>
+          <option value='character'>Character</option>
+          <option value='die'>Die</option>
+          <option value='call_on'>Call-On</option>
+        </select>
+      </div>
+      <div class='col-md-2'>
+        Cost:
+        <input class='form-control' id='cost' ng-model='filters.costFilter' placeholder="'&lt; 2' or '&gt; 3' or '= 5'" type='text'>
+      </div>
+      <div class='col-md-2'>
+        Can Afford:
+        <input ng-model='filters.canAfford' type='checkbox'>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='modal-footer'>
+  <button class='btn btn-primary' ng-click='ok(characterIdAndName)'>OK</button>
+  <button class='btn btn-warning' ng-click='cancel()'>Cancel</button>
+</div>

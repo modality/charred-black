@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Arms",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Roden Throwing Blades",
+    "rp": 15,
+    "type": "gear"
+  },
+  {
+    "name": "Wooden Shield",
+    "rp": 2,
+    "type": "gear"
+  },
+  {
+    "name": "Armor",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Gambeson",
+        "rp": 5
+      },
+      {
+        "name": "Reinforced Leather",
+        "rp": 10
+      },
+      {
+        "name": "Light Mail",
+        "rp": 15
+      },
+      {
+        "name": "Heavy Mail",
+        "rp": 20
+      }
+    ]
+  },
+  {
+    "name": "Property",
+    "type": "property",
+    "resources": [
+      {
+        "name": "Rat's Nest Property",
+        "resources": [
+          {
+            "name": "Den",
+            "rp": 7
+          },
+          {
+            "name": "Nest",
+            "rp": 10
+          },
+          {
+            "name": "Apiary",
+            "rp": 10
+          },
+          {
+            "name": "Fields",
+            "rp": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Workshop",
+    "type": "property",
+    "rp": 20
+  },
+  {
+    "name": "Animal Herd",
+    "type": "property",
+    "rp": 10
+  },
+  {
+    "name": "Clothes",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Traveling Gear",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Shoes",
+    "type": "gear",
+    "rp": 3
+  },
+  {
+    "name": "Tool Kit",
+    "type": "gear",
+    "rp": 9
+  },
+  {
+    "name": "Firebombs",
+    "type": "gear",
+    "rp": 20
+  },
+  {
+    "name": "Robes Of The Ordained",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Honeyed Oatcakes",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Dandewine",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Blood Blossom",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Visionary Cult",
+    "type": "affiliation",
+    "resources": [
+      {
+        "name": "1d Cult",
+        "rp": 10
+      },
+      {
+        "name": "2d Cult",
+        "rp": 25
+      },
+      {
+        "name": "3d Cult",
+        "rp": 50
+      }
+    ]
+  }
+]

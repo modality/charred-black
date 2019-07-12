@@ -1,0 +1,1740 @@
+{
+  "Field Setting": {
+    "Born To The Fields": {
+      "time": 8,
+      "res": 0,
+      "leads": [
+        "Society"
+      ],
+      "skills": [
+        [
+          3,
+          "General"
+        ]
+      ],
+      "traits": [
+        3,
+        "Vegetarian"
+      ],
+      "common_traits": [
+        "Aecer's Likeness",
+        "Coat Of Fur",
+        "Communal",
+        "Enlarged Incisors",
+        "Quick-blooded",
+        "Tail",
+        "Large Ears"
+      ],
+      "key_leads": [
+        "Society Subsetting"
+      ]
+    },
+    "Hand": {
+      "time": 3,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile"
+      ],
+      "skills": [
+        [
+          4,
+          "Sing",
+          "Work-wise",
+          "Back-breaking Labor"
+        ]
+      ],
+      "traits": [
+        1,
+        "Toiling"
+      ],
+      "key_leads": [
+        "Exile Subsetting"
+      ]
+    },
+    "Woodsen": {
+      "time": 6,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile"
+      ],
+      "skills": [
+        [
+          4,
+          "Tree Cutting",
+          "Tree-wise",
+          "Mending",
+          "Orienteering"
+        ]
+      ],
+      "traits": [
+        1,
+        "Independent"
+      ],
+      "key_leads": [
+        "Exile Subsetting"
+      ]
+    },
+    "Bee Keeper": {
+      "time": 7,
+      "res": 9,
+      "skills": [
+        [
+          5,
+          "Bee Husbandry",
+          "Firebuilding",
+          "Bee-wise",
+          "Flower-wise",
+          "Honey-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Thick-skinned",
+        "Beespeaker"
+      ]
+    },
+    "Gatherer": {
+      "time": 8,
+      "res": 10,
+      "leads": [
+        "Exile"
+      ],
+      "skills": [
+        [
+          4,
+          "Foraging",
+          "Herbalism",
+          "Nut And Berry-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Adventurous Palate"
+      ],
+      "key_leads": [
+        "Exile Subsetting"
+      ]
+    },
+    "Farmer": {
+      "time": 8,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Farming",
+          "Mending",
+          "Seed-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Hoarder",
+        "Slow"
+      ]
+    },
+    "Miller": {
+      "time 9": null,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          5,
+          "Miller",
+          "Grain-wise",
+          "Haggling"
+        ]
+      ],
+      "traits": [
+        1,
+        "Industrious"
+      ]
+    },
+    "Mead-maker": {
+      "time": 9,
+      "res": 14,
+      "skills": [
+        [
+          5,
+          "Brewer",
+          "Mead-wise",
+          "Haggling",
+          "Cooper"
+        ]
+      ],
+      "traits": [
+        1,
+        "Beloved"
+      ]
+    },
+    "Baker": {
+      "time": 7,
+      "res": 12,
+      "skills": [
+        [
+          4,
+          "Cooking",
+          "Firebuilding",
+          "Bread-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Keen Sense Of Taste",
+        "Fragrant",
+        "Sweet-tooth"
+      ]
+    },
+    "Weaver": {
+      "time": 8,
+      "res": 15,
+      "skills": [
+        [
+          6,
+          "Weaving",
+          "Sewing",
+          "Embroidery",
+          "Soothing Platitudes",
+          "Sing"
+        ]
+      ],
+      "traits": [
+        1,
+        "Calloused Fingers"
+      ]
+    },
+    "Apprentice": {
+      "time": 4,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          4,
+          "Mending",
+          "Blacksmith",
+          "Carpentry",
+          "Potter",
+          "Mason"
+        ]
+      ],
+      "traits": [
+        1,
+        "Gopher"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Crafter": {
+      "time": 10,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          8,
+          "Haggling",
+          "Jargon",
+          "Instruction",
+          "Apprentice-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Serious",
+        "Diligent"
+      ],
+      "requires": "Apprentice",
+      "requires_expr": [
+        "apprentice"
+      ]
+    },
+    "Healer": {
+      "time": 8,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          6,
+          "Herbalism",
+          "Field Dressing",
+          "Apothecary",
+          "Ugly Truth",
+          "Hurt-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Compassionate",
+        "Bedside Manner"
+      ]
+    },
+    "Trader": {
+      "time": 8,
+      "res": 6,
+      "leads": [
+        "Exile"
+      ],
+      "skills": [
+        [
+          6,
+          "Haggling",
+          "Appraisal",
+          "Accounting",
+          "Conspicuous",
+          "Village-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Opportunist"
+      ],
+      "key_leads": [
+        "Exile Subsetting"
+      ]
+    },
+    "Deputy": {
+      "time": 4,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          7,
+          "Spear",
+          "Bow",
+          "Brawling",
+          "Shield Training",
+          "Trouble-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Alarmist"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Sheriff": {
+      "time": 8,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          7,
+          "Rule Of Law",
+          "Command",
+          "Intimidation",
+          "Interrogation",
+          "Sword"
+        ]
+      ],
+      "traits": [
+        1,
+        "Suspicious"
+      ]
+    },
+    "Mayor": {
+      "time": 10,
+      "res": 20,
+      "skills": [
+        [
+          8,
+          "Oratory",
+          "Persuasion",
+          "Rule Of Law",
+          "Etiquette",
+          "Haggling",
+          "Petitioner-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Hand-shaker",
+        "Practiced Smile"
+      ],
+      "requires": "Requires the character to be at minimum 17 yrs old before taking it.",
+      "requires_expr": [
+        "+age_greater_than",
+        16
+      ]
+    },
+    "Brother/sister": {
+      "time": 5,
+      "res": 14,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          6,
+          "Doctrine",
+          "Read",
+          "Write",
+          "Meditation",
+          "Shrine-wise",
+          "Prayer-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Humble",
+        "Ordained",
+        "Faithful"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Missionary": {
+      "time": 5,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          5,
+          "Suasion",
+          "Preaching",
+          "Intimidation",
+          "Below-wise",
+          "Brawling",
+          "Man-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Tough",
+        "Zealot",
+        "Righteous"
+      ],
+      "requires": "Brother/Sister",
+      "requires_expr": [
+        "brother/sister"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Father/mother": {
+      "time": 7,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          5,
+          "Suasion",
+          "Oratory",
+          "Illuminations",
+          "Calligraphy",
+          "Sing"
+        ]
+      ],
+      "traits": [
+        3,
+        "Patient",
+        "Friendly Face",
+        "Portly"
+      ],
+      "requires": "Brother/Sister",
+      "requires_expr": [
+        "brother/sister"
+      ]
+    },
+    "Abbot/abbess": {
+      "time": 10,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          10,
+          "Oratory",
+          "Conspicuous",
+          "History",
+          "Research",
+          "Cartography",
+          "Poetry",
+          "Etiquette"
+        ]
+      ],
+      "traits": [
+        1,
+        "Revered",
+        "Wise"
+      ],
+      "requires": "Father/Mother",
+      "requires_expr": [
+        "father/mother"
+      ]
+    }
+  },
+  "Below Setting": {
+    "Born Below": {
+      "time": 6,
+      "res": 0,
+      "leads": [
+        "Society"
+      ],
+      "skills": [
+        [
+          3,
+          "General"
+        ]
+      ],
+      "traits": [
+        3,
+        "Tunnel Vision"
+      ],
+      "common_traits": [
+        "Aecer's Likeness",
+        "Coat Of Fur",
+        "Communal",
+        "Enlarged Incisors",
+        "Quick-blooded",
+        "Tail",
+        "Large Ears"
+      ],
+      "key_leads": [
+        "Society Subsetting"
+      ]
+    },
+    "Pinky": {
+      "time": 2,
+      "res": 2,
+      "stat": [
+        [
+          -1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Soothing Platitudes",
+          "Below-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Confusing Rant",
+        "Distracted",
+        "Clumsy",
+        "Lucky"
+      ]
+    },
+    "Scavenger": {
+      "time": 4,
+      "res": 3,
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          6,
+          "Inconspicuous",
+          "Survival",
+          "Appraisal",
+          "Brawling",
+          "Junk-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Greedy",
+        "Iron Stomach",
+        "Callous"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Scratcher": {
+      "time": 6,
+      "res": 4,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          5,
+          "Tunneling",
+          "Tunnel-wise",
+          "Mending"
+        ]
+      ],
+      "traits": [
+        1,
+        "Deep Sense",
+        "Hacking Cough"
+      ]
+    },
+    "Snitch": {
+      "time": 4,
+      "res": 3,
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          4,
+          "Inconspicuous",
+          "Falsehood",
+          "Haggling",
+          "Secret-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Cowardly",
+        "Two-faced"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "The Gauntlet": {
+      "time": 1,
+      "res": 4,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Society"
+      ],
+      "skills": [
+        [
+          5,
+          "Brawling",
+          "Soothing Platitudes",
+          "Hazing-wise",
+          "Pecking Order-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Skulking",
+        "Abused"
+      ],
+      "key_leads": [
+        "Society Subsetting"
+      ]
+    },
+    "Apprentice": {
+      "time": 6,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          3,
+          "Mending",
+          "Blacksmith",
+          "Bribe-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Gopher"
+      ],
+      "requires": "The Gauntlet",
+      "requires_expr": [
+        "the gauntlet"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Bladesmith": {
+      "time": 8,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Society"
+      ],
+      "skills": [
+        [
+          7,
+          "Haggling",
+          "Instruction",
+          "Blacksmith",
+          "Knife-wise",
+          "Sword-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Secretive"
+      ],
+      "requires": "Apprentice",
+      "requires_expr": [
+        "apprentice"
+      ],
+      "key_leads": [
+        "Society Subsetting"
+      ]
+    },
+    "Kidnapper": {
+      "time": 7,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          7,
+          "Inconspicuous",
+          "Knots",
+          "Haggling",
+          "Cudgel",
+          "Intimidation",
+          "Child-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Callous"
+      ],
+      "requires": "The Gauntlet",
+      "requires_expr": [
+        "the gauntlet"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Fingers": {
+      "time": 6,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          4,
+          "Sleight Of Hand",
+          "Inconspicuous",
+          "Knives",
+          "Streetwise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Light Touch",
+        "Cocky"
+      ],
+      "requires": "The Gauntlet",
+      "requires_expr": [
+        "the gauntlet"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Sneak-thief": {
+      "time": 7,
+      "res": 6,
+      "skills": [
+        [
+          5,
+          "Stealthy",
+          "Lock Pick",
+          "Knives",
+          "Roof-wise",
+          "Window-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Cool-headed",
+        "Soft Step"
+      ],
+      "requires": "The Gauntlet",
+      "requires_expr": [
+        "the gauntlet"
+      ]
+    },
+    "Burglar": {
+      "time": 8,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          8,
+          "Observation",
+          "Climbing",
+          "Throwing",
+          "Knots",
+          "Interrogation",
+          "Locksmith",
+          "Loot-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Quiet",
+        "Confident"
+      ],
+      "requires": "Sneak-Thief, Sheriff, or Shadow",
+      "requires_expr": [
+        "sneak-thief",
+        "sheriff",
+        "shadow"
+      ]
+    },
+    "Bruiser": {
+      "time": 6,
+      "res": 8,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Society"
+      ],
+      "skills": [
+        [
+          7,
+          "Weapon Of Choice",
+          "Intimidation",
+          "Extortion",
+          "Crossbow",
+          "Shield Training"
+        ]
+      ],
+      "traits": [
+        1,
+        "Mean",
+        "Brutal",
+        "Dumb"
+      ],
+      "requires": "The Gauntlet",
+      "requires_expr": [
+        "the gauntlet"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Society Subsetting"
+      ]
+    },
+    "Fence": {
+      "time": 7,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          7,
+          "Appraisal",
+          "Haggling",
+          "Falsehood",
+          "Antique-wise",
+          "Fake-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Poker Face"
+      ]
+    },
+    "Sawbones": {
+      "time": 8,
+      "res": 15,
+      "leads": [
+        "Exile"
+      ],
+      "skills": [
+        [
+          6,
+          "Field Dressing",
+          "Apothecary",
+          "Surgery",
+          "Poisons",
+          "Haggling"
+        ]
+      ],
+      "traits": [
+        1,
+        "Practical",
+        "Impersonal"
+      ],
+      "key_leads": [
+        "Exile Subsetting"
+      ]
+    },
+    "Negotiator": {
+      "time": 8,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Society"
+      ],
+      "skills": [
+        [
+          6,
+          "Persuasion",
+          "Deal-wise",
+          "Haggling",
+          "Intimidation",
+          "Oratory"
+        ]
+      ],
+      "traits": [
+        1,
+        "Calm Demeanor",
+        "Good Listener"
+      ],
+      "key_leads": [
+        "Society Subsetting"
+      ]
+    },
+    "The Brain": {
+      "time": 9,
+      "res": 13,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Society"
+      ],
+      "skills": [
+        [
+          13,
+          "Soothing Platitudes",
+          "Read",
+          "Write",
+          "Research",
+          "Astrology",
+          "Strategy",
+          "Logistics",
+          "Falsehood",
+          "History",
+          "Obscure History",
+          "World Domination-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Genius",
+        "Condescending",
+        "Academic",
+        "Frustrated"
+      ],
+      "requires": "One completely mundane lifepath like Bee Keeper, Scavenger, or Hermit",
+      "key_leads": [
+        "Society Subsetting"
+      ]
+    },
+    "Mastermind": {
+      "time": 10,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          13,
+          "Intimidation",
+          "Persuasion",
+          "Oratory",
+          "Falsehood",
+          "Command",
+          "Below-wise",
+          "Sword",
+          "Clique-wise",
+          "Nest-wise",
+          "Traitor-wise"
+        ]
+      ],
+      "traits": [
+        3,
+        "Ambitious",
+        "Ruthless",
+        "Suspicious"
+      ],
+      "requires": "The Gauntlet and either Negotiator or The Brain",
+      "requires_expr": [
+        "+and",
+        [
+          "the gauntlet"
+        ],
+        [
+          "+or",
+          [
+            "negotiator"
+          ],
+          [
+            "the brain"
+          ]
+        ]
+      ]
+    }
+  },
+  "Exile Subsetting": {
+    "Carnivore": {
+      "time": 4,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Below",
+        "Society"
+      ],
+      "skills": [
+        [
+          6,
+          "Hunting",
+          "Cooking",
+          "Tracking",
+          "Trapper",
+          "Bow",
+          "Spear",
+          "Forest-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Gnawing Hunger",
+        "Aggressive Carnivore"
+      ],
+      "requires": "Born to the Fields",
+      "requires_expr": [
+        "born to the fields"
+      ],
+      "key_leads": [
+        "Below Setting",
+        "Society Subsetting"
+      ]
+    },
+    "Scrub": {
+      "time": 3,
+      "res": 3,
+      "stat": [
+        [
+          -1,
+          "m"
+        ],
+        [
+          -1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Field",
+        "Society"
+      ],
+      "skills": [
+        [
+          5,
+          "Inconspicuous",
+          "Soothing Platitudes",
+          "Kick Me-wise",
+          "Bully-wise",
+          "Nest-wise",
+          "Below-wise",
+          "Village-wise",
+          "Cat-wise"
+        ]
+      ],
+      "traits": [
+        3,
+        "Abused",
+        "Non-confrontational",
+        "Meek"
+      ],
+      "requires": "Born Below",
+      "requires_exp": [
+        "born below"
+      ],
+      "key_leads": [
+        "Field Setting",
+        "Society Subsetting"
+      ]
+    },
+    "Diseased": {
+      "time": 3,
+      "res": 3,
+      "stat": [
+        [
+          -1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          5,
+          "Survival",
+          "Foraging",
+          "Disease-wise",
+          "Lynch Mob-wise",
+          "Hospital-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Contagious",
+        "Bitter"
+      ]
+    },
+    "Hermit": {
+      "time": 10,
+      "res": 2,
+      "leads": [
+        "Field",
+        "Society"
+      ],
+      "skills": [
+        [
+          9,
+          "Philosophy",
+          "Astrology",
+          "Rhetoric",
+          "Oratory",
+          "Foraging",
+          "Books-wise",
+          "Lost Secrets-wise"
+        ]
+      ],
+      "traits": [
+        3,
+        "Philosophical",
+        "Boring"
+      ],
+      "key_leads": [
+        "Field Setting",
+        "Society Subsetting"
+      ]
+    },
+    "Bushwhacker": {
+      "time": 5,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Field",
+        "Below",
+        "Society"
+      ],
+      "skills": [
+        [
+          4,
+          "Weapon Of Choice",
+          "Intimidation",
+          "Stealthy",
+          "Bow",
+          "Ambush-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Desperate"
+      ],
+      "key_leads": [
+        "Field Setting",
+        "Below Setting",
+        "Society Subsetting"
+      ]
+    },
+    "Corsair": {
+      "time": 6,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Field",
+        "Below",
+        "Society"
+      ],
+      "skills": [
+        [
+          8,
+          "Rigging",
+          "Knots",
+          "Navigation",
+          "Mending",
+          "Appropriate Weapons",
+          "Intimidation",
+          "Ship-wise",
+          "Bay-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Ruthless",
+        "Sea Legs"
+      ],
+      "key_leads": [
+        "Field Setting",
+        "Below Setting",
+        "Society Subsetting"
+      ]
+    },
+    "Bandit King": {
+      "time": 7,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Field",
+        "Below",
+        "Society"
+      ],
+      "skills": [
+        [
+          6,
+          "Intimidation",
+          "Command",
+          "Sword",
+          "Bandit-wise",
+          "Caravan-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Scheming",
+        "Daring"
+      ],
+      "requires": "Bushwhacker, Sheriff, or Bruiser",
+      "requires_expr": [
+        "bushwhacker",
+        "sheriff",
+        "bruiser"
+      ],
+      "key_leads": [
+        "Field Setting",
+        "Below Setting",
+        "Society Subsetting"
+      ]
+    },
+    "Albino": {
+      "time": 10,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          8,
+          "Astrology",
+          "Ugly Truth",
+          "Read",
+          "Write",
+          "Sorcery",
+          "Spirit Binding"
+        ]
+      ],
+      "traits": [
+        2,
+        "Albino",
+        "Feared",
+        "Gifted",
+        "Misunderstood"
+      ],
+      "note": "Choose one of Sorcery or Summoning, not both."
+    }
+  },
+  "Society Subsetting": {
+    "Initiate": {
+      "time": 3,
+      "res": 2,
+      "leads": [
+        "Exile"
+      ],
+      "skills": [
+        [
+          3,
+          "Doctrine",
+          "Society-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Broken Spirit"
+      ],
+      "key_leads": [
+        "Exile Subsetting"
+      ]
+    },
+    "Cultist": {
+      "time": 4,
+      "res": 4,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          5,
+          "Rhetoric",
+          "Suasion",
+          "Cudgel",
+          "Conversion-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Zealot",
+        "Defensive"
+      ],
+      "requires": "Initiate",
+      "requires_expr": [
+        "initiate"
+      ]
+    },
+    "Shadow": {
+      "time": 6,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          6,
+          "Stealthy",
+          "Observation",
+          "Inconspicuous",
+          "Climbing",
+          "Tail-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Cautious"
+      ],
+      "requires": "Initiate",
+      "requires_expr": [
+        "initiate"
+      ]
+    },
+    "Arsonist": {
+      "time": 6,
+      "res": 6,
+      "skills": [
+        [
+          7,
+          "Firebuilding",
+          "Arson",
+          "Inconspicuous",
+          "Firebombs",
+          "Lock Pick",
+          "Arson-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Pyromaniac"
+      ],
+      "requires": "Initiate",
+      "requires_expr": [
+        "initiate"
+      ]
+    },
+    "Murderer": {
+      "time": 6,
+      "res": 7,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          8,
+          "Knives",
+          "Stealthy",
+          "Intimidation",
+          "Inconspicuous",
+          "Garrote",
+          "Anatomy",
+          "Crossbow",
+          "Murder-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Murderous",
+        "Cold-hearted",
+        "Single-minded"
+      ],
+      "requires": "Initiate",
+      "requires_expr": [
+        "initiate"
+      ]
+    },
+    "Willard": {
+      "time": 5,
+      "res": 5,
+      "skills": [
+        [
+          5,
+          "Animal Husbandry",
+          "Inconspicuous",
+          "Command",
+          "Ratiquette"
+        ]
+      ],
+      "traits": [
+        2,
+        "Rat-squeak",
+        "Bitter",
+        "Weird"
+      ],
+      "requires": "Initiate",
+      "requires_expr": [
+        "initiate"
+      ]
+    },
+    "Perverter": {
+      "time": 8,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Field",
+        "Below",
+        "Exile"
+      ],
+      "skills": [
+        [
+          6,
+          "Disguise",
+          "Preaching",
+          "Inconspicuous",
+          "Falsehood",
+          "Dupe-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Scheming"
+      ],
+      "requires": "Cultist or Missionary",
+      "requires_expr": [
+        "cultist",
+        "missionary"
+      ],
+      "key_leads": [
+        "Field Setting",
+        "Below Setting",
+        "Exile Subsetting"
+      ]
+    },
+    "Poisoner": {
+      "time": 6,
+      "res": 7,
+      "skills": [
+        [
+          6,
+          "Disguise",
+          "Preaching",
+          "Inconspicuous",
+          "Falsehood",
+          "Dupe-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Sadist",
+        "Nauseous"
+      ],
+      "requires": "Initiate",
+      "requires_expr": [
+        "initiate"
+      ]
+    },
+    "Guardian": {
+      "time": 6,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          8,
+          "Weapon Of Choice",
+          "Brawling",
+          "Armor Training",
+          "Shield Training",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        2,
+        "Merciless",
+        "Loyal"
+      ],
+      "requires": "Initiate",
+      "requires_expr": [
+        "initiate"
+      ]
+    },
+    "Preacher": {
+      "time": 8,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          6,
+          "Preaching",
+          "Conspicuous",
+          "Symbology",
+          "Obscure History"
+        ]
+      ],
+      "traits": [
+        2,
+        "Obsessed",
+        "Righteous"
+      ],
+      "requires": "Requires Initiate and either Brother/Sister or Cultist",
+      "requires_expr": [
+        "+and",
+        [
+          "initiate"
+        ],
+        [
+          "brother/sister",
+          "cultist"
+        ]
+      ]
+    },
+    "Visionary": {
+      "time": 10,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Exile",
+        "Below"
+      ],
+      "skills": [
+        [
+          13,
+          "Command",
+          "Astrology",
+          "Research",
+          "Interrogation",
+          "Torture",
+          "Observation",
+          "Poetry",
+          "Cult-wise",
+          "Inner Workings-wise",
+          "Undermining-wise"
+        ]
+      ],
+      "traits": [
+        4,
+        "Megalomaniac",
+        "Imperious Demeanor",
+        "Visionary Faith",
+        "Dreamer"
+      ],
+      "requires": "Preacher",
+      "requires_expr": [
+        "preacher"
+      ],
+      "key_leads": [
+        "Exile Subsetting",
+        "Below Setting"
+      ]
+    }
+  }
+}

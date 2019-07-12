@@ -1,0 +1,818 @@
+<div class='panel-group' id='accordion_main'>
+  <div class='panel panel-default'>
+    <div class='panel-heading'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_tools' data-toggle='collapse' href=''>
+          Tools
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_tools'>
+      <div class='panel-body'>
+        <div class='alert alert-danger alert-dismissable' ng-repeat="warn in alertsOfType('tools', 'warn')">
+          <button aria-hidden='true' class='close' ng-click="removeAlert('tools',warn)" type='button'>&times;</button>
+          {{warn}}
+        </div>
+        <div class='alert alert-success alert-dismissable' ng-repeat="warn in alertsOfType('tools', 'succ')">
+          <button aria-hidden='true' class='close' ng-click="removeAlert('tools',warn)" type='button'>&times;</button>
+          {{warn}}
+        </div>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-3'>
+              <a href='' ng-click='makeCharsheetForCurrentCharacter()'>
+                Create PDF Character Sheet
+              </a>
+            </div>
+            <div class='col-md-2'>
+              <a href='' ng-click='onStockChange()'>
+                Reset Character
+              </a>
+            </div>
+            <div class='col-md-2' ng-show="serverSettings.storageType == 'server'">
+              <a href='' ng-click='saveCurrentCharacterToServer()'>
+                Save Character
+              </a>
+            </div>
+            <div class='col-md-2' ng-show="serverSettings.storageType == 'server'">
+              <a href='' ng-click='chooseCharacterToLoad()'>
+                Load Character...
+              </a>
+            </div>
+            <div class='col-md-2' ng-show="serverSettings.storageType == 'server'">
+              <a href='' ng-click='chooseCharacterToDelete()'>
+                Delete Character...
+              </a>
+            </div>
+            <div class='col-md-2' ng-show="serverSettings.storageType != 'server'">
+              <a href='' ng-click='downloadCurrentCharacter()'>
+                Download Character
+              </a>
+            </div>
+            <div class='col-md-2' ng-show="serverSettings.storageType != 'server'">
+              <a href='' ng-click='showUploadCharacterModal()'>
+                Upload Character...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel-heading'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_first' data-toggle='collapse' href=''>
+          Character
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_first'>
+      <div class='panel-body'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-1'>
+              <strong>Name:</strong>
+            </div>
+            <div class='col-md-2'>
+              <input class='form-control' id='name' ng-model='name' type='text'>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click='generateName()'>Gen</a>
+            </div>
+            <div class='col-md-1'>
+              <strong>
+                Stock:
+              </strong>
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' ng-change='onStockChange()' ng-model='stock'>
+                <option value='man'>Man</option>
+                <option value='dwarf'>Dwarf</option>
+                <option value='elf'>Elf</option>
+                <option value='orc'>Orc</option>
+                <option value='roden'>Roden</option>
+                <option value='wolf'>Great Wolf</option>
+              </select>
+            </div>
+            <div class='col-md-1'>
+              <strong>
+                Age:
+              </strong>
+              {{age}}
+            </div>
+            <div class='col-md-1'>
+              <strong>
+                Gender:
+              </strong>
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' ng-change='onGenderChange()' ng-model='gender'>
+                <option>female</option>
+                <option>male</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel-heading'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_lp' data-toggle='collapse' href=''>
+          Lifepaths
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_lp'>
+      <div class='panel-body'>
+        <div class='list-group'>
+          <div class='list-group-item' ng-repeat='lp in selectedLifepaths'>
+            <div class='container-fluid'>
+              <div class='row'>
+                <div class='col-md-3'>
+                  <div class='h4'>{{lp.displayName}}</div>
+                </div>
+                <div class='col-md-1' ng-show='lp.timeIsChoosable'>
+                  <span>
+                    <input max='{{lp.timeRange.max}}' min='{{lp.timeRange.min}}' ng-change='onLifepathTimeChange(lp)' ng-model='lp.time' required='' style='width: 3em;' type='number'>
+                  </span>
+                  <span>
+                    yrs
+                  </span>
+                </div>
+                <div class='col-md-1' ng-hide='lp.timeIsChoosable'>{{lp.time}} yrs</div>
+                <div class='col-md-1'>{{lp.resourcePts}} res</div>
+                <div class='col-md-2'>{{lp.displayStat()}}</div>
+                <div class='col-md-3'>{{lp.displayLeads()}}</div>
+                <div class='col-md-1' ng-show='$last'>
+                  <a href='' ng-click='onRemoveLifepathClick(lp)'>remove</a>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-md-1'>&nbsp;</div>
+              </div>
+              <div class='row'>
+                <div class='col-md-1'></div>
+                <div class='col-md-7'>
+                  <strong>
+                    Skills:
+                  </strong>
+                  {{lp.displaySkills()}}
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-md-1'></div>
+                <div class='col-md-7'>
+                  <strong>
+                    Traits:
+                  </strong>
+                  {{lp.traitPts}} pt: {{lp.displayTraits()}}
+                </div>
+              </div>
+              <div class='row' ng-show='lp.requires'>
+                <div class='col-md-1'></div>
+                <div class='col-md-7'>
+                  <strong>Requires:</strong>
+                  {{lp.requires}}
+                </div>
+              </div>
+              <div class='row' ng-show='lp.restrict'>
+                <div class='col-md-1'></div>
+                <div class='col-md-7'>
+                  <strong>Restrictions:</strong>
+                  {{lp.restrict}}
+                </div>
+              </div>
+              <div class='row' ng-show='lp.note'>
+                <div class='col-md-1'></div>
+                <div class='col-md-7'>
+                  <strong>Note:</strong>
+                  {{lp.note}}
+                </div>
+              </div>
+              <div class='row' ng-show="stock == 'orc' &amp;&amp; lp.brutalLifeDOF != 0">
+                <div class='col-md-1'></div>
+                <div class='col-md-7'>
+                  <strong>Brutal Life:</strong>
+                  Die of Fate roll was {{lp.brutalLifeDOF}}.
+                  <span ng-show='lp.brutalLifeTraitName'>Unfortunately, you gained the {{lp.brutalLifeTraitName}} trait.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Add Lifepath</h4>
+        <div class='container'>
+          <div class='row' ng-hide='brutalLifeWithdrawn'>
+            <div class='col-md-3'>
+              <select class='form-control' ng-change='onSettingChange()' ng-model='currentSetting' ng-options='s for s in settingNames'></select>
+            </div>
+            <div class='col-md-3'>
+              <select class='form-control' ng-model='currentSettingLifepath' ng-options="s for s in currentSettingLifepathNames | orderBy:'toString()'"></select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click='onAddLifepathClick()'>Add</a>
+            </div>
+          </div>
+          <div class='row' ng-show='brutalLifeWithdrawn'>
+            <div class='col-md-6'>
+              You've removed a lifepath where the Brutal Life rules caused an unsavoury trait. Removing the lifepath
+              means your character chose to bow and prostrate before his betters, and cannot progress any further in
+              character burning.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel-heading' ng-show='age &gt; 0'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_stats' data-toggle='collapse' href=''>
+          Stats and Attributes
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_stats' ng-show='age &gt; 0'>
+      <div class='panel-body'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-5'>
+              <strong>Remaining:</strong>
+              Physical: {{unspentStatPoints.physical}}/{{totalStatPoints.physical}} pts,
+              Mental: {{unspentStatPoints.mental}}/{{totalStatPoints.mental}} pts,
+              Either: {{unspentStatPoints.either}}/{{totalStatPoints.either}} pts
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-1'>
+              <br>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-1'>
+              <button class='btn btn-default btn-sm' ng-click='distributeStats()'>Distribute</button>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-1'>
+              <br>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-5'>
+              <div class='row' ng-repeat='stat in stats'>
+                <div class='col-md-3'>
+                  {{stat.name}}
+                </div>
+                <div class='col-md-3'>
+                  <button class='btn btn-default btn-xs' ng-click='changeStatShade(stat)'>{{stat.shade}}</button>
+                  {{stat.exp()}}
+                  <div class='btn-group'>
+                    <button class='btn btn-default btn-xs' ng-click='incrementStat(stat)'>+</button>
+                    <button class='btn btn-default btn-xs' ng-click='decrementStat(stat)'>-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='col-md-7'>
+              <div class='row' ng-repeat='attrname in attributeNames()'>
+                <div class='col-md-4'>
+                  {{attrname}}
+                </div>
+                <div class='col-md-2'>
+                  <span ng-show='attributeShade[attrname]'>
+                    <button class='btn btn-default btn-xs' ng-click='changeAttributeShade(attrname)'>{{attribute(attrname).shade}}</button>
+                  </span>
+                  <span ng-hide='attributeShade[attrname]'>
+                    {{attribute(attrname).shade}}
+                  </span>
+                  {{attribute(attrname).exp}}
+                </div>
+                <div class='col-md-1' ng-show='attribute(attrname).modifyable'>
+                  <a href='' ng-click='answerEmotionalAttributeQuestions(attrname)'>modify</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel-heading' ng-show='age &gt; 0'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_ptgs' data-toggle='collapse' href=''>
+          Physical Tolerances Grayscale
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_ptgs' ng-show='age &gt; 0'>
+      <div class='panel-body'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-2'>
+              <table class='table table-condensed'>
+                <tr>
+                  <th>Su</th>
+                  <th>Li</th>
+                  <th>Mi</th>
+                  <th>Se</th>
+                  <th>Tr</th>
+                  <th>Mo</th>
+                </tr>
+                <tr>
+                  <td>B{{ptgs.su}}</td>
+                  <td>B{{ptgs.li}}</td>
+                  <td>B{{ptgs.mi}}</td>
+                  <td>B{{ptgs.se}}</td>
+                  <td>B{{ptgs.tr}}</td>
+                  <td>B{{ptgs.mo}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel-heading' ng-show='age &gt; 0'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_skills' data-toggle='collapse' href=''>
+          Skills
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_skills' ng-show='age &gt; 0'>
+      <div class='panel-body'>
+        <strong>Remaining:</strong>
+        Lifepath: {{unspentSkillPoints.lifepath}}/{{totalSkillPoints.lifepath}} pts, General: {{unspentSkillPoints.general}}/{{totalSkillPoints.general}} pts
+        <br>
+        <br>
+        <ul class='list-group' id='skills-list-group' ng-show='hashValues(allSelectedSkills()).length &gt; 0'>
+          <li class='list-group-item'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  <strong>Name</strong>
+                </div>
+                <div class='col-md-2'>
+                  <strong>Root</strong>
+                </div>
+                <div class='col-md-2'>
+                  <strong>Shade and Exponent</strong>
+                </div>
+                <div class='col-md-2'>
+                  <strong>Notes</strong>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- / Attempt to color skills that have exp > 0 -->
+          <!-- /%li{ :class => "list-group-item", "ng-repeat" => "skill in hashValues(allSelectedSkills) | orderBy:'name'", "ng-class" => "{highlight: exp() > 0}" } -->
+          <li class='list-group-item' ng-repeat="skill in hashValues(allSelectedSkills()) | orderBy:'name'">
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  <span ng-style='skillStyle(skill)'>
+                    {{skill.name}}
+                  </span>
+                </div>
+                <div class='col-md-2'>
+                  {{skill.displayRoots()}}
+                </div>
+                <div class='col-md-2' ng-hide='skill.isTraining'>
+                  {{skill.shade(statsForSkillCalc)}} {{skill.exp(statsForSkillCalc)}}
+                  <div class='btn-group'>
+                    <button class='btn btn-default btn-xs' ng-click='incrementSkill(skill)'>+</button>
+                    <button class='btn btn-default btn-xs' ng-click='decrementSkill(skill)'>-</button>
+                  </div>
+                </div>
+                <div class='col-md-2' ng-show='skill.isTraining'>
+                  <input ng-checked='skill.pointsSpent() &gt; 0' ng-click='changeTrainingSkill($event, skill)' type='checkbox'>
+                </div>
+                <div class='col-md-2'>
+                  {{skill.notes()}}
+                </div>
+                <div class='col-md-1' ng-show='isGeneralSkill(skill)'>
+                  <button class='btn btn-default btn-xs' ng-click='removeGeneralSkill(skill)'>remove</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-4'>
+              <h4>Add General Skill</h4>
+            </div>
+            <div class='col-md-4'>
+              <h4>Add Custom -Wise</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-3'>
+              <select class='form-control' ng-model='currentGeneralSkill' ng-options='s for s in selectableGeneralSkills()'></select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click='addGeneralSkill(currentGeneralSkill)'>Add</a>
+            </div>
+            <div class='col-md-3'>
+              <input class='form-control' id='customWiseName' ng-model='customWiseName' placeholder="Enter '-wise' name" type='text'>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click='addCustomWise(customWiseName)'>Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel-heading' ng-show='age &gt; 0'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_traits' data-toggle='collapse' href=''>
+          Traits
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_traits' ng-show='age &gt; 0'>
+      <div class='panel-body'>
+        <div class='alert alert-danger' ng-repeat='warn in lifepathTraitWarnings'>{{warn}}</div>
+        <div class='alert alert-danger alert-dismissable' ng-repeat="warn in alertsOfType('trait', 'warn')">
+          <button aria-hidden='true' class='close' ng-click="removeAlert('trait',warn)" type='button'>&times;</button>
+          {{warn}}
+        </div>
+        <strong>Remaining:</strong>
+        {{unspentTraitPoints}}/{{totalTraitPoints}} pts
+        <br>
+        <br>
+        <ul class='list-group' id='traits-list-group' ng-show='hashValues(commonTraits).length &gt; 0 || hashValues(purchasedTraits).length &gt; 0 ||hashValues(requiredTraits).length &gt; 0'>
+          <li class='list-group-item'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-3'>
+                  <strong>Name</strong>
+                </div>
+                <div class='col-md-2'>
+                  <strong>Type</strong>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat="trait in hashValues(commonTraits) | orderBy:'name'">
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-3' data-placement='top' data-toggle='tooltip' title='{{trait.desc}}'>
+                  {{trait.name}}
+                </div>
+                <div class='col-md-2'>
+                  {{trait.typeForDisplay()}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat="trait in hashValues(purchasedTraits) | orderBy:'name'">
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-3' data-placement='top' data-toggle='tooltip' title='{{trait.desc}}'>
+                  {{trait.name}}
+                </div>
+                <div class='col-md-2'>
+                  {{trait.typeForDisplay()}}
+                </div>
+                <div class='col-md-1'>
+                  <button class='btn btn-default btn-xs' ng-click='removeTrait(trait)'>remove</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat="trait in hashValues(requiredTraits) | orderBy:'name'">
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-3' data-placement='top' data-toggle='tooltip' title='{{trait.desc}}'>
+                  {{trait.name}}
+                </div>
+                <div class='col-md-2'>
+                  {{trait.typeForDisplay()}}
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-4'>
+              <h4>Add Trait from Lifepaths</h4>
+            </div>
+            <div class='col-md-4'>
+              <h4>Add Special Trait</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-3'>
+              <select class='form-control' ng-model='currentLifepathTrait' ng-options='s for s in lifepathTraitsForDisplay()'></select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click='addLifepathTrait(currentLifepathTrait)'>Add</a>
+            </div>
+            <div class='col-md-3'>
+              <select class='form-control' ng-model='currentSpecialTrait' ng-options='s.nameForListDisplay for s in specialTraitsForDisplay'></select>
+            </div>
+            <div class='col-md-3'>
+              <a href='' ng-click='addSpecialTrait(currentSpecialTrait)'>Add</a>
+              |
+              <a href='' ng-click='chooseTraitUsingAdvancedSearch()'>Search traits...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel-heading' ng-show='age &gt; 0'>
+      <h4 class='panel-title'>
+        <a data-target='#collapse_resources' data-toggle='collapse' href=''>
+          Resources
+        </a>
+      </h4>
+    </div>
+    <div class='panel-collapse collapse in' id='collapse_resources' ng-show='age &gt; 0'>
+      <div class='panel-body'>
+        <div class='alert alert-danger alert-dismissable' ng-repeat="warn in alertsOfType('resources', 'warn')">
+          <button aria-hidden='true' class='close' ng-click="removeAlert('resources',warn)" type='button'>&times;</button>
+          {{warn}}
+        </div>
+        <strong>Remaining:</strong>
+        {{unspentResourcePoints}}/{{totalResourcePoints}} rps
+        <br>
+        <br>
+        <ul class='list-group' id='resources-list-group' ng-show='hashValues(gear).length &gt; 0 || hashValues(relationships).length &gt; 0 || hashValues(affiliations).length &gt; 0 || hashValues(reputations).length &gt; 0 || hashValues(property).length &gt; 0'>
+          <li class='list-group-item'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  <strong>Type</strong>
+                </div>
+                <div class='col-md-5'>
+                  <strong>Desc</strong>
+                </div>
+                <div class='col-md-1'>
+                  <strong>Cost</strong>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat='gear in hashValues(gear)'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  Gear
+                </div>
+                <div class='col-md-5'>
+                  {{gear.forDisplay()}}
+                </div>
+                <div class='col-md-1'>
+                  {{gear.cost}}
+                </div>
+                <div class='col-md-1'>
+                  <a href='' ng-click="removeResource('gear', gear)">remove</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat='property in hashValues(property)'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  Property
+                </div>
+                <div class='col-md-5'>
+                  {{property.forDisplay()}}
+                </div>
+                <div class='col-md-1'>
+                  {{property.cost}}
+                </div>
+                <div class='col-md-1'>
+                  <a href='' ng-click="removeResource('property', property)">remove</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat='rel in hashValues(relationships)'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  Relationship
+                </div>
+                <div class='col-md-5'>
+                  {{rel.forDisplay()}}
+                </div>
+                <div class='col-md-1'>
+                  {{rel.cost}}
+                </div>
+                <div class='col-md-1'>
+                  <a href='' ng-click="removeResource('relationship', rel)">remove</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat='rel in hashValues(affiliations)'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  Affiliation
+                </div>
+                <div class='col-md-5'>
+                  {{rel.forDisplay()}}
+                </div>
+                <div class='col-md-1'>
+                  {{rel.cost}}
+                </div>
+                <div class='col-md-1'>
+                  <a href='' ng-click="removeResource('affiliation', rel)">remove</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='list-group-item' ng-repeat='rel in hashValues(reputations)'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-2'>
+                  Reputation
+                </div>
+                <div class='col-md-5'>
+                  {{rel.forDisplay()}}
+                </div>
+                <div class='col-md-1'>
+                  {{rel.cost}}
+                </div>
+                <div class='col-md-1'>
+                  <a href='' ng-click="removeResource('reputation', rel)">remove</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md-2'>
+              <strong>Select Category</strong>
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' ng-model='resourceAdderToShow'>
+                <option value='gear'>Gear</option>
+                <option value='property'>Property</option>
+                <option value='relationship'>Relationship</option>
+                <option value='affiliation'>Affiliation</option>
+                <option value='reputation'>Reputation</option>
+              </select>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-2'>
+              <h4 ng-show="resourceAdderToShow == 'gear'">Add Gear</h4>
+              <h4 ng-show="resourceAdderToShow == 'property'">Add Property</h4>
+              <h4 ng-show="resourceAdderToShow == 'relationship'">Add Relationship</h4>
+              <h4 ng-show="resourceAdderToShow == 'affiliation'">Add Affiliation</h4>
+              <h4 ng-show="resourceAdderToShow == 'reputation'">Add Reputation</h4>
+            </div>
+          </div>
+        </div>
+        <div class='container' ng-show="resourceAdderToShow == 'gear'">
+          <div class='row'>
+            <div class='col-md-3'>
+              <select class='form-control' ng-change='calculateHierarchyListForSelectN(gearListForSelect, currentSelectListGear, 1)' ng-model='currentSelectListGear[0]' ng-options='s.displayName for s in gearListForSelect[0]'></select>
+            </div>
+            <div class='col-md-3' ng-show='gearListForSelect[1].length &gt; 0'>
+              <select class='form-control' ng-change='calculateHierarchyListForSelectN(gearListForSelect, currentSelectListGear, 2)' ng-model='currentSelectListGear[1]' ng-options='s.displayName for s in gearListForSelect[1]'></select>
+            </div>
+            <div class='col-md-3' ng-show='gearListForSelect[2].length &gt; 0'>
+              <select class='form-control' ng-model='currentSelectListGear[2]' ng-options='s.displayName for s in gearListForSelect[2]'></select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click='addSelectListGear()'>Add</a>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-1'>
+              <br>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-3'>
+              <h4>Add Custom Gear</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-3'>
+              <input class='form-control' id='name' ng-model='currentGearDesc' placeholder='Enter name/description' type='text'>
+            </div>
+            <div class='col-md-2'>
+              <input class='form-control' id='cost' ng-model='currentGearCost' placeholder='Enter cost in rps' type='text'>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click="addResource('gear')">Add</a>
+              <!-- %select{ :class => "form-control", "ng-options" => "s.name for s in burningData.gearListForSelect()" } -->
+            </div>
+          </div>
+        </div>
+        <div class='container' ng-show="resourceAdderToShow == 'property'">
+          <div class='row'>
+            <div class='col-md-3'>
+              <select class='form-control' ng-change='calculateHierarchyListForSelectN(propertyListForSelect, currentSelectListProperty, 1)' ng-model='currentSelectListProperty[0]' ng-options='s.displayName for s in propertyListForSelect[0]'></select>
+            </div>
+            <div class='col-md-3' ng-show='propertyListForSelect[1].length &gt; 0'>
+              <select class='form-control' ng-change='calculateHierarchyListForSelectN(propertyListForSelect, currentSelectListProperty, 2)' ng-model='currentSelectListProperty[1]' ng-options='s.displayName for s in propertyListForSelect[1]'></select>
+            </div>
+            <div class='col-md-3' ng-show='propertyListForSelect[2].length &gt; 0'>
+              <select class='form-control' ng-model='currentSelectListProperty[2]' ng-options='s.displayName for s in propertyListForSelect[2]'></select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click='addSelectListProperty()'>Add</a>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-1'>
+              <br>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-3'>
+              <h4>Add Custom Property</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-3'>
+              <input class='form-control' id='name' ng-model='currentPropertyDesc' placeholder='Enter name/description' type='text'>
+            </div>
+            <div class='col-md-3'>
+              <input class='form-control' id='cost' ng-model='currentPropertyCost' placeholder='Enter cost in rps' type='text'>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click="addResource('property')">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class='container' ng-show="resourceAdderToShow == 'relationship'">
+          <div class='row'>
+            <div class='col-md-3'>
+              <input class='form-control' id='name' ng-model='currentRelationshipDesc' placeholder='Enter description' type='text'>
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' ng-model='currentRelationshipImportance' placeholder='test'>
+                <option value='minor'>Minor: 5 rps</option>
+                <option value='significant'>Significant: 10 rps</option>
+                <option value='powerful'>Powerful: 15 rps</option>
+              </select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click="addResource('relationship')">Add</a>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-2'>
+              <input ng-model='currentRelationshipIsImmedFam' type='checkbox'>Immediate family: -2 rps</input>
+            </div>
+            <div class='col-md-2'>
+              <input ng-model='currentRelationshipIsOtherFam' type='checkbox'>Other family: -1 rps</input>
+            </div>
+            <div class='col-md-2'>
+              <input ng-model='currentRelationshipIsRomantic' type='checkbox'>Romantic: -2 rps</input>
+            </div>
+            <div class='col-md-2'>
+              <input ng-model='currentRelationshipIsForbidden' type='checkbox'>Forbidden: -1 rps</input>
+            </div>
+            <div class='col-md-2'>
+              <input ng-model='currentRelationshipIsHateful' type='checkbox'>Hateful or Rivals: -2 rps</input>
+            </div>
+          </div>
+        </div>
+        <div class='container' ng-show="resourceAdderToShow == 'affiliation'">
+          <div class='row'>
+            <div class='col-md-3'>
+              <input class='form-control' id='affiliation' ng-model='currentAffiliationDesc' placeholder='Enter description' type='text'>
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' ng-model='currentAffiliationImportance'>
+                <option value='small'>1D, Small, Local, or Specialized: 10 rps</option>
+                <option value='large'>2D, Large, Regional, or Expansive: 25 rps</option>
+                <option value='national'>3D, National, Powerful, or Ruling: 50 rps</option>
+              </select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click="addResource('affiliation')">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class='container' ng-show="resourceAdderToShow == 'reputation'">
+          <div class='row'>
+            <div class='col-md-3'>
+              <input class='form-control' id='reputation' ng-model='currentReputationDesc' placeholder='Enter description' type='text'>
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' ng-model='currentReputationImportance'>
+                <option value='local'>1D, Local or Minor: 7 rps</option>
+                <option value='regional'>2D, Regional or Notable: 25 rps</option>
+                <option value='national'>3D, National or Major: 45 rps</option>
+              </select>
+            </div>
+            <div class='col-md-1'>
+              <a href='' ng-click="addResource('reputation')">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id='versiontext'>Charred v{{serverSettings.versionString}}</span>

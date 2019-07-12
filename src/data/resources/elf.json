@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Run Of The Mill Bow",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Run Of The Mill Arms",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Reinforced Leather",
+    "type": "gear",
+    "rp": 3
+  },
+  {
+    "name": "Light Mail",
+    "type": "gear",
+    "rp": 6
+  },
+  {
+    "name": "Heavy Mail",
+    "type": "gear",
+    "rp": 10
+  },
+  {
+    "name": "Plated Mail",
+    "type": "gear",
+    "rp": 20
+  },
+  {
+    "name": "Elven Armor",
+    "type": "gear",
+    "resources": [
+      {
+        "name": "Gambeson",
+        "rp": 9
+      },
+      {
+        "name": "Reinforced Leather",
+        "resources": null,
+        "rp": 20
+      },
+      {
+        "name": "Light Mail",
+        "resources": null,
+        "rp": 30
+      },
+      {
+        "name": "Heavy Mail",
+        "rp": 40
+      },
+      {
+        "name": "Plated Mail",
+        "rp": 75
+      }
+    ]
+  },
+  {
+    "name": "Elven Arms",
+    "type": "gear",
+    "rp": 15
+  },
+  {
+    "name": "Elven Bow",
+    "type": "gear",
+    "rp": 25
+  },
+  {
+    "name": "Elven Cloak",
+    "type": "gear",
+    "rp": 30
+  },
+  {
+    "name": "Elven Steed",
+    "type": "gear",
+    "rp": 8
+  },
+  {
+    "name": "Elven Clothes",
+    "type": "gear",
+    "rp": 2
+  },
+  {
+    "name": "Elven Shoes",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Elven Finery",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Elven Rope",
+    "type": "gear",
+    "rp": 12
+  },
+  {
+    "name": "Elven Bread",
+    "type": "gear",
+    "rp": 10
+  },
+  {
+    "name": "Elven Mirrorwine",
+    "type": "gear",
+    "rp": 8
+  },
+  {
+    "name": "Starlight",
+    "type": "gear",
+    "rp": 50
+  },
+  {
+    "name": "Tome Of Lore",
+    "type": "gear",
+    "rp": 20
+  },
+  {
+    "name": "Elven Instrument",
+    "type": "gear",
+    "rp": 6
+  },
+  {
+    "name": "Personal Effects",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Elven Smithy",
+    "type": "property",
+    "rp": 50
+  },
+  {
+    "name": "Artisan's Shop",
+    "type": "property",
+    "rp": 60
+  },
+  {
+    "name": "Skill Tools",
+    "type": "gear",
+    "rp": 9
+  },
+  {
+    "name": "Elven Ship",
+    "type": "gear",
+    "rp": 80
+  },
+  {
+    "name": "Elven Land",
+    "type": "property",
+    "resources": [
+      {
+        "name": "Pastoral",
+        "rp": 20
+      },
+      {
+        "name": "Large Country Manor And Land",
+        "rp": 50
+      },
+      {
+        "name": "Palace",
+        "rp": 100
+      },
+      {
+        "name": "A Forest, Bay Or Mountain",
+        "rp": 150
+      },
+      {
+        "name": "Appartment In The Citadel",
+        "rp": 25
+      }
+    ]
+  }
+]

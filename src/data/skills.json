@@ -1,0 +1,2749 @@
+{
+  "Accounting": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Acting": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Administration": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Ages Of The Etharch": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Alchemy": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Almanac": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Althing-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Ambition-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Amercement": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Ancestral Jaw": {
+    "stock": "wolfish",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Ancient Languages": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Ancient Ways": {
+    "stock": "wolfish",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Anatomy": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Animal Husbandry": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Antiphon Union Training": {
+    "stock": "elven",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Apothecary": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Appraisal": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Archcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Architect": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Armor Training": {
+    "roots": [
+      "Power",
+      "Speed"
+    ]
+  },
+  "Armorer": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Army-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Arson": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Artificer-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Artillerist": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Artillery Hand": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Astrology": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Atilliator": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Aura Reading": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Axe": {
+    "roots": [
+      "Power",
+      "Agility"
+    ]
+  },
+  "Back Alley-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Bad End-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Baking": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Ballad Of History": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Banner-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Bannerman-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Bat-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Bastions Of Hatred": {
+    "stock": "orcish",
+    "roots": [
+      "Hatred"
+    ]
+  },
+  "Beer Appraisal": {
+    "stock": "dwarven",
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Beer-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Begging": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Bird Husbandry": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Black Legion-wise": {
+    "stock": "orcish",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Black Metal Artifice": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Blacksmith": {
+    "roots": [
+      "Agility",
+      "Power"
+    ]
+  },
+  "Bloodletting": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Boatwright": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Bow": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Bowcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Bowyer": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Boxing (Martial Arts)": {
+    "roots": [
+      "Power",
+      "Agility"
+    ]
+  },
+  "Brawling": {
+    "roots": [
+      "Power"
+    ]
+  },
+  "Brazen Horn Of Despair": {
+    "stock": "orcish",
+    "roots": [
+      "Hatred"
+    ]
+  },
+  "Brewer": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Bribe-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Brutal Intimidation": {
+    "stock": "orcish",
+    "roots": [
+      "Hatred"
+    ]
+  },
+  "Burden Of The Crown-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Bureaucracy": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Butchery": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Cadence-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Call Of The Wild": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Calligraphy": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Campaign-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Cargo-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Carpentry": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Cartography": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Cartwright": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Carving": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Cave-in-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Cave-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Champion-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Chandler": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Chattel-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Cheating-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Child Rearing": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Chronology Of Kings": {
+    "stock": "dwarven",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Church Law": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Citadel-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "City-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Clan History": {
+    "stock": "dwarven",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Clan-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Climbing": {
+    "roots": [
+      "Speed"
+    ]
+  },
+  "Cloth Dyeing": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Coarse Persuasion": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Cobbler": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Code Of Citadels": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Command": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Composition": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Conspicuous": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Contract-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Cooking": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Cooper": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Coppersmith": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Counterfeiting": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Countryside-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Crop-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Crossbow": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Crowd-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Cryptography": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Cudgel": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Daily Bread-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Dance": {
+    "roots": [
+      "Speed"
+    ]
+  },
+  "Darkened Street-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Darkness-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Demonology": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Digging": {
+    "roots": [
+      "Power"
+    ]
+  },
+  "Dignity Of The Wilderlands": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Disguise": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Ditch Digging": {
+    "roots": [
+      "Power"
+    ]
+  },
+  "Doctrine": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Doctrine Of Night's Blood": {
+    "stock": "orcish",
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Drama-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Drinking": {
+    "roots": [
+      "Forte"
+    ]
+  },
+  "Driving": {
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Drum Maker": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Drunkard-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Drunking": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Forte"
+    ]
+  },
+  "Dwarf-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Dwarven Art-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Dwarven Heroes-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Dwarven Rune Script": {
+    "stock": "dwarven",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Dye Manufacture": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Earth-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Elf-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Elven Artifact-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Elven Art-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Elven Blade-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Elven Citadel-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Elven Ranger-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Elven Script": {
+    "stock": "elven",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Embroidery": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Empyrealia": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Enchanting": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Engineering": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Engraving": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Escape Artist": {
+    "stock": "wolfish",
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Estate Management": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Estate-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Etching": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Etharch-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Etiquette": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Everybody's Innocent-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Excavation": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Power"
+    ]
+  },
+  "Extortion": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Faith-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Falconry": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Falsehood": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Family-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Family Secret-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Farming": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Fealty-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Fence Building": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Field Dressing": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Fire And Steel-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Firearms": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Firebombs": {
+    "stock": "roden",
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Firebuilding": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Fishing": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Fletcher": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Flock-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Folklore": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Foraging": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Foreign Languages": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Forest-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Forge Artifice": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Forgery": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Formation Fighting": {
+    "training": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Fortifications": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Gambling": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Games Of Chance": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Garrote": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Gas Pocket-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Gem Artifice": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Gemcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Genius-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Gossip-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Grain Appraisal": {
+    "stock": "dwarven",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Grain Song": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Grain-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Grandfather's Song": {
+    "stock": "wolfish",
+    "roots": [
+      "Ancestral Taint"
+    ]
+  },
+  "Graybeard-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Great And Black-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Great Masters-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Great Wolf Husbandry": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Grift-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Guilder-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Haggling": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Hallmaster": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Hammer": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Handwriting-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Hatchet-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Hauling": {
+    "roots": [
+      "Will",
+      "Power"
+    ]
+  },
+  "Heraldry": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Herbalism": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Hills-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "History": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Hold-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Hoof-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Host-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Howling": {
+    "stock": "wolfish",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Hunting": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Hymn Of Scales And Fins": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Illuminations": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Imperfections-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Inconspicuous": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Infection-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Insect Husbandry": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Instruction": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Interrogation": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Intimidation": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Intrigue-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Jargon": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Javelin": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Jewelcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Jeweler": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Khirurgy": {
+    "stock": "dwarven",
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Kingdom-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Knives": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Knots": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Lance": {
+    "roots": [
+      "Agility",
+      "Power"
+    ]
+  },
+  "Lapidary": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Leathercraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Ledger-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Leverage-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Links": {
+    "stock": "dwarven",
+    "roots": [
+      "Will",
+      "Forte"
+    ]
+  },
+  "Lithography": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Lock Pick": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Locksmith": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Logistics": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Lost Treasures-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Lyric Of Law": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Mace": {
+    "roots": [
+      "Power",
+      "Agility"
+    ]
+  },
+  "Maker's Mark-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Man-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Mason": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Martial Arts": {
+    "roots": [
+      "Power",
+      "Agility"
+    ]
+  },
+  "Meditation": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Mending": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Mercenary Company-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Metal-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Midwifery": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Mill-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Miller": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Mimicry": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Mining": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Monk-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Mounted Combat Training": {
+    "roots": [
+      "Will",
+      "Power"
+    ]
+  },
+  "Mounted Combat: Bowman Training": {
+    "roots": [
+      "Will",
+      "Power"
+    ]
+  },
+  "Mouth Of Hell-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Mule-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Munitions": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Music Composition": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Musical Instrument": {
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Mystery Meat-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Name Ritual": {
+    "stock": "orcish",
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Nature Of All Things": {
+    "stock": "wolfish",
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Navigation": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Nogger": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Nursing": {
+    "stock": "wolfish",
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Oath-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Obligation-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Obscure Text-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Observation": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Oratory": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Orc-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Ore-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Orienteering": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Pack Etiquette": {
+    "stock": "wolfish",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Paean Of Deeds": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Painting": {
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Pattern-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Personal Effects-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Persuasion": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Philosophy": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Pilgrimage-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Pilot": {
+    "roots": [
+      "Perception",
+      "Power"
+    ]
+  },
+  "Playwright": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Plumbing": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Poetry": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Poison-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Poisonous Platitudes": {
+    "stock": "orcish",
+    "roots": [
+      "Hatred"
+    ]
+  },
+  "Poisons": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Polearm": {
+    "roots": [
+      "Power",
+      "Agility"
+    ]
+  },
+  "Potter": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Primal Bark": {
+    "stock": "wolfish",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Prospecting": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Purple Song": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Ratiquette": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Read": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rearing": {
+    "stock": "wolfish",
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Reason Of Old Stone": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Religious Diatribe": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Reputation-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Research": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rhetoric": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rhyme Of The Gatherer": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rhyme Of The Mariner": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Agility",
+      "Speed"
+    ]
+  },
+  "Rhyme Of The Pathfinder": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rhythm Of The City-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Riddle Of Steel": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Rediculous Request-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Riding": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Rigging": {
+    "roots": [
+      "Agility",
+      "Speed"
+    ]
+  },
+  "Ritual": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Rituals Of Blood": {
+    "stock": "orcish",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Rituals Of Night": {
+    "stock": "orcish",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rituals-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Road-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rope Chant": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Round Of Harvest": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Royal Secret-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rude Carpentry": {
+    "stock": "orcish",
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Rule Of Law": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rumour-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Rune Casting": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Saddlery": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Saint-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Savage Attack": {
+    "stock": "wolfish",
+    "roots": [
+      "Agility",
+      "Speed"
+    ]
+  },
+  "Scavenging": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Sculpture": {
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Scutwork-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Seamanship": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Seduction": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Servant-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Sewing": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Shield Training": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Ship Management": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Ship-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Shipwright": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Shortcut-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Shrewd Appraisal": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Siege Engineer": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Signaling": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Silent Fury": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Silver Trumpet": {
+    "stock": "elven",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Sing": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Skirmish Tactics": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Slave Deck-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Sleight Of Hand": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Slip Of Currents": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Smithcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Soldiering": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Song Of The Eldar": {
+    "stock": "elven",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Song Of Feasting": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Song Of Flocks And Herds": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Form": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Lordship": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Paths And Ways": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Song Of Soothing": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Soothing Platitudes": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Sorcery": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Sorcery-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Spear": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Spearcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Spider Husbandry": {
+    "stock": "orcish",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Spirit Binding": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Spiel-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Staff": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Starcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Stealthy": {
+    "roots": [
+      "Speed"
+    ]
+  },
+  "Stentorious Debate": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Stentorious Singing": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Stone Artifice": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Power"
+    ]
+  },
+  "Stonecraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Strategy": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Strategy Games": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Streetwise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Structural Weakness-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Stuff-wise": {
+    "stock": "dwarven",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Suasion": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "Suicidal Bravery-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Summoning": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Supplier-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Supply-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Surgery": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Survival": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Sword": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Symbology": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Tactics": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Tall Grass-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Tanner": {
+    "roots": [
+      "Agility",
+      "Forte"
+    ]
+  },
+  "Taskmaster-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Tavern Tales-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Taxidermy": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Terroir-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Theatrics": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "The Way Of The First Hunter": {
+    "stock": "wolfish",
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Threading Chant": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Throwing": {
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Tongue Of The Ancient One": {
+    "stock": "wolfish",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Torture": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Orcish Torture": {
+    "stock": "orcish",
+    "roots": [
+      "Hatred"
+    ]
+  },
+  "Tracking": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Tragic End-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Trails-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Trapper": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Treasure-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Tree Cutting": {
+    "roots": [
+      "Perception",
+      "Power"
+    ]
+  },
+  "Tree Pulling": {
+    "stock": "orcish",
+    "roots": [
+      "Hatred"
+    ]
+  },
+  "Troll Etiquette": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Troll-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Tune-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Tunneling": {
+    "stock": "roden",
+    "roots": [
+      "Power"
+    ]
+  },
+  "Preaching": {
+    "stock": "roden",
+    "roots": [
+      "Will"
+    ]
+  },
+  "Tunnel-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Two-fisted Fighting Training": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Ugly Truth": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Vein-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Vile Poisoner": {
+    "stock": "orcish",
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Village Secret-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Vine-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Vintage-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Vintner": {
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Visage-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Voice Of Thunder": {
+    "stock": "elven",
+    "roots": [
+      "Will",
+      "Power"
+    ]
+  },
+  "Wagon-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Waiting Tables": {
+    "roots": [
+      "Will"
+    ]
+  },
+  "War Art": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "War Engineer": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Perception"
+    ]
+  },
+  "Weaponsmith": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Weaving": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Weaving Way": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Web-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Well-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Whip-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Whispered Secrets-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "White Metal Artifice": {
+    "stock": "dwarven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Whitesmith": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Windage-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Wine Tasting": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Wolf-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Wolfish Hunting": {
+    "stock": "wolfish",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Wood-wise": {
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Woodcraft": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will",
+      "Agility"
+    ]
+  },
+  "Write": {
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Air Of Gates": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Alarm": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Anthem Of Courage": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Ballad Of Rage": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Canticle Of Years": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Chant Of Offering": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Council Caller": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Discerner": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Doom Of Strength": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Doom Sayer": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Evensong": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Gift Of Speed": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Hymn Of Victory": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Homesong": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Lament For The Fallen": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Lament Of Mourning": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Lament Of Stars": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Lament Of The Westering Sun": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Lay Of The Horse": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Litany Of Responsibilities": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Lyric Of Healing": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Monody Of The March": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Mornsong": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Recitation Of Ages": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Rhyme Of Rules": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Rhyme Of Tongues": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Arbors": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Bonding": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Burning Bright": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Merriment": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Silence": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of Songs": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Song Of The Sword": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Strain Of Far Sight": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Supplication To The Wind": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Threne Of The Chameleon": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Tract Of Enmity": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Verse Of Decision": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Verse Of Friendship": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Voice Of Ages": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  },
+  "Weathersong": {
+    "stock": "elven",
+    "magic": 1,
+    "roots": [
+      "Will"
+    ]
+  }
+}

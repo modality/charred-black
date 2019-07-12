@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Shoddy Arms",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Dwarven Arms",
+    "rp": 20,
+    "type": "gear"
+  },
+  {
+    "name": "Shoddy Crossbow",
+    "rp": 6,
+    "type": "gear"
+  },
+  {
+    "name": "Dwarven Arbalest",
+    "rp": 20,
+    "type": "gear"
+  },
+  {
+    "name": "Dwarven-made Light Mail",
+    "rp": 9,
+    "type": "gear"
+  },
+  {
+    "name": "Dwarven-made Heavy Mail",
+    "rp": 10,
+    "type": "gear"
+  },
+  {
+    "name": "Dwarven-made Plated Mail",
+    "rp": 20,
+    "type": "gear"
+  },
+  {
+    "name": "Dwarven Mail",
+    "rp": 100,
+    "type": "gear"
+  },
+  {
+    "name": "Forge Mask",
+    "rp": 40,
+    "type": "gear"
+  },
+  {
+    "name": "Dwarven Shield",
+    "rp": 20,
+    "type": "gear"
+  },
+  {
+    "name": "Riding Mount Or Pack Animal",
+    "rp": 8,
+    "type": "gear"
+  },
+  {
+    "name": "Clothes",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Traveling Gear",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Sturdy Shoes",
+    "rp": 1,
+    "type": "gear"
+  },
+  {
+    "name": "Finery",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Chronicles",
+    "rp": 15,
+    "type": "gear"
+  },
+  {
+    "name": "Keg O' Nog",
+    "rp": 20,
+    "type": "gear"
+  },
+  {
+    "name": "Small Dwarven House",
+    "rp": 10,
+    "type": "property"
+  },
+  {
+    "name": "Large Dwarven House",
+    "rp": 15,
+    "type": "property"
+  },
+  {
+    "name": "A Dwarven Hall",
+    "rp": 30,
+    "type": "property"
+  },
+  {
+    "name": "A Graybeard's Hold",
+    "rp": 40,
+    "type": "property"
+  },
+  {
+    "name": "An Engineer's Hold",
+    "rp": 45,
+    "type": "property"
+  },
+  {
+    "name": "A Master Artificer's Hold",
+    "rp": 60,
+    "type": "property"
+  },
+  {
+    "name": "A Warden's Hold",
+    "rp": 75,
+    "type": "property"
+  },
+  {
+    "name": "A High Captain's Hold",
+    "rp": 90,
+    "type": "property"
+  },
+  {
+    "name": "A Prince's Hold",
+    "rp": 105,
+    "type": "property"
+  },
+  {
+    "name": "A Workshop",
+    "rp": 60,
+    "type": "property"
+  },
+  {
+    "name": "Dwarven Tools",
+    "rp": 10,
+    "type": "gear"
+  },
+  {
+    "name": "Shoddy Tools",
+    "rp": 5,
+    "type": "gear"
+  },
+  {
+    "name": "Carts And Baggage",
+    "rp": 15,
+    "type": "gear"
+  }
+]

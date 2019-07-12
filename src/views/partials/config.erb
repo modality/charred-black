@@ -1,0 +1,38 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-8'>
+      <input ng-model='enforceLifepathReqts' type='checkbox'>
+      Enforce lifepath requirements
+    </div>
+    <div class='col-md-8'>
+      <input ng-model='enforcePointLimits' type='checkbox'>
+      Enforce point limits (stat points, skill points, trait points, etc.)
+    </div>
+  </div>
+  <!-- .row -->
+  <!-- .col-md-8 -->
+  <!-- %input{ :type => "checkbox", "ng-model" => "displayEmotionalMath"} -->
+  <!-- Display the calculations for Health, Steel and the emotional attributes -->
+  <div class='row'>
+    <div class='col-md-1'>&nbsp;</div>
+  </div>
+  <div class='row'>
+    <div class='col-md-3'>
+      Modify Appropriate Weapons:
+    </div>
+    <div class='col-md-2'>
+      <select class='form-control' ng-model='currentAppropriateWeaponLifepath' ng-options='s for s in hashKeys(appropriateWeapons)'></select>
+    </div>
+    <div class='col-md-1'>
+      <a href='' ng-click='editAppropriateWeapons()'>Edit</a>
+    </div>
+    <div class='col-md-1'>
+      <a href='' ng-click='deleteAppropriateWeapons()'>Delete</a>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-2'>
+      <button class='btn btn-primary' ng-click='applySettings()'>Apply</button>
+    </div>
+  </div>
+</div>

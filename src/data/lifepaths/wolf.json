@@ -1,0 +1,971 @@
+{
+  "Wild Pack Setting": {
+    "Born To The Pack": {
+      "time": 1,
+      "res": 0,
+      "leads": [
+        "Captive"
+      ],
+      "skills": [
+        [
+          2,
+          "Howling"
+        ],
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        2
+      ],
+      "common_traits": [
+        "Crushing Jaws",
+        "Deep Fur",
+        "Great Lupine Form",
+        "Lupine Intellect",
+        "Long-legged",
+        "Wolf's Eyes",
+        "Wolf's Snout",
+        "Woodland Ear"
+      ],
+      "key_leads": [
+        "Captive Subsetting"
+      ]
+    },
+    "Yearling": {
+      "time": 1,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Captive",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          8,
+          "Pack Etiquette",
+          "Stealthy",
+          "Wolfish Hunting",
+          "Tracking",
+          "Foraging",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Wolves taking this lifepath must be 1 year old.",
+      "requires_expr": [
+        "+and",
+        [
+          "+age_less_than",
+          1.5
+        ],
+        [
+          "born to the pack",
+          "last wolf"
+        ]
+      ],
+      "key_leads": [
+        "Captive Subsetting",
+        "Outcast Subsetting"
+      ]
+    },
+    "Hunter": {
+      "time": 1,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Captive",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          7,
+          "Wolfish Hunting",
+          "Hoof-wise",
+          "Intimidation",
+          "Brawling",
+          "Begging",
+          "Scent-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Submissive"
+      ],
+      "requires_expr": [
+        "born to the pack",
+        "last wolf"
+      ],
+      "key_leads": [
+        "Captive Subsetting",
+        "Outcast Subsetting"
+      ]
+    },
+    "Dominant": {
+      "time": 1,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Captive",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          5,
+          "Intimidation",
+          "Command",
+          "Nursing",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        1,
+        "Dominant"
+      ],
+      "requires": "Yearling, Aunt, Unce, or Last Wolf.",
+      "note": "Only female dominants of 3 years or older may take the Nursing skill.",
+      "requires_expr": [
+        "yearling",
+        "aunt",
+        "uncle",
+        "last wolf"
+      ],
+      "key_leads": [
+        "Captive Subsetting",
+        "Outcast Subsetting"
+      ]
+    },
+    "Aunt": {
+      "time": 0.5,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Captive",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          4,
+          "Nursing",
+          "Pup-wise",
+          "Scavenging",
+          "Begging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Submissive"
+      ],
+      "requires_expr": [
+        "+and",
+        [
+          "born to the pack",
+          "last wolf"
+        ],
+        [
+          "+sex",
+          "female"
+        ]
+      ],
+      "key_leads": [
+        "Captive Subsetting",
+        "Outcast Subsetting"
+      ]
+    },
+    "Uncle": {
+      "time": 0.5,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Captive",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          4,
+          "Rearing",
+          "Pup-wise",
+          "Scavenging",
+          "Begging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Submissive"
+      ],
+      "requires_expr": [
+        "+and",
+        [
+          "born to the pack",
+          "last wolf"
+        ],
+        [
+          "+sex",
+          "male"
+        ]
+      ],
+      "key_leads": [
+        "Captive Subsetting",
+        "Outcast Subsetting"
+      ]
+    },
+    "Elder": {
+      "time": 2,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast"
+      ],
+      "skills": [
+        [
+          7,
+          "Begging",
+          "Man-wise",
+          "Orc-wise",
+          "Elf-wise",
+          "Forest-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Submissive"
+      ],
+      "requires_expr": [
+        "+and",
+        [
+          "born to the pack",
+          "last wolf"
+        ],
+        [
+          "+age_greater_than",
+          8.5
+        ]
+      ],
+      "key_leads": [
+        "Outcast Subsetting"
+      ]
+    },
+    "Last Wolf": {
+      "time": 0.5,
+      "res": 2,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Captive",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          2,
+          "Begging",
+          "Pack Etiquette"
+        ]
+      ],
+      "traits": [
+        2,
+        "Submissive",
+        "Stained"
+      ],
+      "key_leads": [
+        "Captive Subsetting",
+        "Outcast Subsetting"
+      ]
+    }
+  },
+  "Slave To The Legion Setting": {
+    "Born To The Legion": {
+      "time": 1,
+      "res": 0,
+      "leads": [
+        "Captive"
+      ],
+      "skills": [
+        [
+          2,
+          "Howling"
+        ],
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        1,
+        "Vile Language",
+        "Demented"
+      ],
+      "common_traits": [
+        "Crushing Jaws",
+        "Deep Fur",
+        "Great Lupine Form",
+        "Lupine Intellect",
+        "Long-legged",
+        "Wolf's Eyes",
+        "Wolf's Snout",
+        "Woodland Ear"
+      ],
+      "key_leads": [
+        "Captive Subsetting"
+      ]
+    },
+    "Caged And Beaten": {
+      "time": 0.5,
+      "res": 0,
+      "leads": [
+        "Captive"
+      ],
+      "skills": [
+        [
+          3,
+          "Pack Etiquette",
+          "Begging",
+          "Cage-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Submissive",
+        "Tasting The Lash",
+        "Deranged"
+      ],
+      "key_leads": [
+        "Captive Subsetting"
+      ]
+    },
+    "Shadow-chaser": {
+      "time": 1,
+      "res": 2,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          8,
+          "Stealthy",
+          "Tracking",
+          "Trail-wise",
+          "Orc-wise",
+          "Scavenging",
+          "Intimidation",
+          "Rider Training",
+          "Begging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Submissive",
+        "Tasting The Lash"
+      ]
+    },
+    "Wayward": {
+      "time": 0.5,
+      "res": 2,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast"
+      ],
+      "skills": [
+        [
+          6,
+          "Wolfish Hunting",
+          "Foraging",
+          "Brawling",
+          "Stealthy",
+          "Howling",
+          "Escape Artist"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Shadow-Chaser",
+      "requires_expr": [
+        "shadow-chaser"
+      ],
+      "key_leads": [
+        "Outcast Subsetting"
+      ]
+    },
+    "Bitch": {
+      "time": 1,
+      "res": 4,
+      "skills": [
+        [
+          5,
+          "Nursing",
+          "Rearing",
+          "Pup-wise",
+          "Scavenging",
+          "Begging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Submissive"
+      ],
+      "requires": "Must be at least 3 years old.",
+      "requires_expr": [
+        "+and",
+        [
+          "+age_greater_than",
+          2.5
+        ],
+        [
+          "+sex",
+          "female"
+        ]
+      ]
+    },
+    "Howling Beast": {
+      "time": 1,
+      "res": 1,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          7,
+          "Rider Training",
+          "Mounted Combat",
+          "Savage Attack",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        1,
+        "Howl Of Doom"
+      ],
+      "requires": "Shadow-Chaser",
+      "requires_expr": [
+        "shadow-chaser"
+      ]
+    },
+    "Black Destroyer": {
+      "time": 2,
+      "res": 2,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          4,
+          "Rider Training",
+          "Mounted Combat",
+          "Savage Attack"
+        ]
+      ],
+      "traits": [
+        2,
+        "Intense Hatred",
+        "Great Cunning",
+        "Fearless",
+        "Cold-blooded",
+        "Brutality",
+        "Dominant",
+        "Submissive"
+      ],
+      "requires": "Howling Beast or Ebon Tyrant",
+      "requires_expr": [
+        "howling beast",
+        "ebon tyrant"
+      ]
+    },
+    "Ebon Tyrant": {
+      "time": 2,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          5,
+          "Conspicuous",
+          "Command",
+          "Skirmish Tactics",
+          "Strategy"
+        ]
+      ],
+      "traits": [
+        2,
+        "Dominant"
+      ],
+      "requires": "Shadow-Chaser or Black Destroyer",
+      "requires_expr": [
+        "shadow-chaser",
+        "black destroyer"
+      ]
+    },
+    "Dark Friend": {
+      "time": 3,
+      "res": 4,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast"
+      ],
+      "skills": [
+        [
+          5,
+          "Stealthy",
+          "Tracking",
+          "Brawling",
+          "Rituals-wise",
+          "Poisons-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Obedient",
+        "Loyal",
+        "Fearless"
+      ],
+      "requires": "Caged and Beaten",
+      "requires_expr": [
+        "caged and beaten"
+      ],
+      "key_leads": [
+        "Outcast Subsetting"
+      ]
+    }
+  },
+  "Outcast Subsetting": {
+    "Lone Wolf": {
+      "time": 1,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Wild Pack",
+        "Captive",
+        "Spirit Hunter",
+        "Ghost Of The Deeping Wood"
+      ],
+      "skills": [
+        [
+          4,
+          "Territory-wise",
+          "Pack-wise",
+          "Scavenging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Wanderlust"
+      ],
+      "requires": "Yearling, Last Wolf, Captured, Wandering Lost, Ancient Journeyer, Wayward, or Dark Friend.",
+      "requires_expr": [
+        "yearling",
+        "last wolf",
+        "captured and broken",
+        "wandering lost",
+        "ancient journeyer",
+        "wayward",
+        "dark friend"
+      ],
+      "key_leads": [
+        "Wild Pack Setting",
+        "Captive Subsetting",
+        "Spirit Hunter Subsetting",
+        "Ghost Of The Deeping Wood Subsetting"
+      ]
+    },
+    "Scavenger": {
+      "time": 1,
+      "res": 3,
+      "leads": [
+        "Legion",
+        "Wild Pack",
+        "Captive"
+      ],
+      "skills": [
+        [
+          5,
+          "Scent-wise",
+          "Village-wise",
+          "Dog-wise",
+          "Scavenging"
+        ]
+      ],
+      "traits": [
+        1,
+        "Wolfish Scavenger"
+      ],
+      "requires": "Lone Wolf, Captured and Broken, or Captured and Beaten",
+      "requires_expr": [
+        "lone wolf",
+        "captured and broken",
+        "captured and broken"
+      ],
+      "key_leads": [
+        "Slave To The Legion Setting",
+        "Wild Pack Setting",
+        "Captive Subsetting"
+      ]
+    }
+  },
+  "Captive Subsetting": {
+    "Captured And Broken": {
+      "time": 0.5,
+      "res": 3,
+      "leads": [
+        "Legion",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          3,
+          "Begging",
+          "Cage-wise",
+          "Man-wise"
+        ]
+      ],
+      "traits": [
+        3,
+        "Broken Wolf",
+        "Submissive"
+      ],
+      "key_leads": [
+        "Slave To The Legion Setting",
+        "Outcast Subsetting"
+      ]
+    }
+  },
+  "Spirit Hunter Subsetting": {
+    "Spirit-chaser": {
+      "time": 1,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Captive"
+      ],
+      "skills": [
+        [
+          5,
+          "Primal Bark",
+          "Wolfish Hunting",
+          "The Way Of The First Hunter"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Lone Wolf and the Chosen Wolf trait",
+      "requires_expr": [
+        "+and",
+        [
+          "lone wolf"
+        ],
+        [
+          "+trait",
+          "chosen wolf"
+        ]
+      ],
+      "key_leads": [
+        "Outcast Subsetting",
+        "Captive Subsetting"
+      ]
+    },
+    "Spirit-howler": {
+      "time": 1,
+      "res": 4,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Ancestral Jaw"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Spirit-Chaser",
+      "requires_expr": [
+        "spirit-chaser"
+      ]
+    },
+    "Spirit-hunter": {
+      "time": 2,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Ghost Of The Deeping Wood"
+      ],
+      "skills": [
+        [
+          3,
+          "Grandfather's Song"
+        ]
+      ],
+      "traits": [
+        1,
+        "Spirit Nose"
+      ],
+      "requires": "Spirit-Howler",
+      "requires_expr": [
+        "spirit-howler"
+      ],
+      "key_leads": [
+        "Ghost Of The Deeping Wood Subsetting"
+      ]
+    }
+  },
+  "Ghost Of The Deeping Wood Subsetting": {
+    "Wandering Lost": {
+      "time": 0.5,
+      "res": 0,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Spirit Hunter",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          2,
+          "Nature Of All Things"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Last Wolf and Lone Wolf",
+      "requires_expr": [
+        "+and",
+        [
+          "last wolf"
+        ],
+        [
+          "lone wolf"
+        ]
+      ],
+      "key_leads": [
+        "Spirit Hunter Subsetting",
+        "Outcast Subsetting"
+      ]
+    },
+    "Dire Haunt": {
+      "time": 1,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Tongue Of The Ancient One"
+        ]
+      ],
+      "traits": [
+        2
+      ],
+      "requires": "Wandering Lost",
+      "requires_expr": [
+        "wandering lost"
+      ]
+    },
+    "Ancient Journeyer": {
+      "time": 0.5,
+      "res": 0,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Spirit Hunter",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          3,
+          "Ancient Ways"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Last Wolf and Lone Wolf",
+      "requires_expr": [
+        "+and",
+        [
+          "last wolf"
+        ],
+        [
+          "lone wolf"
+        ]
+      ],
+      "key_leads": [
+        "Spirit Hunter Subsetting",
+        "Outcast Subsetting"
+      ]
+    },
+    "Fell Ancient": {
+      "time": 2,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Ancient Ways"
+        ]
+      ],
+      "traits": [
+        2,
+        "Reclusive",
+        "Calmly Paranoid",
+        "Odor Of Spirits"
+      ],
+      "requires": "Ancient Journeyer",
+      "requires_expr": [
+        "ancient journeyer"
+      ]
+    },
+    "Ghost Of The Wood": {
+      "time": 2,
+      "res": 10,
+      "stat": [
+        [
+          2,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          6,
+          "Wolf-wise",
+          "Spirit-hunter-wise",
+          "Legion-wise",
+          "Path-wise",
+          "River-wise",
+          "Pack-wise"
+        ],
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Preternaturally Calm",
+        "Watchful",
+        "Piercing Gaze",
+        "Stink Of The Ancient"
+      ]
+    }
+  }
+}

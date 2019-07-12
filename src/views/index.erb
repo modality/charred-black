@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app='burning'>
+  <head>
+    <link href='/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='/css/style.css' rel='stylesheet' type='text/css'>
+    <script src='/js/server_settings.js'></script>
+    <script src='/js/angular.min.js'></script>
+    <script src='/js/angular-resource.js'></script>
+    <script src='/js/angular-route.js'></script>
+    <!-- %script{ :src => "/js/ui-bootstrap-tpls-0.11.0.min.js" } -->
+    <script src='/js/ui-bootstrap-tpls-0.11.0.js'></script>
+    <script src='/js/burning-util.js'></script>
+    <script src='/js/burning-classes.js'></script>
+    <script src='/js/burning-service.js'></script>
+    <script src='/js/burning-modal.js'></script>
+    <script src='/js/burning-serialize.js'></script>
+    <script src='/js/burning.js'></script>
+    <title>Charred - The Burning Wheel Gold Character Burner</title>
+  </head>
+  <body>
+    <div class='container' ng-controller='BurningCtrl'>
+      <nav class='navbar navbar-default' role='navigation'>
+        <div class='navbar-header'>
+          <a class='navbar-brand' href='#'>Charred</a>
+        </div>
+        <ul class='nav navbar-nav'>
+          <li>
+            <a href='#/config'>Settings</a>
+          </li>
+          <li>
+            <a href='#/help'>Guide</a>
+          </li>
+          <li>
+            <a target='_blank' href='https://forums.burningwheel.com/t/charred-an-unofficial-online-bwg-character-burner/14299'>Forum Thread</a>
+          </li>
+        </ul>
+      </nav>
+      <div ng-view=''></div>
+    </div>
+    <script src='/js/jquery-1.10.2.min.js'></script>
+    <script src='/js/bootstrap.min.js'></script>
+    <iframe id='downloadframe' name='downloadframe'></iframe>
+    <iframe id='uploadiframe' name='uploadiframe' onload='handleIframeLoad("uploadiframe")'></iframe>
+    <script>
+      $(document)
+        .on('change', '.btn-file :file', function() {
+          var input = $(this),
+          numFiles = input.get(0).files ? input.get(0).files.length : 1,
+          label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+          input.trigger('fileselect', [numFiles, label]);
+      
+          var textInput = $(this).parents('.input-group').find(':text');
+          textInput.val(label);
+          
+      });
+    </script>
+  </body>
+</html>

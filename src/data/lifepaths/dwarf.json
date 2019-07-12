@@ -1,0 +1,1971 @@
+{
+  "Clansman Setting": {
+    "Born Clansman": {
+      "time": 20,
+      "res": 10,
+      "leads": [
+        "Guilder"
+      ],
+      "skills": [
+        [
+          3,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "common_traits": [
+        "Accustomed To The Dark",
+        "Bearded",
+        "Greed",
+        "Oathsworn",
+        "Shaped From Earth And Stone",
+        "Stout",
+        "Tough"
+      ],
+      "key_leads": [
+        "Guilder Setting"
+      ]
+    },
+    "Tender": {
+      "time": 20,
+      "res": 7,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Host"
+      ],
+      "skills": [
+        [
+          5,
+          "Farming",
+          "Crop-wise",
+          "Hills-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Cursing"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Herder": {
+      "time": 15,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Host"
+      ],
+      "skills": [
+        [
+          5,
+          "Animal Husbandry",
+          "Flock-wise",
+          "Fence Building",
+          "Climbing"
+        ]
+      ],
+      "traits": [
+        2,
+        "Booming Voice",
+        "Affinity For Sheep And Goats"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Tinkerer": {
+      "time": 35,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          4,
+          "Stuff-wise",
+          "Mending",
+          "Scavenging"
+        ]
+      ],
+      "traits": [
+        2,
+        "Curious",
+        "Tinkerer"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Outcast Subsetting"
+      ]
+    },
+    "Delver": {
+      "time": 20,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Host"
+      ],
+      "skills": [
+        [
+          4,
+          "Tunnel-wise",
+          "Gas Pocket-wise",
+          "Excavation"
+        ]
+      ],
+      "traits": [
+        1,
+        "Deep Sense"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Miller": {
+      "time": 30,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Host"
+      ],
+      "skills": [
+        [
+          6,
+          "Grain Appraisal",
+          "Miller",
+          "Mending",
+          "Brewer",
+          "Grain-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Brewer": {
+      "time": 40,
+      "res": 40,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Host",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          5,
+          "Beer Appraisal",
+          "Nogger",
+          "Miller",
+          "Beer-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Miller, Longbeard, Seneschal, Captain or Drunk",
+      "requires_expr": [
+        "miller",
+        "longbeard",
+        "seneschal",
+        "captain",
+        "drunk"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Host Subsetting",
+        "Dwarven Outcast Subsetting"
+      ]
+    },
+    "Foreman": {
+      "time": 35,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Host",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          5,
+          "Ore-wise",
+          "Vein-wise",
+          "Engineering"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Delver, Artificer's Ardent or Engineer",
+      "requires_expr": [
+        "delver",
+        "artificer setting:ardent",
+        "engineer"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Host Subsetting",
+        "Artificer Setting"
+      ]
+    },
+    "Husband/wife": {
+      "time": 70,
+      "res": 18,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Host",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          5,
+          "Clan-wise",
+          "Family-wise",
+          "Haggling",
+          "Soothing Platitudes"
+        ]
+      ],
+      "traits": [
+        2,
+        "Dispute-settler",
+        "Pragmatic Outlook"
+      ],
+      "restriction": "husband/wife cannot be the character's second lifepath",
+      "key_leads": [
+        "Guilder Setting",
+        "Dwarven Host Subsetting",
+        "Dwarven Outcast Subsetting"
+      ]
+    },
+    "Longbeard": {
+      "time": 77,
+      "res": 30,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Host",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          6,
+          "Coarse Persuasion",
+          "Ugly Truth",
+          "Guilder-wise",
+          "Host-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Folksy Wisdom",
+        "Oathswearer"
+      ],
+      "requires": "Foreman, Graybeard, Artificer, Trader, Seneschal, Adventurer or Husband/Wife",
+      "requires_expr": [
+        "foreman",
+        "graybeard",
+        "artificer",
+        "trader",
+        "seneschal",
+        "adventurer",
+        "husband/wife"
+      ],
+      "key_leads": [
+        "Dwarven Host Subsetting",
+        "Dwarven Outcast Subsetting"
+      ]
+    }
+  },
+  "Guilder Setting": {
+    "Born Guilder": {
+      "time": 21,
+      "res": 5,
+      "leads": [
+        "Clansman"
+      ],
+      "skills": [
+        [
+          4,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "common_traits": [
+        "Accustomed To The Dark",
+        "Bearded",
+        "Greed",
+        "Oathsworn",
+        "Shaped From Earth And Stone",
+        "Stout",
+        "Tough"
+      ],
+      "key_leads": [
+        "Clansman Setting"
+      ]
+    },
+    "Wordbearer": {
+      "time": 15,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Host"
+      ],
+      "skills": [
+        [
+          5,
+          "Hold-wise",
+          "Rumour-wise",
+          "Oratory",
+          "Clan History"
+        ]
+      ],
+      "traits": [
+        1,
+        "Quirky",
+        "Iron Memory",
+        "Quick-step"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Hauler": {
+      "time": 10,
+      "res": 7,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Host"
+      ],
+      "skills": [
+        [
+          5,
+          "Hauling",
+          "Wagon-wise",
+          "Cargo-wise",
+          "Road-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Lifting Heavy Things"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Carter": {
+      "time": 20,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          5,
+          "Animal Husbandry",
+          "Driving",
+          "Mending",
+          "Mule-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Patient",
+        "Iron Nose"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Dwarven Outcast Subsetting"
+      ]
+    },
+    "Hawker": {
+      "time": 15,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          6,
+          "Inconspicuous",
+          "Conspicuous",
+          "Streetwise",
+          "Haggling",
+          "Spiel-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Apprentice": {
+      "time": 15,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          4,
+          "Carving",
+          "Tanner",
+          "Carpentry",
+          "Scutwork-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Seen Not Heard"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Journeyman": {
+      "time": 25,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Host",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          7,
+          "Haggling",
+          "Reputation-wise",
+          "Cartwright",
+          "Mending",
+          "Black Metal Artifice"
+        ]
+      ],
+      "traits": [
+        1,
+        "Hungry"
+      ],
+      "requires": "Apprentice or any Ardent lifepath",
+      "requires_expr": [
+        "apprentice",
+        "ardent"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Dwarven Host Subsetting",
+        "Artificer Setting"
+      ]
+    },
+    "Craftsman": {
+      "time": 45,
+      "res": 45,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          4,
+          "Appraisal",
+          "Shipwright",
+          "Artificer-wise"
+        ],
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Journeyman, Artificer, Artillerist or Engineer",
+      "requires_expr": [
+        "journeyman",
+        "artificer",
+        "artillerist",
+        "engineer"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Trader": {
+      "time": 45,
+      "res": 70,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          7,
+          "Stentorious Debate",
+          "Shrewd Appraisal",
+          "Haggling",
+          "Persuasion"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Hawker, Journeyman, Adventurer or Husband/Wife",
+      "requires_expr": [
+        "hawker",
+        "journeyman",
+        "adventurer",
+        "husband/wife"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Dwarven Outcast Subsetting"
+      ]
+    }
+  },
+  "Artificer Setting": {
+    "Born Artificer": {
+      "time": 20,
+      "res": 15,
+      "leads": [
+        "Clansman"
+      ],
+      "skills": [
+        [
+          2,
+          "Dwarven Rune Script"
+        ],
+        [
+          3,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "common_traits": [
+        "Accustomed To The Dark",
+        "Bearded",
+        "Greed",
+        "Oathsworn",
+        "Shaped From Earth And Stone",
+        "Stout",
+        "Tough"
+      ],
+      "key_leads": [
+        "Clansman Setting"
+      ]
+    },
+    "Ardent": {
+      "time": 21,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Noble",
+        "Host",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          4,
+          "Firebuilding",
+          "Soothing Platitudes",
+          "Soot-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Humility",
+        "Hard Work"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Dwarven Noble Setting",
+        "Dwarven Host Subsetting",
+        "Guilder Setting"
+      ]
+    },
+    "Tyro Artificer": {
+      "time": 21,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          5,
+          "Black Metal Artifice",
+          "Mending",
+          "Dwarven Art-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Determined"
+      ],
+      "requires": "Artificer's Ardent or Journeyman",
+      "requires_expr": [
+        "artificer setting:ardent",
+        "journeyman"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting",
+        "Guilder Setting"
+      ]
+    },
+    "Artificer": {
+      "time": 30,
+      "res": 35,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          8,
+          "Stone Artifice",
+          "Etching",
+          "White Metal Artifice",
+          "Gem Artifice"
+        ]
+      ],
+      "traits": [
+        1,
+        "Stolid"
+      ],
+      "requires": "Tyro or Craftsman",
+      "requires_expr": [
+        "tyro artificer",
+        "craftsman"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Mask Bearer": {
+      "time": 55,
+      "res": 50,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host",
+        "Noble"
+      ],
+      "skills": [
+        [
+          6,
+          "Jargon",
+          "Fire And Steel-wise",
+          "War Art"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Artificer",
+      "requires_expr": [
+        "artificer"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting",
+        "Dwarven Noble Setting"
+      ]
+    },
+    "Master Of Arches": {
+      "time": 75,
+      "res": 75,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          8,
+          "Lithography",
+          "Sculpture",
+          "Hallmaster",
+          "Symbology",
+          "Etiquette"
+        ]
+      ],
+      "traits": [
+        2,
+        "Confident",
+        "Patient"
+      ],
+      "requires": "Artificer",
+      "requires_expr": [
+        "artificer"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Master Of Forges": {
+      "time": 75,
+      "res": 75,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          6,
+          "Forge Artifice",
+          "Appraisal",
+          "Engineering",
+          "Command",
+          "Maker's Mark-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Meticulous",
+        "Estimation"
+      ],
+      "requires": "Mask Bearer",
+      "requires_expr": [
+        "mask bearer"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Master Engraver": {
+      "time": 100,
+      "res": 60,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          4,
+          "Reason Of Old Stone",
+          "Stone-wise",
+          "Mountain-wise"
+        ],
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Master of Arches",
+      "requires_expr": [
+        "master of arches"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    }
+  },
+  "Dwarven Noble Setting": {
+    "Born Noble": {
+      "time": 21,
+      "res": 10,
+      "leads": [
+        "Guilder",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          2,
+          "Dwarven Rune Script"
+        ],
+        [
+          4,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Dvergar"
+      ],
+      "common_traits": [
+        "Accustomed To The Dark",
+        "Bearded",
+        "Greed",
+        "Oathsworn",
+        "Shaped From Earth And Stone",
+        "Stout",
+        "Tough"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Abecedart": {
+      "time": 20,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Guilder",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          4,
+          "Chronology Of Kings",
+          "Etiquette",
+          "Obscure Text-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Know It All"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Guilder Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Ardent": {
+      "time": 25,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Guilder",
+        "Artificer",
+        "Outcast"
+      ],
+      "skills": [
+        [
+          4,
+          "Sing",
+          "Soothing Platitudes",
+          "Accounting",
+          "Whispered Secrets-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Humility In The Face Of Your Betters"
+      ],
+      "key_leads": [
+        "Guilder Setting",
+        "Artificer Setting",
+        "Dwarven Outcast Subsetting"
+      ]
+    },
+    "Axe Bearer": {
+      "time": 20,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          8,
+          "Axe",
+          "Armor Training",
+          "Shield Training",
+          "Formation Fighting",
+          "Throwing"
+        ]
+      ],
+      "traits": [
+        1,
+        "Proud"
+      ],
+      "requires": "Noble Ardent or Banner Bearer",
+      "requires_expr": [
+        "dwarven noble setting:ardent",
+        "banner bearer"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Chronicler": {
+      "time": 50,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Host",
+        "Guilder",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          9,
+          "Illuminations",
+          "Ancient History",
+          "Clan-wise",
+          "Dwarf-wise",
+          "Poetry",
+          "Cartography",
+          "Etiquette",
+          "Symbology",
+          "Oath-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Abecedart, Khirurgeon or Graybeard",
+      "requires_expr": [
+        "abecedart",
+        "khirurgeon",
+        "graybeard"
+      ],
+      "key_leads": [
+        "Dwarven Host Subsetting",
+        "Guilder Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Seneschal": {
+      "time": 55,
+      "res": 50,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Host",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          5,
+          "Etiquette",
+          "Command",
+          "Estate Management",
+          "Hold-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Practical"
+      ],
+      "requires": "Trader, Longbeard, Quartermaster, Chronicler, Khirurgeon or Graybeard",
+      "requires_expr": [
+        "trader",
+        "longbeard",
+        "quartermaster",
+        "chronicler",
+        "khirurgeon",
+        "graybeard"
+      ],
+      "key_leads": [
+        "Dwarven Host Subsetting",
+        "Guilder Setting"
+      ]
+    },
+    "Treasurer": {
+      "time": 75,
+      "res": 100,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          6,
+          "Accounting",
+          "Etiquette",
+          "Treasure-wise",
+          "Administration"
+        ]
+      ],
+      "traits": [
+        2,
+        "Dangerous Obsession",
+        "Rainman"
+      ],
+      "requires": "Seneschal, Artificer or Warden",
+      "requires_expr": [
+        "seneschal",
+        "artificer",
+        "warden"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "High Captain": {
+      "time": 75,
+      "res": 75,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          5,
+          "Command",
+          "Strategy",
+          "Conspicuous"
+        ],
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Muttering",
+        "Stentorious Voice"
+      ],
+      "requires": "Noble Axe Bearer and either Captain or Warden",
+      "requires_expr": [
+        "+and",
+        [
+          "dwarven noble setting:axe bearer"
+        ],
+        [
+          "captain",
+          "warden"
+        ]
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    },
+    "Prince": {
+      "time": 100,
+      "res": 200,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host"
+      ],
+      "skills": [
+        [
+          8,
+          "Conspicuous",
+          "Etiquette",
+          "Intimidation",
+          "Oratory",
+          "Command",
+          "Burden Of The Crown-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Grumbling",
+        "Galvanizing Presence",
+        "Baleful Stare"
+      ],
+      "requires": "Born Noble and Noble Axe Bearer",
+      "requires_expr": [
+        "+and",
+        [
+          "born noble"
+        ],
+        [
+          "dwarven noble setting:axe bearer"
+        ]
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting"
+      ]
+    }
+  },
+  "Dwarven Host Subsetting": {
+    "Foot Soldier": {
+      "time": 10,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Clansman",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          6,
+          "Foraging",
+          "Brawling",
+          "Hammer",
+          "Armor Training",
+          "Shield Training",
+          "Cadence-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Salt Of The Earth"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Clansman Setting",
+        "Guilder Setting"
+      ]
+    },
+    "Arbalester": {
+      "time": 12,
+      "res": 12,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Clansman",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          5,
+          "Crossbow",
+          "Mending",
+          "Fletcher",
+          "Artillery Hand",
+          "Windage-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Squinty"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Clansman Setting",
+        "Guilder Setting"
+      ]
+    },
+    "Banner Bearer": {
+      "time": 7,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Clansman",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          4,
+          "Conspicuous",
+          "Banner-wise",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        2,
+        "Resigned (To Death)",
+        "Obsessive"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Clansman Setting",
+        "Guilder Setting"
+      ]
+    },
+    "Horncaller": {
+      "time": 7,
+      "res": 9,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Clansman",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          5,
+          "Links",
+          "Conspicuous",
+          "Cadence-wise",
+          "Suicidal Bravery-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Clansman Setting",
+        "Guilder Setting"
+      ]
+    },
+    "Axe Bearer": {
+      "time": 15,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Guilder",
+        "Noble"
+      ],
+      "skills": [
+        [
+          9,
+          "Foraging",
+          "Axe",
+          "Conspicuous",
+          "Intimidation",
+          "Armor Training",
+          "Shield Training",
+          "Formation Fighting",
+          "Throwing"
+        ]
+      ],
+      "traits": [
+        1,
+        "Swaggering"
+      ],
+      "requires": "Noble Ardent, Graybeard or Banner Bearer",
+      "requires_expr": [
+        "dwarven noble setting:ardent",
+        "graybeard",
+        "banner bearer"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Guilder Setting",
+        "Dwarven Noble Setting"
+      ]
+    },
+    "Graybeard": {
+      "time": 20,
+      "res": 20,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Guilder",
+        "Noble"
+      ],
+      "skills": [
+        [
+          5,
+          "Intimidation",
+          "Field Dressing",
+          "Command",
+          "Campaign-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Chuffing",
+        "Oddly Likeable"
+      ],
+      "requires": "Axe Bearer, Longbeard or three Host lifepaths",
+      "requires_expr": [
+        "+or",
+        [
+          "axe bearer"
+        ],
+        [
+          "longbeard"
+        ],
+        [
+          "+has_n_lifepaths_in",
+          3,
+          "dwarven host subsetting:foot soldier",
+          "dwarven host subsetting:arbalester",
+          "dwarven host subsetting:banner bearer",
+          "dwarven host subsetting:horncaller",
+          "dwarven host subsetting:axe bearer",
+          "dwarven host subsetting:graybeard",
+          "dwarven host subsetting:khirurgeon",
+          "dwarven host subsetting:quartermaster",
+          "dwarven host subsetting:captain",
+          "dwarven host subsetting:artillerist",
+          "dwarven host subsetting:engineer",
+          "dwarven host subsetting:warden"
+        ]
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Guilder Setting",
+        "Dwarven Noble Setting"
+      ]
+    },
+    "Khirurgeon": {
+      "time": 25,
+      "res": 25,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Guilder",
+        "Noble"
+      ],
+      "skills": [
+        [
+          6,
+          "Khirurgy",
+          "Soothing Platitudes",
+          "Cooking",
+          "Infection-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Abecedart, Seneschal or Graybeard",
+      "requires_expr": [
+        "abecedart",
+        "seneschal",
+        "graybeard"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Guilder Setting",
+        "Dwarven Noble Setting"
+      ]
+    },
+    "Quartermaster": {
+      "time": 50,
+      "res": 35,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Guilder",
+        "Noble"
+      ],
+      "skills": [
+        [
+          7,
+          "Logistics",
+          "Accounting",
+          "Strategy",
+          "Supply-wise",
+          "Host-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "No-nonsense"
+      ],
+      "requires": "Seneschal, Treasurer, Trader or Graybeard",
+      "requires_expr": [
+        "seneschal",
+        "treasurer",
+        "trader",
+        "graybeard"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Guilder Setting",
+        "Dwarven Noble Setting"
+      ]
+    },
+    "Captain": {
+      "time": 55,
+      "res": 40,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Guilder",
+        "Noble"
+      ],
+      "skills": [
+        [
+          7,
+          "Command",
+          "Conspicuous",
+          "Formation Fighting",
+          "Strategy",
+          "Cartography",
+          "Graybeard-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "requires": "Prince or Graybeard",
+      "requires_expr": [
+        "prince",
+        "graybeard"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Guilder Setting",
+        "Dwarven Noble Setting"
+      ]
+    },
+    "Artillerist": {
+      "time": 55,
+      "res": 45,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Noble",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          5,
+          "Artillerist",
+          "Mending",
+          "Carpentry",
+          "Structural Weakness-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Complaining"
+      ],
+      "requires": "Mask Bearer, Craftsman, Foreman or three Arbalester lifepaths",
+      "requires_expr": [
+        "+or",
+        [
+          "mask bearer"
+        ],
+        [
+          "craftsman"
+        ],
+        [
+          "foreman"
+        ],
+        [
+          "+has_n_lifepaths_in",
+          3,
+          "arbalester"
+        ]
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Noble Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Engineer": {
+      "time": 60,
+      "res": 50,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Noble",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          6,
+          "Jargon",
+          "War Engineer",
+          "Scavenging",
+          "Leverage-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Estimation"
+      ],
+      "requires": "Artillerist or Mask Bearer",
+      "requires_expr": [
+        "artillerist",
+        "mask bearer"
+      ],
+      "key_leads": [
+        "Dwarven Noble Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Warden": {
+      "time": 75,
+      "res": 65,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Noble"
+      ],
+      "skills": [
+        [
+          7,
+          "Conspicuous",
+          "Oratory",
+          "Observation",
+          "Strategy",
+          "Etiquette",
+          "Champion-wise"
+        ]
+      ],
+      "traits": [
+        1,
+        "Chuntering",
+        "Hard As Nails"
+      ],
+      "requires": "Prince, Captain or High Captain",
+      "requires_expr": [
+        "prince",
+        "captain",
+        "high captain"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Noble Setting"
+      ]
+    }
+  },
+  "Dwarven Outcast Subsetting": {
+    "Adventurer": {
+      "time": 5,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Clansman",
+        "Guilder"
+      ],
+      "skills": [
+        [
+          12,
+          "Survival",
+          "Climbing",
+          "Knots",
+          "Herbalism",
+          "Haggling",
+          "Firebuilding",
+          "Brawling",
+          "Knives",
+          "Sword",
+          "Crossbow",
+          "Lock Pick",
+          "Appraisal",
+          "Obscure History",
+          "Symbology",
+          "Lost Treasures-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Adventurer",
+        "Boaster"
+      ],
+      "key_leads": [
+        "Clansman Setting",
+        "Guilder Setting"
+      ]
+    },
+    "Gambler": {
+      "time": 7,
+      "res": 15,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Clansman"
+      ],
+      "skills": [
+        [
+          5,
+          "Games Of Chance",
+          "Observation",
+          "Sleight Of Hand",
+          "Cheat-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Stone-faced"
+      ],
+      "key_leads": [
+        "Clansman Setting"
+      ]
+    },
+    "Oathbreaker": {
+      "time": 20,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "leads": [
+        "Clansman"
+      ],
+      "skills": [
+        [
+          4,
+          "Ugly Truth",
+          "Falsehood",
+          "Oath-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Oathbreaker",
+        "Bitter"
+      ],
+      "key_leads": [
+        "Clansman Setting"
+      ]
+    },
+    "Drunk": {
+      "time": 10,
+      "res": 5,
+      "leads": [
+        "Clansman"
+      ],
+      "skills": [
+        [
+          4,
+          "Stentorious Singing",
+          "Drunking",
+          "Tavern Tales-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Drunk",
+        "Despondent"
+      ],
+      "key_leads": [
+        "Clansman Setting"
+      ]
+    },
+    "Coward": {
+      "time": 15,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Host",
+        "Clansman",
+        "Guilder",
+        "Noble",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          5,
+          "Inconspicuous",
+          "Ugly Truth",
+          "Oratory",
+          "Hypocritical Bastards-wise"
+        ]
+      ],
+      "traits": [
+        3,
+        "Branded A Coward"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Dwarven Host Subsetting",
+        "Clansman Setting",
+        "Guilder Setting",
+        "Dwarven Noble Setting",
+        "Artificer Setting"
+      ]
+    },
+    "Rune Caster": {
+      "time": 20,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "leads": [
+        "Outcast",
+        "Clansman",
+        "Guilder",
+        "Noble",
+        "Artificer"
+      ],
+      "skills": [
+        [
+          5,
+          "Rune Casting",
+          "Foraging",
+          "Scavenging",
+          "Bad End-wise"
+        ]
+      ],
+      "traits": [
+        2,
+        "Slave To Fate"
+      ],
+      "key_leads": [
+        "Dwarven Outcast Subsetting",
+        "Clansman Setting",
+        "Guilder Setting",
+        "Dwarven Noble Setting",
+        "Artificer Setting"
+      ]
+    }
+  }
+}
