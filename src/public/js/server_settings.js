@@ -1,5 +1,5 @@
 var serverSettings = {
-  'versionString' : '2.0.0', 
+  'versionString' : '2.1.0', 
   'storageType' : 'client', 
   'displayAttrMath' : 'false'
 }

@@ -4,6 +4,8 @@ The unofficial, online, Burning Wheel Gold (+Codex) character burner. Adapted fr
 
 ## Deploy Steps
 
+_This is mine, it won't work for you._
+
 See: [Heroku - Container Registry and Runtime](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 
 ```
@@ -28,13 +30,12 @@ of other gaming tools, but let's keep this tool focused on one thing and do it r
 
 In order to keep the scope of my maintainership finite, I'm not planning to accept community-made lifepaths et al. for inclusion
 in this codebase. Each additional data set increases Charred Black's startup time and memory requirements. The design of your lifepath
-requirements and emotional attributes may not be supported by the editor, or convoluted to implement. Finally, deciding to include
-community-made content would make me an arbiter of quality, and I'd prefer not to have the Enmity Clause invoked because I rejected
-someone's homebrew content.
+requirements and emotional attributes may not be supported by the editor, or may be convoluted to implement. Most importantly, deciding to include any community-made content makes me an arbiter of quality, and I'd prefer not to have the Enmity Clause invoked because I rejected
+someone's homebrew.
 
-I am working on a solution for uploading lifepaths et. al which would be stored locally in your browser and not permanently on
-a server. This way, you can make your data files and share them around with your friends for use with this tool. If someone else
-wants to keep a repository or forum thread of data files known to work with Charred Black, I'd happily to link to it in this
+**However**, I am working on a solution for uploading lifepaths et. al which would be stored locally in your browser and not permanently on
+a server. This way, you can create data files to use with this tool and share them with your friends. If someone else
+wants to keep a repository or forum thread of data files known to work with Charred Black, I am happy to link to it in this
 documentation and from the website itself. I don't want to discourage contributions, I just want do one thing well.
 
 ### Keep It Mostly Stateless
@@ -61,18 +62,19 @@ More guidelines:
 ## Contribution Best Practices
 
 ### Capital Case
-No matter what's in the book, always use Capital Case for skills, traits, lifepaths and settings:
+No matter what's in the book, always use Capital Case for skills, traits, lifepaths and settings.
 
-e.g.
-Path Of Spite Subsetting
-Never A Moment Of Peace
-Ages Of The Etharch
-Reeks Of Alcohol
+* Path Of Spite Subsetting
+* Never A Moment Of Peace
+* Ages Of The Etharch
+* Reeks Of Alcohol
 
-Hyphens: the word after the hyphen is not capitalized:
+### Hyphens
 
-Rabble-rouser
-Burden Of The Crown-wise
+The word after the hyphen is not capitalized.
+
+* Rabble-rouser
+* Burden Of The Crown-wise
 
 ### Lifepath Example
 
