@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](changelog),
 and this project adheres to [Semantic Versioning](semver).
 
 ## [Unreleased]
+- Dark Elf - Bitter Reminders rules
 - Troll stock
 - Add emotional attributes to the PDF
 - Add a page to the pdf for Health + Steel questions
