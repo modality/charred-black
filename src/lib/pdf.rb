@@ -66,9 +66,9 @@ class CharSheet
     die_traits = @character['traits'].select {|t| t[1] == 'die'}.map {|t| t[0] }
     call_on_traits = @character['traits'].select {|t| t[1] == 'call_on'}.map {|t| t[0] }
 
-    pdf.text_box character_traits.join("\n"), :at => [5, 214], :width => 110, :size => @t2
-    pdf.text_box die_traits.join("\n"), :at => [122, 214], :width => 110, :size => @t2
-    pdf.text_box call_on_traits.join("\n"), :at => [241, 207], :width => 110, :size => @t2
+    pdf.text_box character_traits.join(", "), :at => [5, 214], :width => 110, :height => 50, :overflow => :shring_to_fit, :size => @t2
+    pdf.text_box die_traits.join(", "), :at => [122, 214], :width => 110, :height => 50, :overflow => :shrink_to_fit, :size => @t2
+    pdf.text_box call_on_traits.join(", "), :at => [241, 207], :width => 110, :height => 40, :overflow => :shrink_to_fit, :size => @t2
 
     gear = @character['gear'] + @character['property']
     #gear = gear.map {|g| g.split(', ').join(' - ') }

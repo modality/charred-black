@@ -15,6 +15,11 @@ and this project adheres to [Semantic Versioning](semver).
 - Custom upload for your own data files
 - Updates to Roden and Great Wolves files (currently the data comes from Monster Burner and not Codex)
 
+## [2.1.1] - 2019-07-14
+### Changed
+- Traits on PDF are now just a comma-delimited list (instead of newline) and shrink to fit in the appropriate space
+- Fix a typo in Dark Elf lifepaths
+
 ## [2.1.0] - 2019-07-11
 ### Added
 - Dark Elf lifepaths and Spite emotional attribute.
