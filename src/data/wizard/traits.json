@@ -108,7 +108,7 @@
     "type": "die",
     "desc": "The Headmaster of a College of Magic attained their position by rigorous pursuit of excellence and expertise in sorcery and magic. This trait grants a 2D repuation among mages and the halls of power as a Master of Mages."
   },
-  "Misunderstood": {
+  "Outsider": {
     "cost": 2,
     "type": "die",
     "desc": "Choose a 1D infamous reputation. And suffer -1 to your body of argument whenever you're trying to explain your nature, position, meaning, or special insight."

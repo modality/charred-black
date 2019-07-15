@@ -1,0 +1,399 @@
+{
+  "Black Nails": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "Trolls typically have massive, craggy claws used for digging and tearing. They don't often use their claws as a weapon, favoring the use of their stony fists to subdue prey. However if a Troll has another character in a Lock and chooses to do damage (rather than increase the Lock), add +1 Power to the damage of the attack due to the claws gouging into the victim."
+  },
+  "Fangs": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "A Troll's mouth is a mass of misshapen teeth and fangs. They may bite. Pow 1, Add 2, VA -, WS: 2, Shortest"
+  },
+  "Night Blooded": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "Nocturnal by nature, Trolls typically shun the sunlight, for it will undo the sorcery which gave their night-stalking ancestors life. Exposure to the sun causes the Troll's stony roots to consume them and crush them from within."
+  },
+  "Night Eyed (Troll)": {
+    "cost": 1,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "Born to the stuff of night, Trolls can see perfectly well in the darkness and suffer no penalties for nighttime conditions. However rain and haze do affect them like other characters, and bright light imposes a +1 Ob penalty."
+  },
+  "Massive Stature (Troll)": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "Trolls are the definition of Massive Stature: barrel-chested, hulking beasts with long thick limbs and shoulders like towering cliffs. The largest of their number grow twice as tall as humans, but even the smallest adults are rarely less than seven feet in height. Increase all weapon lengths by one for the troll. These greate lumbering beasts must have minimum Power and Forte of 4. The maximum exponents for Power and Forte are 9. The maximum exponents for Agility and Speed are 5. Stride is 7."
+  },
+  "Stone's Age": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "Trolls were born of stone and sorcery and to these roots they remain closely tied. Though not immortal, these creatures age very slowly and are capable of living for long centuries–if they can survive their own violent tendencies. However, the weight of granite in their blood has detrimental effects. Their view of the world is dim and ponderous and their ability to intuit or empathize is minimal. A Troll may not have a Perception or Will higher than 6."
+  },
+  "Tough (Troll)": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "Trolls are the embodiment of tough. Round up when factoring Mortal Wound."
+  },
+  "Troll Skin": {
+    "cost": 0,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "desc": "Troll Skin is resilient and leathery. It provides 1D of armor to the limbs and head, 2D to the chest. As they get older, a Troll's flesh often hardens into a stony mass. Thus the Troll Skin trait may be upgraded to Scaly Skin or Stone Skin for just a few trait points. See the Troll Special Traits list. This skin cannot \"fail\" and become damaged like armor: 1s are discounted in this case. VA works as normal against this armor."
+  },
+  "Voracious Carnivore": {
+    "cost": 0,
+    "restrict": [
+      "trollish",
+      "common"
+    ],
+    "type": "character"
+  },
+  "Addled": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ]
+  },
+  "Bellowing": {
+    "cost": 1,
+    "type": "call_on",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "The sound of this Troll's voice is unimaginably loud. Use as a call-on for Intimidation and Command."
+  },
+  "Boor": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "Bull Trolls have forceful personalities, perhaps verging on the barest of leadership qualities, but mitigated by ill moods, bad jokes and a predilection for overbearing violence."
+  },
+  "Brute": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "This Troll is so tough (or alternately, stupid) that it doesn't know when to give up. WHen taking die penalties from wounds, mental stats do not count for the purposes of incapacitation."
+  },
+  "Grotesque": {
+    "cost": 1,
+    "type": "call_on",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "Call-on for Intimidation and Conspicuous when displaying your deformity."
+  },
+  "Hauling": {
+    "cost": 1,
+    "type": "call_on",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "Ox Trolls are the beasts of burden in the Troll legions. They haul impossible loads for interminable journeys. Use this trait as a call-on for Power when pushing, pulling or hauling loads."
+  },
+  "Heaving": {
+    "cost": 1,
+    "type": "call_on",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "The lowest rung for Troll soldiers in their great legions is that of the Battering Ram. These massive brutes haul forth great war engines to the walls of the citadels of their enemies and even use their own bodies to batter down walls. Use this trait as a call-on for Power when trying to break, smash or knock over something."
+  },
+  "Insidious Cruelty": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ]
+  },
+  "Mind Numbing Work": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ]
+  },
+  "Misshapen": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ]
+  },
+  "Solitary": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ]
+  },
+  "Unflinching": {
+    "cost": 1,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "Ironshields are the bodyguards and retinues of the Troll legions. They are trained to stand guard and lay down their lives for their Warlord master. This trait reduces hesitation by 4 for fear and pain."
+  },
+  "Wickedly Clever": {
+    "cost": 1,
+    "type": "call_on",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "Warlords quickly grow to understand that the world sees Trolls as mindless brutes, good only for absorbing and dealing devastation. Outsiders forget that Trolls can evince intelligence. Troll Warlords use this prejudice to their advantage–playing the part of the dumb automaton while scheming and plotting behind their thick masks. Call-on for Strategy and Tactics when unveiling a surprising stratagem or ploy."
+  },
+  "Witch Flesh": {
+    "cost": 1,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "lifepath"
+    ],
+    "desc": "The Brood Mother knows a bit of magic, rumored to have been handed down from an old giantess in ages past. This magic, called Witch Flesh, grants the ability to transform into a handsome young man or woman. The disguise is impenetrable. The brood mother retains her stats and attributes, but her character traits are replaced with Beautiful, Wholesome, Apple-Cheeked, etc. Any other traits requiring physical expression (like Horns or Claws) are temporarily lost to the human form. No test is required to transform, but the change requires a full scene, during which the magic slowly takes effect. Once the Brood Mother reveals her true nature to her victim (or is perhaps accidentally spotted transforming) the victim will never see her the same way again–and can never bee fooled by the Witch Flesh of this Brood Mother again."
+  },
+  "Berzerker": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "When this Troll fails a Steel test or suffers a wound (that they can feel–Numb and Dead To Pain work against this trait), the monster immediately and automatically shifts into aggressive stance. There is no hesitation. While enraged they will (and must) attack any living (or seemingly living) thing around them–starting with that which just hurt/enraged them. They then move on to the next closest target, friend or foe. The Troll remains in aggressive stance even if they sprint. The rage lasts for exchanges equal to 10 minus the character's Will exponent. If the monster is already in aggressive stance when the above conditions are met, they spend two actions roaring and bellowing (which count as an Intimidation test against their opponents)."
+  },
+  "Bull-legged": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "In place of their clawed feet, this Troll possesses a pair of bony hooves that give them a kicking weapon (Pow 1, VA 1, WS 1). The Troll also walks with a distinctive gait and makes quite a racket when treading on hard surfaces. Any Speed or Stealthy tests made while on stone, ice or really hard, smooth wood are at a +1 Ob. (May not be combined with Webbed Fingers And Toes.)"
+  },
+  "Crystalline Spines": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "A growth of crystalline spines sprouts from teh back and shoulders of this Troll. The spines are sharp to the touch and break off and lodge themselves in the flesh of the unwary, causing great discomfort. Any creature that grapples or otherwise comes into contact with the Troll's spines suffers a +1 Ob to all tests until the spines are removed. This takes effect if the Troll grapples you, too. The penalty is cumulative for each contact. Spines can be plucked out in about a half hour. If the Surgery or Field dressing skill is used, they can be treated in the time it takes to tend to a Superficial wound. If the troll is forced onto their back–if they fall or are pushed–it is possible that the spines are crushed and flattened. Roll the die of fate. On a 1 the spines are crushed and unusable. It takes about a month for the crystals to regrow. (They always regrow.)"
+  },
+  "Devourer": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "This Troll eats anything–soil, stone, wood, metal and flesh. They are indiscriminate in their choices and in fact cannot help themselves from sampling their surroundings. Add +1 VA to bite attacks."
+  },
+  "Earth Blood": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "No matter how badly wounded, this Troll will always heal. Cuts will close, bones will knit and even lost limbs will regrow. This Troll can never fail a Health test for Recovery (though they can roll poorly, in which case maximum healing time is required for the wound to close). The only way to destroy this beast is to put them to the fire."
+  },
+  "Enemy Of The Sun (Troll)": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "The greatest, most fearsome of Trolls have been bred to resist the burning rays of the sun. They may travel by day and not be turned to stone as with the Night Blooded trait. Enemies of the Sun do not suffer penalties for dim or twilit light, but they can no longer see in complete darkness (+4 Ob in pitch dark). This trait replaces the Night Blooded trait."
+  },
+  "Hammer Hands": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "With hands like great mattocks, this Troll is best suited to brawling and pummeling. Add +1D to the Troll's Brawling skill for the purposes of bare-fisted Block, Strike, Beat and Push actions. The Troll suffers a +1 Ob to any other skill that requires manual dexterity (including Throwing and weapons skills)."
+  },
+  "Hook Hand": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "One of this Trolls hands has formed into a massive bony hook. This hook can be used as a weapon: Pow 2, VA 1, WS 2, Short; may Great Strike. In fact, it is really to big and clumsy to be used for anything else."
+  },
+  "Horns": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "Great stony horns protrude from the Troll's skull. In addition to being terribly intimidating, they also serve a somewhat practical purpose. When the Troll charges another creature of relatively similar size, they may choose to add +1D to their Charge Power or to do damage on the Charge as if they had been simultaneously Striking. Damage is Pow 2, VA 2, WS 1. The first two successes of the Charge attack count as a superficial wound to the victim. Four successes over equals a Mark hit. Six over is a Superb hit."
+  },
+  "Iron Hide": {
+    "cost": 6,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "This skin is as tough as iron and scaled like a shark. All incoming damage is reudced by -1 pip on the PTGS: B8 damage would be reduced to B7, etc."
+  },
+  "Malformed": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "special"
+    ]
+  },
+  "Mossy Coat": {
+    "cost": 2,
+    "type": "call_on",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "Covered in a coat of moss and slime, this Troll blends in quite well to forest or earthy surroundings. Call-on for Stealthy or Camouflage in forest or mines."
+  },
+  "Oafishly Charming": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "special"
+    ]
+  },
+  "Repulsive Blood": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "This Troll's blood is noxious and caustic. If the Troll should be bitten for effect, the horrid liquid runs into the mouth of the attacking creature and causes great discomfort and nausea. Any creature that bites the Troll, penetrates its armor and achieves a Mark result, must make an Ob 4 Forte test. Any successes missed equal an obstacle penalty that lasts for three exchanges."
+  },
+  "Ridged Brow": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "Protruding out over this Troll's eyes is a stony brow like unto a craggy cliff. This provides +1D of armor to the Troll's head."
+  },
+  "Scaly Skin": {
+    "cost": 4,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "Scaly Skin provides 2D of armor to the limbs and head, and 3D to the chest. This skin cannot \"fail\" and become damaged like normal armor: 1s are ignored in this case. VA works as normal against this armor."
+  },
+  "Stone Skin": {
+    "cost": 5,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "The hide of this creature is impossibly tough. Stone Skin provides 3D of armor the head and limbs, and 4D to the chest. This skin cannot \"fail\" and become damaged like normal armor: 1s are ignored in this case. VA works as normal against this armor."
+  },
+  "Toothy Maw": {
+    "cost": 3,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "This Troll's jaws are massive, distended and terrible. The Toothy Maw counts as: Pow 3, Add 2, VA 1, WS 1, Shortest. It replaces the Fanged trait."
+  },
+  "Troll Savant": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "This Troll has the uncanny ability to form complete sentences, understand what is said to them and possibly even comprehend what a written language, map or glyph could represent–if it were possible in the first place for scratchings on stone or leather to mean anything. They are a mental giant among their peers and are appropriately hated and feared."
+  },
+  "Tusks": {
+    "cost": 2,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "This Troll's lower canine teeth protrude into formidable tusks. The beast may use these sharpened weapons to gore the unwary. Add +1 Power to the Troll's bite attack when it is at the hands fighting distance. This trait may be combined with Fangs or Toothy Maw."
+  },
+  "Vestigial Wings": {
+    "cost": 1,
+    "type": "character",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "Two small, bat-like wings protrude from the Troll's shoulders. Flap, flap."
+  },
+  "Webbed Fingers And Toes": {
+    "cost": 1,
+    "type": "die",
+    "restrict": [
+      "trollish",
+      "special"
+    ],
+    "desc": "Stride 5 when swimming."
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "Wild Setting": {
+    "Born Wild": {
+      "time": 5,
+      "res": 2,
+      "skills": [
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "common_traits": [
+        "Black Nails",
+        "Fangs",
+        "Night Blooded",
+        "Night Eyed (Troll)",
+        "Massive Stature (Troll)",
+        "Stone's Age",
+        "Tough (Troll)",
+        "Troll Skin",
+        "Voracious Carnivore"
+      ],
+      "leads": [
+        "Pit"
+      ],
+      "key_leads": [
+        "Pit Setting"
+      ]
+    },
+    "Bogey": {
+      "time": 7,
+      "res": 1,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Brawling",
+          "Forest-wise",
+          "Stealthy"
+        ]
+      ],
+      "traits": [
+        2
+      ],
+      "leads": [
+        "Cave"
+      ],
+      "key_leads": [
+        "Cavedweller Setting"
+      ]
+    },
+    "Bridgehaunt": {
+      "time": 10,
+      "res": 2,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Bridge-wise",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        1,
+        "Stubborn"
+      ]
+    },
+    "Manhunter": {
+      "time": 7,
+      "res": 2,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Man-wise",
+          "Village-wise"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "leads": [
+        "Pit"
+      ],
+      "key_leads": [
+        "Pit Setting"
+      ]
+    },
+    "Forlorn": {
+      "time": 13,
+      "res": 1,
+      "stat": [
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Solitary",
+        "Addled",
+        "Slow"
+      ]
+    },
+    "Brute": {
+      "time": 15,
+      "res": 2,
+      "stat": [
+        [
+          2,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Intimidation",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        1,
+        "Brute"
+      ],
+      "requires": "Bridgehaunt, Mine Haunt, Manhunter, Dwarf Hunter, Battering Ram or Mattock",
+      "requires_expr": [
+        "bridgehaunt",
+        "mine haunt",
+        "manhunter",
+        "dwarf hunter",
+        "battering ram",
+        "mattock"
+      ],
+      "leads": [
+        "Pit"
+      ],
+      "key_leads": [
+        "Pit Setting"
+      ]
+    },
+    "Brood Mother": {
+      "time": 33,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Nursing",
+          "Ugly Truth"
+        ]
+      ],
+      "traits": [
+        2,
+        "Misshapen",
+        "Grotesque",
+        "Witch Flesh"
+      ],
+      "requires": "Brute, Dread Stone or Bellower",
+      "requires_expr": [
+        "brute",
+        "dread stone",
+        "bellower"
+      ],
+      "leads": [
+        "Pit",
+        "Cave"
+      ],
+      "key_leads": [
+        "Pit Setting",
+        "Cavedweller Setting"
+      ]
+    },
+    "Bull": {
+      "time": 45,
+      "res": 5,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Torture",
+          "Extortion"
+        ]
+      ],
+      "traits": [
+        2,
+        "Boor"
+      ],
+      "requires": "Brute or Ironshield",
+      "requires_expr": [
+        "brute",
+        "ironshield"
+      ],
+      "leads": [
+        "Pit"
+      ],
+      "key_leads": [
+        "Pit Setting"
+      ]
+    }
+  },
+  "Cavedweller Setting": {
+    "Born To Dark Caves": {
+      "time": 5,
+      "res": 2,
+      "skills": [
+        [
+          2,
+          "General"
+        ]
+      ],
+      "traits": [
+        2
+      ],
+      "common_traits": [
+        "Black Nails",
+        "Fangs",
+        "Night Blooded",
+        "Night Eyed (Troll)",
+        "Massive Stature (Troll)",
+        "Stone's Age",
+        "Tough (Troll)",
+        "Troll Skin",
+        "Voracious Carnivore"
+      ],
+      "leads": [
+        "Pit"
+      ],
+      "key_leads": [
+        "Pit Setting"
+      ]
+    },
+    "Dweller": {
+      "time": 4,
+      "res": 1,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Climbing",
+          "Rock-wise",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        2
+      ],
+      "leads": [
+        "Wild"
+      ],
+      "key_leads": [
+        "Wild Setting"
+      ]
+    },
+    "Mine Haunt": {
+      "time": 12,
+      "res": 1,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Mine-wise",
+          "Brawling"
+        ]
+      ],
+      "traits": [
+        1
+      ],
+      "leads": [
+        "Pit",
+        "Wild"
+      ],
+      "key_leads": [
+        "Pit Setting",
+        "Wild Setting"
+      ]
+    },
+    "Dwarf Hunter": {
+      "time": 6,
+      "res": 3,
+      "stat": [
+        [
+          1,
+          "p"
+        ],
+        [
+          1,
+          "m"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Dwarf-wise",
+          "Throwing"
+        ]
+      ],
+      "traits": [
+        1,
+        "Stubborn"
+      ],
+      "leads": [
+        "Pit"
+      ],
+      "key_leads": [
+        "Pit Setting"
+      ]
+    },
+    "Dread Stone": {
+      "time": 30,
+      "res": 4,
+      "stat": [
+        [
+          2,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Camouflage",
+          "Stealthy"
+        ]
+      ],
+      "traits": [
+        3
+      ],
+      "requires": "Mine Haunt or Dwarf Hunter",
+      "requires_expr": [
+        "mine haunt",
+        "dwarf hunter"
+      ]
+    }
+  },
+  "Pit Setting": {
+    "Born To The Pit": {
+      "time": 4,
+      "res": 1,
+      "skills": [
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Vile Language"
+      ],
+      "common_traits": [
+        "Black Nails",
+        "Fangs",
+        "Night Blooded",
+        "Night Eyed (Troll)",
+        "Massive Stature (Troll)",
+        "Stone's Age",
+        "Tough (Troll)",
+        "Troll Skin",
+        "Voracious Carnivore"
+      ],
+      "leads": [
+        "Pit",
+        "Cave"
+      ],
+      "key_leads": [
+        "Pit Setting",
+        "Cavedweller Setting"
+      ]
+    },
+    "Tortured": {
+      "time": 3,
+      "skills": [
+        [
+          1
+        ]
+      ],
+      "traits": [
+        3,
+        "Tasting The Lash",
+        "Numb"
+      ]
+    },
+    "Ox": {
+      "time": 9,
+      "res": 1,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Ditch Digging",
+          "Hauling",
+          "Mining"
+        ]
+      ],
+      "traits": [
+        1,
+        "Back-breaking Labor",
+        "Tasting The Lash"
+      ]
+    },
+    "Battering Ram": {
+      "time": 6,
+      "res": 1,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          2,
+          "Brawling",
+          "Throwing"
+        ]
+      ],
+      "traits": [
+        1,
+        "Hardened"
+      ],
+      "leads": [
+        "Wild"
+      ],
+      "key_leads": [
+        "Wild Setting"
+      ]
+    },
+    "Mattock": {
+      "time": 7,
+      "res": 7,
+      "stat": [
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Hammer",
+          "Formation Fighting"
+        ]
+      ],
+      "traits": [
+        1,
+        "Brutal"
+      ],
+      "requires": "Ox, Battering Ram, Dwarf Hunter, Manhunter or Brute",
+      "requires_expr": [
+        "ox",
+        "battering ram",
+        "dwarf hunter",
+        "manhunter",
+        "brute"
+      ],
+      "leads": [
+        "Wild"
+      ],
+      "key_leads": [
+        "Wild Setting"
+      ]
+    },
+    "Ironshield": {
+      "time": 8,
+      "res": 6,
+      "stat": [
+        [
+          1,
+          "pm"
+        ]
+      ],
+      "skills": [
+        [
+          1,
+          "Shield Training",
+          "Intimidation"
+        ]
+      ],
+      "traits": [
+        1,
+        "Unflinching"
+      ],
+      "requires": "Mattock or Brute",
+      "requires_expr": [
+        "mattock",
+        "brute"
+      ],
+      "leads": [
+        "Wild"
+      ],
+      "key_leads": [
+        "Wild Setting"
+      ]
+    },
+    "Bellower": {
+      "time": 16,
+      "res": 4,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Torture",
+          "Lash"
+        ]
+      ],
+      "traits": [
+        1,
+        "Where There's A Whip, There's A Way",
+        "Tough As Nails",
+        "Bellowing"
+      ],
+      "requires": "Bull or Ironshield",
+      "requires_expr": [
+        "bull",
+        "ironshield"
+      ]
+    },
+    "Warlord": {
+      "time": 56,
+      "res": 10,
+      "stat": [
+        [
+          1,
+          "m"
+        ],
+        [
+          1,
+          "p"
+        ]
+      ],
+      "skills": [
+        [
+          3,
+          "Command",
+          "Strategy"
+        ],
+        [
+          1,
+          "General"
+        ]
+      ],
+      "traits": [
+        2,
+        "Insidious Cruelty",
+        "Wickedly Clever"
+      ],
+      "requires": "Bellower",
+      "requires_expr": [
+        "bellower"
+      ]
+    }
+  }
+}

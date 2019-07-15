@@ -3,17 +3,16 @@ require 'json'
 module Charred
   module Wizard
     def load_wizard(data)
-      puts 'Loading wizard burner'
       file = File.read('data/wizard/lifepaths.json')
       wizard_data = JSON.parse(file)
 
       file = File.read('data/wizard/skills.json')
       wizard_skills = JSON.parse(file)
-      data[:skills].merge! wizard_skills
+      verbose_merge data[:skills], wizard_skills
 
       file = File.read('data/wizard/traits.json')
       wizard_traits = JSON.parse(file)
-      data[:traits].merge! wizard_traits
+      verbose_merge data[:traits], wizard_traits
 
       man = data[:lifepaths]['man']
 
@@ -111,7 +110,6 @@ module Charred
       end
 
       data[:lifepaths]['man'] = man
-      puts 'loaded!'
       data
     end
   end

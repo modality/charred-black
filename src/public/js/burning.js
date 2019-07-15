@@ -555,8 +555,13 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
   $scope.incrementStat = function(stat){
 
     // Man stock has max 8 pts in any stat
-    if ( stat.exp() == 8 )
-      return;
+    if ( $scope.stock == "troll" && (stat.name == "Power" || stat.name == "Forte" ) ) {
+      if ( stat.exp() == 9 )
+        return;
+    } else {
+      if ( stat.exp() == 8 )
+        return;
+    }
 
     var specificStatPoints = 0;
     var eitherStatPoints = $scope.unspentStatPoints.either;
@@ -991,7 +996,12 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     var bonus = computeBonus(name)
 
     if( "Mortal Wound" == name ){
-      var shadeAndExp = computeStatAverage($scope.statsByName, ["Power", "Forte"]);
+      var shadeAndExp;
+      if ( $scope.stock == 'troll' ) {
+        shadeAndExp = computeStatAverage($scope.statsByName, ["Power", "Forte"], true);
+      } else {
+        shadeAndExp = computeStatAverage($scope.statsByName, ["Power", "Forte"]);
+      }
       return {"shade" : shadeAndExp[0], "exp" : shadeAndExp[1] + 6 + bonus};
     }
     else if ( "Reflexes" == name ){
@@ -2767,7 +2777,7 @@ function calculateUnspentResourcePoints($scope){
 }
 
 function isValidStock(stock){
-  return stock == "man" || stock == "elf" || stock == "orc" || stock == "dwarf" || stock == "roden" || stock == "wolf";
+  return stock == "man" || stock == "elf" || stock == "orc" || stock == "dwarf" || stock == "roden" || stock == "wolf" || stock =="troll";
 }
 
 function restrictionStockToValidStock(stock){
@@ -2784,6 +2794,8 @@ function restrictionStockToValidStock(stock){
     return "wolf";
   else if ( stock == "roden" )
     return "roden";
+  else if ( stock == "trollish" )
+    return "troll";
 }
 
 function validStockToRestrictionStock(stock){
@@ -2800,6 +2812,8 @@ function validStockToRestrictionStock(stock){
     return "roden";
   else if ( stock == "wolf" )
     return "wolfish";
+  else if ( stock == "troll" )
+    return "trollish";
 }
 
 function attributeModifyingQuestions($scope, attribute)
@@ -3127,15 +3141,61 @@ function attributeModifyingQuestions($scope, attribute)
       return val;
     }
 
+    var bitterMod = function() {
+      var darkElfGear = [
+        'Bitter Poison',
+        'Spiteful Poison',
+        'Lock Picks',
+        'Long Knife',
+        'Barbed Javelins',
+        'Garrote',
+        'Caltrops',
+        'Tools Of The Trade',
+        'Cloak Of Darkness',
+        'Climbing Claws',
+        'Remote Refuge',
+        'Morlin Armor',
+        'Morlin Weapons'
+      ]
+      var bitterRps = 0;
+
+      var isBitter = function(gear) {
+        for (var i = 0; i < darkElfGear.length; i++) {
+          if (gear.desc.startsWith(darkElfGear[i])) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      for (var k in $scope.gear) {
+        var gear = $scope.gear[k];
+        if (isBitter(gear)) {
+          bitterRps += gear.cost;
+        }
+      }
+
+      for (var k in $scope.property) {
+        var prop = $scope.property[k];
+        if (isBitter(prop)) {
+          bitterRps += prop.cost;
+        }
+      }
+
+      return Math.floor(bitterRps/10);
+    }
+
     result.push(
       {question: "+1 Spite for every point of Grief", computed: true, compute: griefMod},
       {question: "+1 Spite for each of several spiteful traits", computed: true, compute: traitsMod},
+      {question: "+1 Spite for every 10 rps spent on Elven resources", computed: true, compute: bitterMod},
       {question: "Has the character been betrayed by their friends?", math_label: "(+1 Spite)", modifier: 1},
       {question: "Is the character lovesick or broken hearted?", math_label: "(+1 Spite)", modifier: 1},
       {question: "Has the character been abandoned by those they held dear?", math_label: "(+1 Spite)", modifier: 1},
       {question: "Has the character been abused or tortured?", math_label: "(+1 Spite)", modifier: 1},
       {question: "Does the character still respect or admire someone on the other side?", math_label: "(-1 Spite)", modifier: -1},
       {question: "Does the character still love someone on the other side?", math_label: "(-2 Spite)", modifier: -2}
+
     );
   }
   else if ( attribute == "Hatred" )
@@ -3380,7 +3440,7 @@ function getGeneralSkillNameFor(skillName){
 }
 
 // Given n stat names, average the stats taking into account shade. Return the resulting [shade, exp] tuple.
-var computeStatAverage = function(statsByName, statNames){
+var computeStatAverage = function(statsByName, statNames, roundUp){
   var sum = 0;
   var shade = 'B';
   var allGray = true;
@@ -3423,6 +3483,9 @@ var computeStatAverage = function(statsByName, statNames){
   }
 
   var exp = Math.floor( sum / stats.length );
+  if ( roundUp ) {
+    exp = Math.ceil( sum / stats.length );
+  }
   return [shade, exp];
 
 }

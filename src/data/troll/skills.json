@@ -1,0 +1,27 @@
+{
+  "Bridge-wise": {
+    "stock": "trollish",
+    "roots": [
+      "Perception"
+    ]
+  },
+  "Camouflage": {
+    "stock": "trollish",
+    "roots": [
+      "Perception",
+      "Agility"
+    ]
+  },
+  "Lash": {
+    "stock": "trollish",
+    "roots": [
+      "Agility"
+    ]
+  },
+  "Mine-wise": {
+    "stock": "trollish",
+    "roots": [
+      "Perception"
+    ]
+  }
+}

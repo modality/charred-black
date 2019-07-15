@@ -5,8 +5,6 @@ The format is based on [Keep a Changelog](changelog),
 and this project adheres to [Semantic Versioning](semver).
 
 ## [Unreleased]
-- Dark Elf - Bitter Reminders rules
-- Troll stock
 - Add emotional attributes to the PDF
 - Add a page to the pdf for Health + Steel questions
 - Add a page to the pdf for trait descriptions
@@ -14,6 +12,15 @@ and this project adheres to [Semantic Versioning](semver).
 - Write a guide on creating your own JSON data files
 - Custom upload for your own data files
 - Updates to Roden and Great Wolves files (currently the data comes from Monster Burner and not Codex)
+
+## [2.2.0] - 2019-07-14
+### Added
+- Added the troll stock.
+- Dark Elf - Spite calculations for Bitter Reminders
+
+### Changed
+- Wizard trait "Misunderstood" was renamed to "Outsider" to avoid conflict with Roden trait of the same name
+- Added a `verbose_merge` method to surface trait and skill conflicts.
 
 ## [2.1.1] - 2019-07-14
 ### Changed

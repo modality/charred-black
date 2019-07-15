@@ -499,7 +499,7 @@ function DisplayTrait(name, traitdata){
     this.bonus = data["bonus"];
 
     var rawRestrict = data["restrict"] 
-    // Stock is one of mannish, dwarven, elven, orcish. If there is no restriction, it is set to null.
+    // Stock is one of mannish, dwarven, elven, orcish, trollish. If there is no restriction, it is set to null.
     this.stock = null;
     // Category is common, lifepath, or special
     this.category = null;
@@ -512,7 +512,7 @@ function DisplayTrait(name, traitdata){
             this.category = [];
           this.category.push(flag);
         }
-        else if ( flag == "mannish" || flag == "dwarven" || flag == "elven" || flag == "orcish" ){
+        else if ( flag == "mannish" || flag == "dwarven" || flag == "elven" || flag == "orcish" || flag == "trollish" ){
           if ( !this.stock )
             this.stock = [];
           this.stock.push(flag);

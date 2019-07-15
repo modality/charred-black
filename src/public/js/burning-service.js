@@ -265,13 +265,13 @@ function BurningDataService($http) {
 
   this.dataSetsLoaded = 0;
   // Total data sets: 
-  //  lifepaths: 6 (man, dwarf, elf, orc, roden, wolf)
-  //  stat points: 6 (man, dwarf, elf, orc, roden, wolf)
+  //  lifepaths: 7 (man, dwarf, elf, orc, roden, wolf, troll)
+  //  stat points: 7 (man, dwarf, elf, orc, roden, wolf, troll)
   //  skills
   //  traits
-  //  resources: 6 (man, dwarf, elf, orc, roden, wolf)
-  // TOTAL: 20
-  this.totalDataSets = 20;
+  //  resources: 7 (man, dwarf, elf, orc, roden, wolf. troll)
+  // TOTAL: 23
+  this.totalDataSets = 23;
   this.onAllDatasetsLoaded = null;
   this.registerOnAllDatasetsLoaded = function(callback){
     if ( this.dataSetsLoaded >= this.totalDataSets ){
@@ -290,6 +290,7 @@ function BurningDataService($http) {
     }
   }
 
+  var stocks = ["man", "dwarf", "elf", "orc", "roden", "wolf", "troll"];
   var myself = this;
 
   /* Load lifepaths from server */
@@ -311,13 +312,6 @@ function BurningDataService($http) {
       });
   }
 
-  loadLifepathsForStock("man");
-  loadLifepathsForStock("dwarf");
-  loadLifepathsForStock("elf");
-  loadLifepathsForStock("orc");
-  loadLifepathsForStock("roden");
-  loadLifepathsForStock("wolf");
-
   /* Load starting stat points table from server */
   var loadStartingStatPtsForStock = function(stock){
     if( ! isValidStock(stock) ){
@@ -336,13 +330,6 @@ function BurningDataService($http) {
         console.log("Error: Getting "+stock+" stat points from server failed: HTTP code " + status + ": " + data);
       });
   }
-
-  loadStartingStatPtsForStock("man");
-  loadStartingStatPtsForStock("dwarf");
-  loadStartingStatPtsForStock("elf");
-  loadStartingStatPtsForStock("orc");
-  loadStartingStatPtsForStock("roden");
-  loadStartingStatPtsForStock("wolf");
 
   /* Load starting stat points table from server */
   var loadResourcesForStock = function(stock){
@@ -363,12 +350,11 @@ function BurningDataService($http) {
       });
   }
 
-  loadResourcesForStock("man");
-  loadResourcesForStock("dwarf");
-  loadResourcesForStock("elf");
-  loadResourcesForStock("orc");
-  loadResourcesForStock("roden");
-  loadResourcesForStock("wolf");
+  for (var i = 0; i < stocks.length; i++) {
+    loadLifepathsForStock(stocks[i]);
+    loadStartingStatPtsForStock(stocks[i]);
+    loadResourcesForStock(stocks[i]);
+  }
 
   /* Load skills from server */
   $http.get("/skills", {'timeout': 3000} ).

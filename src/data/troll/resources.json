@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Rags",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Troll Shoes",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Sack",
+    "type": "gear",
+    "rp": 1
+  },
+  {
+    "name": "Chest or Footlocker",
+    "type": "gear",
+    "rp": 3
+  },
+  {
+    "name": "Trophies",
+    "type": "gear",
+    "rp": 3
+  },
+  {
+    "name": "Shiny Trophies",
+    "type": "gear",
+    "rp": 7
+  },
+  {
+    "name": "Pile of Rocks",
+    "type": "gear",
+    "rp": 2
+  },
+  {
+    "name": "Troll Lash",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Mattock",
+    "type": "gear",
+    "rp": 10
+  },
+  {
+    "name": "Black Iron Shield",
+    "type": "gear",
+    "rp": 5
+  },
+  {
+    "name": "Cave Hole",
+    "type": "property",
+    "rp": 5
+  }
+]
