@@ -5,17 +5,20 @@ The format is based on [Keep a Changelog](changelog),
 and this project adheres to [Semantic Versioning](semver).
 
 ## [Unreleased]
-- Add emotional attributes to the PDF
-- Add a page to the pdf for Health + Steel questions
-- Add a page to the pdf for trait descriptions
+- Add Great Spiders
 - Add weapon info to the pdf based on some educated guesses (e.g. do you have the arms resource and the Spear skill?)
 - Write a guide on creating your own JSON data files
 - Custom upload for your own data files
 - Updates to Roden and Great Wolves files (currently the data comes from Monster Burner and not Codex)
 
-## [2.2.1] - 2019-07-28
+## [2.3.0] - 2019-07-28
+### Added
+- Display emotional attribute traits on PDF
+- Append a page to the PDF with trait descriptions and attribute questions
+
 ### Fixed
 - Wizard's Apprentice should count as Neophyte Sorcerer, and Junior Student counts as Arcane Devotee and Neophyte Sorcerer (thanks StubbsPKS!)
+- Alphabetize skill and trait dropdown lists
 
 ## [2.2.0] - 2019-07-14
 ### Added

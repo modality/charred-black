@@ -26,6 +26,9 @@ module Charred
 
       puts 'loading trolls'
       load_troll(@data)
+
+      @data[:traits] = @data[:traits].sort.to_h
+      @data[:skills] = @data[:skills].sort.to_h
     end
 
     def verbose_merge(to, from)

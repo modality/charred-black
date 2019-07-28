@@ -6,7 +6,12 @@ class CharSheet
     @character = character
     @t1 = 16
     @t2 = 12
+    @t2b = 10
     @t3 = 10
+    @t3b = 8
+    @caliban = 'data/caliban.ttf'
+    @bauerbodoni = 'data/bauerbodoni.ttf'
+    @mediaeval = 'public/fonts/post-mediaeval.ttf'
   end
 
   def render_skill(pdf, skilldef, at)
@@ -24,9 +29,47 @@ class CharSheet
     pdf.draw_text (exponent.to_s), :at => [x+xs, y+ys], :size => @t2
   end
 
-  def render(logger)
+  def render_trait(pdf, name, trait)
+    trait_type = {
+      "die" => "Die",
+      "call_on" => "Call-on",
+      "character" => "Character"
+    }[trait["type"]]
+
+    trait_desc = trait["desc"]
+
+    pdf.font @mediaeval
+    pdf.text "#{name}", :size => @t2
+    pdf.move_down 5
+
+    pdf.font @bauerbodoni
+    pdf.text "#{trait_type}", :size => @t3b
+
+    if trait_desc
+      pdf.move_down 5
+      pdf.text "#{trait["desc"]}", :width => 200, :size => @t2b
+    end
+
+    pdf.move_down 10
+  end
+
+  def render_questions(pdf, name, questions)
+    pdf.font @mediaeval
+    pdf.text "#{name}", :size => @t2
+
+    pdf.font @bauerbodoni
+    questions.each do |q|
+      pdf.move_down 5
+      yes = q["answer"]
+      pdf.text "#{q["question"]} #{yes ? "Yes." : "No."}", :size => @t2b
+    end
+
+    pdf.move_down 10
+  end
+
+  def render(logger, data)
     pdf = Prawn::Document.new(:template => 'data/gold.pdf')
-    pdf.font 'data/caliban.ttf'
+    pdf.font @caliban
     pdf.default_leading -4
 
     # logger.info @character
@@ -123,6 +166,23 @@ class CharSheet
     self.render_shade_exponent(pdf, ref_attr[0], ref_attr[1], [279, 396.5])
     self.render_shade_exponent(pdf, mor_attr[0], mor_attr[1], [278.5, 346])
 
+    emo_name = ''
+    emo_attr = nil
+
+    ['Spite', 'Grief', 'Greed', 'Faith', 'Hatred', 'Ancestral Taint'].each do |emo|
+      if not @character['attributes'][emo.downcase].nil?
+        emo_name = emo
+        emo_attr = @character['attributes'][emo.downcase]
+        emo_name = 'Taint' if emo_name == 'Ancestral Taint' # two words is too big
+        break
+      end
+    end
+
+    if not emo_attr.nil?
+      pdf.draw_text emo_name, :at => [127, 398], :size => @t2
+      self.render_shade_exponent(pdf, emo_attr[0], emo_attr[1], [164.5, 398.3])
+    end
+
     ptgs = @character['ptgs']
     ["Su", "Li", "Mi", "Se", "Tr", "Mo"].each do |tol|
       tol_c = ptgs[tol.downcase]
@@ -144,6 +204,45 @@ class CharSheet
     if skills_right
       skills_right.each_with_index do |s, i|
         self.render_skill(pdf, s, [551, 495 - (i*20.3)])
+      end
+    end
+
+    options = {
+      :page_layout => :landscape,
+      :margin => 0
+    }
+
+    pdf.start_new_page(:layout => :landscape, :margin => 36)
+    pdf.default_leading = 0
+
+    pdf.column_box([0, pdf.cursor], :columns => 3, :width => pdf.bounds.width) do
+      pdf.font @mediaeval
+      pdf.text "Traits", :size => @t1
+      pdf.move_down 10
+
+      trait_list = @character['traits'].sort { |a, b| a <=> b }
+      trait_list.each_with_index do |t, i|
+        name = t[0]
+        trait = DATA[:traits][name]
+
+        if trait.nil?
+          trait = {
+            "type" => "character"
+          }
+        end
+
+        self.render_trait(pdf, name, trait)
+      end
+
+      pdf.move_down 10
+      pdf.font @mediaeval
+      pdf.text "Attribute Questions", :size => @t1
+      pdf.move_down 10
+
+      attr_mods = @character['attr_mod_questions']
+
+      attr_mods.each do |name, questions|
+        self.render_questions(pdf, name, questions)
       end
     end
 

@@ -104,7 +104,7 @@ get '/get_file' do
     data = CACHE.delete(params['file'])
     if data
       cs = CharSheet.new(data)
-      data = cs.render(logger)
+      data = cs.render(logger, DATA)
     end
   else
     content_type 'application/octet-stream'
