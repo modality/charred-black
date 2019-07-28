@@ -103,6 +103,8 @@
         "augur",
         "crazy witch",
         "neophyte sorcerer",
+        "junior student",
+        "wizard's apprentice",
         "elder"
       ],
       "key_leads": [
@@ -307,6 +309,7 @@
       "requires": "Senior Student, Neophyte Sorcerer, Apt Pupil or Wizard's Apprentice",
       "requires_expr": [
         "senior student",
+        "junior student",
         "neophyte sorcerer",
         "apt pupil",
         "wizard's apprentice"
@@ -523,7 +526,8 @@
         "supplicant",
         "arcane devotee",
         "apt pupil",
-        "neophyte sorcerer"
+        "neophyte sorcerer",
+        "wizard's apprentice"
       ],
       "key_leads": [
         "City Dweller Setting",

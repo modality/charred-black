@@ -88,22 +88,25 @@ module Charred
         end
       end
 
-      # backfill Apt Pupil == Neophyte Sorcerer connection
+      # backfill Neophyte Sorcerer and Arcane Devotee connections
       man.keys.each do |man_set|
         man[man_set].keys.each do |man_lp|
-          requirements = self.lifepath_requirements(man[man_set][man_lp]['requires_expr'])
-          next if requirements.include? 'apt pupil'
-          requirements.each do |req|
-            setting = nil
-            req_lp = req
-            setting, req_lp = req.split(':') if req.include? ':'
+          requirements = self.lifepath_requirements(man[man_set][man_lp]["requires_expr"])
+          requirements.collect! { |req| req.include?(':') ? req.split(":")[1].downcase : req.downcase }
 
-            next unless req_lp.downcase == 'neophyte sorcerer'
-
-            if man[man_set][man_lp]['requires_expr'].include? 'neophyte sorcerer'
-              man[man_set][man_lp]['requires_expr'] |= ['apt pupil']
+          if requirements.include? "neophyte sorcerer"
+            if man[man_set][man_lp]["requires_expr"].include? "neophyte sorcerer"
+              man[man_set][man_lp]["requires_expr"] |= ["apt pupil", "wizard's apprentice", "junior student"]
             else
-              puts "warning, could not add apt pupil to deep requirements array at #{man_set}:#{man_lp}"
+              puts "warning, could not add neophyte sorcerer connection to deep requirements array at #{man_set}:#{man_lp}"
+            end
+          end
+
+          if requirements.include? "arcane devotee"
+            if man[man_set][man_lp]["requires_expr"].include? "arcane devotee"
+              man[man_set][man_lp]["requires_expr"] |= ["junior student"]
+            else
+              puts "warning, could not add arcane devotee connection to deep requirements array at #{man_set}:#{man_lp}"
             end
           end
         end

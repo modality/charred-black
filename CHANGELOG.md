@@ -13,10 +13,14 @@ and this project adheres to [Semantic Versioning](semver).
 - Custom upload for your own data files
 - Updates to Roden and Great Wolves files (currently the data comes from Monster Burner and not Codex)
 
+## [2.2.1] - 2019-07-28
+### Fixed
+- Wizard's Apprentice should count as Neophyte Sorcerer, and Junior Student counts as Arcane Devotee and Neophyte Sorcerer (thanks StubbsPKS!)
+
 ## [2.2.0] - 2019-07-14
 ### Added
-- Added the troll stock.
-- Dark Elf - Spite calculations for Bitter Reminders
+- Added the Troll stock.
+- Dark Elf Spite calculations include "Bitter Reminders"
 
 ### Changed
 - Wizard trait "Misunderstood" was renamed to "Outsider" to avoid conflict with Roden trait of the same name
@@ -33,11 +37,11 @@ and this project adheres to [Semantic Versioning](semver).
 - README.md and CHANGELOG.md
 
 ### Changed
-- Spite is calculated using the Grief value, and this required some updates to the 
+- Spite is calculated using the Grief value, this required some updates to stat calculation to prevent an infinite loop.
 
 ## [2.0.1] - 2019-07-10
 ### Fixed
-- First Mate LP is now selectable with 2 seafaring LPs. Previously: if Son of a Gun was the first LP, it was not selectable. Example: Son of a Gun -> Officer's Mate -> First Mate.
+- First Mate LP is now selectable with 2 seafaring LPs. Previously: if Son of a Gun was the first LP, it was not selectable. Example: Son of a Gun -> Officer's Mate -> First Mate. (thanks Dave's Not Here!)
 
 ## [2.0.0] - 2019-07-09
 ### Added
