@@ -662,7 +662,8 @@
     },
     "Country Wife": {
       "time": 10,
-      "res": 5,
+      "res": "*",
+      "res_expr": ["+plus_div_husband", 5, 2],
       "stat": [
         [
           1,
@@ -678,7 +679,7 @@
       ],
       "skills": [
         [
-          2,
+          ["+plus_div_husband", 2, 2],
           "Child Rearing",
           "Cooking"
         ]
@@ -2365,7 +2366,8 @@
     },
     "Village Wife": {
       "time": 8,
-      "res": 5,
+      "res": "*",
+      "res_expr": ["+plus_div_husband", 5, 2],
       "stat": [
         [
           1,
@@ -2383,9 +2385,13 @@
       ],
       "skills": [
         [
-          2,
+          ["+plus_div_husband", 2, 2],
           "Child Rearing",
           "Cooking"
+        ],
+        [
+          ["+plus_div_husband", 0, 2],
+          "General"
         ]
       ],
       "traits": [
@@ -5063,7 +5069,8 @@
     },
     "City Wife": {
       "time": 6,
-      "res": 5,
+      "res": "*",
+      "res_expr": ["+plus_div_husband", 5, 4],
       "stat": [
         [
           1,
@@ -5075,7 +5082,7 @@
       ],
       "skills": [
         [
-          2,
+          ["+plus_div_husband", 2, 2],
           "Child Rearing",
           "Husband-wise"
         ]
@@ -7535,13 +7542,9 @@
       ],
       "skills": [
         [
-          "*",
+          ["+mult_time", 1],
           "General"
         ]
-      ],
-      "skills_expr": [
-        "+mult_time",
-        1
       ],
       "traits": [
         1

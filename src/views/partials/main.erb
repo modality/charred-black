@@ -189,6 +189,18 @@
                   {{lp.note}}
                 </div>
               </div>
+              <div class='row' ng-show='lp.isWife()'>
+                <div class='col-md-1'></div>
+                <div class='col-md-7'>
+                  <strong>Husband's Lifepath:</strong>
+                  <select class="form-control"
+                    style="width:16em;"
+                    ng-change="onHusbandLifepathChange(lp)"
+                    ng-model="lp.husbandLifepath"
+                    ng-options="h for h in lp.isWife() ? husbandLifepathNames(lp) : []">
+                  </select>
+                </div>
+              </div>
               <div class='row' ng-show="stock == 'orc' &amp;&amp; lp.brutalLifeDOF != 0">
                 <div class='col-md-1'></div>
                 <div class='col-md-7'>

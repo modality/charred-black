@@ -1,0 +1,16 @@
+<div class='modal-header'>
+  <h3 class='modal-title'>Choose Husband's Lifepath</h3>
+</div>
+<div class='modal-body'>
+  <p>
+    {{note}}
+  </p>
+  <p>
+    Please choose the husband's lifepath:
+  </p>
+  <select ng-model='chosen[0]' ng-options='i for i in husbandLifepathNames'></select>
+</div>
+<div class='modal-footer'>
+  <button class='btn btn-primary' ng-click='ok()'>OK</button>
+  <button class='btn btn-warning' ng-click='cancel()'>Cancel</button>
+</div>

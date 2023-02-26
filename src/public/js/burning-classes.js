@@ -60,25 +60,26 @@ function DisplayLifepath(setting, name, jsonLifepath){
   this.requires = jsonLifepath["requires"];
   this.note = jsonLifepath["note"];
   this.weaponOfChoice = null;
+  this.husbandLifepath = null;
   
   this.resourcePtsIsCalculated = false;
   if ( jsonLifepath.res == "*" ){
     // Figure out the resource point calculation 
-    var expr = jsonLifepath.res_expr
-    if ( null == expr ){
+    var resExpr = jsonLifepath.res_expr
+    if ( null == resExpr ){
       console.log("Error: Lifepath with calculated resources is missing res_expr attribute");
       this.resourcePts = -1;
     }
-    else if( expr[0] == '+mult_time'){
+    else if( resExpr[0] == '+mult_time'){
       this.resourcePtsIsCalculated = true;
-      var mult = parseInt(expr[1])
+      var mult = parseInt(resExpr[1])
       this.innerCalculateResourcePoints = function(prevLifepath){
         this.resourcePts = this.time * mult;
       }
     }
-    else if( expr[0] == '+mult_prev'){
+    else if( resExpr[0] == '+mult_prev'){
       this.resourcePtsIsCalculated = true;
-      var mult = expr[1]
+      var mult = resExpr[1];
       this.innerCalculateResourcePoints = function(prevLifepath){
         if(prevLifepath){
           this.resourcePts = Math.floor(prevLifepath.resourcePts * mult);
@@ -88,8 +89,16 @@ function DisplayLifepath(setting, name, jsonLifepath){
         }
       }
     }
+    else if ( resExpr[0] == '+plus_div_husband'){
+      this.resourcePtsIsCalculated = true;
+      var resourceBase = parseInt(resExpr[1]);
+      var resourceDenominator = parseInt(resExpr[2]);
+      this.innerCalculateResourcePoints = function(prevLifepath){
+        this.resourcePts = resourceBase + Math.floor(this.husbandResourcePts / resourceDenominator);
+      }
+    }
     else {
-      console.log("Unknown res_expr type " + expr[0]);
+      console.log("Unknown res_expr type " + resExpr[0]);
       this.resourcePts = -1;
     }
   }
@@ -105,38 +114,62 @@ function DisplayLifepath(setting, name, jsonLifepath){
   this.brutalLifeTraitName = null;
 
   this.generalSkillPtsIsCalculated = false;
+  this.lifepathSkillPtsIsCalculated = false;
   if ( skills && skills.length > 0){
     for(var j = 0; j < skills.length; j++){
       var skillsCategory = skills[j];
     
       // Is this the General skills category?
       if( skillsCategory[1] == "General" ){
-        if (skillsCategory[0] == '*') {
-          var expr = jsonLifepath.skills_expr
-          if ( null == expr ){
-            console.log("Error: Lifepath with calculated general skillpoints is missing skills_expr attribute");
-            this.generalSkillPts = -1;
-          }
-          else if( expr[0] == '+mult_time'){
+        if (Array.isArray(skillsCategory[0])) {
+          var generalExpr = skillsCategory[0];
+          if( generalExpr[0] == '+mult_time'){
             this.generalSkillPtsIsCalculated = true;
             // Need a new variable name for this since javascript variables
             // are scoped to the function, not to the block.
-            var multGenSkill = parseInt(expr[1])
+            var multGenSkill = parseInt(generalExpr[1])
             this.innerCalculateGeneralSkillPoints = function(){
               this.generalSkillPts = this.time * multGenSkill;
             }
           }
-          else {
-            console.log("Unknown skills_expr type " + expr[0]);
-            this.resourcePts = -1;
+          else if( generalExpr[0] == '+plus_div_husband'){
+            this.generalSkillPtsIsCalculated = true;
+            var generalBase = parseInt(generalExpr[1])
+            var generalDenominator = parseInt(generalExpr[2]);
+            this.innerCalculateGeneralSkillPoints = function(){
+              this.generalSkillPts = generalBase + Math.floor(this.husbandGeneralSkillPts / generalDenominator);
+            }
           }
-        } else {
+          else {
+            console.log("Unknown generalExpr type " + resExpr[0]);
+            this.generalSkillPts = -1;
+          }
+        } 
+        else {
           this.generalSkillPts += skillsCategory[0];
         }
       }
       else {
-        this.lifepathSkillPts += skillsCategory[0];
+        if (Array.isArray(skillsCategory[0])) {
+          var skillExpr = skillsCategory[0];
+          if (skillExpr[0] == "+plus_div_husband"){
+            this.lifepathSkillPtsIsCalculated = true;
+            var skillBase = parseInt(skillExpr[1]);
+            var skillDenominator = parseInt(skillExpr[2])
+            this.innerCalculateLifepathSkillPoints = function(){
+              this.lifepathSkillPts = skillBase + Math.floor(this.husbandLifepathSkillPts / skillDenominator);
+            }
+          }
+          else {
+            console.log("Unknown skillExpr type " + skillExpr[0]);
+            this.lifepathSkillPts = -1;
+          }
+        }
+        else {
+          this.lifepathSkillPts += skillsCategory[0];
+        }
         this.skills = this.skills.concat(skillsCategory.slice(1));
+        initialSkills = this.skills;
       }
     }
   }
@@ -213,16 +246,106 @@ function DisplayLifepath(setting, name, jsonLifepath){
 
     return s;
   }
+  
+  this.isWife = function() {
+    if (this.isWifeCached !== undefined) {
+      return this.isWifeCached;
+    }
+    this.isWifeCached = this.note?.includes?.("husband's lifepath") ?? false;
+    return this.isWifeCached;
+  }
+  
+  this.updateHusbandLifepath = function(burningData) {
+    this.setHusbandLifepath(this.husbandLifepath, burningData.lifepaths.man[setting][this.husbandLifepath]);
+  }
+ 
+  this.setHusbandLifepath = function(husbandLpName, jsonHusbandLifepath) {
+    this.skills = initialSkills;
+    this.husbandLifepath = husbandLpName;
+    if (jsonHusbandLifepath.res == '*'){
+      // Figure out the resource point calculation 
+      var resExpr = jsonHusbandLifepath.res_expr
+      if ( null == resExpr ){
+        console.log("Error: Lifepath with calculated resources is missing res_expr attribute");
+        this.resourcePts = -1;
+      }
+      else if( resExpr[0] == '+mult_time'){
+        this.resourcePtsIsCalculated = true;
+        var mult = parseInt(resExpr[1])
+        this.calculateHusbandResourcePoints = function(prevLifepath){
+          this.husbandResourcePts = this.time * mult;
+        }
+      }
+      else if( resExpr[0] == '+mult_prev'){
+        this.resourcePtsIsCalculated = true;
+        var mult = resExpr[1];
+        this.calculateHusbandResourcePoints = function(prevLifepath){
+          if(prevLifepath){
+            this.husbandResourcePts = Math.floor(prevLifepath.resourcePts * mult);
+          }
+          else {
+            this.husbandResourcePts = -1;
+          }
+        }
+      }
+      else {
+        console.log("Unknown res_expr type " + resExpr[0]);
+        this.resourcePts = -1;
+      }
+    }
+    else {
+      this.husbandResourcePts = getAsNumOrDefault(
+        jsonHusbandLifepath,
+        "res",
+        -1,
+        "res field is not set in lifepath " + husbandLpName + " or is not a number"
+      );
+    }
+    var husbandSkills = jsonHusbandLifepath.skills;
+    this.husbandGeneralSkillPts = 0;
+    this.husbandLifepathSkillPts = 0;
+    for(var skillsCategory of husbandSkills){
+      // Is this the General skills category?
+      if( skillsCategory[1] == "General" ){
+        if (Array.isArray(skillsCategory[0])) {
+          var generalExpr = skillsCategory[0];
+          if( generalExpr[0] == '+mult_time'){
+            this.generalSkillPtsIsCalculated = true;
+            var multGenSkill = parseInt(generalExpr[1])
+            this.calculateHusbandGeneralSkillPoints = function(){
+              this.husbandGeneralSkillPts += this.time * multGenSkill;
+            }
+          }
+          else {
+            console.log("Unknown generalExpr type " + generalExpr[0]);
+            this.husbandGeneralSkillPts = -1;
+          }
+        }
+        else {
+          this.husbandGeneralSkillPts = skillsCategory[0];
+        }
+      }
+      else {
+        this.husbandLifepathSkillPts += skillsCategory[0];
+        this.skills = this.skills.concat(skillsCategory.slice(1));
+      }
+    }
+  }
 
   this.calculateResourcePoints = function(prevLifepath){
+    this.calculateHusbandResourcePoints?.(prevLifepath);
     if(this.resourcePtsIsCalculated){
       this.innerCalculateResourcePoints(prevLifepath);
     }
   }
 
-  this.calculateGeneralSkillPoints = function(){
+  this.calculateSkillPoints = function(){
+    this.calculateHusbandGeneralSkillPoints?.();
     if(this.generalSkillPtsIsCalculated){
       this.innerCalculateGeneralSkillPoints();
+    }
+    if(this.lifepathSkillPtsIsCalculated){
+      this.innerCalculateLifepathSkillPoints();
     }
   }
 

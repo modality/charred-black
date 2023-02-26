@@ -48,6 +48,22 @@ function WeaponOfChoiceModalCtrl($scope, $modalInstance, lifepathName) {
 }
 
 // For use with the angular ui bootstrap Modal call
+function HusbandLifepathModalCtrl($scope, $modalInstance, husbandLifepaths, note) {
+  $scope.husbandLifepathNames = husbandLifepaths;
+  $scope.chosen = [$scope.husbandLifepathNames[0]];
+  $scope.note = note;
+
+  $scope.ok = function(){
+    $modalInstance.close($scope.chosen[0]);
+  }
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+
+}
+
+// For use with the angular ui bootstrap Modal call
 function EmotionalAttributeModalCtrl($scope, $modalInstance, attributeName, questions, displayEmotionalMath) {
   $scope.attributeName = attributeName;
 
