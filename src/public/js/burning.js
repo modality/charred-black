@@ -403,6 +403,27 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     removeLifepathSkillsFromGeneralSkills($scope);
     calculateUnspentSkillPoints($scope);
   }
+  $scope.husbandLifepathNames = function(lp){
+    return husbandLifepathNames(burningData, lp.setting);
+  }
+  $scope.onHusbandLifepathChange = function(lp){
+    // the previous husband lifepath's skills are general again
+    for (const possiblyGeneralSkill of lp.skills) {
+      $scope.addGeneralSkill(possiblyGeneralSkill);
+    }
+
+    lp.updateHusbandLifepath(burningData);
+    lp.calculateResourcePoints(null);
+    calculateTotalResourcePoints($scope);
+    calculateUnspentResourcePoints($scope);
+
+    lp.calculateSkillPoints();
+    calculateTotalSkillPoints($scope);
+    calculateLifepathSkills($scope, burningData, appropriateWeapons);
+    openRequiredSkills($scope);
+    removeLifepathSkillsFromGeneralSkills($scope);
+    calculateUnspentSkillPoints($scope);
+  }
 
   burningData.registerOnAllDatasetsLoaded(function(){
     onLifepathsLoad($scope, burningData);

@@ -169,6 +169,7 @@ function DisplayLifepath(setting, name, jsonLifepath){
           this.lifepathSkillPts += skillsCategory[0];
         }
         this.skills = this.skills.concat(skillsCategory.slice(1));
+        initialSkills = this.skills;
       }
     }
   }
@@ -246,10 +247,22 @@ function DisplayLifepath(setting, name, jsonLifepath){
     return s;
   }
   
+  this.isWife = function() {
+    if (this.isWifeCached !== undefined) {
+      return this.isWifeCached;
+    }
+    this.isWifeCached = this.note?.includes?.("husband's lifepath") ?? false;
+    return this.isWifeCached;
+  }
+  
+  this.updateHusbandLifepath = function(burningData) {
+    this.setHusbandLifepath(this.husbandLifepath, burningData.lifepaths.man[setting][this.husbandLifepath]);
+  }
+ 
   this.setHusbandLifepath = function(husbandLpName, jsonHusbandLifepath) {
+    this.skills = initialSkills;
     this.husbandLifepath = husbandLpName;
     if (jsonHusbandLifepath.res == '*'){
-      var oldInnerCalculateResourcePoints = this.innerCalculateResourcePoints.bind(this);
       // Figure out the resource point calculation 
       var resExpr = jsonHusbandLifepath.res_expr
       if ( null == resExpr ){
@@ -259,22 +272,20 @@ function DisplayLifepath(setting, name, jsonLifepath){
       else if( resExpr[0] == '+mult_time'){
         this.resourcePtsIsCalculated = true;
         var mult = parseInt(resExpr[1])
-        this.innerCalculateResourcePoints = function(prevLifepath){
+        this.calculateHusbandResourcePoints = function(prevLifepath){
           this.husbandResourcePts = this.time * mult;
-          oldInnerCalculateResourcePoints(prevLifepath)
         }
       }
       else if( resExpr[0] == '+mult_prev'){
         this.resourcePtsIsCalculated = true;
         var mult = resExpr[1];
-        this.innerCalculateResourcePoints = function(prevLifepath){
+        this.calculateHusbandResourcePoints = function(prevLifepath){
           if(prevLifepath){
             this.husbandResourcePts = Math.floor(prevLifepath.resourcePts * mult);
           }
           else {
             this.husbandResourcePts = -1;
           }
-          oldInnerCalculateResourcePoints(prevLifepath);
         }
       }
       else {
@@ -301,10 +312,8 @@ function DisplayLifepath(setting, name, jsonLifepath){
           if( generalExpr[0] == '+mult_time'){
             this.generalSkillPtsIsCalculated = true;
             var multGenSkill = parseInt(generalExpr[1])
-            var oldInnerCalculateGeneralSkillPoints = this.innerCalculateGeneralSkillPoints.bind(this);
-            this.innerCalculateGeneralSkillPoints = function(){
+            this.calculateHusbandGeneralSkillPoints = function(){
               this.husbandGeneralSkillPts += this.time * multGenSkill;
-              oldInnerCalculateGeneralSkillPoints();
             }
           }
           else {
@@ -324,12 +333,14 @@ function DisplayLifepath(setting, name, jsonLifepath){
   }
 
   this.calculateResourcePoints = function(prevLifepath){
+    this.calculateHusbandResourcePoints?.(prevLifepath);
     if(this.resourcePtsIsCalculated){
       this.innerCalculateResourcePoints(prevLifepath);
     }
   }
 
   this.calculateSkillPoints = function(){
+    this.calculateHusbandGeneralSkillPoints?.();
     if(this.generalSkillPtsIsCalculated){
       this.innerCalculateGeneralSkillPoints();
     }
