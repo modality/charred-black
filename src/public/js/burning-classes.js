@@ -60,6 +60,7 @@ function DisplayLifepath(setting, name, jsonLifepath){
   this.requires = jsonLifepath["requires"];
   this.note = jsonLifepath["note"];
   this.weaponOfChoice = null;
+  this.husbandLifepath = null;
   
   this.resourcePtsIsCalculated = false;
   if ( jsonLifepath.res == "*" ){
@@ -78,7 +79,7 @@ function DisplayLifepath(setting, name, jsonLifepath){
     }
     else if( expr[0] == '+mult_prev'){
       this.resourcePtsIsCalculated = true;
-      var mult = expr[1]
+      var mult = expr[1];
       this.innerCalculateResourcePoints = function(prevLifepath){
         if(prevLifepath){
           this.resourcePts = Math.floor(prevLifepath.resourcePts * mult);
@@ -86,6 +87,14 @@ function DisplayLifepath(setting, name, jsonLifepath){
         else {
           this.resourcePts = -1;
         }
+      }
+    }
+    else if ( expr[0] == '+plus_div_husband'){
+      this.resourcePtsIsCalculated = true;
+      var base = parseInt(expr[1]);
+      var denominator = parseInt(expr[2]);
+      this.innerCalculateResourcePoints = function(prevLifepath){
+        this.resourcePts = base + Math.floor(this.husbandResourcePts / denominator);
       }
     }
     else {
@@ -124,6 +133,16 @@ function DisplayLifepath(setting, name, jsonLifepath){
             var multGenSkill = parseInt(expr[1])
             this.innerCalculateGeneralSkillPoints = function(){
               this.generalSkillPts = this.time * multGenSkill;
+            }
+          }
+          else if( expr[0] == '+plus_div_husband'){
+            this.generalSkillPtsIsCalculated = true;
+            var generalBase = parseInt(expr[1])
+            var denominator = parseInt(expr[2]);
+            this.innerCalculateGeneralSkillPoints = function(){
+              this.generalSkillPts = generalBase + Math.floor(this.husbandGeneralSkillPts / denominator);
+              // KLUDGE: calculating lifepath skillpoints too
+              this.lifepathSkillPts += Math.floor(this.husbandLifepathSkillPts / denominator);
             }
           }
           else {
@@ -212,6 +231,87 @@ function DisplayLifepath(setting, name, jsonLifepath){
     }
 
     return s;
+  }
+  
+  this.setHusbandLifepath = function(husbandLpName, jsonHusbandLifepath) {
+    this.husbandLifepath = husbandLpName;
+    if (jsonHusbandLifepath.res == '*'){
+      var oldInnerCalculateResourcePoints = this.innerCalculateResourcePoints.bind(this);
+      // Figure out the resource point calculation 
+      var expr = jsonHusbandLifepath.res_expr
+      if ( null == expr ){
+        console.log("Error: Lifepath with calculated resources is missing res_expr attribute");
+        this.resourcePts = -1;
+      }
+      else if( expr[0] == '+mult_time'){
+        this.resourcePtsIsCalculated = true;
+        var mult = parseInt(expr[1])
+        this.innerCalculateResourcePoints = function(prevLifepath){
+          this.husbandResourcePts = this.time * mult;
+          oldInnerCalculateResourcePoints(prevLifepath)
+        }
+      }
+      else if( expr[0] == '+mult_prev'){
+        this.resourcePtsIsCalculated = true;
+        var mult = expr[1];
+        this.innerCalculateResourcePoints = function(prevLifepath){
+          if(prevLifepath){
+            this.husbandResourcePts = Math.floor(prevLifepath.resourcePts * mult);
+          }
+          else {
+            this.husbandResourcePts = -1;
+          }
+          oldInnerCalculateResourcePoints(prevLifepath);
+        }
+      }
+      else {
+        console.log("Unknown res_expr type " + expr[0]);
+        this.resourcePts = -1;
+      }
+    } else {
+      this.husbandResourcePts = getAsNumOrDefault(
+        jsonHusbandLifepath,
+        "res",
+        -1,
+        "res field is not set in lifepath " + name + " or is not a number"
+      );
+    }
+    var husbandSkills = jsonHusbandLifepath.skills;
+    this.husbandGeneralSkillPts = 0;
+    this.husbandLifepathSkillPts = 0;
+    for(var skillsCategory of husbandSkills){
+      // Is this the General skills category?
+      if( skillsCategory[1] == "General" ){
+        if (skillsCategory[0] == '*') {
+          var expr = jsonHusbandLifepath.skills_expr
+          if ( null == expr ){
+            console.log("Error: Lifepath with calculated general skillpoints is missing skills_expr attribute");
+            this.husbandGeneralSkillPts = -1;
+          }
+          else if( expr[0] == '+mult_time'){
+            this.generalSkillPtsIsCalculated = true;
+            // Need a new variable name for this since javascript variables
+            // are scoped to the function, not to the block.
+            var multGenSkill = parseInt(expr[1])
+            var oldInnerCalculateGeneralSkillPoints = this.innerCalculateGeneralSkillPoints.bind(this);
+            this.innerCalculateGeneralSkillPoints = function(){
+              this.husbandGeneralSkillPts += this.time * multGenSkill;
+              oldInnerCalculateGeneralSkillPoints();
+            }
+          }
+          else {
+            console.log("Unknown skills_expr type " + expr[0]);
+            this.husbandGeneralSkillPts = -1;
+          }
+        } else {
+          this.husbandGeneralSkillPts = skillsCategory[0];
+        }
+      }
+      else {
+        this.husbandLifepathSkillPts += skillsCategory[0];
+        this.skills = this.skills.concat(skillsCategory.slice(1));
+      }
+    }
   }
 
   this.calculateResourcePoints = function(prevLifepath){

@@ -21,6 +21,7 @@ function loadCurrentCharacterFromStruct($scope, charStruct, burningData, appropr
       // lp[5] is the replacement skill for 'Weapon Of Choice' if it's present.
       // lp[6] is the replacement stat array, if present. This is needed if the
       //       lifepath had a stat penalty.
+      // lp[7] is the husband's lifepath, if present.
 
       var setting = burningData.lifepaths[$scope.stock][lp[0]];
       if (!setting)
@@ -40,6 +41,9 @@ function loadCurrentCharacterFromStruct($scope, charStruct, burningData, appropr
 
       if (lp[6] != null)
         displayLp.stat = lp[6]
+      
+      if (lp[7] != null)
+        displayLp.setHusbandLifepath(lp[7], burningData.lifepaths.man[setting][lp[7]]);
 
       var prevLifepath = null;
       if(selectedLifepaths.length > 0)
@@ -213,8 +217,14 @@ function convertCurrentCharacterToStruct($scope, appropriateWeapons) {
     } else {
       lp.push(null);
     }
-
+    
     lp[6] = displayLp.stat;
+
+    if ( displayLp.husbandLifepath ){
+      lp.push(displayLp.husbandLifepath);
+    } else {
+      lp.push(null)
+    }
 
     lifepaths.push(lp);
   }

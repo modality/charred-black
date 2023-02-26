@@ -208,6 +208,56 @@ function WeaponOfChoiceService($modal, $http) {
 
 /**** End Class WeaponOfChoiceService ****/
 
+/**** Class HusbandLifepathService (Angular Service) ****/
+function HusbandLifepathService($modal, $http, burningData) {
+  this.hasHusbandLifepath = function (displayLp){
+    return displayLp.note?.includes?.("husband's lifepath");
+  }
+ 
+  this.selectHusbandLifepath = function (displayLp, onSelect){
+    if( this.hasHusbandLifepath(displayLp) ){
+      this.selectHusbandLifepathByModal(displayLp.setting, displayLp.name, function(selected){
+        displayLp.setHusbandLifepath(selected, burningData.lifepaths.man[displayLp.setting][selected]);
+
+        if ( onSelect ){
+          onSelect();
+        }
+      })
+    }
+  }
+
+  this.selectHusbandLifepathByModal = function (setting, lifepathName, onSelect){
+    var modalInstance = $modal.open({
+      templateUrl: '/choose_husband_lifepath_partial',
+      controller: HusbandLifepathModalCtrl,
+      resolve: {
+        husbandLifepaths: function() {
+          husbandLifepathNames(burningData, setting);
+        },
+        burningData: function() {
+          return burningData;
+        },
+        lifepathName: function () {
+          return lifepathName;
+        },
+        setting: function() {
+          return setting;
+        }
+      }
+    });
+
+    modalInstance.result.then(function (selected) {
+      console.log("Modal: User selected:");
+      console.log(selected);
+      if ( onSelect ){
+        onSelect(selected);
+      }
+    }, function () {
+      console.log("Modal: User cancelled");
+    });
+  }
+}
+
 /**** Class CharacterStorageService ****/
 function CharacterStorageService($http) {
   this.currentCharacter = null;

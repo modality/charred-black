@@ -54,6 +54,7 @@ burningModule.service('appropriateWeapons', AppropriateWeaponsService);
 burningModule.service('characterStorage', CharacterStorageService);
 burningModule.service('burningData', BurningDataService);
 burningModule.service('weaponOfChoice', WeaponOfChoiceService);
+burningModule.service('husbandLifepath', HusbandLifepathService);
 
 /* Set up URL routes. Different URLs map to different HTML fragments (templates)*/
 burningModule.config(function($routeProvider) {
@@ -77,7 +78,7 @@ burningModule.run(function($rootScope, $location, $anchorScroll, $routeParams) {
   });
 });
 
-function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapons, weaponOfChoice, characterStorage, burningData){
+function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapons, weaponOfChoice, husbandLifepath, characterStorage, burningData){
 
   $scope.basicAttributeNames =  ["Mortal Wound", "Reflexes", "Health", "Steel", "Hesitation", "Stride", "Circles", "Resources"];
 
@@ -464,6 +465,14 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
       else {
         appropriateWeapons.replaceAppropriateWeapons(displayLp, appropriate);
       }
+    }
+
+    // If the lifepath is a Wife lifepath, ask the user to choose the husband's lifepath.
+    if( husbandLifepath.hasHusbandLifepath(displayLp) ){
+      husbandLifepath.selectHusbandLifepath(displayLp, function(){
+        $scope.addDisplayLifepath(displayLp);
+      });
+      return;
     }
 
     // If the lifepath contains 'Weapon Of Choice', ask the 
@@ -1993,6 +2002,10 @@ function isBornLifepath(lifepathName) {
          lifepathName == "Gifted Child";
 }
 
+function isWifeLifepath(lifepathName) {
+  return lifepathName.includes('Wife');
+}
+
 
 function calculateCurrentSettingLifepathNames($scope, burningData){
   var currentSettingLifepathNames = null;
@@ -2597,6 +2610,21 @@ function areLifepathRequirementsSatisfied($scope, rexpr){
 
 function weaponSkillsNames(){
   return ["Axe", "Bow", "Cudgel", "Crossbow", "Firearms", "Firebombs", "Hammer", "Knives", "Lance", "Mace", "Polearm", "Spear", "Staff", "Sword"]
+}
+
+function husbandLifepathNames(burningData, setting){ 
+  var husbandLifepathNamesResult = [];
+  var lifepathNames = Object.keys(burningData.lifepaths.man[setting])
+  for(var j = 0; j < lifepathNames.length; j++){
+    var lifepathName = lifepathNames[j];
+
+    if ( isBornLifepath(lifepathName) || isWifeLifepath(lifepathName) )
+      continue;
+
+    // assume the husband meets any requirements.
+    husbandLifepathNamesResult.push(lifepathName);
+  }
+  return husbandLifepathNamesResult;
 }
 
 // Perform some simple validation on the char struct to ensure it seems mostly legit.
