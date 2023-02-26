@@ -3,12 +3,12 @@
 </div>
 <div class='modal-body'>
   <p>
-    The lifepath '{{lifepathName}}' requires choosing the husband's lifepath.
+    {{note}}
   </p>
   <p>
     Please choose the husband's lifepath:
   </p>
-  <select ng-model='chosen[0]' ng-options='i for i in husbandLifepathNames()'></select>
+  <select ng-model='chosen[0]' ng-options='i for i in husbandLifepathNames'></select>
 </div>
 <div class='modal-footer'>
   <button class='btn btn-primary' ng-click='ok()'>OK</button>

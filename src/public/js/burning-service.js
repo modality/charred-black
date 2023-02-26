@@ -216,7 +216,7 @@ function HusbandLifepathService($modal, $http, burningData) {
  
   this.selectHusbandLifepath = function (displayLp, onSelect){
     if( this.hasHusbandLifepath(displayLp) ){
-      this.selectHusbandLifepathByModal(displayLp.setting, displayLp.name, function(selected){
+      this.selectHusbandLifepathByModal(displayLp, function(selected){
         displayLp.setHusbandLifepath(selected, burningData.lifepaths.man[displayLp.setting][selected]);
 
         if ( onSelect ){
@@ -226,22 +226,16 @@ function HusbandLifepathService($modal, $http, burningData) {
     }
   }
 
-  this.selectHusbandLifepathByModal = function (setting, lifepathName, onSelect){
+  this.selectHusbandLifepathByModal = function (displayLp, onSelect){
     var modalInstance = $modal.open({
       templateUrl: '/choose_husband_lifepath_partial',
       controller: HusbandLifepathModalCtrl,
       resolve: {
         husbandLifepaths: function() {
-          husbandLifepathNames(burningData, setting);
+          return husbandLifepathNames(burningData, displayLp.setting);
         },
-        burningData: function() {
-          return burningData;
-        },
-        lifepathName: function () {
-          return lifepathName;
-        },
-        setting: function() {
-          return setting;
+        note: function () {
+          return displayLp.note;
         }
       }
     });

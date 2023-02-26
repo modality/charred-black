@@ -48,13 +48,10 @@ function WeaponOfChoiceModalCtrl($scope, $modalInstance, lifepathName) {
 }
 
 // For use with the angular ui bootstrap Modal call
-function HusbandLifepathModalCtrl($scope, $modalInstance, burningData, setting, lifepathName) {
-  $scope.chosen = [husbandLifepathNames(burningData, setting)[0]];
-  $scope.lifepathName = lifepathName;
-
-  $scope.husbandLifepathNames = function(){
-    return husbandLifepathNames(burningData, setting);
-  }
+function HusbandLifepathModalCtrl($scope, $modalInstance, husbandLifepaths, note) {
+  $scope.husbandLifepathNames = husbandLifepaths;
+  $scope.chosen = [$scope.husbandLifepathNames[0]];
+  $scope.note = note;
 
   $scope.ok = function(){
     $modalInstance.close($scope.chosen[0]);
