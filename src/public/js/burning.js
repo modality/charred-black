@@ -396,7 +396,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     calculateTotalResourcePoints($scope);
     calculateUnspentResourcePoints($scope);
 
-    lp.calculateGeneralSkillPoints();
+    lp.calculateSkillPoints();
     calculateTotalSkillPoints($scope);
     openRequiredSkills($scope);
     calculateUnspentSkillPoints($scope);
@@ -494,7 +494,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     if($scope.selectedLifepaths.length > 0)
       prevLifepath = $scope.selectedLifepaths[$scope.selectedLifepaths.length-1];
     displayLp.calculateResourcePoints(prevLifepath);
-    displayLp.calculateGeneralSkillPoints(prevLifepath);
+    displayLp.calculateSkillPoints(prevLifepath);
 
     displayLp.modifyForDiminishingReturns($scope.selectedLifepaths);  
     if($scope.stock == "orc"){

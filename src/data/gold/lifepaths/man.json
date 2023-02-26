@@ -679,16 +679,11 @@
       ],
       "skills": [
         [
-          2,
+          ["+plus_div_husband", 2, 2],
           "Child Rearing",
           "Cooking"
-        ],
-        [
-          "*",
-          "General"
         ]
       ],
-      "skills_expr": ["+plus_div_husband", 0, 2],
       "traits": [
         1
       ],
@@ -2390,16 +2385,15 @@
       ],
       "skills": [
         [
-          2,
+          ["+plus_div_husband", 2, 2],
           "Child Rearing",
           "Cooking"
         ],
         [
-          "*",
+          ["+plus_div_husband", 0, 2],
           "General"
         ]
       ],
-      "skills_expr": ["+plus_div_husband", 0, 2],
       "traits": [
         1
       ],
@@ -5088,16 +5082,11 @@
       ],
       "skills": [
         [
-          2,
+          ["+plus_div_husband", 2, 2],
           "Child Rearing",
           "Husband-wise"
-        ],
-        [
-          "*",
-          "General"
         ]
       ],
-      "skills_expr": ["+plus_div_husband", 0, 2],
       "traits": [
         1
       ],
@@ -7553,13 +7542,9 @@
       ],
       "skills": [
         [
-          "*",
+          ["+mult_time", 1],
           "General"
         ]
-      ],
-      "skills_expr": [
-        "+mult_time",
-        1
       ],
       "traits": [
         1
