@@ -997,7 +997,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
 
     if( "Mortal Wound" == name ){
       var shadeAndExp;
-      if ( $scope.stock == 'troll' ) {
+      if ( $scope.stock == 'troll' || $scope.stock == 'dwarf') {
         shadeAndExp = computeStatAverage($scope.statsByName, ["Power", "Forte"], true);
       } else {
         shadeAndExp = computeStatAverage($scope.statsByName, ["Power", "Forte"]);
