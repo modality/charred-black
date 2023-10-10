@@ -7617,7 +7617,7 @@
         "Outcast Subsetting"
       ]
     },
-    "Ditch Digging": {
+    "Ditch Digger": {
       "time": 4,
       "res": 4,
       "leads": [
@@ -7627,7 +7627,7 @@
       "skills": [
         [
           3,
-          "Ditch Digger",
+          "Ditch Digging",
           "Sing",
           "Boss-wise"
         ]
