@@ -16,8 +16,8 @@ module Charred
 
       man = data[:lifepaths]['man']
 
-      man['College of Magic Setting'] = wizard_data['College of Magic Setting']
-      man['Death Cult Setting'] = wizard_data['Death Cult Setting']
+      man['College of Magic Subsetting'] = wizard_data['College of Magic Subsetting']
+      man['Death Cult Subsetting'] = wizard_data['Death Cult Subsetting']
 
       data[:lifepaths]['orc']['Servant Of The Dark Blood Subsetting'].merge!(wizard_data['Servant Of The Dark Blood Subsetting'])
 
@@ -55,8 +55,8 @@ module Charred
       end
 
       leads_short = {
-        'College of Magic Setting' => 'College',
-        'Death Cult Setting' => 'Death',
+        'College of Magic Subsetting' => 'College',
+        'Death Cult Subsetting' => 'Death',
       }
       
       # backfill leads
