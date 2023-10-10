@@ -729,6 +729,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     else
       console.log("Error: changing shade of stat failed: unknown shade " + stat.shade);
 
+	calculatePTGS($scope);
   }
 
   $scope.changeAttributeShade = function(attrName){
