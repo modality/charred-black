@@ -729,6 +729,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
     else
       console.log("Error: changing shade of stat failed: unknown shade " + stat.shade);
 
+	calculatePTGS($scope);
   }
 
   $scope.changeAttributeShade = function(attrName){
@@ -997,7 +998,7 @@ function BurningCtrl($scope, $http, $modal, $timeout, settings, appropriateWeapo
 
     if( "Mortal Wound" == name ){
       var shadeAndExp;
-      if ( $scope.stock == 'troll' ) {
+      if ( $scope.stock == 'troll' || $scope.stock == 'dwarf') {
         shadeAndExp = computeStatAverage($scope.statsByName, ["Power", "Forte"], true);
       } else {
         shadeAndExp = computeStatAverage($scope.statsByName, ["Power", "Forte"]);
@@ -1983,7 +1984,7 @@ function calculateSettingNames($scope, burningData){
 }
 
 function calculatePTGS($scope) {
-  $scope.ptgs.calculate($scope.statsByName['Forte'].exp(), $scope.attribute("Mortal Wound").exp)
+  $scope.ptgs.calculate($scope.statsByName['Forte'].exp(), $scope.attribute("Mortal Wound"))
 }
 
 

@@ -16,8 +16,8 @@ module Charred
 
       man = data[:lifepaths]['man']
 
-      man['College of Magic Setting'] = wizard_data['College of Magic Setting']
-      man['Death Cult Setting'] = wizard_data['Death Cult Setting']
+      man['College of Magic Subsetting'] = wizard_data['College of Magic Subsetting']
+      man['Death Cult Subsetting'] = wizard_data['Death Cult Subsetting']
 
       data[:lifepaths]['orc']['Servant Of The Dark Blood Subsetting'].merge!(wizard_data['Servant Of The Dark Blood Subsetting'])
 
@@ -55,11 +55,11 @@ module Charred
       end
 
       leads_short = {
-        'College of Magic Setting' => 'College',
-        'Death Cult Setting' => 'Death',
+        'College of Magic Subsetting' => 'College',
+        'Death Cult Subsetting' => 'Death',
       }
       
-      # backfill leads
+      # backfill leads from requirements
       leads_short.keys.each do |wiz_set|
         wizard_data[wiz_set].keys.each do |wiz_lp|
           lifepath = wizard_data[wiz_set][wiz_lp]
@@ -87,6 +87,24 @@ module Charred
           end
         end
       end
+      
+      # backfill general Death leads
+      # Codex p. 406: "Also, Harem Slave, Captive of War, Gaol, Grave Digger, Pillager, Cripple, Deranged, Leper and Insurrectionist all lead to this setting"
+      # Insurrectionist, Deranged, and Gravedigger are already covered by the requirements backfill
+      man['Servitude And Captive Setting']['Harem Slave']['leads'].push("Death")
+      man['Servitude And Captive Setting']['Harem Slave']['key_leads'].push("Death Cult Subsetting")
+      man['Servitude And Captive Setting']['Captive Of War']['leads'].push("Death")
+      man['Servitude And Captive Setting']['Captive Of War']['key_leads'].push("Death Cult Subsetting")
+      man['Servitude And Captive Setting']['Gaol']['leads'].push("Death")
+      man['Servitude And Captive Setting']['Gaol']['key_leads'].push("Death Cult Subsetting")
+      man['Outcast Subsetting']['Pillager']['leads'].push("Death")
+      man['Outcast Subsetting']['Pillager']['key_leads'].push("Death Cult Subsetting")
+      man['Outcast Subsetting']['Cripple (Lame)']['leads'].push("Death")
+      man['Outcast Subsetting']['Cripple (Lame)']['key_leads'].push("Death Cult Subsetting")
+      man['Outcast Subsetting']['Cripple (Missing Limb)']['leads'].push("Death")
+      man['Outcast Subsetting']['Cripple (Missing Limb)']['key_leads'].push("Death Cult Subsetting")
+      man['Outcast Subsetting']['Leper']['leads'].push("Death")
+      man['Outcast Subsetting']['Leper']['key_leads'].push("Death Cult Subsetting")
 
       # backfill Neophyte Sorcerer and Arcane Devotee connections
       man.keys.each do |man_set|

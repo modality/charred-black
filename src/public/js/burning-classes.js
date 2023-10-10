@@ -668,41 +668,61 @@ function Alert(desc, type){
 
 /**** Class PTGS ****/
 function PTGS() {
-  this.su = 0
-  this.li = 0
-  this.mi = 0
-  this.se = 0
-  this.tr = 0
-  this.mo = 0
+  this.su = {"shade" : "B", "exp" : 0}
+  this.li = {"shade" : "B", "exp" : 0}
+  this.mi = {"shade" : "B", "exp" : 0}
+  this.se = {"shade" : "B", "exp" : 0}
+  this.tr = {"shade" : "B", "exp" : 0}
+  this.mo = {"shade" : "B", "exp" : 0}
 
   this.calculate = function(forte, mortal) {
-    this.su = Math.floor(forte/2)+1
-
+    this.su.exp = Math.floor(forte/2)+1
+	this.mo=mortal
+	
+	
     /* Put Light, Midi, Severe, and Traumatic as far right as possible, then
      * move them backwards to satisfy the constraint that they may only be 
      * as far apart as half forte rounded up.
      */
 
+	if (this.mo.shade == "B")
+		mo_as_B=this.mo.exp
+	else
+		mo_as_B=this.mo.exp+16
+	
     gap = Math.ceil(forte/2)
 
-    var tol = [mortal-4,mortal-3,mortal-2, mortal-1]
+    var tol = [mo_as_B-4,mo_as_B-3,mo_as_B-2, mo_as_B-1]
     for(i = 0; i < 4; i++) {
-      last = this.su
+      last = this.su.exp
       if (i > 0) 
         last = tol[i-1];
 
       if (tol[i] - last > gap)
         tol[i] = last+gap
 
-      if (tol[i] < this.su)
-        tol[i] = this.su;
+      if (tol[i] < this.su.exp)
+        tol[i] = this.su.exp;
     }
     
-    this.li = tol[0]
-    this.mi = tol[1]
-    this.se = tol[2]
-    this.tr = tol[3]
-    this.mo = mortal
+    this.li.exp = tol[0]
+    this.mi.exp = tol[1]
+    this.se.exp = tol[2]
+    this.tr.exp = tol[3]
+    // Graying as needed (it is not possible to make charecters with Gray Midi)
+    if (this.se.exp >= 17) {
+		this.se.shade="G";
+		this.se.exp-= 16;
+	}
+	else
+		this.se.shade="B";
+    
+    if (this.tr.exp >= 17) {
+		this.tr.shade="G";
+		this.tr.exp-= 16;
+	}
+	else
+		this.tr.shade="B";
   }
 }
 /**** End PTGS ****/
