@@ -1983,7 +1983,7 @@ function calculateSettingNames($scope, burningData){
 }
 
 function calculatePTGS($scope) {
-  $scope.ptgs.calculate($scope.statsByName['Forte'].exp(), $scope.attribute("Mortal Wound").exp)
+  $scope.ptgs.calculate($scope.statsByName['Forte'].exp(), $scope.attribute("Mortal Wound"))
 }
 
 
